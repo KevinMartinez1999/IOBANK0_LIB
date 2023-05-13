@@ -14,118 +14,75 @@
 /*************** Definicion de las constantes **********************/
 /*******************************************************************/
 
+#define kIOBANK_OUTFROMPERI_ENABLE 1            /**< Señal de salida del periférico seleccionado habilitada, antes de que se aplique la anulación de registro */
+#define kIOBANK_OUTFROMPERI_DISABLE 0           /**< Señal de salida del periférico seleccionado deshabilitada, antes de que se aplique la anulación de registro */
+#define kIOBANK_OUTTOPAD_ENABLE 1               /**< Señal de salida al pad habilitada después de aplicar la anulación de registro */
+#define kIOBANK_OUTTOPAD_DISABLE 0              /**< Señal de salida al pad deshabilitada después de aplicar la anulación de registro */
+#define kIOBANK_OEFROMPERI_ENABLE 1             /**< Salida habilitada desde el periférico seleccionado, antes de que se aplique la anulación de registro */
+#define kIOBANK_OEFROMPERI_DISABLE 0            /**< Salida deshabilitada desde el periférico seleccionado, antes de que se aplique la anulación de registro */
+#define kIOBANK_OETOPAD_ENABLE 1                /**< Salida habilitada para rellenar después de aplicar la anulación de registro */
+#define kIOBANK_OETOPAD_DISABLE 0               /**< Salida deshabilitada para rellenar después de aplicar la anulación de registro */
+#define kIOBANK_INFROMPAD_ENABLE 1              /**< Señal de entrada del pad habilitada, antes de que se aplique la anulación */
+#define kIOBANK_INFROMPAD_DISABLE 0             /**< Señal de entrada del pad deshabilitada, antes de que se aplique la anulación */
+#define kIOBANK_INTOPERI_ENABLE 1               /**< Señal de entrada al periférico habilitada, después de aplicar la anulación */
+#define kIOBANK_INTOPERI_DISABLE 0              /**< Señal de entrada al periférico deshabilitada, después de aplicar la anulación */
+#define kIOBANK_IRQFROMPAD_ENABLE 1             /**< Interrupción desde el pad antes de que se aplique la anulación, habilitada*/
+#define kIOBANK_IRQFROMPAD_DISABLE 0            /**< Interrupción desde el pad antes de que se aplique la anulación, deshabilitada*/
+#define kIOBANK_IRQTOPROC_ENABLE 1              /**< Interrumpir a los procesadores, después de aplicar la anulación, habilitada */
+#define kIOBANK_IRQTOPROC_DISABLE 0             /**< Interrumpir a los procesadores, después de aplicar la anulación, deshabilitada */
 
+#define kIOBANK_FUNCSEL_FUNC0 0                 /**< Seleccionar función 0. Consulte la tabla de funciones GPIO para conocer las funciones disponibles. */
+#define kIOBANK_FUNCSEL_FUNC1 1                 /**< Seleccionar función 1. Consulte la tabla de funciones GPIO para conocer las funciones disponibles. */
+#define kIOBANK_FUNCSEL_FUNC2 2                 /**< Seleccionar función 2. Consulte la tabla de funciones GPIO para conocer las funciones disponibles. */
+#define kIOBANK_FUNCSEL_FUNC3 3                 /**< Seleccionar función 3. Consulte la tabla de funciones GPIO para conocer las funciones disponibles. */
+#define kIOBANK_FUNCSEL_FUNC4 4                 /**< Seleccionar función 4. Consulte la tabla de funciones GPIO para conocer las funciones disponibles. */
+#define kIOBANK_FUNCSEL_FUNC5 5                 /**< Seleccionar función 5. Consulte la tabla de funciones GPIO para conocer las funciones disponibles. */
+#define kIOBANK_FUNCSEL_FUNC6 6                 /**< Seleccionar función 6. Consulte la tabla de funciones GPIO para conocer las funciones disponibles. */
+#define kIOBANK_FUNCSEL_FUNC7 7                 /**< Seleccionar función 7. Consulte la tabla de funciones GPIO para conocer las funciones disponibles. */
+#define kIOBANK_FUNCSEL_FUNC8 8                 /**< Seleccionar función 8. Consulte la tabla de funciones GPIO para conocer las funciones disponibles. */
+#define kIOBANK_FUNCSEL_FUNC9 9                 /**< Seleccionar función 9. Consulte la tabla de funciones GPIO para conocer las funciones disponibles. */
+#define kIOBANK_FUNCSEL_FUNC10 10               /**< Seleccionar función 10. Consulte la tabla de funciones GPIO para conocer las funciones disponibles. */
+#define kIOBANK_FUNCSEL_FUNC11 11               /**< Seleccionar función 11. Consulte la tabla de funciones GPIO para conocer las funciones disponibles. */
+#define kIOBANK_FUNCSEL_FUNC12 12               /**< Seleccionar función 12. Consulte la tabla de funciones GPIO para conocer las funciones disponibles. */
+#define kIOBANK_FUNCSEL_FUNC13 13               /**< Seleccionar función 13. Consulte la tabla de funciones GPIO para conocer las funciones disponibles. */
+#define kIOBANK_FUNCSEL_FUNC14 14               /**< Seleccionar función 14. Consulte la tabla de funciones GPIO para conocer las funciones disponibles. */
+#define kIOBANK_FUNCSEL_FUNC15 15               /**< Seleccionar función 15. Consulte la tabla de funciones GPIO para conocer las funciones disponibles. */
+#define kIOBANK_FUNCSEL_FUNC16 16               /**< Seleccionar función 16. Consulte la tabla de funciones GPIO para conocer las funciones disponibles. */
+#define kIOBANK_FUNCSEL_FUNC17 17               /**< Seleccionar función 17. Consulte la tabla de funciones GPIO para conocer las funciones disponibles. */
+#define kIOBANK_FUNCSEL_FUNC18 18               /**< Seleccionar función 18. Consulte la tabla de funciones GPIO para conocer las funciones disponibles. */
+#define kIOBANK_FUNCSEL_FUNC19 19               /**< Seleccionar función 19. Consulte la tabla de funciones GPIO para conocer las funciones disponibles. */
+#define kIOBANK_FUNCSEL_FUNC20 20               /**< Seleccionar función 20. Consulte la tabla de funciones GPIO para conocer las funciones disponibles. */
+#define kIOBANK_FUNCSEL_FUNC21 21               /**< Seleccionar función 21. Consulte la tabla de funciones GPIO para conocer las funciones disponibles. */
+#define kIOBANK_FUNCSEL_FUNC22 22               /**< Seleccionar función 22. Consulte la tabla de funciones GPIO para conocer las funciones disponibles. */
+#define kIOBANK_FUNCSEL_FUNC23 23               /**< Seleccionar función 23. Consulte la tabla de funciones GPIO para conocer las funciones disponibles. */
+#define kIOBANK_FUNCSEL_FUNC24 24               /**< Seleccionar función 24. Consulte la tabla de funciones GPIO para conocer las funciones disponibles. */
+#define kIOBANK_FUNCSEL_FUNC25 25               /**< Seleccionar función 25. Consulte la tabla de funciones GPIO para conocer las funciones disponibles. */
+#define kIOBANK_FUNCSEL_FUNC26 26               /**< Seleccionar función 26. Consulte la tabla de funciones GPIO para conocer las funciones disponibles. */
+#define kIOBANK_FUNCSEL_FUNC27 27               /**< Seleccionar función 27. Consulte la tabla de funciones GPIO para conocer las funciones disponibles. */
+#define kIOBANK_FUNCSEL_FUNC28 28               /**< Seleccionar función 28. Consulte la tabla de funciones GPIO para conocer las funciones disponibles. */
+#define kIOBANK_FUNCSEL_FUNC29 29               /**< Seleccionar función 29. Consulte la tabla de funciones GPIO para conocer las funciones disponibles. */
+#define kIOBANK_FUNCSEL_FUNC30 30               /**< Seleccionar función 30. Consulte la tabla de funciones GPIO para conocer las funciones disponibles. */
+#define kIOBANK_FUNCSEL_NULL 31                 /**< No seleccionar función */
 
-/*******************************************************************/
-/****************Start Bits Fields Type Definition******************/
-/*******************************************************************/
+#define kIOBANK_OUTOVER_OUT_FROM_SIGNAL_SELECTED 0                  /**< 0x0 → salida de la unidad desde la señal periférica seleccionada por funcsel */
+#define kIOBANK_OUTOVER_OUT_FROM_INVERSE_SIGNAL_SELECTED 1          /**< 0x1 → salida de la unidad desde el inverso de la señal periférica seleccionada por funcsel */
+#define kIOBANK_OUTOVER_OUT_LOW 2                                   /**< 0x2 → salida de la unidad baja */
+#define kIOBANK_OUTOVER_OUT_HIGH 3                                  /**< 0x3 → salida de la unidad alta */
 
-/**
- * @struct __iobank0_t
- * @brief Estructura del módulo IOBANK0, contiene 99 registros de 32 bits cada uno.
-*/
-typedef struct {
-    volatile __gpio_status_t GPIO0_STATUS;                  /**< Direccion de memoria  0x000 */
-    volatile __gpio_ctrl_t GPIO0_CTRL;                      /**< Direccion de memoria  0x004 */
-    volatile __gpio_status_t GPIO1_STATUS;                  /**< Direccion de memoria  0x008 */
-    volatile __gpio_ctrl_t GPIO1_CTRL;                      /**< Direccion de memoria  0x00c */
-    volatile __gpio_status_t GPIO2_STATUS;                  /**< Direccion de memoria  0x010 */
-    volatile __gpio_ctrl_t GPIO2_CTRL;                      /**< Direccion de memoria  0x014 */
-    volatile __gpio_status_t GPIO3_STATUS;                  /**< Direccion de memoria  0x018 */
-    volatile __gpio_ctrl_t GPIO3_CTRL;                      /**< Direccion de memoria  0x01c */
-    volatile __gpio_status_t GPIO4_STATUS;                  /**< Direccion de memoria  0x020 */
-    volatile __gpio_ctrl_t GPIO4_CTRL;                      /**< Direccion de memoria  0x024 */
-    volatile __gpio_status_t GPIO5_STATUS;                  /**< Direccion de memoria  0x028 */
-    volatile __gpio_ctrl_t GPIO5_CTRL;                      /**< Direccion de memoria  0x02c */
-    volatile __gpio_status_t GPIO6_STATUS;                  /**< Direccion de memoria  0x030 */
-    volatile __gpio_ctrl_t GPIO6_CTRL;                      /**< Direccion de memoria  0x034 */
-    volatile __gpio_status_t GPIO7_STATUS;                  /**< Direccion de memoria  0x038 */
-    volatile __gpio_ctrl_t GPIO7_CTRL;                      /**< Direccion de memoria  0x03c */
-    volatile __gpio_status_t GPIO8_STATUS;                  /**< Direccion de memoria  0x040 */
-    volatile __gpio_ctrl_t GPIO8_CTRL;                      /**< Direccion de memoria  0x044 */
-    volatile __gpio_status_t GPIO9_STATUS;                  /**< Direccion de memoria  0x048 */
-    volatile __gpio_ctrl_t GPIO9_CTRL;                      /**< Direccion de memoria  0x04c */
-    volatile __gpio_status_t GPIO10_STATUS;                 /**< Direccion de memoria  0x050 */
-    volatile __gpio_ctrl_t GPIO10_CTRL;                     /**< Direccion de memoria  0x054 */
-    volatile __gpio_status_t GPIO11_STATUS;                 /**< Direccion de memoria  0x058 */
-    volatile __gpio_ctrl_t GPIO11_CTRL;                     /**< Direccion de memoria  0x05c */
-    volatile __gpio_status_t GPIO12_STATUS;                 /**< Direccion de memoria  0x060 */
-    volatile __gpio_ctrl_t GPIO12_CTRL;                     /**< Direccion de memoria  0x064 */
-    volatile __gpio_status_t GPIO13_STATUS;                 /**< Direccion de memoria  0x068 */
-    volatile __gpio_ctrl_t GPIO13_CTRL;                     /**< Direccion de memoria  0x06c */
-    volatile __gpio_status_t GPIO14_STATUS;                 /**< Direccion de memoria  0x070 */
-    volatile __gpio_ctrl_t GPIO14_CTRL;                     /**< Direccion de memoria  0x074 */
-    volatile __gpio_status_t GPIO15_STATUS;                 /**< Direccion de memoria  0x078 */
-    volatile __gpio_ctrl_t GPIO15_CTRL;                     /**< Direccion de memoria  0x07c */
-    volatile __gpio_status_t GPIO16_STATUS;                 /**< Direccion de memoria  0x080 */
-    volatile __gpio_ctrl_t GPIO16_CTRL;                     /**< Direccion de memoria  0x084 */
-    volatile __gpio_status_t GPIO17_STATUS;                 /**< Direccion de memoria  0x088 */
-    volatile __gpio_ctrl_t GPIO17_CTRL;                     /**< Direccion de memoria  0x08c */
-    volatile __gpio_status_t GPIO18_STATUS;                 /**< Direccion de memoria  0x090 */
-    volatile __gpio_ctrl_t GPIO18_CTRL;                     /**< Direccion de memoria  0x094 */
-    volatile __gpio_status_t GPIO19_STATUS;                 /**< Direccion de memoria  0x098 */
-    volatile __gpio_ctrl_t GPIO19_CTRL;                     /**< Direccion de memoria  0x09c */
-    volatile __gpio_status_t GPIO20_STATUS;                 /**< Direccion de memoria  0x0a0 */
-    volatile __gpio_ctrl_t GPIO20_CTRL;                     /**< Direccion de memoria  0x0a4 */
-    volatile __gpio_status_t GPIO21_STATUS;                 /**< Direccion de memoria  0x0a8 */
-    volatile __gpio_ctrl_t GPIO21_CTRL;                     /**< Direccion de memoria  0x0ac */
-    volatile __gpio_status_t GPIO22_STATUS;                 /**< Direccion de memoria  0x0b0 */
-    volatile __gpio_ctrl_t GPIO22_CTRL;                     /**< Direccion de memoria  0x0b4 */
-    volatile __gpio_status_t GPIO23_STATUS;                 /**< Direccion de memoria  0x0b8 */
-    volatile __gpio_ctrl_t GPIO23_CTRL;                     /**< Direccion de memoria  0x0bc */
-    volatile __gpio_status_t GPIO24_STATUS;                 /**< Direccion de memoria  0x0c0 */
-    volatile __gpio_ctrl_t GPIO24_CTRL;                     /**< Direccion de memoria  0x0c4 */
-    volatile __gpio_status_t GPIO25_STATUS;                 /**< Direccion de memoria  0x0c8 */
-    volatile __gpio_ctrl_t GPIO25_CTRL;                     /**< Direccion de memoria  0x0cc */
-    volatile __gpio_status_t GPIO26_STATUS;                 /**< Direccion de memoria  0x0d0 */
-    volatile __gpio_ctrl_t GPIO26_CTRL;                     /**< Direccion de memoria  0x0d4 */
-    volatile __gpio_status_t GPIO27_STATUS;                 /**< Direccion de memoria  0xxd8 */
-    volatile __gpio_ctrl_t GPIO27_CTRL;                     /**< Direccion de memoria  0x0dc */
-    volatile __gpio_status_t GPIO28_STATUS;                 /**< Direccion de memoria  0x0e0 */
-    volatile __gpio_ctrl_t GPIO28_CTRL;                     /**< Direccion de memoria  0x0e4 */
-    volatile __gpio_status_t GPIO29_STATUS;                 /**< Direccion de memoria  0x0e8 */
-    volatile __gpio_ctrl_t GPIO29_CTRL;                     /**< Direccion de memoria  0x0ec */
-    volatile __int0_t INTR0;                                /**< Direccion de memoria  0x0f0 */
-    volatile __int1_t INTR1;                                /**< Direccion de memoria  0x0f4 */
-    volatile __int2_t INTR2;                                /**< Direccion de memoria  0x0f8 */
-    volatile __int3_t INTR3;                                /**< Direccion de memoria  0x0fc */
-    volatile __int0_t PROC0_INTE0;                          /**< Direccion de memoria  0x100 */
-    volatile __int1_t PROC0_INTE1;                          /**< Direccion de memoria  0x104 */
-    volatile __int2_t PROC0_INTE2;                          /**< Direccion de memoria  0x108 */
-    volatile __int3_t PROC0_INTE3;                          /**< Direccion de memoria  0x10c */
-    volatile __int0_t PROC0_INTF0;                          /**< Direccion de memoria  0x110 */
-    volatile __int1_t PROC0_INTF1;                          /**< Direccion de memoria  0x114 */
-    volatile __int2_t PROC0_INTF2;                          /**< Direccion de memoria  0x118 */
-    volatile __int3_t PROC0_INTF3;                          /**< Direccion de memoria  0x11c */
-    volatile __int0_t PROC0_INTS0;                          /**< Direccion de memoria  0x120 */
-    volatile __int1_t PROC0_INTS1;                          /**< Direccion de memoria  0x124 */
-    volatile __int2_t PROC0_INTS2;                          /**< Direccion de memoria  0x128 */
-    volatile __int3_t PROC0_INTS3;                          /**< Direccion de memoria  0x12c */
-    volatile __int0_t PROC1_INTE0;                          /**< Direccion de memoria  0x130 */
-    volatile __int1_t PROC1_INTE1;                          /**< Direccion de memoria  0x134 */
-    volatile __int2_t PROC1_INTE2;                          /**< Direccion de memoria  0x138 */
-    volatile __int3_t PROC1_INTE3;                          /**< Direccion de memoria  0x13c */
-    volatile __int0_t PROC1_INTF0;                          /**< Direccion de memoria  0x140 */
-    volatile __int1_t PROC1_INTF1;                          /**< Direccion de memoria  0x144 */
-    volatile __int2_t PROC1_INTF2;                          /**< Direccion de memoria  0x148 */
-    volatile __int3_t PROC1_INTF3;                          /**< Direccion de memoria  0x14c */
-    volatile __int0_t PROC1_INTS0;                          /**< Direccion de memoria  0x150 */
-    volatile __int1_t PROC1_INTS1;                          /**< Direccion de memoria  0x154 */
-    volatile __int2_t PROC1_INTS2;                          /**< Direccion de memoria  0x158 */
-    volatile __int3_t PROC1_INTS3;                          /**< Direccion de memoria  0x15c */
-    volatile __int0_t DORMANT_WAKE_INTE0;                   /**< Direccion de memoria  0x160 */
-    volatile __int1_t DORMANT_WAKE_INTE1;                   /**< Direccion de memoria  0x164 */
-    volatile __int2_t DORMANT_WAKE_INTE2;                   /**< Direccion de memoria  0x168 */
-    volatile __int3_t DORMANT_WAKE_INTE3;                   /**< Direccion de memoria  0x16c */
-    volatile __int0_t DORMANT_WAKE_INTF0;                   /**< Direccion de memoria  0x170 */
-    volatile __int1_t DORMANT_WAKE_INTF1;                   /**< Direccion de memoria  0x174 */
-    volatile __int2_t DORMANT_WAKE_INTF2;                   /**< Direccion de memoria  0x178 */
-    volatile __int3_t DORMANT_WAKE_INTF3;                   /**< Direccion de memoria  0x17c */
-    volatile __int0_t DORMANT_WAKE_INTS0;                   /**< Direccion de memoria  0x180 */
-    volatile __int1_t DORMANT_WAKE_INTS1;                   /**< Direccion de memoria  0x184 */
-    volatile __int2_t DORMANT_WAKE_INTS2;                   /**< Direccion de memoria  0x188 */
-    volatile __int3_t DORMANT_WAKE_INTS3;                   /**< Direccion de memoria  0x18c */
-}__iobank0_t;
+#define kIOBANK_OEOVER_ENABLE_OUT_FROM_SIGNAL_SELECTED 0            /**< 0x0 → habilitación de salida de unidad desde señal periférica seleccionada por funcsel */
+#define kIOBANK_OEOVER_ENABLE_OUT_FROM_INVERSE_SIGNAL_SELECTED 1    /**< 0x1 → habilitación de salida de unidad desde el inverso de la señal periférica seleccionada por funcsel */
+#define kIOBANK_OEOVER_DISABLE_OUT 2                                /**< 0x2 → deshabilitar salida */
+#define kIOBANK_OEOVER_ENABLE_OUT 3                                 /**< 0x3 → habilitar salida */
+
+#define kIOBANK_INOVER_NO_INVERT_IN 0                               /**< 0x0 → no inviertir la entrada peri */
+#define kIOBANK_INOVER_INVERT_IN 1                                  /**< 0x1 → invertir la entrada peri */
+#define kIOBANK_INOVER_IN_LOW 2                                     /**< 0x2 → entrada peri de la unidad baja */
+#define kIOBANK_INOVER_IN_HIGH 3                                    /**< 0x3 → entrada peri de la unidad alta */
+
+#define kIOBANK_IRQOVER_NO_INVERT_INTERRUPT 0                       /**< 0x0 → no invertir la interrupción */
+#define kIOBANK_IRQOVER_INVERT_INTERRUPT 1                          /**< 0x1 → invertir la interrupción */
+#define kIOBANK_IRQOVER_INTERRUPT_LOW 2                             /**< 0x2 → interrupción de unidad baja */
+#define kIOBANK_IRQOVER_INTERRUPT_HIGH 3                            /**< 0x3 → interrupción de unidad alta */
 
 /**
  * @union __gpio_status_t
@@ -322,6 +279,117 @@ typedef union {
         uint32_t                     : 8;   /**< Campo de bits reservado para los registros INT3 */
     }BITS;
 }__int3_t;
+
+/*******************************************************************/
+/****************Start Bits Fields Type Definition******************/
+/*******************************************************************/
+
+/**
+ * @struct __iobank0_t
+ * @brief Estructura del módulo IOBANK0, contiene 99 registros de 32 bits cada uno.
+*/
+typedef struct {
+    volatile __gpio_status_t GPIO0_STATUS;                  /**< Direccion de memoria  0x000 */
+    volatile __gpio_ctrl_t GPIO0_CTRL;                      /**< Direccion de memoria  0x004 */
+    volatile __gpio_status_t GPIO1_STATUS;                  /**< Direccion de memoria  0x008 */
+    volatile __gpio_ctrl_t GPIO1_CTRL;                      /**< Direccion de memoria  0x00c */
+    volatile __gpio_status_t GPIO2_STATUS;                  /**< Direccion de memoria  0x010 */
+    volatile __gpio_ctrl_t GPIO2_CTRL;                      /**< Direccion de memoria  0x014 */
+    volatile __gpio_status_t GPIO3_STATUS;                  /**< Direccion de memoria  0x018 */
+    volatile __gpio_ctrl_t GPIO3_CTRL;                      /**< Direccion de memoria  0x01c */
+    volatile __gpio_status_t GPIO4_STATUS;                  /**< Direccion de memoria  0x020 */
+    volatile __gpio_ctrl_t GPIO4_CTRL;                      /**< Direccion de memoria  0x024 */
+    volatile __gpio_status_t GPIO5_STATUS;                  /**< Direccion de memoria  0x028 */
+    volatile __gpio_ctrl_t GPIO5_CTRL;                      /**< Direccion de memoria  0x02c */
+    volatile __gpio_status_t GPIO6_STATUS;                  /**< Direccion de memoria  0x030 */
+    volatile __gpio_ctrl_t GPIO6_CTRL;                      /**< Direccion de memoria  0x034 */
+    volatile __gpio_status_t GPIO7_STATUS;                  /**< Direccion de memoria  0x038 */
+    volatile __gpio_ctrl_t GPIO7_CTRL;                      /**< Direccion de memoria  0x03c */
+    volatile __gpio_status_t GPIO8_STATUS;                  /**< Direccion de memoria  0x040 */
+    volatile __gpio_ctrl_t GPIO8_CTRL;                      /**< Direccion de memoria  0x044 */
+    volatile __gpio_status_t GPIO9_STATUS;                  /**< Direccion de memoria  0x048 */
+    volatile __gpio_ctrl_t GPIO9_CTRL;                      /**< Direccion de memoria  0x04c */
+    volatile __gpio_status_t GPIO10_STATUS;                 /**< Direccion de memoria  0x050 */
+    volatile __gpio_ctrl_t GPIO10_CTRL;                     /**< Direccion de memoria  0x054 */
+    volatile __gpio_status_t GPIO11_STATUS;                 /**< Direccion de memoria  0x058 */
+    volatile __gpio_ctrl_t GPIO11_CTRL;                     /**< Direccion de memoria  0x05c */
+    volatile __gpio_status_t GPIO12_STATUS;                 /**< Direccion de memoria  0x060 */
+    volatile __gpio_ctrl_t GPIO12_CTRL;                     /**< Direccion de memoria  0x064 */
+    volatile __gpio_status_t GPIO13_STATUS;                 /**< Direccion de memoria  0x068 */
+    volatile __gpio_ctrl_t GPIO13_CTRL;                     /**< Direccion de memoria  0x06c */
+    volatile __gpio_status_t GPIO14_STATUS;                 /**< Direccion de memoria  0x070 */
+    volatile __gpio_ctrl_t GPIO14_CTRL;                     /**< Direccion de memoria  0x074 */
+    volatile __gpio_status_t GPIO15_STATUS;                 /**< Direccion de memoria  0x078 */
+    volatile __gpio_ctrl_t GPIO15_CTRL;                     /**< Direccion de memoria  0x07c */
+    volatile __gpio_status_t GPIO16_STATUS;                 /**< Direccion de memoria  0x080 */
+    volatile __gpio_ctrl_t GPIO16_CTRL;                     /**< Direccion de memoria  0x084 */
+    volatile __gpio_status_t GPIO17_STATUS;                 /**< Direccion de memoria  0x088 */
+    volatile __gpio_ctrl_t GPIO17_CTRL;                     /**< Direccion de memoria  0x08c */
+    volatile __gpio_status_t GPIO18_STATUS;                 /**< Direccion de memoria  0x090 */
+    volatile __gpio_ctrl_t GPIO18_CTRL;                     /**< Direccion de memoria  0x094 */
+    volatile __gpio_status_t GPIO19_STATUS;                 /**< Direccion de memoria  0x098 */
+    volatile __gpio_ctrl_t GPIO19_CTRL;                     /**< Direccion de memoria  0x09c */
+    volatile __gpio_status_t GPIO20_STATUS;                 /**< Direccion de memoria  0x0a0 */
+    volatile __gpio_ctrl_t GPIO20_CTRL;                     /**< Direccion de memoria  0x0a4 */
+    volatile __gpio_status_t GPIO21_STATUS;                 /**< Direccion de memoria  0x0a8 */
+    volatile __gpio_ctrl_t GPIO21_CTRL;                     /**< Direccion de memoria  0x0ac */
+    volatile __gpio_status_t GPIO22_STATUS;                 /**< Direccion de memoria  0x0b0 */
+    volatile __gpio_ctrl_t GPIO22_CTRL;                     /**< Direccion de memoria  0x0b4 */
+    volatile __gpio_status_t GPIO23_STATUS;                 /**< Direccion de memoria  0x0b8 */
+    volatile __gpio_ctrl_t GPIO23_CTRL;                     /**< Direccion de memoria  0x0bc */
+    volatile __gpio_status_t GPIO24_STATUS;                 /**< Direccion de memoria  0x0c0 */
+    volatile __gpio_ctrl_t GPIO24_CTRL;                     /**< Direccion de memoria  0x0c4 */
+    volatile __gpio_status_t GPIO25_STATUS;                 /**< Direccion de memoria  0x0c8 */
+    volatile __gpio_ctrl_t GPIO25_CTRL;                     /**< Direccion de memoria  0x0cc */
+    volatile __gpio_status_t GPIO26_STATUS;                 /**< Direccion de memoria  0x0d0 */
+    volatile __gpio_ctrl_t GPIO26_CTRL;                     /**< Direccion de memoria  0x0d4 */
+    volatile __gpio_status_t GPIO27_STATUS;                 /**< Direccion de memoria  0xxd8 */
+    volatile __gpio_ctrl_t GPIO27_CTRL;                     /**< Direccion de memoria  0x0dc */
+    volatile __gpio_status_t GPIO28_STATUS;                 /**< Direccion de memoria  0x0e0 */
+    volatile __gpio_ctrl_t GPIO28_CTRL;                     /**< Direccion de memoria  0x0e4 */
+    volatile __gpio_status_t GPIO29_STATUS;                 /**< Direccion de memoria  0x0e8 */
+    volatile __gpio_ctrl_t GPIO29_CTRL;                     /**< Direccion de memoria  0x0ec */
+    volatile __int0_t INTR0;                                /**< Direccion de memoria  0x0f0 */
+    volatile __int1_t INTR1;                                /**< Direccion de memoria  0x0f4 */
+    volatile __int2_t INTR2;                                /**< Direccion de memoria  0x0f8 */
+    volatile __int3_t INTR3;                                /**< Direccion de memoria  0x0fc */
+    volatile __int0_t PROC0_INTE0;                          /**< Direccion de memoria  0x100 */
+    volatile __int1_t PROC0_INTE1;                          /**< Direccion de memoria  0x104 */
+    volatile __int2_t PROC0_INTE2;                          /**< Direccion de memoria  0x108 */
+    volatile __int3_t PROC0_INTE3;                          /**< Direccion de memoria  0x10c */
+    volatile __int0_t PROC0_INTF0;                          /**< Direccion de memoria  0x110 */
+    volatile __int1_t PROC0_INTF1;                          /**< Direccion de memoria  0x114 */
+    volatile __int2_t PROC0_INTF2;                          /**< Direccion de memoria  0x118 */
+    volatile __int3_t PROC0_INTF3;                          /**< Direccion de memoria  0x11c */
+    volatile __int0_t PROC0_INTS0;                          /**< Direccion de memoria  0x120 */
+    volatile __int1_t PROC0_INTS1;                          /**< Direccion de memoria  0x124 */
+    volatile __int2_t PROC0_INTS2;                          /**< Direccion de memoria  0x128 */
+    volatile __int3_t PROC0_INTS3;                          /**< Direccion de memoria  0x12c */
+    volatile __int0_t PROC1_INTE0;                          /**< Direccion de memoria  0x130 */
+    volatile __int1_t PROC1_INTE1;                          /**< Direccion de memoria  0x134 */
+    volatile __int2_t PROC1_INTE2;                          /**< Direccion de memoria  0x138 */
+    volatile __int3_t PROC1_INTE3;                          /**< Direccion de memoria  0x13c */
+    volatile __int0_t PROC1_INTF0;                          /**< Direccion de memoria  0x140 */
+    volatile __int1_t PROC1_INTF1;                          /**< Direccion de memoria  0x144 */
+    volatile __int2_t PROC1_INTF2;                          /**< Direccion de memoria  0x148 */
+    volatile __int3_t PROC1_INTF3;                          /**< Direccion de memoria  0x14c */
+    volatile __int0_t PROC1_INTS0;                          /**< Direccion de memoria  0x150 */
+    volatile __int1_t PROC1_INTS1;                          /**< Direccion de memoria  0x154 */
+    volatile __int2_t PROC1_INTS2;                          /**< Direccion de memoria  0x158 */
+    volatile __int3_t PROC1_INTS3;                          /**< Direccion de memoria  0x15c */
+    volatile __int0_t DORMANT_WAKE_INTE0;                   /**< Direccion de memoria  0x160 */
+    volatile __int1_t DORMANT_WAKE_INTE1;                   /**< Direccion de memoria  0x164 */
+    volatile __int2_t DORMANT_WAKE_INTE2;                   /**< Direccion de memoria  0x168 */
+    volatile __int3_t DORMANT_WAKE_INTE3;                   /**< Direccion de memoria  0x16c */
+    volatile __int0_t DORMANT_WAKE_INTF0;                   /**< Direccion de memoria  0x170 */
+    volatile __int1_t DORMANT_WAKE_INTF1;                   /**< Direccion de memoria  0x174 */
+    volatile __int2_t DORMANT_WAKE_INTF2;                   /**< Direccion de memoria  0x178 */
+    volatile __int3_t DORMANT_WAKE_INTF3;                   /**< Direccion de memoria  0x17c */
+    volatile __int0_t DORMANT_WAKE_INTS0;                   /**< Direccion de memoria  0x180 */
+    volatile __int1_t DORMANT_WAKE_INTS1;                   /**< Direccion de memoria  0x184 */
+    volatile __int2_t DORMANT_WAKE_INTS2;                   /**< Direccion de memoria  0x188 */
+    volatile __int3_t DORMANT_WAKE_INTS3;                   /**< Direccion de memoria  0x18c */
+}__iobank0_t;
 
 /**************************************************
  **************************************************
