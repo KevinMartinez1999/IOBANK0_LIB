@@ -84,6 +84,464 @@
 #define kIOBANK_IRQOVER_INTERRUPT_LOW 2                             /**< 0x2 → interrupción de unidad baja */
 #define kIOBANK_IRQOVER_INTERRUPT_HIGH 3                            /**< 0x3 → interrupción de unidad alta */
 
+/********************************************************************/
+/************** Definición de Macros de campos de bits **************/
+/********************************************************************/
+
+//--------------- Macros GPIO STATUS -------------------------------/
+
+#define mIOBANK_GPIO0_STATUS_OUTFROMPERI(x) (x & 0x00000100U)               /**< Macro de campo de bit OUTFROMPERI registro GPIO0_STATUS*/
+#define mIOBANK_GPIO0_STATUS_OUTTOPAD(x)    (x & 0x00000200U)               /**< Macro de campo de bit OUTTOPAD registro GPIO0_STATUS*/
+#define mIOBANK_GPIO0_STATUS_OEFROMPERI(x)  (x & 0x00001000U)               /**< Macro de campo de bit OEFROMPERI registro GPIO0_STATUS*/
+#define mIOBANK_GPIO0_STATUS_OETOPAD(x)     (x & 0x00002000U)               /**< Macro de campo de bit OETOPAD registro GPIO0_STATUS*/
+#define mIOBANK_GPIO0_STATUS_INFROMPAD(x)   (x & 0x00020000U)               /**< Macro de campo de bit INFROMPAD registro GPIO0_STATUS*/
+#define mIOBANK_GPIO0_STATUS_INTOPERI(x)    (x & 0x00080000U)               /**< Macro de campo de bit INTOPERI registro GPIO0_STATUS*/
+#define mIOBANK_GPIO0_STATUS_IRQFROMPAD(x)  (x & 0x01000000U)               /**< Macro de campo de bit IRQFROMPAD registro GPIO0_STATUS*/
+#define mIOBANK_GPIO0_STATUS_IRQTOPROC(x)   (x & 0x04000000U)               /**< Macro de campo de bit IRQTOPROC registro GPIO0_STATUS*/
+
+#define mIOBANK_GPIO1_STATUS_OUTFROMPERI(x) (x & 0x00000100U)               /**< Macro de campo de bit OUTFROMPERI registro GPIO1_STATUS*/
+#define mIOBANK_GPIO1_STATUS_OUTTOPAD(x)    (x & 0x00000200U)               /**< Macro de campo de bit OUTTOPAD registro GPIO1_STATUS*/
+#define mIOBANK_GPIO1_STATUS_OEFROMPERI(x)  (x & 0x00001000U)               /**< Macro de campo de bit OEFROMPERI registro GPIO1_STATUS*/
+#define mIOBANK_GPIO1_STATUS_OETOPAD(x)     (x & 0x00002000U)               /**< Macro de campo de bit OETOPAD registro GPIO1_STATUS*/
+#define mIOBANK_GPIO1_STATUS_INFROMPAD(x)   (x & 0x00020000U)               /**< Macro de campo de bit INFROMPAD registro GPIO1_STATUS*/
+#define mIOBANK_GPIO1_STATUS_INTOPERI(x)    (x & 0x00080000U)               /**< Macro de campo de bit INTOPERI registro GPIO1_STATUS*/
+#define mIOBANK_GPIO1_STATUS_IRQFROMPAD(x)  (x & 0x01000000U)               /**< Macro de campo de bit IRQFROMPAD registro GPIO1_STATUS*/
+#define mIOBANK_GPIO1_STATUS_IRQTOPROC(x)   (x & 0x04000000U)               /**< Macro de campo de bit IRQTOPROC registro GPIO1_STATUS*/
+
+#define mIOBANK_GPIO2_STATUS_OUTFROMPERI(x) (x & 0x00000100U)               /**< Macro de campo de bit OUTFROMPERI registro GPIO2_STATUS*/
+#define mIOBANK_GPIO2_STATUS_OUTTOPAD(x)    (x & 0x00000200U)               /**< Macro de campo de bit OUTTOPAD registro GPIO2_STATUS*/
+#define mIOBANK_GPIO2_STATUS_OEFROMPERI(x)  (x & 0x00001000U)               /**< Macro de campo de bit OEFROMPERI registro GPIO2_STATUS*/
+#define mIOBANK_GPIO2_STATUS_OETOPAD(x)     (x & 0x00002000U)               /**< Macro de campo de bit OETOPAD registro GPIO2_STATUS*/
+#define mIOBANK_GPIO2_STATUS_INFROMPAD(x)   (x & 0x00020000U)               /**< Macro de campo de bit INFROMPAD registro GPIO2_STATUS*/
+#define mIOBANK_GPIO2_STATUS_INTOPERI(x)    (x & 0x00080000U)               /**< Macro de campo de bit INTOPERI registro GPIO2_STATUS*/
+#define mIOBANK_GPIO2_STATUS_IRQFROMPAD(x)  (x & 0x01000000U)               /**< Macro de campo de bit IRQFROMPAD registro GPIO2_STATUS*/
+#define mIOBANK_GPIO2_STATUS_IRQTOPROC(x)   (x & 0x04000000U)               /**< Macro de campo de bit IRQTOPROC registro GPIO2_STATUS*/
+
+#define mIOBANK_GPIO3_STATUS_OUTFROMPERI(x) (x & 0x00000100U)               /**< Macro de campo de bit OUTFROMPERI registro GPIO3_STATUS*/
+#define mIOBANK_GPIO3_STATUS_OUTTOPAD(x)    (x & 0x00000200U)               /**< Macro de campo de bit OUTTOPAD registro GPIO3_STATUS*/
+#define mIOBANK_GPIO3_STATUS_OEFROMPERI(x)  (x & 0x00001000U)               /**< Macro de campo de bit OEFROMPERI registro GPIO3_STATUS*/
+#define mIOBANK_GPIO3_STATUS_OETOPAD(x)     (x & 0x00002000U)               /**< Macro de campo de bit OETOPAD registro GPIO3_STATUS*/
+#define mIOBANK_GPIO3_STATUS_INFROMPAD(x)   (x & 0x00020000U)               /**< Macro de campo de bit INFROMPAD registro GPIO3_STATUS*/
+#define mIOBANK_GPIO3_STATUS_INTOPERI(x)    (x & 0x00080000U)               /**< Macro de campo de bit INTOPERI registro GPIO3_STATUS*/
+#define mIOBANK_GPIO3_STATUS_IRQFROMPAD(x)  (x & 0x01000000U)               /**< Macro de campo de bit IRQFROMPAD registro GPIO3_STATUS*/
+#define mIOBANK_GPIO3_STATUS_IRQTOPROC(x)   (x & 0x04000000U)               /**< Macro de campo de bit IRQTOPROC registro GPIO3_STATUS*/
+
+#define mIOBANK_GPIO4_STATUS_OUTFROMPERI(x) (x & 0x00000100U)               /**< Macro de campo de bit OUTFROMPERI registro GPIO4_STATUS*/
+#define mIOBANK_GPIO4_STATUS_OUTTOPAD(x)    (x & 0x00000200U)               /**< Macro de campo de bit OUTTOPAD registro GPIO4_STATUS*/
+#define mIOBANK_GPIO4_STATUS_OEFROMPERI(x)  (x & 0x00001000U)               /**< Macro de campo de bit OEFROMPERI registro GPIO4_STATUS*/
+#define mIOBANK_GPIO4_STATUS_OETOPAD(x)     (x & 0x00002000U)               /**< Macro de campo de bit OETOPAD registro GPIO4_STATUS*/
+#define mIOBANK_GPIO4_STATUS_INFROMPAD(x)   (x & 0x00020000U)               /**< Macro de campo de bit INFROMPAD registro GPIO4_STATUS*/
+#define mIOBANK_GPIO4_STATUS_INTOPERI(x)    (x & 0x00080000U)               /**< Macro de campo de bit INTOPERI registro GPIO4_STATUS*/
+#define mIOBANK_GPIO4_STATUS_IRQFROMPAD(x)  (x & 0x01000000U)               /**< Macro de campo de bit IRQFROMPAD registro GPIO4_STATUS*/
+#define mIOBANK_GPIO4_STATUS_IRQTOPROC(x)   (x & 0x04000000U)               /**< Macro de campo de bit IRQTOPROC registro GPIO4_STATUS*/
+
+#define mIOBANK_GPIO5_STATUS_OUTFROMPERI(x) (x & 0x00000100U)               /**< Macro de campo de bit OUTFROMPERI registro GPIO5_STATUS*/
+#define mIOBANK_GPIO5_STATUS_OUTTOPAD(x)    (x & 0x00000200U)               /**< Macro de campo de bit OUTTOPAD registro GPIO5_STATUS*/
+#define mIOBANK_GPIO5_STATUS_OEFROMPERI(x)  (x & 0x00001000U)               /**< Macro de campo de bit OEFROMPERI registro GPIO5_STATUS*/
+#define mIOBANK_GPIO5_STATUS_OETOPAD(x)     (x & 0x00002000U)               /**< Macro de campo de bit OETOPAD registro GPIO5_STATUS*/
+#define mIOBANK_GPIO5_STATUS_INFROMPAD(x)   (x & 0x00020000U)               /**< Macro de campo de bit INFROMPAD registro GPIO5_STATUS*/
+#define mIOBANK_GPIO5_STATUS_INTOPERI(x)    (x & 0x00080000U)               /**< Macro de campo de bit INTOPERI registro GPIO5_STATUS*/
+#define mIOBANK_GPIO5_STATUS_IRQFROMPAD(x)  (x & 0x01000000U)               /**< Macro de campo de bit IRQFROMPAD registro GPIO5_STATUS*/
+#define mIOBANK_GPIO5_STATUS_IRQTOPROC(x)   (x & 0x04000000U)               /**< Macro de campo de bit IRQTOPROC registro GPIO5_STATUS*/
+
+#define mIOBANK_GPIO6_STATUS_OUTFROMPERI(x) (x & 0x00000100U)               /**< Macro de campo de bit OUTFROMPERI registro GPIO6_STATUS*/
+#define mIOBANK_GPIO6_STATUS_OUTTOPAD(x)    (x & 0x00000200U)               /**< Macro de campo de bit OUTTOPAD registro GPIO6_STATUS*/
+#define mIOBANK_GPIO6_STATUS_OEFROMPERI(x)  (x & 0x00001000U)               /**< Macro de campo de bit OEFROMPERI registro GPIO6_STATUS*/
+#define mIOBANK_GPIO6_STATUS_OETOPAD(x)     (x & 0x00002000U)               /**< Macro de campo de bit OETOPAD registro GPIO6_STATUS*/
+#define mIOBANK_GPIO6_STATUS_INFROMPAD(x)   (x & 0x00020000U)               /**< Macro de campo de bit INFROMPAD registro GPIO6_STATUS*/
+#define mIOBANK_GPIO6_STATUS_INTOPERI(x)    (x & 0x00080000U)               /**< Macro de campo de bit INTOPERI registro GPIO6_STATUS*/
+#define mIOBANK_GPIO6_STATUS_IRQFROMPAD(x)  (x & 0x01000000U)               /**< Macro de campo de bit IRQFROMPAD registro GPIO6_STATUS*/
+#define mIOBANK_GPIO6_STATUS_IRQTOPROC(x)   (x & 0x04000000U)               /**< Macro de campo de bit IRQTOPROC registro GPIO6_STATUS*/
+
+#define mIOBANK_GPIO7_STATUS_OUTFROMPERI(x) (x & 0x00000100U)               /**< Macro de campo de bit OUTFROMPERI registro GPIO7_STATUS*/
+#define mIOBANK_GPIO7_STATUS_OUTTOPAD(x)    (x & 0x00000200U)               /**< Macro de campo de bit OUTTOPAD registro GPIO7_STATUS*/
+#define mIOBANK_GPIO7_STATUS_OEFROMPERI(x)  (x & 0x00001000U)               /**< Macro de campo de bit OEFROMPERI registro GPIO7_STATUS*/
+#define mIOBANK_GPIO7_STATUS_OETOPAD(x)     (x & 0x00002000U)               /**< Macro de campo de bit OETOPAD registro GPIO7_STATUS*/
+#define mIOBANK_GPIO7_STATUS_INFROMPAD(x)   (x & 0x00020000U)               /**< Macro de campo de bit INFROMPAD registro GPIO7_STATUS*/
+#define mIOBANK_GPIO7_STATUS_INTOPERI(x)    (x & 0x00080000U)               /**< Macro de campo de bit INTOPERI registro GPIO7_STATUS*/
+#define mIOBANK_GPIO7_STATUS_IRQFROMPAD(x)  (x & 0x01000000U)               /**< Macro de campo de bit IRQFROMPAD registro GPIO7_STATUS*/
+#define mIOBANK_GPIO7_STATUS_IRQTOPROC(x)   (x & 0x04000000U)               /**< Macro de campo de bit IRQTOPROC registro GPIO7_STATUS*/
+
+#define mIOBANK_GPIO8_STATUS_OUTFROMPERI(x) (x & 0x00000100U)               /**< Macro de campo de bit OUTFROMPERI registro GPIO8_STATUS*/
+#define mIOBANK_GPIO8_STATUS_OUTTOPAD(x)    (x & 0x00000200U)               /**< Macro de campo de bit OUTTOPAD registro GPIO8_STATUS*/
+#define mIOBANK_GPIO8_STATUS_OEFROMPERI(x)  (x & 0x00001000U)               /**< Macro de campo de bit OEFROMPERI registro GPIO8_STATUS*/
+#define mIOBANK_GPIO8_STATUS_OETOPAD(x)     (x & 0x00002000U)               /**< Macro de campo de bit OETOPAD registro GPIO8_STATUS*/
+#define mIOBANK_GPIO8_STATUS_INFROMPAD(x)   (x & 0x00020000U)               /**< Macro de campo de bit INFROMPAD registro GPIO8_STATUS*/
+#define mIOBANK_GPIO8_STATUS_INTOPERI(x)    (x & 0x00080000U)               /**< Macro de campo de bit INTOPERI registro GPIO8_STATUS*/
+#define mIOBANK_GPIO8_STATUS_IRQFROMPAD(x)  (x & 0x01000000U)               /**< Macro de campo de bit IRQFROMPAD registro GPIO8_STATUS*/
+#define mIOBANK_GPIO8_STATUS_IRQTOPROC(x)   (x & 0x04000000U)               /**< Macro de campo de bit IRQTOPROC registro GPIO8_STATUS*/
+
+#define mIOBANK_GPIO9_STATUS_OUTFROMPERI(x) (x & 0x00000100U)               /**< Macro de campo de bit OUTFROMPERI registro GPIO9_STATUS*/
+#define mIOBANK_GPIO9_STATUS_OUTTOPAD(x)    (x & 0x00000200U)               /**< Macro de campo de bit OUTTOPAD registro GPIO9_STATUS*/
+#define mIOBANK_GPIO9_STATUS_OEFROMPERI(x)  (x & 0x00001000U)               /**< Macro de campo de bit OEFROMPERI registro GPIO9_STATUS*/
+#define mIOBANK_GPIO9_STATUS_OETOPAD(x)     (x & 0x00002000U)               /**< Macro de campo de bit OETOPAD registro GPIO9_STATUS*/
+#define mIOBANK_GPIO9_STATUS_INFROMPAD(x)   (x & 0x00020000U)               /**< Macro de campo de bit INFROMPAD registro GPIO9_STATUS*/
+#define mIOBANK_GPIO9_STATUS_INTOPERI(x)    (x & 0x00080000U)               /**< Macro de campo de bit INTOPERI registro GPIO9_STATUS*/
+#define mIOBANK_GPIO9_STATUS_IRQFROMPAD(x)  (x & 0x01000000U)               /**< Macro de campo de bit IRQFROMPAD registro GPIO9_STATUS*/
+#define mIOBANK_GPIO9_STATUS_IRQTOPROC(x)   (x & 0x04000000U)               /**< Macro de campo de bit IRQTOPROC registro GPIO9_STATUS*/
+
+#define mIOBANK_GPIO10_STATUS_OUTFROMPERI(x) (x & 0x00000100U)               /**< Macro de campo de bit OUTFROMPERI registro GPIO10_STATUS*/
+#define mIOBANK_GPIO10_STATUS_OUTTOPAD(x)    (x & 0x00000200U)               /**< Macro de campo de bit OUTTOPAD registro GPIO10_STATUS*/
+#define mIOBANK_GPIO10_STATUS_OEFROMPERI(x)  (x & 0x00001000U)               /**< Macro de campo de bit OEFROMPERI registro GPIO10_STATUS*/
+#define mIOBANK_GPIO10_STATUS_OETOPAD(x)     (x & 0x00002000U)               /**< Macro de campo de bit OETOPAD registro GPIO10_STATUS*/
+#define mIOBANK_GPIO10_STATUS_INFROMPAD(x)   (x & 0x00020000U)               /**< Macro de campo de bit INFROMPAD registro GPIO10_STATUS*/
+#define mIOBANK_GPIO10_STATUS_INTOPERI(x)    (x & 0x00080000U)               /**< Macro de campo de bit INTOPERI registro GPIO10_STATUS*/
+#define mIOBANK_GPIO10_STATUS_IRQFROMPAD(x)  (x & 0x01000000U)               /**< Macro de campo de bit IRQFROMPAD registro GPIO10_STATUS*/
+#define mIOBANK_GPIO10_STATUS_IRQTOPROC(x)   (x & 0x04000000U)               /**< Macro de campo de bit IRQTOPROC registro GPIO10_STATUS*/
+
+#define mIOBANK_GPIO11_STATUS_OUTFROMPERI(x) (x & 0x00000100U)               /**< Macro de campo de bit OUTFROMPERI registro GPIO11_STATUS*/
+#define mIOBANK_GPIO11_STATUS_OUTTOPAD(x)    (x & 0x00000200U)               /**< Macro de campo de bit OUTTOPAD registro GPIO11_STATUS*/
+#define mIOBANK_GPIO11_STATUS_OEFROMPERI(x)  (x & 0x00001000U)               /**< Macro de campo de bit OEFROMPERI registro GPIO11_STATUS*/
+#define mIOBANK_GPIO11_STATUS_OETOPAD(x)     (x & 0x00002000U)               /**< Macro de campo de bit OETOPAD registro GPIO11_STATUS*/
+#define mIOBANK_GPIO11_STATUS_INFROMPAD(x)   (x & 0x00020000U)               /**< Macro de campo de bit INFROMPAD registro GPIO11_STATUS*/
+#define mIOBANK_GPIO11_STATUS_INTOPERI(x)    (x & 0x00080000U)               /**< Macro de campo de bit INTOPERI registro GPIO11_STATUS*/
+#define mIOBANK_GPIO11_STATUS_IRQFROMPAD(x)  (x & 0x01000000U)               /**< Macro de campo de bit IRQFROMPAD registro GPIO11_STATUS*/
+#define mIOBANK_GPIO11_STATUS_IRQTOPROC(x)   (x & 0x04000000U)               /**< Macro de campo de bit IRQTOPROC registro GPIO11_STATUS*/
+
+#define mIOBANK_GPIO12_STATUS_OUTFROMPERI(x) (x & 0x00000100U)               /**< Macro de campo de bit OUTFROMPERI registro GPIO12_STATUS*/
+#define mIOBANK_GPIO12_STATUS_OUTTOPAD(x)    (x & 0x00000200U)               /**< Macro de campo de bit OUTTOPAD registro GPIO12_STATUS*/
+#define mIOBANK_GPIO12_STATUS_OEFROMPERI(x)  (x & 0x00001000U)               /**< Macro de campo de bit OEFROMPERI registro GPIO12_STATUS*/
+#define mIOBANK_GPIO12_STATUS_OETOPAD(x)     (x & 0x00002000U)               /**< Macro de campo de bit OETOPAD registro GPIO12_STATUS*/
+#define mIOBANK_GPIO12_STATUS_INFROMPAD(x)   (x & 0x00020000U)               /**< Macro de campo de bit INFROMPAD registro GPIO12_STATUS*/
+#define mIOBANK_GPIO12_STATUS_INTOPERI(x)    (x & 0x00080000U)               /**< Macro de campo de bit INTOPERI registro GPIO12_STATUS*/
+#define mIOBANK_GPIO12_STATUS_IRQFROMPAD(x)  (x & 0x01000000U)               /**< Macro de campo de bit IRQFROMPAD registro GPIO12_STATUS*/
+#define mIOBANK_GPIO12_STATUS_IRQTOPROC(x)   (x & 0x04000000U)               /**< Macro de campo de bit IRQTOPROC registro GPIO12_STATUS*/
+
+#define mIOBANK_GPIO13_STATUS_OUTFROMPERI(x) (x & 0x00000100U)               /**< Macro de campo de bit OUTFROMPERI registro GPIO13_STATUS*/
+#define mIOBANK_GPIO13_STATUS_OUTTOPAD(x)    (x & 0x00000200U)               /**< Macro de campo de bit OUTTOPAD registro GPIO13_STATUS*/
+#define mIOBANK_GPIO13_STATUS_OEFROMPERI(x)  (x & 0x00001000U)               /**< Macro de campo de bit OEFROMPERI registro GPIO13_STATUS*/
+#define mIOBANK_GPIO13_STATUS_OETOPAD(x)     (x & 0x00002000U)               /**< Macro de campo de bit OETOPAD registro GPIO13_STATUS*/
+#define mIOBANK_GPIO13_STATUS_INFROMPAD(x)   (x & 0x00020000U)               /**< Macro de campo de bit INFROMPAD registro GPIO13_STATUS*/
+#define mIOBANK_GPIO13_STATUS_INTOPERI(x)    (x & 0x00080000U)               /**< Macro de campo de bit INTOPERI registro GPIO13_STATUS*/
+#define mIOBANK_GPIO13_STATUS_IRQFROMPAD(x)  (x & 0x01000000U)               /**< Macro de campo de bit IRQFROMPAD registro GPIO13_STATUS*/
+#define mIOBANK_GPIO13_STATUS_IRQTOPROC(x)   (x & 0x04000000U)               /**< Macro de campo de bit IRQTOPROC registro GPIO13_STATUS*/
+
+#define mIOBANK_GPIO14_STATUS_OUTFROMPERI(x) (x & 0x00000100U)               /**< Macro de campo de bit OUTFROMPERI registro GPIO14_STATUS*/
+#define mIOBANK_GPIO14_STATUS_OUTTOPAD(x)    (x & 0x00000200U)               /**< Macro de campo de bit OUTTOPAD registro GPIO14_STATUS*/
+#define mIOBANK_GPIO14_STATUS_OEFROMPERI(x)  (x & 0x00001000U)               /**< Macro de campo de bit OEFROMPERI registro GPIO14_STATUS*/
+#define mIOBANK_GPIO14_STATUS_OETOPAD(x)     (x & 0x00002000U)               /**< Macro de campo de bit OETOPAD registro GPIO14_STATUS*/
+#define mIOBANK_GPIO14_STATUS_INFROMPAD(x)   (x & 0x00020000U)               /**< Macro de campo de bit INFROMPAD registro GPIO14_STATUS*/
+#define mIOBANK_GPIO14_STATUS_INTOPERI(x)    (x & 0x00080000U)               /**< Macro de campo de bit INTOPERI registro GPIO14_STATUS*/
+#define mIOBANK_GPIO14_STATUS_IRQFROMPAD(x)  (x & 0x01000000U)               /**< Macro de campo de bit IRQFROMPAD registro GPIO14_STATUS*/
+#define mIOBANK_GPIO14_STATUS_IRQTOPROC(x)   (x & 0x04000000U)               /**< Macro de campo de bit IRQTOPROC registro GPIO14_STATUS*/
+
+#define mIOBANK_GPIO15_STATUS_OUTFROMPERI(x) (x & 0x00000100U)               /**< Macro de campo de bit OUTFROMPERI registro GPIO15_STATUS*/
+#define mIOBANK_GPIO15_STATUS_OUTTOPAD(x)    (x & 0x00000200U)               /**< Macro de campo de bit OUTTOPAD registro GPIO15_STATUS*/
+#define mIOBANK_GPIO15_STATUS_OEFROMPERI(x)  (x & 0x00001000U)               /**< Macro de campo de bit OEFROMPERI registro GPIO15_STATUS*/
+#define mIOBANK_GPIO15_STATUS_OETOPAD(x)     (x & 0x00002000U)               /**< Macro de campo de bit OETOPAD registro GPIO15_STATUS*/
+#define mIOBANK_GPIO15_STATUS_INFROMPAD(x)   (x & 0x00020000U)               /**< Macro de campo de bit INFROMPAD registro GPIO15_STATUS*/
+#define mIOBANK_GPIO15_STATUS_INTOPERI(x)    (x & 0x00080000U)               /**< Macro de campo de bit INTOPERI registro GPIO15_STATUS*/
+#define mIOBANK_GPIO15_STATUS_IRQFROMPAD(x)  (x & 0x01000000U)               /**< Macro de campo de bit IRQFROMPAD registro GPIO15_STATUS*/
+#define mIOBANK_GPIO15_STATUS_IRQTOPROC(x)   (x & 0x04000000U)               /**< Macro de campo de bit IRQTOPROC registro GPIO15_STATUS*/
+
+#define mIOBANK_GPIO16_STATUS_OUTFROMPERI(x) (x & 0x00000100U)               /**< Macro de campo de bit OUTFROMPERI registro GPIO16_STATUS*/
+#define mIOBANK_GPIO16_STATUS_OUTTOPAD(x)    (x & 0x00000200U)               /**< Macro de campo de bit OUTTOPAD registro GPIO16_STATUS*/
+#define mIOBANK_GPIO16_STATUS_OEFROMPERI(x)  (x & 0x00001000U)               /**< Macro de campo de bit OEFROMPERI registro GPIO16_STATUS*/
+#define mIOBANK_GPIO16_STATUS_OETOPAD(x)     (x & 0x00002000U)               /**< Macro de campo de bit OETOPAD registro GPIO16_STATUS*/
+#define mIOBANK_GPIO16_STATUS_INFROMPAD(x)   (x & 0x00020000U)               /**< Macro de campo de bit INFROMPAD registro GPIO16_STATUS*/
+#define mIOBANK_GPIO16_STATUS_INTOPERI(x)    (x & 0x00080000U)               /**< Macro de campo de bit INTOPERI registro GPIO16_STATUS*/
+#define mIOBANK_GPIO16_STATUS_IRQFROMPAD(x)  (x & 0x01000000U)               /**< Macro de campo de bit IRQFROMPAD registro GPIO16_STATUS*/
+#define mIOBANK_GPIO16_STATUS_IRQTOPROC(x)   (x & 0x04000000U)               /**< Macro de campo de bit IRQTOPROC registro GPIO16_STATUS*/
+
+#define mIOBANK_GPIO17_STATUS_OUTFROMPERI(x) (x & 0x00000100U)               /**< Macro de campo de bit OUTFROMPERI registro GPIO17_STATUS*/
+#define mIOBANK_GPIO17_STATUS_OUTTOPAD(x)    (x & 0x00000200U)               /**< Macro de campo de bit OUTTOPAD registro GPIO17_STATUS*/
+#define mIOBANK_GPIO17_STATUS_OEFROMPERI(x)  (x & 0x00001000U)               /**< Macro de campo de bit OEFROMPERI registro GPIO17_STATUS*/
+#define mIOBANK_GPIO17_STATUS_OETOPAD(x)     (x & 0x00002000U)               /**< Macro de campo de bit OETOPAD registro GPIO17_STATUS*/
+#define mIOBANK_GPIO17_STATUS_INFROMPAD(x)   (x & 0x00020000U)               /**< Macro de campo de bit INFROMPAD registro GPIO17_STATUS*/
+#define mIOBANK_GPIO17_STATUS_INTOPERI(x)    (x & 0x00080000U)               /**< Macro de campo de bit INTOPERI registro GPIO17_STATUS*/
+#define mIOBANK_GPIO17_STATUS_IRQFROMPAD(x)  (x & 0x01000000U)               /**< Macro de campo de bit IRQFROMPAD registro GPIO17_STATUS*/
+#define mIOBANK_GPIO17_STATUS_IRQTOPROC(x)   (x & 0x04000000U)               /**< Macro de campo de bit IRQTOPROC registro GPIO17_STATUS*/
+
+#define mIOBANK_GPIO18_STATUS_OUTFROMPERI(x) (x & 0x00000100U)               /**< Macro de campo de bit OUTFROMPERI registro GPIO18_STATUS*/
+#define mIOBANK_GPIO18_STATUS_OUTTOPAD(x)    (x & 0x00000200U)               /**< Macro de campo de bit OUTTOPAD registro GPIO18_STATUS*/
+#define mIOBANK_GPIO18_STATUS_OEFROMPERI(x)  (x & 0x00001000U)               /**< Macro de campo de bit OEFROMPERI registro GPIO18_STATUS*/
+#define mIOBANK_GPIO18_STATUS_OETOPAD(x)     (x & 0x00002000U)               /**< Macro de campo de bit OETOPAD registro GPIO18_STATUS*/
+#define mIOBANK_GPIO18_STATUS_INFROMPAD(x)   (x & 0x00020000U)               /**< Macro de campo de bit INFROMPAD registro GPIO18_STATUS*/
+#define mIOBANK_GPIO18_STATUS_INTOPERI(x)    (x & 0x00080000U)               /**< Macro de campo de bit INTOPERI registro GPIO18_STATUS*/
+#define mIOBANK_GPIO18_STATUS_IRQFROMPAD(x)  (x & 0x01000000U)               /**< Macro de campo de bit IRQFROMPAD registro GPIO18_STATUS*/
+#define mIOBANK_GPIO18_STATUS_IRQTOPROC(x)   (x & 0x04000000U)               /**< Macro de campo de bit IRQTOPROC registro GPIO18_STATUS*/
+
+#define mIOBANK_GPIO19_STATUS_OUTFROMPERI(x) (x & 0x00000100U)               /**< Macro de campo de bit OUTFROMPERI registro GPIO19_STATUS*/
+#define mIOBANK_GPIO19_STATUS_OUTTOPAD(x)    (x & 0x00000200U)               /**< Macro de campo de bit OUTTOPAD registro GPIO19_STATUS*/
+#define mIOBANK_GPIO19_STATUS_OEFROMPERI(x)  (x & 0x00001000U)               /**< Macro de campo de bit OEFROMPERI registro GPIO19_STATUS*/
+#define mIOBANK_GPIO19_STATUS_OETOPAD(x)     (x & 0x00002000U)               /**< Macro de campo de bit OETOPAD registro GPIO19_STATUS*/
+#define mIOBANK_GPIO19_STATUS_INFROMPAD(x)   (x & 0x00020000U)               /**< Macro de campo de bit INFROMPAD registro GPIO19_STATUS*/
+#define mIOBANK_GPIO19_STATUS_INTOPERI(x)    (x & 0x00080000U)               /**< Macro de campo de bit INTOPERI registro GPIO19_STATUS*/
+#define mIOBANK_GPIO19_STATUS_IRQFROMPAD(x)  (x & 0x01000000U)               /**< Macro de campo de bit IRQFROMPAD registro GPIO19_STATUS*/
+#define mIOBANK_GPIO19_STATUS_IRQTOPROC(x)   (x & 0x04000000U)               /**< Macro de campo de bit IRQTOPROC registro GPIO19_STATUS*/
+
+#define mIOBANK_GPIO20_STATUS_OUTFROMPERI(x) (x & 0x00000100U)               /**< Macro de campo de bit OUTFROMPERI registro GPIO20_STATUS*/
+#define mIOBANK_GPIO20_STATUS_OUTTOPAD(x)    (x & 0x00000200U)               /**< Macro de campo de bit OUTTOPAD registro GPIO20_STATUS*/
+#define mIOBANK_GPIO20_STATUS_OEFROMPERI(x)  (x & 0x00001000U)               /**< Macro de campo de bit OEFROMPERI registro GPIO20_STATUS*/
+#define mIOBANK_GPIO20_STATUS_OETOPAD(x)     (x & 0x00002000U)               /**< Macro de campo de bit OETOPAD registro GPIO20_STATUS*/
+#define mIOBANK_GPIO20_STATUS_INFROMPAD(x)   (x & 0x00020000U)               /**< Macro de campo de bit INFROMPAD registro GPIO20_STATUS*/
+#define mIOBANK_GPIO20_STATUS_INTOPERI(x)    (x & 0x00080000U)               /**< Macro de campo de bit INTOPERI registro GPIO20_STATUS*/
+#define mIOBANK_GPIO20_STATUS_IRQFROMPAD(x)  (x & 0x01000000U)               /**< Macro de campo de bit IRQFROMPAD registro GPIO20_STATUS*/
+#define mIOBANK_GPIO20_STATUS_IRQTOPROC(x)   (x & 0x04000000U)               /**< Macro de campo de bit IRQTOPROC registro GPIO20_STATUS*/
+
+#define mIOBANK_GPIO21_STATUS_OUTFROMPERI(x) (x & 0x00000100U)               /**< Macro de campo de bit OUTFROMPERI registro GPIO21_STATUS*/
+#define mIOBANK_GPIO21_STATUS_OUTTOPAD(x)    (x & 0x00000200U)               /**< Macro de campo de bit OUTTOPAD registro GPIO21_STATUS*/
+#define mIOBANK_GPIO21_STATUS_OEFROMPERI(x)  (x & 0x00001000U)               /**< Macro de campo de bit OEFROMPERI registro GPIO21_STATUS*/
+#define mIOBANK_GPIO21_STATUS_OETOPAD(x)     (x & 0x00002000U)               /**< Macro de campo de bit OETOPAD registro GPIO21_STATUS*/
+#define mIOBANK_GPIO21_STATUS_INFROMPAD(x)   (x & 0x00020000U)               /**< Macro de campo de bit INFROMPAD registro GPIO21_STATUS*/
+#define mIOBANK_GPIO21_STATUS_INTOPERI(x)    (x & 0x00080000U)               /**< Macro de campo de bit INTOPERI registro GPIO21_STATUS*/
+#define mIOBANK_GPIO21_STATUS_IRQFROMPAD(x)  (x & 0x01000000U)               /**< Macro de campo de bit IRQFROMPAD registro GPIO21_STATUS*/
+#define mIOBANK_GPIO21_STATUS_IRQTOPROC(x)   (x & 0x04000000U)               /**< Macro de campo de bit IRQTOPROC registro GPIO21_STATUS*/
+
+#define mIOBANK_GPIO22_STATUS_OUTFROMPERI(x) (x & 0x00000100U)               /**< Macro de campo de bit OUTFROMPERI registro GPIO22_STATUS*/
+#define mIOBANK_GPIO22_STATUS_OUTTOPAD(x)    (x & 0x00000200U)               /**< Macro de campo de bit OUTTOPAD registro GPIO22_STATUS*/
+#define mIOBANK_GPIO22_STATUS_OEFROMPERI(x)  (x & 0x00001000U)               /**< Macro de campo de bit OEFROMPERI registro GPIO22_STATUS*/
+#define mIOBANK_GPIO22_STATUS_OETOPAD(x)     (x & 0x00002000U)               /**< Macro de campo de bit OETOPAD registro GPIO22_STATUS*/
+#define mIOBANK_GPIO22_STATUS_INFROMPAD(x)   (x & 0x00020000U)               /**< Macro de campo de bit INFROMPAD registro GPIO22_STATUS*/
+#define mIOBANK_GPIO22_STATUS_INTOPERI(x)    (x & 0x00080000U)               /**< Macro de campo de bit INTOPERI registro GPIO22_STATUS*/
+#define mIOBANK_GPIO22_STATUS_IRQFROMPAD(x)  (x & 0x01000000U)               /**< Macro de campo de bit IRQFROMPAD registro GPIO22_STATUS*/
+#define mIOBANK_GPIO22_STATUS_IRQTOPROC(x)   (x & 0x04000000U)               /**< Macro de campo de bit IRQTOPROC registro GPIO22_STATUS*/
+
+#define mIOBANK_GPIO23_STATUS_OUTFROMPERI(x) (x & 0x00000100U)               /**< Macro de campo de bit OUTFROMPERI registro GPIO23_STATUS*/
+#define mIOBANK_GPIO23_STATUS_OUTTOPAD(x)    (x & 0x00000200U)               /**< Macro de campo de bit OUTTOPAD registro GPIO23_STATUS*/
+#define mIOBANK_GPIO23_STATUS_OEFROMPERI(x)  (x & 0x00001000U)               /**< Macro de campo de bit OEFROMPERI registro GPIO23_STATUS*/
+#define mIOBANK_GPIO23_STATUS_OETOPAD(x)     (x & 0x00002000U)               /**< Macro de campo de bit OETOPAD registro GPIO23_STATUS*/
+#define mIOBANK_GPIO23_STATUS_INFROMPAD(x)   (x & 0x00020000U)               /**< Macro de campo de bit INFROMPAD registro GPIO23_STATUS*/
+#define mIOBANK_GPIO23_STATUS_INTOPERI(x)    (x & 0x00080000U)               /**< Macro de campo de bit INTOPERI registro GPIO23_STATUS*/
+#define mIOBANK_GPIO23_STATUS_IRQFROMPAD(x)  (x & 0x01000000U)               /**< Macro de campo de bit IRQFROMPAD registro GPIO23_STATUS*/
+#define mIOBANK_GPIO23_STATUS_IRQTOPROC(x)   (x & 0x04000000U)               /**< Macro de campo de bit IRQTOPROC registro GPIO23_STATUS*/
+
+#define mIOBANK_GPIO24_STATUS_OUTFROMPERI(x) (x & 0x00000100U)               /**< Macro de campo de bit OUTFROMPERI registro GPIO24_STATUS*/
+#define mIOBANK_GPIO24_STATUS_OUTTOPAD(x)    (x & 0x00000200U)               /**< Macro de campo de bit OUTTOPAD registro GPIO24_STATUS*/
+#define mIOBANK_GPIO24_STATUS_OEFROMPERI(x)  (x & 0x00001000U)               /**< Macro de campo de bit OEFROMPERI registro GPIO24_STATUS*/
+#define mIOBANK_GPIO24_STATUS_OETOPAD(x)     (x & 0x00002000U)               /**< Macro de campo de bit OETOPAD registro GPIO24_STATUS*/
+#define mIOBANK_GPIO24_STATUS_INFROMPAD(x)   (x & 0x00020000U)               /**< Macro de campo de bit INFROMPAD registro GPIO24_STATUS*/
+#define mIOBANK_GPIO24_STATUS_INTOPERI(x)    (x & 0x00080000U)               /**< Macro de campo de bit INTOPERI registro GPIO24_STATUS*/
+#define mIOBANK_GPIO24_STATUS_IRQFROMPAD(x)  (x & 0x01000000U)               /**< Macro de campo de bit IRQFROMPAD registro GPIO24_STATUS*/
+#define mIOBANK_GPIO24_STATUS_IRQTOPROC(x)   (x & 0x04000000U)               /**< Macro de campo de bit IRQTOPROC registro GPIO24_STATUS*/
+
+#define mIOBANK_GPIO25_STATUS_OUTFROMPERI(x) (x & 0x00000100U)               /**< Macro de campo de bit OUTFROMPERI registro GPIO25_STATUS*/
+#define mIOBANK_GPIO25_STATUS_OUTTOPAD(x)    (x & 0x00000200U)               /**< Macro de campo de bit OUTTOPAD registro GPIO25_STATUS*/
+#define mIOBANK_GPIO25_STATUS_OEFROMPERI(x)  (x & 0x00001000U)               /**< Macro de campo de bit OEFROMPERI registro GPIO25_STATUS*/
+#define mIOBANK_GPIO25_STATUS_OETOPAD(x)     (x & 0x00002000U)               /**< Macro de campo de bit OETOPAD registro GPIO25_STATUS*/
+#define mIOBANK_GPIO25_STATUS_INFROMPAD(x)   (x & 0x00020000U)               /**< Macro de campo de bit INFROMPAD registro GPIO25_STATUS*/
+#define mIOBANK_GPIO25_STATUS_INTOPERI(x)    (x & 0x00080000U)               /**< Macro de campo de bit INTOPERI registro GPIO25_STATUS*/
+#define mIOBANK_GPIO25_STATUS_IRQFROMPAD(x)  (x & 0x01000000U)               /**< Macro de campo de bit IRQFROMPAD registro GPIO25_STATUS*/
+#define mIOBANK_GPIO25_STATUS_IRQTOPROC(x)   (x & 0x04000000U)               /**< Macro de campo de bit IRQTOPROC registro GPIO25_STATUS*/
+
+#define mIOBANK_GPIO26_STATUS_OUTFROMPERI(x) (x & 0x00000100U)               /**< Macro de campo de bit OUTFROMPERI registro GPIO26_STATUS*/
+#define mIOBANK_GPIO26_STATUS_OUTTOPAD(x)    (x & 0x00000200U)               /**< Macro de campo de bit OUTTOPAD registro GPIO26_STATUS*/
+#define mIOBANK_GPIO26_STATUS_OEFROMPERI(x)  (x & 0x00001000U)               /**< Macro de campo de bit OEFROMPERI registro GPIO26_STATUS*/
+#define mIOBANK_GPIO26_STATUS_OETOPAD(x)     (x & 0x00002000U)               /**< Macro de campo de bit OETOPAD registro GPIO26_STATUS*/
+#define mIOBANK_GPIO26_STATUS_INFROMPAD(x)   (x & 0x00020000U)               /**< Macro de campo de bit INFROMPAD registro GPIO26_STATUS*/
+#define mIOBANK_GPIO26_STATUS_INTOPERI(x)    (x & 0x00080000U)               /**< Macro de campo de bit INTOPERI registro GPIO26_STATUS*/
+#define mIOBANK_GPIO26_STATUS_IRQFROMPAD(x)  (x & 0x01000000U)               /**< Macro de campo de bit IRQFROMPAD registro GPIO26_STATUS*/
+#define mIOBANK_GPIO26_STATUS_IRQTOPROC(x)   (x & 0x04000000U)               /**< Macro de campo de bit IRQTOPROC registro GPIO26_STATUS*/
+
+#define mIOBANK_GPIO27_STATUS_OUTFROMPERI(x) (x & 0x00000100U)               /**< Macro de campo de bit OUTFROMPERI registro GPIO27_STATUS*/
+#define mIOBANK_GPIO27_STATUS_OUTTOPAD(x)    (x & 0x00000200U)               /**< Macro de campo de bit OUTTOPAD registro GPIO27_STATUS*/
+#define mIOBANK_GPIO27_STATUS_OEFROMPERI(x)  (x & 0x00001000U)               /**< Macro de campo de bit OEFROMPERI registro GPIO27_STATUS*/
+#define mIOBANK_GPIO27_STATUS_OETOPAD(x)     (x & 0x00002000U)               /**< Macro de campo de bit OETOPAD registro GPIO27_STATUS*/
+#define mIOBANK_GPIO27_STATUS_INFROMPAD(x)   (x & 0x00020000U)               /**< Macro de campo de bit INFROMPAD registro GPIO27_STATUS*/
+#define mIOBANK_GPIO27_STATUS_INTOPERI(x)    (x & 0x00080000U)               /**< Macro de campo de bit INTOPERI registro GPIO27_STATUS*/
+#define mIOBANK_GPIO27_STATUS_IRQFROMPAD(x)  (x & 0x01000000U)               /**< Macro de campo de bit IRQFROMPAD registro GPIO27_STATUS*/
+#define mIOBANK_GPIO27_STATUS_IRQTOPROC(x)   (x & 0x04000000U)               /**< Macro de campo de bit IRQTOPROC registro GPIO27_STATUS*/
+
+#define mIOBANK_GPIO28_STATUS_OUTFROMPERI(x) (x & 0x00000100U)               /**< Macro de campo de bit OUTFROMPERI registro GPIO28_STATUS*/
+#define mIOBANK_GPIO28_STATUS_OUTTOPAD(x)    (x & 0x00000200U)               /**< Macro de campo de bit OUTTOPAD registro GPIO28_STATUS*/
+#define mIOBANK_GPIO28_STATUS_OEFROMPERI(x)  (x & 0x00001000U)               /**< Macro de campo de bit OEFROMPERI registro GPIO28_STATUS*/
+#define mIOBANK_GPIO28_STATUS_OETOPAD(x)     (x & 0x00002000U)               /**< Macro de campo de bit OETOPAD registro GPIO28_STATUS*/
+#define mIOBANK_GPIO28_STATUS_INFROMPAD(x)   (x & 0x00020000U)               /**< Macro de campo de bit INFROMPAD registro GPIO28_STATUS*/
+#define mIOBANK_GPIO28_STATUS_INTOPERI(x)    (x & 0x00080000U)               /**< Macro de campo de bit INTOPERI registro GPIO28_STATUS*/
+#define mIOBANK_GPIO28_STATUS_IRQFROMPAD(x)  (x & 0x01000000U)               /**< Macro de campo de bit IRQFROMPAD registro GPIO28_STATUS*/
+#define mIOBANK_GPIO28_STATUS_IRQTOPROC(x)   (x & 0x04000000U)               /**< Macro de campo de bit IRQTOPROC registro GPIO28_STATUS*/
+
+#define mIOBANK_GPIO29_STATUS_OUTFROMPERI(x) (x & 0x00000100U)               /**< Macro de campo de bit OUTFROMPERI registro GPIO29_STATUS*/
+#define mIOBANK_GPIO29_STATUS_OUTTOPAD(x)    (x & 0x00000200U)               /**< Macro de campo de bit OUTTOPAD registro GPIO29_STATUS*/
+#define mIOBANK_GPIO29_STATUS_OEFROMPERI(x)  (x & 0x00001000U)               /**< Macro de campo de bit OEFROMPERI registro GPIO29_STATUS*/
+#define mIOBANK_GPIO29_STATUS_OETOPAD(x)     (x & 0x00002000U)               /**< Macro de campo de bit OETOPAD registro GPIO29_STATUS*/
+#define mIOBANK_GPIO29_STATUS_INFROMPAD(x)   (x & 0x00020000U)               /**< Macro de campo de bit INFROMPAD registro GPIO29_STATUS*/
+#define mIOBANK_GPIO29_STATUS_INTOPERI(x)    (x & 0x00080000U)               /**< Macro de campo de bit INTOPERI registro GPIO29_STATUS*/
+#define mIOBANK_GPIO29_STATUS_IRQFROMPAD(x)  (x & 0x01000000U)               /**< Macro de campo de bit IRQFROMPAD registro GPIO29_STATUS*/
+#define mIOBANK_GPIO29_STATUS_IRQTOPROC(x)   (x & 0x04000000U)               /**< Macro de campo de bit IRQTOPROC registro GPIO29_STATUS*/
+
+//--------------- Macros GPIO CTRL -------------------------------/
+
+#define mIOBANK_GPIO0_CTRL_FUNCSEL(x)       (x & 0x0000001FU)           /**< Macro de campo de bit FUNCSEL registro GPIO0_CTRL*/
+#define mIOBANK_GPIO0_CTRL_OUTOVER(x)       (x & 0x00000300U)           /**< Macro de campo de bit OUTOVER registro GPIO0_CTRL*/
+#define mIOBANK_GPIO0_CTRL_OEOVER(x)        (x & 0x00003000U)           /**< Macro de campo de bit OEOVER registro GPIO0_CTRL*/
+#define mIOBANK_GPIO0_CTRL_INOVER(x)        (x & 0x00030000U)           /**< Macro de campo de bit INOVER registro GPIO0_CTRL*/
+#define mIOBANK_GPIO0_CTRL_IRQOVER(x)       (x & 0x30000000U)           /**< Macro de campo de bit IRQOVER registro GPIO0_CTRL*/
+
+#define mIOBANK_GPIO1_CTRL_FUNCSEL(x)       (x & 0x0000001FU)           /**< Macro de campo de bit FUNCSEL registro GPIO1_CTRL*/
+#define mIOBANK_GPIO1_CTRL_OUTOVER(x)       (x & 0x00000300U)           /**< Macro de campo de bit OUTOVER registro GPIO1_CTRL*/
+#define mIOBANK_GPIO1_CTRL_OEOVER(x)        (x & 0x00003000U)           /**< Macro de campo de bit OEOVER registro GPIO1_CTRL*/
+#define mIOBANK_GPIO1_CTRL_INOVER(x)        (x & 0x00030000U)           /**< Macro de campo de bit INOVER registro GPIO1_CTRL*/
+#define mIOBANK_GPIO1_CTRL_IRQOVER(x)       (x & 0x30000000U)           /**< Macro de campo de bit IRQOVER registro GPIO1_CTRL*/
+
+#define mIOBANK_GPIO2_CTRL_FUNCSEL(x)       (x & 0x0000001FU)           /**< Macro de campo de bit FUNCSEL registro GPIO2_CTRL*/
+#define mIOBANK_GPIO2_CTRL_OUTOVER(x)       (x & 0x00000300U)           /**< Macro de campo de bit OUTOVER registro GPIO2_CTRL*/
+#define mIOBANK_GPIO2_CTRL_OEOVER(x)        (x & 0x00003000U)           /**< Macro de campo de bit OEOVER registro GPIO2_CTRL*/
+#define mIOBANK_GPIO2_CTRL_INOVER(x)        (x & 0x00030000U)           /**< Macro de campo de bit INOVER registro GPIO2_CTRL*/
+#define mIOBANK_GPIO2_CTRL_IRQOVER(x)       (x & 0x30000000U)           /**< Macro de campo de bit IRQOVER registro GPIO2_CTRL*/
+
+#define mIOBANK_GPIO3_CTRL_FUNCSEL(x)       (x & 0x0000001FU)           /**< Macro de campo de bit FUNCSEL registro GPIO3_CTRL*/
+#define mIOBANK_GPIO3_CTRL_OUTOVER(x)       (x & 0x00000300U)           /**< Macro de campo de bit OUTOVER registro GPIO3_CTRL*/
+#define mIOBANK_GPIO3_CTRL_OEOVER(x)        (x & 0x00003000U)           /**< Macro de campo de bit OEOVER registro GPIO3_CTRL*/
+#define mIOBANK_GPIO3_CTRL_INOVER(x)        (x & 0x00030000U)           /**< Macro de campo de bit INOVER registro GPIO3_CTRL*/
+#define mIOBANK_GPIO3_CTRL_IRQOVER(x)       (x & 0x30000000U)           /**< Macro de campo de bit IRQOVER registro GPIO3_CTRL*/
+
+#define mIOBANK_GPIO4_CTRL_FUNCSEL(x)       (x & 0x0000001FU)           /**< Macro de campo de bit FUNCSEL registro GPIO4_CTRL*/
+#define mIOBANK_GPIO4_CTRL_OUTOVER(x)       (x & 0x00000300U)           /**< Macro de campo de bit OUTOVER registro GPIO4_CTRL*/
+#define mIOBANK_GPIO4_CTRL_OEOVER(x)        (x & 0x00003000U)           /**< Macro de campo de bit OEOVER registro GPIO4_CTRL*/
+#define mIOBANK_GPIO4_CTRL_INOVER(x)        (x & 0x00030000U)           /**< Macro de campo de bit INOVER registro GPIO4_CTRL*/
+#define mIOBANK_GPIO4_CTRL_IRQOVER(x)       (x & 0x30000000U)           /**< Macro de campo de bit IRQOVER registro GPIO4_CTRL*/
+
+#define mIOBANK_GPIO5_CTRL_FUNCSEL(x)       (x & 0x0000001FU)           /**< Macro de campo de bit FUNCSEL registro GPIO5_CTRL*/
+#define mIOBANK_GPIO5_CTRL_OUTOVER(x)       (x & 0x00000300U)           /**< Macro de campo de bit OUTOVER registro GPIO5_CTRL*/
+#define mIOBANK_GPIO5_CTRL_OEOVER(x)        (x & 0x00003000U)           /**< Macro de campo de bit OEOVER registro GPIO5_CTRL*/
+#define mIOBANK_GPIO5_CTRL_INOVER(x)        (x & 0x00030000U)           /**< Macro de campo de bit INOVER registro GPIO5_CTRL*/
+#define mIOBANK_GPIO5_CTRL_IRQOVER(x)       (x & 0x30000000U)           /**< Macro de campo de bit IRQOVER registro GPIO5_CTRL*/
+
+#define mIOBANK_GPIO6_CTRL_FUNCSEL(x)       (x & 0x0000001FU)           /**< Macro de campo de bit FUNCSEL registro GPIO6_CTRL*/
+#define mIOBANK_GPIO6_CTRL_OUTOVER(x)       (x & 0x00000300U)           /**< Macro de campo de bit OUTOVER registro GPIO6_CTRL*/
+#define mIOBANK_GPIO6_CTRL_OEOVER(x)        (x & 0x00003000U)           /**< Macro de campo de bit OEOVER registro GPIO6_CTRL*/
+#define mIOBANK_GPIO6_CTRL_INOVER(x)        (x & 0x00030000U)           /**< Macro de campo de bit INOVER registro GPIO6_CTRL*/
+#define mIOBANK_GPIO6_CTRL_IRQOVER(x)       (x & 0x30000000U)           /**< Macro de campo de bit IRQOVER registro GPIO6_CTRL*/
+
+#define mIOBANK_GPIO7_CTRL_FUNCSEL(x)       (x & 0x0000001FU)           /**< Macro de campo de bit FUNCSEL registro GPIO7_CTRL*/
+#define mIOBANK_GPIO7_CTRL_OUTOVER(x)       (x & 0x00000300U)           /**< Macro de campo de bit OUTOVER registro GPIO7_CTRL*/
+#define mIOBANK_GPIO7_CTRL_OEOVER(x)        (x & 0x00003000U)           /**< Macro de campo de bit OEOVER registro GPIO7_CTRL*/
+#define mIOBANK_GPIO7_CTRL_INOVER(x)        (x & 0x00030000U)           /**< Macro de campo de bit INOVER registro GPIO7_CTRL*/
+#define mIOBANK_GPIO7_CTRL_IRQOVER(x)       (x & 0x30000000U)           /**< Macro de campo de bit IRQOVER registro GPIO7_CTRL*/
+
+#define mIOBANK_GPIO8_CTRL_FUNCSEL(x)       (x & 0x0000001FU)           /**< Macro de campo de bit FUNCSEL registro GPIO8_CTRL*/
+#define mIOBANK_GPIO8_CTRL_OUTOVER(x)       (x & 0x00000300U)           /**< Macro de campo de bit OUTOVER registro GPIO8_CTRL*/
+#define mIOBANK_GPIO8_CTRL_OEOVER(x)        (x & 0x00003000U)           /**< Macro de campo de bit OEOVER registro GPIO8_CTRL*/
+#define mIOBANK_GPIO8_CTRL_INOVER(x)        (x & 0x00030000U)           /**< Macro de campo de bit INOVER registro GPIO8_CTRL*/
+#define mIOBANK_GPIO8_CTRL_IRQOVER(x)       (x & 0x30000000U)           /**< Macro de campo de bit IRQOVER registro GPIO8_CTRL*/
+
+#define mIOBANK_GPIO9_CTRL_FUNCSEL(x)       (x & 0x0000001FU)           /**< Macro de campo de bit FUNCSEL registro GPIO9_CTRL*/
+#define mIOBANK_GPIO9_CTRL_OUTOVER(x)       (x & 0x00000300U)           /**< Macro de campo de bit OUTOVER registro GPIO9_CTRL*/
+#define mIOBANK_GPIO9_CTRL_OEOVER(x)        (x & 0x00003000U)           /**< Macro de campo de bit OEOVER registro GPIO9_CTRL*/
+#define mIOBANK_GPIO9_CTRL_INOVER(x)        (x & 0x00030000U)           /**< Macro de campo de bit INOVER registro GPIO9_CTRL*/
+#define mIOBANK_GPIO9_CTRL_IRQOVER(x)       (x & 0x30000000U)           /**< Macro de campo de bit IRQOVER registro GPIO9_CTRL*/
+
+#define mIOBANK_GPIO10_CTRL_FUNCSEL(x)       (x & 0x0000001FU)           /**< Macro de campo de bit FUNCSEL registro GPIO10_CTRL*/
+#define mIOBANK_GPIO10_CTRL_OUTOVER(x)       (x & 0x00000300U)           /**< Macro de campo de bit OUTOVER registro GPIO10_CTRL*/
+#define mIOBANK_GPIO10_CTRL_OEOVER(x)        (x & 0x00003000U)           /**< Macro de campo de bit OEOVER registro GPIO10_CTRL*/
+#define mIOBANK_GPIO10_CTRL_INOVER(x)        (x & 0x00030000U)           /**< Macro de campo de bit INOVER registro GPIO10_CTRL*/
+#define mIOBANK_GPIO10_CTRL_IRQOVER(x)       (x & 0x30000000U)           /**< Macro de campo de bit IRQOVER registro GPIO10_CTRL*/
+
+#define mIOBANK_GPIO11_CTRL_FUNCSEL(x)       (x & 0x0000001FU)           /**< Macro de campo de bit FUNCSEL registro GPIO11_CTRL*/
+#define mIOBANK_GPIO11_CTRL_OUTOVER(x)       (x & 0x00000300U)           /**< Macro de campo de bit OUTOVER registro GPIO11_CTRL*/
+#define mIOBANK_GPIO11_CTRL_OEOVER(x)        (x & 0x00003000U)           /**< Macro de campo de bit OEOVER registro GPIO11_CTRL*/
+#define mIOBANK_GPIO11_CTRL_INOVER(x)        (x & 0x00030000U)           /**< Macro de campo de bit INOVER registro GPIO11_CTRL*/
+#define mIOBANK_GPIO11_CTRL_IRQOVER(x)       (x & 0x30000000U)           /**< Macro de campo de bit IRQOVER registro GPIO11_CTRL*/
+
+#define mIOBANK_GPIO12_CTRL_FUNCSEL(x)       (x & 0x0000001FU)           /**< Macro de campo de bit FUNCSEL registro GPIO12_CTRL*/
+#define mIOBANK_GPIO12_CTRL_OUTOVER(x)       (x & 0x00000300U)           /**< Macro de campo de bit OUTOVER registro GPIO12_CTRL*/
+#define mIOBANK_GPIO12_CTRL_OEOVER(x)        (x & 0x00003000U)           /**< Macro de campo de bit OEOVER registro GPIO12_CTRL*/
+#define mIOBANK_GPIO12_CTRL_INOVER(x)        (x & 0x00030000U)           /**< Macro de campo de bit INOVER registro GPIO12_CTRL*/
+#define mIOBANK_GPIO12_CTRL_IRQOVER(x)       (x & 0x30000000U)           /**< Macro de campo de bit IRQOVER registro GPIO12_CTRL*/
+
+#define mIOBANK_GPIO13_CTRL_FUNCSEL(x)       (x & 0x0000001FU)           /**< Macro de campo de bit FUNCSEL registro GPIO13_CTRL*/
+#define mIOBANK_GPIO13_CTRL_OUTOVER(x)       (x & 0x00000300U)           /**< Macro de campo de bit OUTOVER registro GPIO13_CTRL*/
+#define mIOBANK_GPIO13_CTRL_OEOVER(x)        (x & 0x00003000U)           /**< Macro de campo de bit OEOVER registro GPIO13_CTRL*/
+#define mIOBANK_GPIO13_CTRL_INOVER(x)        (x & 0x00030000U)           /**< Macro de campo de bit INOVER registro GPIO13_CTRL*/
+#define mIOBANK_GPIO13_CTRL_IRQOVER(x)       (x & 0x30000000U)           /**< Macro de campo de bit IRQOVER registro GPIO13_CTRL*/
+
+#define mIOBANK_GPIO14_CTRL_FUNCSEL(x)       (x & 0x0000001FU)           /**< Macro de campo de bit FUNCSEL registro GPIO14_CTRL*/
+#define mIOBANK_GPIO14_CTRL_OUTOVER(x)       (x & 0x00000300U)           /**< Macro de campo de bit OUTOVER registro GPIO14_CTRL*/
+#define mIOBANK_GPIO14_CTRL_OEOVER(x)        (x & 0x00003000U)           /**< Macro de campo de bit OEOVER registro GPIO14_CTRL*/
+#define mIOBANK_GPIO14_CTRL_INOVER(x)        (x & 0x00030000U)           /**< Macro de campo de bit INOVER registro GPIO14_CTRL*/
+#define mIOBANK_GPIO14_CTRL_IRQOVER(x)       (x & 0x30000000U)           /**< Macro de campo de bit IRQOVER registro GPIO14_CTRL*/
+
+#define mIOBANK_GPIO15_CTRL_FUNCSEL(x)       (x & 0x0000001FU)           /**< Macro de campo de bit FUNCSEL registro GPIO15_CTRL*/
+#define mIOBANK_GPIO15_CTRL_OUTOVER(x)       (x & 0x00000300U)           /**< Macro de campo de bit OUTOVER registro GPIO15_CTRL*/
+#define mIOBANK_GPIO15_CTRL_OEOVER(x)        (x & 0x00003000U)           /**< Macro de campo de bit OEOVER registro GPIO15_CTRL*/
+#define mIOBANK_GPIO15_CTRL_INOVER(x)        (x & 0x00030000U)           /**< Macro de campo de bit INOVER registro GPIO15_CTRL*/
+#define mIOBANK_GPIO15_CTRL_IRQOVER(x)       (x & 0x30000000U)           /**< Macro de campo de bit IRQOVER registro GPIO15_CTRL*/
+
+#define mIOBANK_GPIO16_CTRL_FUNCSEL(x)       (x & 0x0000001FU)           /**< Macro de campo de bit FUNCSEL registro GPIO16_CTRL*/
+#define mIOBANK_GPIO16_CTRL_OUTOVER(x)       (x & 0x00000300U)           /**< Macro de campo de bit OUTOVER registro GPIO16_CTRL*/
+#define mIOBANK_GPIO16_CTRL_OEOVER(x)        (x & 0x00003000U)           /**< Macro de campo de bit OEOVER registro GPIO16_CTRL*/
+#define mIOBANK_GPIO16_CTRL_INOVER(x)        (x & 0x00030000U)           /**< Macro de campo de bit INOVER registro GPIO16_CTRL*/
+#define mIOBANK_GPIO16_CTRL_IRQOVER(x)       (x & 0x30000000U)           /**< Macro de campo de bit IRQOVER registro GPIO16_CTRL*/
+
+#define mIOBANK_GPIO17_CTRL_FUNCSEL(x)       (x & 0x0000001FU)           /**< Macro de campo de bit FUNCSEL registro GPIO17_CTRL*/
+#define mIOBANK_GPIO17_CTRL_OUTOVER(x)       (x & 0x00000300U)           /**< Macro de campo de bit OUTOVER registro GPIO17_CTRL*/
+#define mIOBANK_GPIO17_CTRL_OEOVER(x)        (x & 0x00003000U)           /**< Macro de campo de bit OEOVER registro GPIO17_CTRL*/
+#define mIOBANK_GPIO17_CTRL_INOVER(x)        (x & 0x00030000U)           /**< Macro de campo de bit INOVER registro GPIO17_CTRL*/
+#define mIOBANK_GPIO17_CTRL_IRQOVER(x)       (x & 0x30000000U)           /**< Macro de campo de bit IRQOVER registro GPIO17_CTRL*/
+
+#define mIOBANK_GPIO18_CTRL_FUNCSEL(x)       (x & 0x0000001FU)           /**< Macro de campo de bit FUNCSEL registro GPIO18_CTRL*/
+#define mIOBANK_GPIO18_CTRL_OUTOVER(x)       (x & 0x00000300U)           /**< Macro de campo de bit OUTOVER registro GPIO18_CTRL*/
+#define mIOBANK_GPIO18_CTRL_OEOVER(x)        (x & 0x00003000U)           /**< Macro de campo de bit OEOVER registro GPIO18_CTRL*/
+#define mIOBANK_GPIO18_CTRL_INOVER(x)        (x & 0x00030000U)           /**< Macro de campo de bit INOVER registro GPIO18_CTRL*/
+#define mIOBANK_GPIO18_CTRL_IRQOVER(x)       (x & 0x30000000U)           /**< Macro de campo de bit IRQOVER registro GPIO18_CTRL*/
+
+#define mIOBANK_GPIO19_CTRL_FUNCSEL(x)       (x & 0x0000001FU)           /**< Macro de campo de bit FUNCSEL registro GPIO19_CTRL*/
+#define mIOBANK_GPIO19_CTRL_OUTOVER(x)       (x & 0x00000300U)           /**< Macro de campo de bit OUTOVER registro GPIO19_CTRL*/
+#define mIOBANK_GPIO19_CTRL_OEOVER(x)        (x & 0x00003000U)           /**< Macro de campo de bit OEOVER registro GPIO19_CTRL*/
+#define mIOBANK_GPIO19_CTRL_INOVER(x)        (x & 0x00030000U)           /**< Macro de campo de bit INOVER registro GPIO19_CTRL*/
+#define mIOBANK_GPIO19_CTRL_IRQOVER(x)       (x & 0x30000000U)           /**< Macro de campo de bit IRQOVER registro GPIO19_CTRL*/
+
+#define mIOBANK_GPIO20_CTRL_FUNCSEL(x)       (x & 0x0000001FU)           /**< Macro de campo de bit FUNCSEL registro GPIO20_CTRL*/
+#define mIOBANK_GPIO20_CTRL_OUTOVER(x)       (x & 0x00000300U)           /**< Macro de campo de bit OUTOVER registro GPIO20_CTRL*/
+#define mIOBANK_GPIO20_CTRL_OEOVER(x)        (x & 0x00003000U)           /**< Macro de campo de bit OEOVER registro GPIO20_CTRL*/
+#define mIOBANK_GPIO20_CTRL_INOVER(x)        (x & 0x00030000U)           /**< Macro de campo de bit INOVER registro GPIO20_CTRL*/
+#define mIOBANK_GPIO20_CTRL_IRQOVER(x)       (x & 0x30000000U)           /**< Macro de campo de bit IRQOVER registro GPIO20_CTRL*/
+
+#define mIOBANK_GPIO21_CTRL_FUNCSEL(x)       (x & 0x0000001FU)           /**< Macro de campo de bit FUNCSEL registro GPIO21_CTRL*/
+#define mIOBANK_GPIO21_CTRL_OUTOVER(x)       (x & 0x00000300U)           /**< Macro de campo de bit OUTOVER registro GPIO21_CTRL*/
+#define mIOBANK_GPIO21_CTRL_OEOVER(x)        (x & 0x00003000U)           /**< Macro de campo de bit OEOVER registro GPIO21_CTRL*/
+#define mIOBANK_GPIO21_CTRL_INOVER(x)        (x & 0x00030000U)           /**< Macro de campo de bit INOVER registro GPIO21_CTRL*/
+#define mIOBANK_GPIO21_CTRL_IRQOVER(x)       (x & 0x30000000U)           /**< Macro de campo de bit IRQOVER registro GPIO21_CTRL*/
+
+#define mIOBANK_GPIO22_CTRL_FUNCSEL(x)       (x & 0x0000001FU)           /**< Macro de campo de bit FUNCSEL registro GPIO22_CTRL*/
+#define mIOBANK_GPIO22_CTRL_OUTOVER(x)       (x & 0x00000300U)           /**< Macro de campo de bit OUTOVER registro GPIO22_CTRL*/
+#define mIOBANK_GPIO22_CTRL_OEOVER(x)        (x & 0x00003000U)           /**< Macro de campo de bit OEOVER registro GPIO22_CTRL*/
+#define mIOBANK_GPIO22_CTRL_INOVER(x)        (x & 0x00030000U)           /**< Macro de campo de bit INOVER registro GPIO22_CTRL*/
+#define mIOBANK_GPIO22_CTRL_IRQOVER(x)       (x & 0x30000000U)           /**< Macro de campo de bit IRQOVER registro GPIO22_CTRL*/
+
+#define mIOBANK_GPIO23_CTRL_FUNCSEL(x)       (x & 0x0000001FU)           /**< Macro de campo de bit FUNCSEL registro GPIO23_CTRL*/
+#define mIOBANK_GPIO23_CTRL_OUTOVER(x)       (x & 0x00000300U)           /**< Macro de campo de bit OUTOVER registro GPIO23_CTRL*/
+#define mIOBANK_GPIO23_CTRL_OEOVER(x)        (x & 0x00003000U)           /**< Macro de campo de bit OEOVER registro GPIO23_CTRL*/
+#define mIOBANK_GPIO23_CTRL_INOVER(x)        (x & 0x00030000U)           /**< Macro de campo de bit INOVER registro GPIO23_CTRL*/
+#define mIOBANK_GPIO23_CTRL_IRQOVER(x)       (x & 0x30000000U)           /**< Macro de campo de bit IRQOVER registro GPIO23_CTRL*/
+
+#define mIOBANK_GPIO24_CTRL_FUNCSEL(x)       (x & 0x0000001FU)           /**< Macro de campo de bit FUNCSEL registro GPIO24_CTRL*/
+#define mIOBANK_GPIO24_CTRL_OUTOVER(x)       (x & 0x00000300U)           /**< Macro de campo de bit OUTOVER registro GPIO24_CTRL*/
+#define mIOBANK_GPIO24_CTRL_OEOVER(x)        (x & 0x00003000U)           /**< Macro de campo de bit OEOVER registro GPIO24_CTRL*/
+#define mIOBANK_GPIO24_CTRL_INOVER(x)        (x & 0x00030000U)           /**< Macro de campo de bit INOVER registro GPIO24_CTRL*/
+#define mIOBANK_GPIO24_CTRL_IRQOVER(x)       (x & 0x30000000U)           /**< Macro de campo de bit IRQOVER registro GPIO24_CTRL*/
+
+#define mIOBANK_GPIO25_CTRL_FUNCSEL(x)       (x & 0x0000001FU)           /**< Macro de campo de bit FUNCSEL registro GPIO25_CTRL*/
+#define mIOBANK_GPIO25_CTRL_OUTOVER(x)       (x & 0x00000300U)           /**< Macro de campo de bit OUTOVER registro GPIO25_CTRL*/
+#define mIOBANK_GPIO25_CTRL_OEOVER(x)        (x & 0x00003000U)           /**< Macro de campo de bit OEOVER registro GPIO25_CTRL*/
+#define mIOBANK_GPIO25_CTRL_INOVER(x)        (x & 0x00030000U)           /**< Macro de campo de bit INOVER registro GPIO25_CTRL*/
+#define mIOBANK_GPIO25_CTRL_IRQOVER(x)       (x & 0x30000000U)           /**< Macro de campo de bit IRQOVER registro GPIO25_CTRL*/
+
+#define mIOBANK_GPIO26_CTRL_FUNCSEL(x)       (x & 0x0000001FU)           /**< Macro de campo de bit FUNCSEL registro GPIO26_CTRL*/
+#define mIOBANK_GPIO26_CTRL_OUTOVER(x)       (x & 0x00000300U)           /**< Macro de campo de bit OUTOVER registro GPIO26_CTRL*/
+#define mIOBANK_GPIO26_CTRL_OEOVER(x)        (x & 0x00003000U)           /**< Macro de campo de bit OEOVER registro GPIO26_CTRL*/
+#define mIOBANK_GPIO26_CTRL_INOVER(x)        (x & 0x00030000U)           /**< Macro de campo de bit INOVER registro GPIO26_CTRL*/
+#define mIOBANK_GPIO26_CTRL_IRQOVER(x)       (x & 0x30000000U)           /**< Macro de campo de bit IRQOVER registro GPIO26_CTRL*/
+
+#define mIOBANK_GPIO27_CTRL_FUNCSEL(x)       (x & 0x0000001FU)           /**< Macro de campo de bit FUNCSEL registro GPIO27_CTRL*/
+#define mIOBANK_GPIO27_CTRL_OUTOVER(x)       (x & 0x00000300U)           /**< Macro de campo de bit OUTOVER registro GPIO27_CTRL*/
+#define mIOBANK_GPIO27_CTRL_OEOVER(x)        (x & 0x00003000U)           /**< Macro de campo de bit OEOVER registro GPIO27_CTRL*/
+#define mIOBANK_GPIO27_CTRL_INOVER(x)        (x & 0x00030000U)           /**< Macro de campo de bit INOVER registro GPIO27_CTRL*/
+#define mIOBANK_GPIO27_CTRL_IRQOVER(x)       (x & 0x30000000U)           /**< Macro de campo de bit IRQOVER registro GPIO27_CTRL*/
+
+#define mIOBANK_GPIO28_CTRL_FUNCSEL(x)       (x & 0x0000001FU)           /**< Macro de campo de bit FUNCSEL registro GPIO28_CTRL*/
+#define mIOBANK_GPIO28_CTRL_OUTOVER(x)       (x & 0x00000300U)           /**< Macro de campo de bit OUTOVER registro GPIO28_CTRL*/
+#define mIOBANK_GPIO28_CTRL_OEOVER(x)        (x & 0x00003000U)           /**< Macro de campo de bit OEOVER registro GPIO28_CTRL*/
+#define mIOBANK_GPIO28_CTRL_INOVER(x)        (x & 0x00030000U)           /**< Macro de campo de bit INOVER registro GPIO28_CTRL*/
+#define mIOBANK_GPIO28_CTRL_IRQOVER(x)       (x & 0x30000000U)           /**< Macro de campo de bit IRQOVER registro GPIO28_CTRL*/
+
+#define mIOBANK_GPIO29_CTRL_FUNCSEL(x)       (x & 0x0000001FU)           /**< Macro de campo de bit FUNCSEL registro GPIO29_CTRL*/
+#define mIOBANK_GPIO29_CTRL_OUTOVER(x)       (x & 0x00000300U)           /**< Macro de campo de bit OUTOVER registro GPIO29_CTRL*/
+#define mIOBANK_GPIO29_CTRL_OEOVER(x)        (x & 0x00003000U)           /**< Macro de campo de bit OEOVER registro GPIO29_CTRL*/
+#define mIOBANK_GPIO29_CTRL_INOVER(x)        (x & 0x00030000U)           /**< Macro de campo de bit INOVER registro GPIO29_CTRL*/
+#define mIOBANK_GPIO29_CTRL_IRQOVER(x)       (x & 0x30000000U)           /**< Macro de campo de bit IRQOVER registro GPIO29_CTRL*/
+
 /**
  * @union __gpio_status_t
  * @brief Union de los registros GPIO_STATUS de 32 bits. Contiene los 9 campos de bits de los registros.
