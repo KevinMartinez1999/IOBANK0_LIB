@@ -11,280 +11,315 @@
 #include <stdint.h>
 
 /*******************************************************************/
+/*************** Definicion de las constantes **********************/
+/*******************************************************************/
+
+
+
+/*******************************************************************/
 /****************Start Bits Fields Type Definition******************/
 /*******************************************************************/
+
+/**
+ * @struct __iobank0_t
+ * @brief Estructura del módulo IOBANK0, contiene 99 registros de 32 bits cada uno.
+*/
 typedef struct {
-    volatile __gpio_status_t GPIO0_STATUS;                 // 0x000
-    volatile __gpio_ctrl_t GPIO0_CTRL;                     // 0x004
-    volatile __gpio_status_t GPIO1_STATUS;                 // 0x008
-    volatile __gpio_ctrl_t GPIO1_CTRL;                     // 0x00c
-    volatile __gpio_status_t GPIO2_STATUS;                 // 0x010
-    volatile __gpio_ctrl_t GPIO2_CTRL;                     // 0x014
-    volatile __gpio_status_t GPIO3_STATUS;                 // 0x018
-    volatile __gpio_ctrl_t GPIO3_CTRL;                     // 0x01c
-    volatile __gpio_status_t GPIO4_STATUS;                 // 0x020
-    volatile __gpio_ctrl_t GPIO4_CTRL;                     // 0x024
-    volatile __gpio_status_t GPIO5_STATUS;                 // 0x028
-    volatile __gpio_ctrl_t GPIO5_CTRL;                     // 0x02c
-    volatile __gpio_status_t GPIO6_STATUS;                 // 0x030
-    volatile __gpio_ctrl_t GPIO6_CTRL;                     // 0x034
-    volatile __gpio_status_t GPIO7_STATUS;                 // 0x038
-    volatile __gpio_ctrl_t GPIO7_CTRL;                     // 0x03c
-    volatile __gpio_status_t GPIO8_STATUS;                 // 0x040
-    volatile __gpio_ctrl_t GPIO8_CTRL;                     // 0x044
-    volatile __gpio_status_t GPIO9_STATUS;                 // 0x048
-    volatile __gpio_ctrl_t GPIO9_CTRL;                     // 0x04c
-    volatile __gpio_status_t GPIO10_STATUS;               // 0x050
-    volatile __gpio_ctrl_t GPIO10_CTRL;                   // 0x054
-    volatile __gpio_status_t GPIO11_STATUS;               // 0x058
-    volatile __gpio_ctrl_t GPIO11_CTRL;                   // 0x05c
-    volatile __gpio_status_t GPIO12_STATUS;               // 0x060
-    volatile __gpio_ctrl_t GPIO12_CTRL;                   // 0x064
-    volatile __gpio_status_t GPIO13_STATUS;               // 0x068
-    volatile __gpio_ctrl_t GPIO13_CTRL;                   // 0x06c
-    volatile __gpio_status_t GPIO14_STATUS;               // 0x070
-    volatile __gpio_ctrl_t GPIO14_CTRL;                   // 0x074
-    volatile __gpio_status_t GPIO15_STATUS;               // 0x078
-    volatile __gpio_ctrl_t GPIO15_CTRL;                   // 0x07c
-    volatile __gpio_status_t GPIO16_STATUS;               // 0x080
-    volatile __gpio_ctrl_t GPIO16_CTRL;                   // 0x084
-    volatile __gpio_status_t GPIO17_STATUS;               // 0x088
-    volatile __gpio_ctrl_t GPIO17_CTRL;                   // 0x08c
-    volatile __gpio_status_t GPIO18_STATUS;               // 0x090
-    volatile __gpio_ctrl_t GPIO18_CTRL;                   // 0x094
-    volatile __gpio_status_t GPIO19_STATUS;               // 0x098
-    volatile __gpio_ctrl_t GPIO19_CTRL;                   // 0x09c
-    volatile __gpio_status_t GPIO20_STATUS;               // 0x0a0
-    volatile __gpio_ctrl_t GPIO20_CTRL;                   // 0x0a4
-    volatile __gpio_status_t GPIO21_STATUS;               // 0x0a8
-    volatile __gpio_ctrl_t GPIO21_CTRL;                   // 0x0ac
-    volatile __gpio_status_t GPIO22_STATUS;               // 0x0b0
-    volatile __gpio_ctrl_t GPIO22_CTRL;                   // 0x0b4
-    volatile __gpio_status_t GPIO23_STATUS;               // 0x0b8
-    volatile __gpio_ctrl_t GPIO23_CTRL;                   // 0x0bc
-    volatile __gpio_status_t GPIO24_STATUS;               // 0x0c0
-    volatile __gpio_ctrl_t GPIO24_CTRL;                   // 0x0c4
-    volatile __gpio_status_t GPIO25_STATUS;               // 0x0c8
-    volatile __gpio_ctrl_t GPIO25_CTRL;                   // 0x0cc
-    volatile __gpio_status_t GPIO26_STATUS;               // 0x0d0
-    volatile __gpio_ctrl_t GPIO26_CTRL;                   // 0x0d4
-    volatile __gpio_status_t GPIO27_STATUS;               // 0xxd8
-    volatile __gpio_ctrl_t GPIO27_CTRL;                   // 0x0dc
-    volatile __gpio_status_t GPIO28_STATUS;               // 0x0e0
-    volatile __gpio_ctrl_t GPIO28_CTRL;                   // 0x0e4
-    volatile __gpio_status_t GPIO29_STATUS;               // 0x0e8
-    volatile __gpio_ctrl_t GPIO29_CTRL;                   // 0x0ec
-    volatile __int0_t INTR0;                               // 0x0f0
-    volatile __int1_t INTR1;                               // 0x0f4
-    volatile __int2_t INTR2;                               // 0x0f8
-    volatile __int3_t INTR3;                               // 0x0fc
-    volatile __int0_t PROC0_INTE0;                   // 0x100
-    volatile __int1_t PROC0_INTE1;                   // 0x104
-    volatile __int2_t PROC0_INTE2;                   // 0x108
-    volatile __int3_t PROC0_INTE3;                   // 0x10c
-    volatile __int0_t PROC0_INTF0;                   // 0x110
-    volatile __int1_t PROC0_INTF1;                   // 0x114
-    volatile __int2_t PROC0_INTF2;                   // 0x118
-    volatile __int3_t PROC0_INTF3;                   // 0x11c
-    volatile __int0_t PROC0_INTS0;                   // 0x120
-    volatile __int1_t PROC0_INTS1;                   // 0x124
-    volatile __int2_t PROC0_INTS2;                   // 0x128
-    volatile __int3_t PROC0_INTS3;                   // 0x12c
-    volatile __int0_t PROC1_INTE0;                   // 0x130
-    volatile __int1_t PROC1_INTE1;                   // 0x134
-    volatile __int2_t PROC1_INTE2;                   // 0x138
-    volatile __int3_t PROC1_INTE3;                   // 0x13c
-    volatile __int0_t PROC1_INTF0;                   // 0x140
-    volatile __int1_t PROC1_INTF1;                   // 0x144
-    volatile __int2_t PROC1_INTF2;                   // 0x148
-    volatile __int3_t PROC1_INTF3;                   // 0x14c
-    volatile __int0_t PROC1_INTS0;                   // 0x150
-    volatile __int1_t PROC1_INTS1;                   // 0x154
-    volatile __int2_t PROC1_INTS2;                   // 0x158
-    volatile __int3_t PROC1_INTS3;                   // 0x15c
-    volatile __int0_t DORMANT_WAKE_INTE0;     // 0x160
-    volatile __int1_t DORMANT_WAKE_INTE1;     // 0x164
-    volatile __int2_t DORMANT_WAKE_INTE2;     // 0x168
-    volatile __int3_t DORMANT_WAKE_INTE3;     // 0x16c
-    volatile __int0_t DORMANT_WAKE_INTF0;     // 0x170
-    volatile __int1_t DORMANT_WAKE_INTF1;     // 0x174
-    volatile __int2_t DORMANT_WAKE_INTF2;     // 0x178
-    volatile __int3_t DORMANT_WAKE_INTF3;     // 0x17c
-    volatile __int0_t DORMANT_WAKE_INTS0;     // 0x180
-    volatile __int1_t DORMANT_WAKE_INTS1;     // 0x184
-    volatile __int2_t DORMANT_WAKE_INTS2;     // 0x188
-    volatile __int3_t DORMANT_WAKE_INTS3;     // 0x18c
+    volatile __gpio_status_t GPIO0_STATUS;                  /**< Direccion de memoria  0x000 */
+    volatile __gpio_ctrl_t GPIO0_CTRL;                      /**< Direccion de memoria  0x004 */
+    volatile __gpio_status_t GPIO1_STATUS;                  /**< Direccion de memoria  0x008 */
+    volatile __gpio_ctrl_t GPIO1_CTRL;                      /**< Direccion de memoria  0x00c */
+    volatile __gpio_status_t GPIO2_STATUS;                  /**< Direccion de memoria  0x010 */
+    volatile __gpio_ctrl_t GPIO2_CTRL;                      /**< Direccion de memoria  0x014 */
+    volatile __gpio_status_t GPIO3_STATUS;                  /**< Direccion de memoria  0x018 */
+    volatile __gpio_ctrl_t GPIO3_CTRL;                      /**< Direccion de memoria  0x01c */
+    volatile __gpio_status_t GPIO4_STATUS;                  /**< Direccion de memoria  0x020 */
+    volatile __gpio_ctrl_t GPIO4_CTRL;                      /**< Direccion de memoria  0x024 */
+    volatile __gpio_status_t GPIO5_STATUS;                  /**< Direccion de memoria  0x028 */
+    volatile __gpio_ctrl_t GPIO5_CTRL;                      /**< Direccion de memoria  0x02c */
+    volatile __gpio_status_t GPIO6_STATUS;                  /**< Direccion de memoria  0x030 */
+    volatile __gpio_ctrl_t GPIO6_CTRL;                      /**< Direccion de memoria  0x034 */
+    volatile __gpio_status_t GPIO7_STATUS;                  /**< Direccion de memoria  0x038 */
+    volatile __gpio_ctrl_t GPIO7_CTRL;                      /**< Direccion de memoria  0x03c */
+    volatile __gpio_status_t GPIO8_STATUS;                  /**< Direccion de memoria  0x040 */
+    volatile __gpio_ctrl_t GPIO8_CTRL;                      /**< Direccion de memoria  0x044 */
+    volatile __gpio_status_t GPIO9_STATUS;                  /**< Direccion de memoria  0x048 */
+    volatile __gpio_ctrl_t GPIO9_CTRL;                      /**< Direccion de memoria  0x04c */
+    volatile __gpio_status_t GPIO10_STATUS;                 /**< Direccion de memoria  0x050 */
+    volatile __gpio_ctrl_t GPIO10_CTRL;                     /**< Direccion de memoria  0x054 */
+    volatile __gpio_status_t GPIO11_STATUS;                 /**< Direccion de memoria  0x058 */
+    volatile __gpio_ctrl_t GPIO11_CTRL;                     /**< Direccion de memoria  0x05c */
+    volatile __gpio_status_t GPIO12_STATUS;                 /**< Direccion de memoria  0x060 */
+    volatile __gpio_ctrl_t GPIO12_CTRL;                     /**< Direccion de memoria  0x064 */
+    volatile __gpio_status_t GPIO13_STATUS;                 /**< Direccion de memoria  0x068 */
+    volatile __gpio_ctrl_t GPIO13_CTRL;                     /**< Direccion de memoria  0x06c */
+    volatile __gpio_status_t GPIO14_STATUS;                 /**< Direccion de memoria  0x070 */
+    volatile __gpio_ctrl_t GPIO14_CTRL;                     /**< Direccion de memoria  0x074 */
+    volatile __gpio_status_t GPIO15_STATUS;                 /**< Direccion de memoria  0x078 */
+    volatile __gpio_ctrl_t GPIO15_CTRL;                     /**< Direccion de memoria  0x07c */
+    volatile __gpio_status_t GPIO16_STATUS;                 /**< Direccion de memoria  0x080 */
+    volatile __gpio_ctrl_t GPIO16_CTRL;                     /**< Direccion de memoria  0x084 */
+    volatile __gpio_status_t GPIO17_STATUS;                 /**< Direccion de memoria  0x088 */
+    volatile __gpio_ctrl_t GPIO17_CTRL;                     /**< Direccion de memoria  0x08c */
+    volatile __gpio_status_t GPIO18_STATUS;                 /**< Direccion de memoria  0x090 */
+    volatile __gpio_ctrl_t GPIO18_CTRL;                     /**< Direccion de memoria  0x094 */
+    volatile __gpio_status_t GPIO19_STATUS;                 /**< Direccion de memoria  0x098 */
+    volatile __gpio_ctrl_t GPIO19_CTRL;                     /**< Direccion de memoria  0x09c */
+    volatile __gpio_status_t GPIO20_STATUS;                 /**< Direccion de memoria  0x0a0 */
+    volatile __gpio_ctrl_t GPIO20_CTRL;                     /**< Direccion de memoria  0x0a4 */
+    volatile __gpio_status_t GPIO21_STATUS;                 /**< Direccion de memoria  0x0a8 */
+    volatile __gpio_ctrl_t GPIO21_CTRL;                     /**< Direccion de memoria  0x0ac */
+    volatile __gpio_status_t GPIO22_STATUS;                 /**< Direccion de memoria  0x0b0 */
+    volatile __gpio_ctrl_t GPIO22_CTRL;                     /**< Direccion de memoria  0x0b4 */
+    volatile __gpio_status_t GPIO23_STATUS;                 /**< Direccion de memoria  0x0b8 */
+    volatile __gpio_ctrl_t GPIO23_CTRL;                     /**< Direccion de memoria  0x0bc */
+    volatile __gpio_status_t GPIO24_STATUS;                 /**< Direccion de memoria  0x0c0 */
+    volatile __gpio_ctrl_t GPIO24_CTRL;                     /**< Direccion de memoria  0x0c4 */
+    volatile __gpio_status_t GPIO25_STATUS;                 /**< Direccion de memoria  0x0c8 */
+    volatile __gpio_ctrl_t GPIO25_CTRL;                     /**< Direccion de memoria  0x0cc */
+    volatile __gpio_status_t GPIO26_STATUS;                 /**< Direccion de memoria  0x0d0 */
+    volatile __gpio_ctrl_t GPIO26_CTRL;                     /**< Direccion de memoria  0x0d4 */
+    volatile __gpio_status_t GPIO27_STATUS;                 /**< Direccion de memoria  0xxd8 */
+    volatile __gpio_ctrl_t GPIO27_CTRL;                     /**< Direccion de memoria  0x0dc */
+    volatile __gpio_status_t GPIO28_STATUS;                 /**< Direccion de memoria  0x0e0 */
+    volatile __gpio_ctrl_t GPIO28_CTRL;                     /**< Direccion de memoria  0x0e4 */
+    volatile __gpio_status_t GPIO29_STATUS;                 /**< Direccion de memoria  0x0e8 */
+    volatile __gpio_ctrl_t GPIO29_CTRL;                     /**< Direccion de memoria  0x0ec */
+    volatile __int0_t INTR0;                                /**< Direccion de memoria  0x0f0 */
+    volatile __int1_t INTR1;                                /**< Direccion de memoria  0x0f4 */
+    volatile __int2_t INTR2;                                /**< Direccion de memoria  0x0f8 */
+    volatile __int3_t INTR3;                                /**< Direccion de memoria  0x0fc */
+    volatile __int0_t PROC0_INTE0;                          /**< Direccion de memoria  0x100 */
+    volatile __int1_t PROC0_INTE1;                          /**< Direccion de memoria  0x104 */
+    volatile __int2_t PROC0_INTE2;                          /**< Direccion de memoria  0x108 */
+    volatile __int3_t PROC0_INTE3;                          /**< Direccion de memoria  0x10c */
+    volatile __int0_t PROC0_INTF0;                          /**< Direccion de memoria  0x110 */
+    volatile __int1_t PROC0_INTF1;                          /**< Direccion de memoria  0x114 */
+    volatile __int2_t PROC0_INTF2;                          /**< Direccion de memoria  0x118 */
+    volatile __int3_t PROC0_INTF3;                          /**< Direccion de memoria  0x11c */
+    volatile __int0_t PROC0_INTS0;                          /**< Direccion de memoria  0x120 */
+    volatile __int1_t PROC0_INTS1;                          /**< Direccion de memoria  0x124 */
+    volatile __int2_t PROC0_INTS2;                          /**< Direccion de memoria  0x128 */
+    volatile __int3_t PROC0_INTS3;                          /**< Direccion de memoria  0x12c */
+    volatile __int0_t PROC1_INTE0;                          /**< Direccion de memoria  0x130 */
+    volatile __int1_t PROC1_INTE1;                          /**< Direccion de memoria  0x134 */
+    volatile __int2_t PROC1_INTE2;                          /**< Direccion de memoria  0x138 */
+    volatile __int3_t PROC1_INTE3;                          /**< Direccion de memoria  0x13c */
+    volatile __int0_t PROC1_INTF0;                          /**< Direccion de memoria  0x140 */
+    volatile __int1_t PROC1_INTF1;                          /**< Direccion de memoria  0x144 */
+    volatile __int2_t PROC1_INTF2;                          /**< Direccion de memoria  0x148 */
+    volatile __int3_t PROC1_INTF3;                          /**< Direccion de memoria  0x14c */
+    volatile __int0_t PROC1_INTS0;                          /**< Direccion de memoria  0x150 */
+    volatile __int1_t PROC1_INTS1;                          /**< Direccion de memoria  0x154 */
+    volatile __int2_t PROC1_INTS2;                          /**< Direccion de memoria  0x158 */
+    volatile __int3_t PROC1_INTS3;                          /**< Direccion de memoria  0x15c */
+    volatile __int0_t DORMANT_WAKE_INTE0;                   /**< Direccion de memoria  0x160 */
+    volatile __int1_t DORMANT_WAKE_INTE1;                   /**< Direccion de memoria  0x164 */
+    volatile __int2_t DORMANT_WAKE_INTE2;                   /**< Direccion de memoria  0x168 */
+    volatile __int3_t DORMANT_WAKE_INTE3;                   /**< Direccion de memoria  0x16c */
+    volatile __int0_t DORMANT_WAKE_INTF0;                   /**< Direccion de memoria  0x170 */
+    volatile __int1_t DORMANT_WAKE_INTF1;                   /**< Direccion de memoria  0x174 */
+    volatile __int2_t DORMANT_WAKE_INTF2;                   /**< Direccion de memoria  0x178 */
+    volatile __int3_t DORMANT_WAKE_INTF3;                   /**< Direccion de memoria  0x17c */
+    volatile __int0_t DORMANT_WAKE_INTS0;                   /**< Direccion de memoria  0x180 */
+    volatile __int1_t DORMANT_WAKE_INTS1;                   /**< Direccion de memoria  0x184 */
+    volatile __int2_t DORMANT_WAKE_INTS2;                   /**< Direccion de memoria  0x188 */
+    volatile __int3_t DORMANT_WAKE_INTS3;                   /**< Direccion de memoria  0x18c */
 }__iobank0_t;
 
+/**
+ * @union __gpio_status_t
+ * @brief Union de los registros GPIO_STATUS de 32 bits. Contiene los 9 campos de bits de los registros.
+*/
 typedef union {     // Registros GPIO STATUS
     uint32_t WORD;
     struct {
-        uint32_t OUTFROMPERI    : 1;
-        uint32_t OUTTOPAD       : 1;
-        uint32_t OEFROMPERI     : 1;
-        uint32_t OETOPAD        : 1;
-        uint32_t INFROMPAD      : 1;
-        uint32_t INTOPERI       : 1;
-        uint32_t IRQFROMPAD     : 1;
-        uint32_t IRQTOPROC      : 1;
-        uint32_t                : 24;
+        uint32_t OUTFROMPERI    : 1;    /**< Campo de bits OUTFROMPERI para los registros GPIO_STATUS */
+        uint32_t OUTTOPAD       : 1;    /**< Campo de bits OUTTOPAD para los registros GPIO_STATUS */
+        uint32_t OEFROMPERI     : 1;    /**< Campo de bits OEFROMPERI para los registros GPIO_STATUS */
+        uint32_t OETOPAD        : 1;    /**< Campo de bits OETOPAD para los registros GPIO_STATUS */
+        uint32_t INFROMPAD      : 1;    /**< Campo de bits INFROMPAD para los registros GPIO_STATUS */
+        uint32_t INTOPERI       : 1;    /**< Campo de bits INTOPERI para los registros GPIO_STATUS */
+        uint32_t IRQFROMPAD     : 1;    /**< Campo de bits IRQFROMPAD para los registros GPIO_STATUS */
+        uint32_t IRQTOPROC      : 1;    /**< Campo de bits IRQTOPROC para los registros GPIO_STATUS */
+        uint32_t                : 24;   /**< Campo de bits reservado para los registros GPIO_STATUS */
     }BITS;
 }__gpio_status_t;
 
+/**
+ * @union __gpio_ctrl_t
+ * @brief Union de los registros GPIO_CTRL de 32 bits. Contiene los 6 campos de bits de los registros.
+*/
 typedef union {     // Registros GPIO CTRL
     uint32_t WORD;
     struct {
-        uint32_t FUNCSEL    : 5;
-        uint32_t OUTOVER    : 2;
-        uint32_t OEOVER     : 2;
-        uint32_t INOVER     : 2;
-        uint32_t IRQOVER    : 2;
-        uint32_t            : 19;
+        uint32_t FUNCSEL    : 5;    /**< Campo de bits FUNCSEL para los registros GPIO_CTRL */
+        uint32_t OUTOVER    : 2;    /**< Campo de bits OUTOVER para los registros GPIO_CTRL */
+        uint32_t OEOVER     : 2;    /**< Campo de bits OEOVER para los registros GPIO_CTRL */
+        uint32_t INOVER     : 2;    /**< Campo de bits INOVER para los registros GPIO_CTRL */
+        uint32_t IRQOVER    : 2;    /**< Campo de bits IRQOVER para los registros GPIO_CTRL */
+        uint32_t            : 19;   /**< Campo de bits reservado para los registros GPIO_CTRL */
     }BITS;
 }__gpio_ctrl_t;
 
+/**
+ * @union __int0_t
+ * @brief Union de los registros que contienen INTR0, INTE0, INTF0 e INTS0. Contiene los 32 campos de bits de los registros.
+*/
 typedef union {
     uint32_t WORD;
     struct {
-        uint32_t GPIO0_LEVEL_LOW    : 1;
-        uint32_t GPIO0_LEVEL_HIGH   : 1;
-        uint32_t GPIO0_EDGE_LOW     : 1;
-        uint32_t GPIO0_EDGE_HIGH    : 1;
-        uint32_t GPIO1_LEVEL_LOW    : 1;
-        uint32_t GPIO1_LEVEL_HIGH   : 1;
-        uint32_t GPIO1_EDGE_LOW     : 1;
-        uint32_t GPIO1_EDGE_HIGH    : 1;
-        uint32_t GPIO2_LEVEL_LOW    : 1;
-        uint32_t GPIO2_LEVEL_HIGH   : 1;
-        uint32_t GPIO2_EDGE_LOW     : 1;
-        uint32_t GPIO2_EDGE_HIGH    : 1;
-        uint32_t GPIO3_LEVEL_LOW    : 1;
-        uint32_t GPIO3_LEVEL_HIGH   : 1;
-        uint32_t GPIO3_EDGE_LOW     : 1;
-        uint32_t GPIO3_EDGE_HIGH    : 1;
-        uint32_t GPIO4_LEVEL_LOW    : 1;
-        uint32_t GPIO4_LEVEL_HIGH1  : 1;
-        uint32_t GPIO4_EDGE_LOW     : 1;
-        uint32_t GPIO4_EDGE_HIGH    : 1;
-        uint32_t GPIO5_LEVEL_LOW    : 1;
-        uint32_t GPIO5_LEVEL_HIGH   : 1;
-        uint32_t GPIO5_EDGE_LOW     : 1;
-        uint32_t GPIO5_EDGE_HIGH    : 1;
-        uint32_t GPIO6_LEVEL_LOW    : 1;
-        uint32_t GPIO6_LEVEL_HIGH   : 1;
-        uint32_t GPIO6_EDGE_LOW     : 1;
-        uint32_t GPIO6_EDGE_HIGH    : 1;
-        uint32_t GPIO7_LEVEL_LOW    : 1;
-        uint32_t GPIO7_LEVEL_HIGH   : 1;
-        uint32_t GPIO7_EDGE_LOW     : 1;
-        uint32_t GPIO7_EDGE_HIGH    : 1;
+        uint32_t GPIO0_LEVEL_LOW    : 1;    /**< Campo de bits GPIO0_LEVEL_LOW para los registros INT0 */
+        uint32_t GPIO0_LEVEL_HIGH   : 1;    /**< Campo de bits GPIO0_LEVEL_LOW para los registros INT0 */
+        uint32_t GPIO0_EDGE_LOW     : 1;    /**< Campo de bits GPIO0_LEVEL_LOW para los registros INT0 */
+        uint32_t GPIO0_EDGE_HIGH    : 1;    /**< Campo de bits GPIO0_LEVEL_LOW para los registros INT0 */
+        uint32_t GPIO1_LEVEL_LOW    : 1;    /**< Campo de bits GPIO1_LEVEL_LOW para los registros INT0 */
+        uint32_t GPIO1_LEVEL_HIGH   : 1;    /**< Campo de bits GPIO1_LEVEL_LOW para los registros INT0 */
+        uint32_t GPIO1_EDGE_LOW     : 1;    /**< Campo de bits GPIO1_LEVEL_LOW para los registros INT0 */
+        uint32_t GPIO1_EDGE_HIGH    : 1;    /**< Campo de bits GPIO1_LEVEL_LOW para los registros INT0 */
+        uint32_t GPIO2_LEVEL_LOW    : 1;    /**< Campo de bits GPIO2_LEVEL_LOW para los registros INT0 */
+        uint32_t GPIO2_LEVEL_HIGH   : 1;    /**< Campo de bits GPIO2_LEVEL_LOW para los registros INT0 */
+        uint32_t GPIO2_EDGE_LOW     : 1;    /**< Campo de bits GPIO2_LEVEL_LOW para los registros INT0 */
+        uint32_t GPIO2_EDGE_HIGH    : 1;    /**< Campo de bits GPIO2_LEVEL_LOW para los registros INT0 */
+        uint32_t GPIO3_LEVEL_LOW    : 1;    /**< Campo de bits GPIO3_LEVEL_LOW para los registros INT0 */
+        uint32_t GPIO3_LEVEL_HIGH   : 1;    /**< Campo de bits GPIO3_LEVEL_LOW para los registros INT0 */
+        uint32_t GPIO3_EDGE_LOW     : 1;    /**< Campo de bits GPIO3_LEVEL_LOW para los registros INT0 */
+        uint32_t GPIO3_EDGE_HIGH    : 1;    /**< Campo de bits GPIO3_LEVEL_LOW para los registros INT0 */
+        uint32_t GPIO4_LEVEL_LOW    : 1;    /**< Campo de bits GPIO4_LEVEL_LOW para los registros INT0 */
+        uint32_t GPIO4_LEVEL_HIGH1  : 1;    /**< Campo de bits GPIO4_LEVEL_LOW para los registros INT0 */
+        uint32_t GPIO4_EDGE_LOW     : 1;    /**< Campo de bits GPIO4_LEVEL_LOW para los registros INT0 */
+        uint32_t GPIO4_EDGE_HIGH    : 1;    /**< Campo de bits GPIO4_LEVEL_LOW para los registros INT0 */
+        uint32_t GPIO5_LEVEL_LOW    : 1;    /**< Campo de bits GPIO5_LEVEL_LOW para los registros INT0 */
+        uint32_t GPIO5_LEVEL_HIGH   : 1;    /**< Campo de bits GPIO5_LEVEL_LOW para los registros INT0 */
+        uint32_t GPIO5_EDGE_LOW     : 1;    /**< Campo de bits GPIO5_LEVEL_LOW para los registros INT0 */
+        uint32_t GPIO5_EDGE_HIGH    : 1;    /**< Campo de bits GPIO5_LEVEL_LOW para los registros INT0 */
+        uint32_t GPIO6_LEVEL_LOW    : 1;    /**< Campo de bits GPIO6_LEVEL_LOW para los registros INT0 */
+        uint32_t GPIO6_LEVEL_HIGH   : 1;    /**< Campo de bits GPIO6_LEVEL_LOW para los registros INT0 */
+        uint32_t GPIO6_EDGE_LOW     : 1;    /**< Campo de bits GPIO6_LEVEL_LOW para los registros INT0 */
+        uint32_t GPIO6_EDGE_HIGH    : 1;    /**< Campo de bits GPIO6_LEVEL_LOW para los registros INT0 */
+        uint32_t GPIO7_LEVEL_LOW    : 1;    /**< Campo de bits GPIO7_LEVEL_LOW para los registros INT0 */
+        uint32_t GPIO7_LEVEL_HIGH   : 1;    /**< Campo de bits GPIO7_LEVEL_LOW para los registros INT0 */
+        uint32_t GPIO7_EDGE_LOW     : 1;    /**< Campo de bits GPIO7_LEVEL_LOW para los registros INT0 */
+        uint32_t GPIO7_EDGE_HIGH    : 1;    /**< Campo de bits GPIO7_LEVEL_LOW para los registros INT0 */
     }BITS;
 }__int0_t;
 
+/**
+ * @union __int1_t
+ * @brief Union de los registros que contienen INTR1, INTE1, INTF1 e INTS1. Contiene los 32 campos de bits de los registros.
+*/
 typedef union {
     uint32_t WORD;
     struct {
-        uint32_t GPIO8_LEVEL_LOW     : 1;
-        uint32_t GPIO8_LEVEL_HIGH    : 1;
-        uint32_t GPIO8_EDGE_LOW      : 1;
-        uint32_t GPIO8_EDGE_HIGH     : 1;
-        uint32_t GPIO9_LEVEL_LOW     : 1;
-        uint32_t GPIO9_LEVEL_HIGH    : 1;
-        uint32_t GPIO9_EDGE_LOW      : 1;
-        uint32_t GPIO9_EDGE_HIGH     : 1;
-        uint32_t GPIO10_LEVEL_LOW    : 1;
-        uint32_t GPIO10_LEVEL_HIGH   : 1;
-        uint32_t GPIO10_EDGE_LOW     : 1;
-        uint32_t GPIO10_EDGE_HIGH    : 1;
-        uint32_t GPIO11_LEVEL_LOW    : 1;
-        uint32_t GPIO11_LEVEL_HIGH   : 1;
-        uint32_t GPIO11_EDGE_LOW     : 1;
-        uint32_t GPIO11_EDGE_HIGH    : 1;
-        uint32_t GPIO12_LEVEL_LOW    : 1;
-        uint32_t GPIO12_LEVEL_HIGH1  : 1;
-        uint32_t GPIO12_EDGE_LOW     : 1;
-        uint32_t GPIO12_EDGE_HIGH    : 1;
-        uint32_t GPIO13_LEVEL_LOW    : 1;
-        uint32_t GPIO13_LEVEL_HIGH   : 1;
-        uint32_t GPIO13_EDGE_LOW     : 1;
-        uint32_t GPIO13_EDGE_HIGH    : 1;
-        uint32_t GPIO14_LEVEL_LOW    : 1;
-        uint32_t GPIO14_LEVEL_HIGH   : 1;
-        uint32_t GPIO14_EDGE_LOW     : 1;
-        uint32_t GPIO14_EDGE_HIGH    : 1;
-        uint32_t GPIO15_LEVEL_LOW    : 1;
-        uint32_t GPIO15_LEVEL_HIGH   : 1;
-        uint32_t GPIO15_EDGE_LOW     : 1;
-        uint32_t GPIO15_EDGE_HIGH    : 1;
+        uint32_t GPIO8_LEVEL_LOW     : 1;    /**< Campo de bits GPIO8_LEVEL_LOW para los registros INT1 */
+        uint32_t GPIO8_LEVEL_HIGH    : 1;    /**< Campo de bits GPIO8_LEVEL_LOW para los registros INT1 */
+        uint32_t GPIO8_EDGE_LOW      : 1;    /**< Campo de bits GPIO8_LEVEL_LOW para los registros INT1 */
+        uint32_t GPIO8_EDGE_HIGH     : 1;    /**< Campo de bits GPIO8_LEVEL_LOW para los registros INT1 */
+        uint32_t GPIO9_LEVEL_LOW     : 1;    /**< Campo de bits GPIO9_LEVEL_LOW para los registros INT1 */
+        uint32_t GPIO9_LEVEL_HIGH    : 1;    /**< Campo de bits GPIO9_LEVEL_LOW para los registros INT1 */
+        uint32_t GPIO9_EDGE_LOW      : 1;    /**< Campo de bits GPIO9_LEVEL_LOW para los registros INT1 */
+        uint32_t GPIO9_EDGE_HIGH     : 1;    /**< Campo de bits GPIO9_LEVEL_LOW para los registros INT1 */
+        uint32_t GPIO10_LEVEL_LOW    : 1;    /**< Campo de bits GPIO10_LEVEL_LOW para los registros INT1 */
+        uint32_t GPIO10_LEVEL_HIGH   : 1;    /**< Campo de bits GPIO10_LEVEL_LOW para los registros INT1 */
+        uint32_t GPIO10_EDGE_LOW     : 1;    /**< Campo de bits GPIO10_LEVEL_LOW para los registros INT1 */
+        uint32_t GPIO10_EDGE_HIGH    : 1;    /**< Campo de bits GPIO10_LEVEL_LOW para los registros INT1 */
+        uint32_t GPIO11_LEVEL_LOW    : 1;    /**< Campo de bits GPIO11_LEVEL_LOW para los registros INT1 */
+        uint32_t GPIO11_LEVEL_HIGH   : 1;    /**< Campo de bits GPIO11_LEVEL_LOW para los registros INT1 */
+        uint32_t GPIO11_EDGE_LOW     : 1;    /**< Campo de bits GPIO11_LEVEL_LOW para los registros INT1 */
+        uint32_t GPIO11_EDGE_HIGH    : 1;    /**< Campo de bits GPIO11_LEVEL_LOW para los registros INT1 */
+        uint32_t GPIO12_LEVEL_LOW    : 1;    /**< Campo de bits GPIO12_LEVEL_LOW para los registros INT1 */
+        uint32_t GPIO12_LEVEL_HIGH1  : 1;    /**< Campo de bits GPIO12_LEVEL_LOW para los registros INT1 */
+        uint32_t GPIO12_EDGE_LOW     : 1;    /**< Campo de bits GPIO12_LEVEL_LOW para los registros INT1 */
+        uint32_t GPIO12_EDGE_HIGH    : 1;    /**< Campo de bits GPIO12_LEVEL_LOW para los registros INT1 */
+        uint32_t GPIO13_LEVEL_LOW    : 1;    /**< Campo de bits GPIO13_LEVEL_LOW para los registros INT1 */
+        uint32_t GPIO13_LEVEL_HIGH   : 1;    /**< Campo de bits GPIO13_LEVEL_LOW para los registros INT1 */
+        uint32_t GPIO13_EDGE_LOW     : 1;    /**< Campo de bits GPIO13_LEVEL_LOW para los registros INT1 */
+        uint32_t GPIO13_EDGE_HIGH    : 1;    /**< Campo de bits GPIO13_LEVEL_LOW para los registros INT1 */
+        uint32_t GPIO14_LEVEL_LOW    : 1;    /**< Campo de bits GPIO14_LEVEL_LOW para los registros INT1 */
+        uint32_t GPIO14_LEVEL_HIGH   : 1;    /**< Campo de bits GPIO14_LEVEL_LOW para los registros INT1 */
+        uint32_t GPIO14_EDGE_LOW     : 1;    /**< Campo de bits GPIO14_LEVEL_LOW para los registros INT1 */
+        uint32_t GPIO14_EDGE_HIGH    : 1;    /**< Campo de bits GPIO14_LEVEL_LOW para los registros INT1 */
+        uint32_t GPIO15_LEVEL_LOW    : 1;    /**< Campo de bits GPIO15_LEVEL_LOW para los registros INT1 */
+        uint32_t GPIO15_LEVEL_HIGH   : 1;    /**< Campo de bits GPIO15_LEVEL_LOW para los registros INT1 */
+        uint32_t GPIO15_EDGE_LOW     : 1;    /**< Campo de bits GPIO15_LEVEL_LOW para los registros INT1 */
+        uint32_t GPIO15_EDGE_HIGH    : 1;    /**< Campo de bits GPIO15_LEVEL_LOW para los registros INT1 */
     }BITS;
 }__int1_t;
 
+/**
+ * @union __int2_t
+ * @brief Union de los registros que contienen INTR2, INTE2, INTF2 e INTS2. Contiene los 32 campos de bits de los registros.
+*/
 typedef union {
     uint32_t WORD;
     struct {
-        uint32_t GPIO16_LEVEL_LOW     : 1;
-        uint32_t GPIO16_LEVEL_HIGH    : 1;
-        uint32_t GPIO16_EDGE_LOW      : 1;
-        uint32_t GPIO16_EDGE_HIGH     : 1;
-        uint32_t GPIO17_LEVEL_LOW     : 1;
-        uint32_t GPIO17_LEVEL_HIGH    : 1;
-        uint32_t GPIO17_EDGE_LOW      : 1;
-        uint32_t GPIO17_EDGE_HIGH     : 1;
-        uint32_t GPIO18_LEVEL_LOW    : 1;
-        uint32_t GPIO18_LEVEL_HIGH   : 1;
-        uint32_t GPIO18_EDGE_LOW     : 1;
-        uint32_t GPIO18_EDGE_HIGH    : 1;
-        uint32_t GPIO19_LEVEL_LOW    : 1;
-        uint32_t GPIO19_LEVEL_HIGH   : 1;
-        uint32_t GPIO19_EDGE_LOW     : 1;
-        uint32_t GPIO19_EDGE_HIGH    : 1;
-        uint32_t GPIO20_LEVEL_LOW    : 1;
-        uint32_t GPIO20_LEVEL_HIGH1  : 1;
-        uint32_t GPIO20_EDGE_LOW     : 1;
-        uint32_t GPIO20_EDGE_HIGH    : 1;
-        uint32_t GPIO21_LEVEL_LOW    : 1;
-        uint32_t GPIO21_LEVEL_HIGH   : 1;
-        uint32_t GPIO21_EDGE_LOW     : 1;
-        uint32_t GPIO21_EDGE_HIGH    : 1;
-        uint32_t GPIO22_LEVEL_LOW    : 1;
-        uint32_t GPIO22_LEVEL_HIGH   : 1;
-        uint32_t GPIO22_EDGE_LOW     : 1;
-        uint32_t GPIO22_EDGE_HIGH    : 1;
-        uint32_t GPIO23_LEVEL_LOW    : 1;
-        uint32_t GPIO23_LEVEL_HIGH   : 1;
-        uint32_t GPIO23_EDGE_LOW     : 1;
-        uint32_t GPIO23_EDGE_HIGH    : 1;
+        uint32_t GPIO16_LEVEL_LOW    : 1;   /**< Campo de bits GPIO16_LEVEL_LOW para los registros INT2 */
+        uint32_t GPIO16_LEVEL_HIGH   : 1;   /**< Campo de bits GPIO16_LEVEL_LOW para los registros INT2 */
+        uint32_t GPIO16_EDGE_LOW     : 1;   /**< Campo de bits GPIO16_LEVEL_LOW para los registros INT2 */
+        uint32_t GPIO16_EDGE_HIGH    : 1;   /**< Campo de bits GPIO16_LEVEL_LOW para los registros INT2 */
+        uint32_t GPIO17_LEVEL_LOW    : 1;   /**< Campo de bits GPIO17_LEVEL_LOW para los registros INT2 */
+        uint32_t GPIO17_LEVEL_HIGH   : 1;   /**< Campo de bits GPIO17_LEVEL_LOW para los registros INT2 */
+        uint32_t GPIO17_EDGE_LOW     : 1;   /**< Campo de bits GPIO17_LEVEL_LOW para los registros INT2 */
+        uint32_t GPIO17_EDGE_HIGH    : 1;   /**< Campo de bits GPIO17_LEVEL_LOW para los registros INT2 */
+        uint32_t GPIO18_LEVEL_LOW    : 1;   /**< Campo de bits GPIO18_LEVEL_LOW para los registros INT2 */
+        uint32_t GPIO18_LEVEL_HIGH   : 1;   /**< Campo de bits GPIO18_LEVEL_LOW para los registros INT2 */
+        uint32_t GPIO18_EDGE_LOW     : 1;   /**< Campo de bits GPIO18_LEVEL_LOW para los registros INT2 */
+        uint32_t GPIO18_EDGE_HIGH    : 1;   /**< Campo de bits GPIO18_LEVEL_LOW para los registros INT2 */
+        uint32_t GPIO19_LEVEL_LOW    : 1;   /**< Campo de bits GPIO19_LEVEL_LOW para los registros INT2 */
+        uint32_t GPIO19_LEVEL_HIGH   : 1;   /**< Campo de bits GPIO19_LEVEL_LOW para los registros INT2 */
+        uint32_t GPIO19_EDGE_LOW     : 1;   /**< Campo de bits GPIO19_LEVEL_LOW para los registros INT2 */
+        uint32_t GPIO19_EDGE_HIGH    : 1;   /**< Campo de bits GPIO19_LEVEL_LOW para los registros INT2 */
+        uint32_t GPIO20_LEVEL_LOW    : 1;   /**< Campo de bits GPIO20_LEVEL_LOW para los registros INT2 */
+        uint32_t GPIO20_LEVEL_HIGH1  : 1;   /**< Campo de bits GPIO20_LEVEL_LOW para los registros INT2 */
+        uint32_t GPIO20_EDGE_LOW     : 1;   /**< Campo de bits GPIO20_LEVEL_LOW para los registros INT2 */
+        uint32_t GPIO20_EDGE_HIGH    : 1;   /**< Campo de bits GPIO20_LEVEL_LOW para los registros INT2 */
+        uint32_t GPIO21_LEVEL_LOW    : 1;   /**< Campo de bits GPIO21_LEVEL_LOW para los registros INT2 */
+        uint32_t GPIO21_LEVEL_HIGH   : 1;   /**< Campo de bits GPIO21_LEVEL_LOW para los registros INT2 */
+        uint32_t GPIO21_EDGE_LOW     : 1;   /**< Campo de bits GPIO21_LEVEL_LOW para los registros INT2 */
+        uint32_t GPIO21_EDGE_HIGH    : 1;   /**< Campo de bits GPIO21_LEVEL_LOW para los registros INT2 */
+        uint32_t GPIO22_LEVEL_LOW    : 1;   /**< Campo de bits GPIO22_LEVEL_LOW para los registros INT2 */
+        uint32_t GPIO22_LEVEL_HIGH   : 1;   /**< Campo de bits GPIO22_LEVEL_LOW para los registros INT2 */
+        uint32_t GPIO22_EDGE_LOW     : 1;   /**< Campo de bits GPIO22_LEVEL_LOW para los registros INT2 */
+        uint32_t GPIO22_EDGE_HIGH    : 1;   /**< Campo de bits GPIO22_LEVEL_LOW para los registros INT2 */
+        uint32_t GPIO23_LEVEL_LOW    : 1;   /**< Campo de bits GPIO23_LEVEL_LOW para los registros INT2 */
+        uint32_t GPIO23_LEVEL_HIGH   : 1;   /**< Campo de bits GPIO23_LEVEL_LOW para los registros INT2 */
+        uint32_t GPIO23_EDGE_LOW     : 1;   /**< Campo de bits GPIO23_LEVEL_LOW para los registros INT2 */
+        uint32_t GPIO23_EDGE_HIGH    : 1;   /**< Campo de bits GPIO23_LEVEL_LOW para los registros INT2 */
     }BITS;
 }__int2_t;
 
+/**
+ * @union __int3_t
+ * @brief Union de los registros que contienen INTR3, INTE3, INTF3 e INTS3. Contiene los 32 campos de bits de los registros.
+*/
 typedef union {
     uint32_t WORD;
     struct {
-        uint32_t GPIO24_LEVEL_LOW     : 1;
-        uint32_t GPIO24_LEVEL_HIGH    : 1;
-        uint32_t GPIO24_EDGE_LOW      : 1;
-        uint32_t GPIO24_EDGE_HIGH     : 1;
-        uint32_t GPIO25_LEVEL_LOW     : 1;
-        uint32_t GPIO25_LEVEL_HIGH    : 1;
-        uint32_t GPIO25_EDGE_LOW      : 1;
-        uint32_t GPIO25_EDGE_HIGH     : 1;
-        uint32_t GPIO26_LEVEL_LOW    : 1;
-        uint32_t GPIO26_LEVEL_HIGH   : 1;
-        uint32_t GPIO26_EDGE_LOW     : 1;
-        uint32_t GPIO26_EDGE_HIGH    : 1;
-        uint32_t GPIO27_LEVEL_LOW    : 1;
-        uint32_t GPIO27_LEVEL_HIGH   : 1;
-        uint32_t GPIO27_EDGE_LOW     : 1;
-        uint32_t GPIO27_EDGE_HIGH    : 1;
-        uint32_t GPIO28_LEVEL_LOW    : 1;
-        uint32_t GPIO28_LEVEL_HIGH1  : 1;
-        uint32_t GPIO28_EDGE_LOW     : 1;
-        uint32_t GPIO28_EDGE_HIGH    : 1;
-        uint32_t GPIO29_LEVEL_LOW    : 1;
-        uint32_t GPIO29_LEVEL_HIGH   : 1;
-        uint32_t GPIO29_EDGE_LOW     : 1;
-        uint32_t GPIO29_EDGE_HIGH    : 1;
-        uint32_t                     : 8;
+        uint32_t GPIO24_LEVEL_LOW    : 1;   /**< Campo de bits GPIO24_LEVEL_LOW para los registros INT3 */
+        uint32_t GPIO24_LEVEL_HIGH   : 1;   /**< Campo de bits GPIO24_LEVEL_LOW para los registros INT3 */
+        uint32_t GPIO24_EDGE_LOW     : 1;   /**< Campo de bits GPIO24_LEVEL_LOW para los registros INT3 */
+        uint32_t GPIO24_EDGE_HIGH    : 1;   /**< Campo de bits GPIO24_LEVEL_LOW para los registros INT3 */
+        uint32_t GPIO25_LEVEL_LOW    : 1;   /**< Campo de bits GPIO25_LEVEL_LOW para los registros INT3 */
+        uint32_t GPIO25_LEVEL_HIGH   : 1;   /**< Campo de bits GPIO25_LEVEL_LOW para los registros INT3 */
+        uint32_t GPIO25_EDGE_LOW     : 1;   /**< Campo de bits GPIO25_LEVEL_LOW para los registros INT3 */
+        uint32_t GPIO25_EDGE_HIGH    : 1;   /**< Campo de bits GPIO25_LEVEL_LOW para los registros INT3 */
+        uint32_t GPIO26_LEVEL_LOW    : 1;   /**< Campo de bits GPIO26_LEVEL_LOW para los registros INT3 */
+        uint32_t GPIO26_LEVEL_HIGH   : 1;   /**< Campo de bits GPIO26_LEVEL_LOW para los registros INT3 */
+        uint32_t GPIO26_EDGE_LOW     : 1;   /**< Campo de bits GPIO26_LEVEL_LOW para los registros INT3 */
+        uint32_t GPIO26_EDGE_HIGH    : 1;   /**< Campo de bits GPIO26_LEVEL_LOW para los registros INT3 */
+        uint32_t GPIO27_LEVEL_LOW    : 1;   /**< Campo de bits GPIO27_LEVEL_LOW para los registros INT3 */
+        uint32_t GPIO27_LEVEL_HIGH   : 1;   /**< Campo de bits GPIO27_LEVEL_LOW para los registros INT3 */
+        uint32_t GPIO27_EDGE_LOW     : 1;   /**< Campo de bits GPIO27_LEVEL_LOW para los registros INT3 */
+        uint32_t GPIO27_EDGE_HIGH    : 1;   /**< Campo de bits GPIO27_LEVEL_LOW para los registros INT3 */
+        uint32_t GPIO28_LEVEL_LOW    : 1;   /**< Campo de bits GPIO28_LEVEL_LOW para los registros INT3 */
+        uint32_t GPIO28_LEVEL_HIGH1  : 1;   /**< Campo de bits GPIO28_LEVEL_LOW para los registros INT3 */
+        uint32_t GPIO28_EDGE_LOW     : 1;   /**< Campo de bits GPIO28_LEVEL_LOW para los registros INT3 */
+        uint32_t GPIO28_EDGE_HIGH    : 1;   /**< Campo de bits GPIO28_LEVEL_LOW para los registros INT3 */
+        uint32_t GPIO29_LEVEL_LOW    : 1;   /**< Campo de bits GPIO29_LEVEL_LOW para los registros INT3 */
+        uint32_t GPIO29_LEVEL_HIGH   : 1;   /**< Campo de bits GPIO29_LEVEL_LOW para los registros INT3 */
+        uint32_t GPIO29_EDGE_LOW     : 1;   /**< Campo de bits GPIO29_LEVEL_LOW para los registros INT3 */
+        uint32_t GPIO29_EDGE_HIGH    : 1;   /**< Campo de bits GPIO29_LEVEL_LOW para los registros INT3 */
+        uint32_t                     : 8;   /**< Campo de bits reservado para los registros INT3 */
     }BITS;
 }__int3_t;
 
