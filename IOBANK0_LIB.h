@@ -1049,6 +1049,762 @@
 #define mIOBANK_DORMANT_WAKE_INTS3_GPIO29_EDGE_LOW(x)        (x & 0x00400000U)   /**< Macro de campo de bit GPIO29_EDGE_LOW registro DORMANT_WAKE_INTS3 */
 #define mIOBANK_DORMANT_WAKE_INTS3_GPIO29_EDGE_HIGH(x)       (x & 0x00800000U)   /**< Macro de campo de bit GPIO29_EDGE_HIGH registro DORMANT_WAKE_INTS3 */
 
+//--------------- Macros PROC0_INT -------------------------------/
+
+#define mIOBANK_PROC0_INTE0_GPIO0_LEVEL_LOW(x)      (x & 0x00000001U)       /**< Macro de campo de bit GPIO0_LEVEL_LOW registro PROC0_INTE0 */
+#define mIOBANK_PROC0_INTE0_GPIO0_LEVEL_HIGH(x)     (x & 0x00000002U)       /**< Macro de campo de bit GPIO0_LEVEL_HIGH registro PROC0_INTE0 */
+#define mIOBANK_PROC0_INTE0_GPIO0_EDGE_LOW(x)       (x & 0x00000004U)       /**< Macro de campo de bit GPIO0_EDGE_LOW registro PROC0_INTE0 */
+#define mIOBANK_PROC0_INTE0_GPIO0_EDGE_HIGH(x)      (x & 0x00000008U)       /**< Macro de campo de bit GPIO0_EDGE_HIGH registro PROC0_INTE0 */
+#define mIOBANK_PROC0_INTE0_GPIO1_LEVEL_LOW(x)      (x & 0x00000010U)       /**< Macro de campo de bit GPIO1_LEVEL_LOW registro PROC0_INTE0 */
+#define mIOBANK_PROC0_INTE0_GPIO1_LEVEL_HIGH(x)     (x & 0x00000020U)       /**< Macro de campo de bit GPIO1_LEVEL_HIGH registro PROC0_INTE0 */
+#define mIOBANK_PROC0_INTE0_GPIO1_EDGE_LOW(x)       (x & 0x00000040U)       /**< Macro de campo de bit GPIO1_EDGE_LOW registro PROC0_INTE0 */
+#define mIOBANK_PROC0_INTE0_GPIO1_EDGE_HIGH(x)      (x & 0x00000080U)       /**< Macro de campo de bit GPIO1_EDGE_HIGH registro PROC0_INTE0 */
+#define mIOBANK_PROC0_INTE0_GPIO2_LEVEL_LOW(x)      (x & 0x00000100U)       /**< Macro de campo de bit GPIO2_LEVEL_LOW registro PROC0_INTE0 */
+#define mIOBANK_PROC0_INTE0_GPIO2_LEVEL_HIGH(x)     (x & 0x00000200U)       /**< Macro de campo de bit GPIO2_LEVEL_HIGH registro PROC0_INTE0 */
+#define mIOBANK_PROC0_INTE0_GPIO2_EDGE_LOW(x)       (x & 0x00000400U)       /**< Macro de campo de bit GPIO2_EDGE_LOW registro PROC0_INTE0 */
+#define mIOBANK_PROC0_INTE0_GPIO2_EDGE_HIGH(x)      (x & 0x00000800U)       /**< Macro de campo de bit GPIO0_EDGE_HIGH registro PROC0_INTE0 */
+#define mIOBANK_PROC0_INTE0_GPIO3_LEVEL_LOW(x)      (x & 0x00001000U)       /**< Macro de campo de bit GPIO3_LEVEL_LOW registro PROC0_INTE0 */
+#define mIOBANK_PROC0_INTE0_GPIO3_LEVEL_HIGH(x)     (x & 0x00002000U)       /**< Macro de campo de bit GPIO3_LEVEL_HIGH registro PROC0_INTE0 */
+#define mIOBANK_PROC0_INTE0_GPIO3_EDGE_LOW(x)       (x & 0x00004000U)       /**< Macro de campo de bit GPIO3_EDGE_LOW registro PROC0_INTE0 */
+#define mIOBANK_PROC0_INTE0_GPIO3_EDGE_HIGH(x)      (x & 0x00008000U)       /**< Macro de campo de bit GPIO3_EDGE_HIGH registro PROC0_INTE0 */
+#define mIOBANK_PROC0_INTE0_GPIO4_LEVEL_LOW(x)      (x & 0x00010000U)       /**< Macro de campo de bit GPIO4_LEVEL_LOW registro PROC0_INTE0 */
+#define mIOBANK_PROC0_INTE0_GPIO4_LEVEL_HIGH(x)     (x & 0x00020000U)       /**< Macro de campo de bit GPIO4_LEVEL_HIGH registro PROC0_INTE0 */
+#define mIOBANK_PROC0_INTE0_GPIO4_EDGE_LOW(x)       (x & 0x00040000U)       /**< Macro de campo de bit GPIO4_EDGE_LOW registro PROC0_INTE0 */
+#define mIOBANK_PROC0_INTE0_GPIO4_EDGE_HIGH(x)      (x & 0x00080000U)       /**< Macro de campo de bit GPIO4_EDGE_HIGH registro PROC0_INTE0 */
+#define mIOBANK_PROC0_INTE0_GPIO5_LEVEL_LOW(x)      (x & 0x00100000U)       /**< Macro de campo de bit GPIO5_LEVEL_LOW registro PROC0_INTE0 */
+#define mIOBANK_PROC0_INTE0_GPIO5_LEVEL_HIGH(x)     (x & 0x00200000U)       /**< Macro de campo de bit GPIO5_LEVEL_HIGH registro PROC0_INTE0 */
+#define mIOBANK_PROC0_INTE0_GPIO5_EDGE_LOW(x)       (x & 0x00400000U)       /**< Macro de campo de bit GPIO5_EDGE_LOW registro PROC0_INTE0 */
+#define mIOBANK_PROC0_INTE0_GPIO5_EDGE_HIGH(x)      (x & 0x00800000U)       /**< Macro de campo de bit GPIO5_EDGE_HIGH registro PROC0_INTE0 */
+#define mIOBANK_PROC0_INTE0_GPIO6_LEVEL_LOW(x)      (x & 0x01000000U)       /**< Macro de campo de bit GPIO6_LEVEL_LOW registro PROC0_INTE0 */
+#define mIOBANK_PROC0_INTE0_GPIO6_LEVEL_HIGH(x)     (x & 0x02000000U)       /**< Macro de campo de bit GPIO6_LEVEL_HIGH registro PROC0_INTE0 */
+#define mIOBANK_PROC0_INTE0_GPIO6_EDGE_LOW(x)       (x & 0x04000000U)       /**< Macro de campo de bit GPIO6_EDGE_LOW registro PROC0_INTE0 */
+#define mIOBANK_PROC0_INTE0_GPIO6_EDGE_HIGH(x)      (x & 0x08000000U)       /**< Macro de campo de bit GPIO6_EDGE_HIGH registro PROC0_INTE0 */
+#define mIOBANK_PROC0_INTE0_GPIO7_LEVEL_LOW(x)      (x & 0x10000000U)       /**< Macro de campo de bit GPIO7_LEVEL_LOW registro PROC0_INTE0 */
+#define mIOBANK_PROC0_INTE0_GPIO7_LEVEL_HIGH(x)     (x & 0x20000000U)       /**< Macro de campo de bit GPIO7_LEVEL_HIGH registro PROC0_INTE0 */
+#define mIOBANK_PROC0_INTE0_GPIO7_EDGE_LOW(x)       (x & 0x40000000U)       /**< Macro de campo de bit GPIO7_EDGE_LOW registro PROC0_INTE0 */
+#define mIOBANK_PROC0_INTE0_GPIO7_EDGE_HIGH(x)      (x & 0x80000000U)       /**< Macro de campo de bit GPIO7_EDGE_HIGH registro PROC0_INTE0 */
+
+#define mIOBANK_PROC0_INTE1_GPIO8_LEVEL_LOW(x)      (x & 0x00000001U)      /**< Macro de campo de bit GPIO8_LEVEL_LOW registro PROC0_INTE1 */
+#define mIOBANK_PROC0_INTE1_GPIO8_LEVEL_HIGH(x)     (x & 0x00000002U)      /**< Macro de campo de bit GPIO8_LEVEL_HIGH registro PROC0_INTE1 */
+#define mIOBANK_PROC0_INTE1_GPIO8_EDGE_LOW(x)       (x & 0x00000004U)      /**< Macro de campo de bit GPIO8_EDGE_LOW registro PROC0_INTE1 */
+#define mIOBANK_PROC0_INTE1_GPIO8_EDGE_HIGH(x)      (x & 0x00000008U)      /**< Macro de campo de bit GPIO8_EDGE_HIGH registro PROC0_INTE1 */
+#define mIOBANK_PROC0_INTE1_GPIO9_LEVEL_LOW(x)      (x & 0x00000010U)      /**< Macro de campo de bit GPIO9_LEVEL_LOW registro PROC0_INTE1 */
+#define mIOBANK_PROC0_INTE1_GPIO9_LEVEL_HIGH(x)     (x & 0x00000020U)      /**< Macro de campo de bit GPIO9_LEVEL_HIGH registro PROC0_INTE1 */
+#define mIOBANK_PROC0_INTE1_GPIO9_EDGE_LOW(x)       (x & 0x00000040U)      /**< Macro de campo de bit GPIO9_EDGE_LOW registro PROC0_INTE1 */
+#define mIOBANK_PROC0_INTE1_GPIO9_EDGE_HIGH(x)      (x & 0x00000080U)      /**< Macro de campo de bit GPIO9_EDGE_HIGH registro PROC0_INTE1 */
+#define mIOBANK_PROC0_INTE1_GPIO10_LEVEL_LOW(x)     (x & 0x00000100U)       /**< Macro de campo de bit GPIO10_LEVEL_LOW registro PROC0_INTE1 */
+#define mIOBANK_PROC0_INTE1_GPIO10_LEVEL_HIGH(x)    (x & 0x00000200U)       /**< Macro de campo de bit GPIO10_LEVEL_HIGH registro PROC0_INTE1 */
+#define mIOBANK_PROC0_INTE1_GPIO10_EDGE_LOW(x)      (x & 0x00000400U)       /**< Macro de campo de bit GPIO10_EDGE_LOW registro PROC0_INTE1 */
+#define mIOBANK_PROC0_INTE1_GPIO10_EDGE_HIGH(x)     (x & 0x00000800U)       /**< Macro de campo de bit GPIO10_EDGE_HIGH registro PROC0_INTE1 */
+#define mIOBANK_PROC0_INTE1_GPIO11_LEVEL_LOW(x)     (x & 0x00001000U)       /**< Macro de campo de bit GPIO11_LEVEL_LOW registro PROC0_INTE1 */
+#define mIOBANK_PROC0_INTE1_GPIO11_LEVEL_HIGH(x)    (x & 0x00002000U)       /**< Macro de campo de bit GPIO11_LEVEL_HIGH registro PROC0_INTE1 */
+#define mIOBANK_PROC0_INTE1_GPIO11_EDGE_LOW(x)      (x & 0x00004000U)       /**< Macro de campo de bit GPIO11_EDGE_LOW registro PROC0_INTE1 */
+#define mIOBANK_PROC0_INTE1_GPIO11_EDGE_HIGH(x)     (x & 0x00008000U)       /**< Macro de campo de bit GPIO11_EDGE_HIGH registro PROC0_INTE1 */
+#define mIOBANK_PROC0_INTE1_GPIO12_LEVEL_LOW(x)     (x & 0x00010000U)       /**< Macro de campo de bit GPIO12_LEVEL_LOW registro PROC0_INTE1 */
+#define mIOBANK_PROC0_INTE1_GPIO12_LEVEL_HIGH(x)    (x & 0x00020000U)       /**< Macro de campo de bit GPIO12_LEVEL_HIGH registro PROC0_INTE1 */
+#define mIOBANK_PROC0_INTE1_GPIO12_EDGE_LOW(x)      (x & 0x00040000U)       /**< Macro de campo de bit GPIO12_EDGE_LOW registro PROC0_INTE1 */
+#define mIOBANK_PROC0_INTE1_GPIO12_EDGE_HIGH(x)     (x & 0x00080000U)       /**< Macro de campo de bit GPIO12_EDGE_HIGH registro PROC0_INTE1 */
+#define mIOBANK_PROC0_INTE1_GPIO13_LEVEL_LOW(x)     (x & 0x00100000U)       /**< Macro de campo de bit GPIO13_LEVEL_LOW registro PROC0_INTE1 */
+#define mIOBANK_PROC0_INTE1_GPIO13_LEVEL_HIGH(x)    (x & 0x00200000U)       /**< Macro de campo de bit GPIO13_LEVEL_HIGH registro PROC0_INTE1 */
+#define mIOBANK_PROC0_INTE1_GPIO13_EDGE_LOW(x)      (x & 0x00400000U)       /**< Macro de campo de bit GPIO13_EDGE_LOW registro PROC0_INTE1 */
+#define mIOBANK_PROC0_INTE1_GPIO13_EDGE_HIGH(x)     (x & 0x00800000U)       /**< Macro de campo de bit GPIO13_EDGE_HIGH registro PROC0_INTE1 */
+#define mIOBANK_PROC0_INTE1_GPIO14_LEVEL_LOW(x)     (x & 0x01000000U)       /**< Macro de campo de bit GPIO14_LEVEL_LOW registro PROC0_INTE1 */
+#define mIOBANK_PROC0_INTE1_GPIO14_LEVEL_HIGH(x)    (x & 0x02000000U)       /**< Macro de campo de bit GPIO14_LEVEL_HIGH registro PROC0_INTE1 */
+#define mIOBANK_PROC0_INTE1_GPIO14_EDGE_LOW(x)      (x & 0x04000000U)       /**< Macro de campo de bit GPIO14_EDGE_LOW registro PROC0_INTE1 */
+#define mIOBANK_PROC0_INTE1_GPIO14_EDGE_HIGH(x)     (x & 0x08000000U)       /**< Macro de campo de bit GPIO14_EDGE_HIGH registro PROC0_INTE1 */
+#define mIOBANK_PROC0_INTE1_GPIO15_LEVEL_LOW(x)     (x & 0x10000000U)       /**< Macro de campo de bit GPIO15_LEVEL_LOW registro PROC0_INTE1 */
+#define mIOBANK_PROC0_INTE1_GPIO15_LEVEL_HIGH(x)    (x & 0x20000000U)       /**< Macro de campo de bit GPIO15_LEVEL_HIGH registro PROC0_INTE1 */
+#define mIOBANK_PROC0_INTE1_GPIO15_EDGE_LOW(x)      (x & 0x40000000U)       /**< Macro de campo de bit GPIO15_EDGE_LOW registro PROC0_INTE1 */
+#define mIOBANK_PROC0_INTE1_GPIO15_EDGE_HIGH(x)     (x & 0x80000000U)       /**< Macro de campo de bit GPIO15_EDGE_HIGH registro PROC0_INTE1 */
+
+#define mIOBANK_PROC0_INTE2_GPIO16_LEVEL_LOW(x)     (x & 0x00000001U)       /**< Macro de campo de bit GPIO16_LEVEL_LOW registro PROC0_INTE2 */
+#define mIOBANK_PROC0_INTE2_GPIO16_LEVEL_HIGH(x)    (x & 0x00000002U)       /**< Macro de campo de bit GPIO16_LEVEL_HIGH registro PROC0_INTE2 */
+#define mIOBANK_PROC0_INTE2_GPIO16_EDGE_LOW(x)      (x & 0x00000004U)       /**< Macro de campo de bit GPIO16_EDGE_LOW registro PROC0_INTE2 */
+#define mIOBANK_PROC0_INTE2_GPIO16_EDGE_HIGH(x)     (x & 0x00000008U)       /**< Macro de campo de bit GPIO16_EDGE_HIGH registro PROC0_INTE2 */
+#define mIOBANK_PROC0_INTE2_GPIO17_LEVEL_LOW(x)     (x & 0x00000010U)       /**< Macro de campo de bit GPIO17_LEVEL_LOW registro PROC0_INTE2 */
+#define mIOBANK_PROC0_INTE2_GPIO17_LEVEL_HIGH(x)    (x & 0x00000020U)       /**< Macro de campo de bit GPIO17_LEVEL_HIGH registro PROC0_INTE2 */
+#define mIOBANK_PROC0_INTE2_GPIO17_EDGE_LOW(x)      (x & 0x00000040U)       /**< Macro de campo de bit GPIO17_EDGE_LOW registro PROC0_INTE2 */
+#define mIOBANK_PROC0_INTE2_GPIO17_EDGE_HIGH(x)     (x & 0x00000080U)       /**< Macro de campo de bit GPIO17_EDGE_HIGH registro PROC0_INTE2 */
+#define mIOBANK_PROC0_INTE2_GPIO18_LEVEL_LOW(x)     (x & 0x00000100U)       /**< Macro de campo de bit GPIO18_LEVEL_LOW registro PROC0_INTE2 */
+#define mIOBANK_PROC0_INTE2_GPIO18_LEVEL_HIGH(x)    (x & 0x00000200U)       /**< Macro de campo de bit GPIO18_LEVEL_HIGH registro PROC0_INTE2 */
+#define mIOBANK_PROC0_INTE2_GPIO18_EDGE_LOW(x)      (x & 0x00000400U)       /**< Macro de campo de bit GPIO18_EDGE_LOW registro PROC0_INTE2 */
+#define mIOBANK_PROC0_INTE2_GPIO18_EDGE_HIGH(x)     (x & 0x00000800U)       /**< Macro de campo de bit GPIO18_EDGE_HIGH registro PROC0_INTE2 */
+#define mIOBANK_PROC0_INTE2_GPIO19_LEVEL_LOW(x)     (x & 0x00001000U)       /**< Macro de campo de bit GPIO19_LEVEL_LOW registro PROC0_INTE2 */
+#define mIOBANK_PROC0_INTE2_GPIO19_LEVEL_HIGH(x)    (x & 0x00002000U)       /**< Macro de campo de bit GPIO19_LEVEL_HIGH registro PROC0_INTE2 */
+#define mIOBANK_PROC0_INTE2_GPIO19_EDGE_LOW(x)      (x & 0x00004000U)       /**< Macro de campo de bit GPIO19_EDGE_LOW registro PROC0_INTE2 */
+#define mIOBANK_PROC0_INTE2_GPIO19_EDGE_HIGH(x)     (x & 0x00008000U)       /**< Macro de campo de bit GPIO19_EDGE_HIGH registro PROC0_INTE2 */
+#define mIOBANK_PROC0_INTE2_GPIO20_LEVEL_LOW(x)     (x & 0x00010000U)       /**< Macro de campo de bit GPIO20_LEVEL_LOW registro PROC0_INTE2 */
+#define mIOBANK_PROC0_INTE2_GPIO20_LEVEL_HIGH(x)    (x & 0x00020000U)       /**< Macro de campo de bit GPIO20_LEVEL_HIGH registro PROC0_INTE2 */
+#define mIOBANK_PROC0_INTE2_GPIO20_EDGE_LOW(x)      (x & 0x00040000U)       /**< Macro de campo de bit GPIO20_EDGE_LOW registro PROC0_INTE2 */
+#define mIOBANK_PROC0_INTE2_GPIO20_EDGE_HIGH(x)     (x & 0x00080000U)       /**< Macro de campo de bit GPIO20_EDGE_HIGH registro PROC0_INTE2 */
+#define mIOBANK_PROC0_INTE2_GPIO21_LEVEL_LOW(x)     (x & 0x00100000U)       /**< Macro de campo de bit GPIO21_LEVEL_LOW registro PROC0_INTE2 */
+#define mIOBANK_PROC0_INTE2_GPIO21_LEVEL_HIGH(x)    (x & 0x00200000U)       /**< Macro de campo de bit GPIO21_LEVEL_HIGH registro PROC0_INTE2 */
+#define mIOBANK_PROC0_INTE2_GPIO21_EDGE_LOW(x)      (x & 0x00400000U)       /**< Macro de campo de bit GPIO21_EDGE_LOW registro PROC0_INTE2 */
+#define mIOBANK_PROC0_INTE2_GPIO21_EDGE_HIGH(x)     (x & 0x00800000U)       /**< Macro de campo de bit GPIO21_EDGE_HIGH registro PROC0_INTE2 */
+#define mIOBANK_PROC0_INTE2_GPIO22_LEVEL_LOW(x)     (x & 0x01000000U)       /**< Macro de campo de bit GPIO22_LEVEL_LOW registro PROC0_INTE2 */
+#define mIOBANK_PROC0_INTE2_GPIO22_LEVEL_HIGH(x)    (x & 0x02000000U)       /**< Macro de campo de bit GPIO22_LEVEL_HIGH registro PROC0_INTE2 */
+#define mIOBANK_PROC0_INTE2_GPIO22_EDGE_LOW(x)      (x & 0x04000000U)       /**< Macro de campo de bit GPIO22_EDGE_LOW registro PROC0_INTE2 */
+#define mIOBANK_PROC0_INTE2_GPIO22_EDGE_HIGH(x)     (x & 0x08000000U)       /**< Macro de campo de bit GPIO22_EDGE_HIGH registro PROC0_INTE2 */
+#define mIOBANK_PROC0_INTE2_GPIO23_LEVEL_LOW(x)     (x & 0x10000000U)       /**< Macro de campo de bit GPIO23_LEVEL_LOW registro PROC0_INTE2 */
+#define mIOBANK_PROC0_INTE2_GPIO23_LEVEL_HIGH(x)    (x & 0x20000000U)       /**< Macro de campo de bit GPIO23_LEVEL_HIGH registro PROC0_INTE2 */
+#define mIOBANK_PROC0_INTE2_GPIO23_EDGE_LOW(x)      (x & 0x40000000U)       /**< Macro de campo de bit GPIO23_EDGE_LOW registro PROC0_INTE2 */
+#define mIOBANK_PROC0_INTE2_GPIO23_EDGE_HIGH(x)     (x & 0x80000000U)       /**< Macro de campo de bit GPIO23_EDGE_HIGH registro PROC0_INTE2 */
+
+#define mIOBANK_PROC0_INTE3_GPIO24_LEVEL_LOW(x)     (x & 0x00000001U)       /**< Macro de campo de bit GPIO24_LEVEL_LOW registro PROC0_INTE3 */
+#define mIOBANK_PROC0_INTE3_GPIO24_LEVEL_HIGH(x)    (x & 0x00000002U)       /**< Macro de campo de bit GPIO24_LEVEL_HIGH registro PROC0_INTE3 */
+#define mIOBANK_PROC0_INTE3_GPIO24_EDGE_LOW(x)      (x & 0x00000004U)       /**< Macro de campo de bit GPIO24_EDGE_LOW registro PROC0_INTE3 */
+#define mIOBANK_PROC0_INTE3_GPIO24_EDGE_HIGH(x)     (x & 0x00000008U)       /**< Macro de campo de bit GPIO24_EDGE_HIGH registro PROC0_INTE3 */
+#define mIOBANK_PROC0_INTE3_GPIO25_LEVEL_LOW(x)     (x & 0x00000010U)       /**< Macro de campo de bit GPIO25_LEVEL_LOW registro PROC0_INTE3 */
+#define mIOBANK_PROC0_INTE3_GPIO25_LEVEL_HIGH(x)    (x & 0x00000020U)       /**< Macro de campo de bit GPIO25_LEVEL_HIGH registro PROC0_INTE3 */
+#define mIOBANK_PROC0_INTE3_GPIO25_EDGE_LOW(x)      (x & 0x00000040U)       /**< Macro de campo de bit GPIO25_EDGE_LOW registro PROC0_INTE3 */
+#define mIOBANK_PROC0_INTE3_GPIO25_EDGE_HIGH(x)     (x & 0x00000080U)       /**< Macro de campo de bit GPIO25_EDGE_HIGH registro PROC0_INTE3 */
+#define mIOBANK_PROC0_INTE3_GPIO26_LEVEL_LOW(x)     (x & 0x00000100U)       /**< Macro de campo de bit GPIO26_LEVEL_LOW registro PROC0_INTE3 */
+#define mIOBANK_PROC0_INTE3_GPIO26_LEVEL_HIGH(x)    (x & 0x00000200U)       /**< Macro de campo de bit GPIO26_LEVEL_HIGH registro PROC0_INTE3 */
+#define mIOBANK_PROC0_INTE3_GPIO26_EDGE_LOW(x)      (x & 0x00000400U)       /**< Macro de campo de bit GPIO26_EDGE_LOW registro PROC0_INTE3 */
+#define mIOBANK_PROC0_INTE3_GPIO26_EDGE_HIGH(x)     (x & 0x00000800U)       /**< Macro de campo de bit GPIO26_EDGE_HIGH registro PROC0_INTE3 */
+#define mIOBANK_PROC0_INTE3_GPIO27_LEVEL_LOW(x)     (x & 0x00001000U)       /**< Macro de campo de bit GPIO27_LEVEL_LOW registro PROC0_INTE3 */
+#define mIOBANK_PROC0_INTE3_GPIO27_LEVEL_HIGH(x)    (x & 0x00002000U)       /**< Macro de campo de bit GPIO27_LEVEL_HIGH registro PROC0_INTE3 */
+#define mIOBANK_PROC0_INTE3_GPIO27_EDGE_LOW(x)      (x & 0x00004000U)       /**< Macro de campo de bit GPIO27_EDGE_LOW registro PROC0_INTE3 */
+#define mIOBANK_PROC0_INTE3_GPIO27_EDGE_HIGH(x)     (x & 0x00008000U)       /**< Macro de campo de bit GPIO27_EDGE_HIGH registro PROC0_INTE3 */
+#define mIOBANK_PROC0_INTE3_GPIO28_LEVEL_LOW(x)     (x & 0x00010000U)       /**< Macro de campo de bit GPIO28_LEVEL_LOW registro PROC0_INTE3 */
+#define mIOBANK_PROC0_INTE3_GPIO28_LEVEL_HIGH(x)    (x & 0x00020000U)       /**< Macro de campo de bit GPIO28_LEVEL_HIGH registro PROC0_INTE3 */
+#define mIOBANK_PROC0_INTE3_GPIO28_EDGE_LOW(x)      (x & 0x00040000U)       /**< Macro de campo de bit GPIO28_EDGE_LOW registro PROC0_INTE3 */
+#define mIOBANK_PROC0_INTE3_GPIO28_EDGE_HIGH(x)     (x & 0x00080000U)       /**< Macro de campo de bit GPIO28_EDGE_HIGH registro PROC0_INTE3 */
+#define mIOBANK_PROC0_INTE3_GPIO29_LEVEL_LOW(x)     (x & 0x00100000U)       /**< Macro de campo de bit GPIO29_LEVEL_LOW registro PROC0_INTE3 */
+#define mIOBANK_PROC0_INTE3_GPIO29_LEVEL_HIGH(x)    (x & 0x00200000U)       /**< Macro de campo de bit GPIO29_LEVEL_HIGH registro PROC0_INTE3 */
+#define mIOBANK_PROC0_INTE3_GPIO29_EDGE_LOW(x)      (x & 0x00400000U)       /**< Macro de campo de bit GPIO29_EDGE_LOW registro PROC0_INTE3 */
+#define mIOBANK_PROC0_INTE3_GPIO29_EDGE_HIGH(x)     (x & 0x00800000U)       /**< Macro de campo de bit GPIO29_EDGE_HIGH registro PROC0_INTE3 */
+
+//------------------------------------------------------------------------
+
+#define mIOBANK_PROC0_INTF0_GPIO0_LEVEL_LOW(x)      (x & 0x00000001U)       /**< Macro de campo de bit GPIO0_LEVEL_LOW registro PROC0_INTF0 */
+#define mIOBANK_PROC0_INTF0_GPIO0_LEVEL_HIGH(x)     (x & 0x00000002U)       /**< Macro de campo de bit GPIO0_LEVEL_HIGH registro PROC0_INTF0 */
+#define mIOBANK_PROC0_INTF0_GPIO0_EDGE_LOW(x)       (x & 0x00000004U)       /**< Macro de campo de bit GPIO0_EDGE_LOW registro PROC0_INTF0 */
+#define mIOBANK_PROC0_INTF0_GPIO0_EDGE_HIGH(x)      (x & 0x00000008U)       /**< Macro de campo de bit GPIO0_EDGE_HIGH registro PROC0_INTF0 */
+#define mIOBANK_PROC0_INTF0_GPIO1_LEVEL_LOW(x)      (x & 0x00000010U)       /**< Macro de campo de bit GPIO1_LEVEL_LOW registro PROC0_INTF0 */
+#define mIOBANK_PROC0_INTF0_GPIO1_LEVEL_HIGH(x)     (x & 0x00000020U)       /**< Macro de campo de bit GPIO1_LEVEL_HIGH registro PROC0_INTF0 */
+#define mIOBANK_PROC0_INTF0_GPIO1_EDGE_LOW(x)       (x & 0x00000040U)       /**< Macro de campo de bit GPIO1_EDGE_LOW registro PROC0_INTF0 */
+#define mIOBANK_PROC0_INTF0_GPIO1_EDGE_HIGH(x)      (x & 0x00000080U)       /**< Macro de campo de bit GPIO1_EDGE_HIGH registro PROC0_INTF0 */
+#define mIOBANK_PROC0_INTF0_GPIO2_LEVEL_LOW(x)      (x & 0x00000100U)       /**< Macro de campo de bit GPIO2_LEVEL_LOW registro PROC0_INTF0 */
+#define mIOBANK_PROC0_INTF0_GPIO2_LEVEL_HIGH(x)     (x & 0x00000200U)       /**< Macro de campo de bit GPIO2_LEVEL_HIGH registro PROC0_INTF0 */
+#define mIOBANK_PROC0_INTF0_GPIO2_EDGE_LOW(x)       (x & 0x00000400U)       /**< Macro de campo de bit GPIO2_EDGE_LOW registro PROC0_INTF0 */
+#define mIOBANK_PROC0_INTF0_GPIO2_EDGE_HIGH(x)      (x & 0x00000800U)       /**< Macro de campo de bit GPIO0_EDGE_HIGH registro PROC0_INTF0 */
+#define mIOBANK_PROC0_INTF0_GPIO3_LEVEL_LOW(x)      (x & 0x00001000U)       /**< Macro de campo de bit GPIO3_LEVEL_LOW registro PROC0_INTF0 */
+#define mIOBANK_PROC0_INTF0_GPIO3_LEVEL_HIGH(x)     (x & 0x00002000U)       /**< Macro de campo de bit GPIO3_LEVEL_HIGH registro PROC0_INTF0 */
+#define mIOBANK_PROC0_INTF0_GPIO3_EDGE_LOW(x)       (x & 0x00004000U)       /**< Macro de campo de bit GPIO3_EDGE_LOW registro PROC0_INTF0 */
+#define mIOBANK_PROC0_INTF0_GPIO3_EDGE_HIGH(x)      (x & 0x00008000U)       /**< Macro de campo de bit GPIO3_EDGE_HIGH registro PROC0_INTF0 */
+#define mIOBANK_PROC0_INTF0_GPIO4_LEVEL_LOW(x)      (x & 0x00010000U)       /**< Macro de campo de bit GPIO4_LEVEL_LOW registro PROC0_INTF0 */
+#define mIOBANK_PROC0_INTF0_GPIO4_LEVEL_HIGH(x)     (x & 0x00020000U)       /**< Macro de campo de bit GPIO4_LEVEL_HIGH registro PROC0_INTF0 */
+#define mIOBANK_PROC0_INTF0_GPIO4_EDGE_LOW(x)       (x & 0x00040000U)       /**< Macro de campo de bit GPIO4_EDGE_LOW registro PROC0_INTF0 */
+#define mIOBANK_PROC0_INTF0_GPIO4_EDGE_HIGH(x)      (x & 0x00080000U)       /**< Macro de campo de bit GPIO4_EDGE_HIGH registro PROC0_INTF0 */
+#define mIOBANK_PROC0_INTF0_GPIO5_LEVEL_LOW(x)      (x & 0x00100000U)       /**< Macro de campo de bit GPIO5_LEVEL_LOW registro PROC0_INTF0 */
+#define mIOBANK_PROC0_INTF0_GPIO5_LEVEL_HIGH(x)     (x & 0x00200000U)       /**< Macro de campo de bit GPIO5_LEVEL_HIGH registro PROC0_INTF0 */
+#define mIOBANK_PROC0_INTF0_GPIO5_EDGE_LOW(x)       (x & 0x00400000U)       /**< Macro de campo de bit GPIO5_EDGE_LOW registro PROC0_INTF0 */
+#define mIOBANK_PROC0_INTF0_GPIO5_EDGE_HIGH(x)      (x & 0x00800000U)       /**< Macro de campo de bit GPIO5_EDGE_HIGH registro PROC0_INTF0 */
+#define mIOBANK_PROC0_INTF0_GPIO6_LEVEL_LOW(x)      (x & 0x01000000U)       /**< Macro de campo de bit GPIO6_LEVEL_LOW registro PROC0_INTF0 */
+#define mIOBANK_PROC0_INTF0_GPIO6_LEVEL_HIGH(x)     (x & 0x02000000U)       /**< Macro de campo de bit GPIO6_LEVEL_HIGH registro PROC0_INTF0 */
+#define mIOBANK_PROC0_INTF0_GPIO6_EDGE_LOW(x)       (x & 0x04000000U)       /**< Macro de campo de bit GPIO6_EDGE_LOW registro PROC0_INTF0 */
+#define mIOBANK_PROC0_INTF0_GPIO6_EDGE_HIGH(x)      (x & 0x08000000U)       /**< Macro de campo de bit GPIO6_EDGE_HIGH registro PROC0_INTF0 */
+#define mIOBANK_PROC0_INTF0_GPIO7_LEVEL_LOW(x)      (x & 0x10000000U)       /**< Macro de campo de bit GPIO7_LEVEL_LOW registro PROC0_INTF0 */
+#define mIOBANK_PROC0_INTF0_GPIO7_LEVEL_HIGH(x)     (x & 0x20000000U)       /**< Macro de campo de bit GPIO7_LEVEL_HIGH registro PROC0_INTF0 */
+#define mIOBANK_PROC0_INTF0_GPIO7_EDGE_LOW(x)       (x & 0x40000000U)       /**< Macro de campo de bit GPIO7_EDGE_LOW registro PROC0_INTF0 */
+#define mIOBANK_PROC0_INTF0_GPIO7_EDGE_HIGH(x)      (x & 0x80000000U)       /**< Macro de campo de bit GPIO7_EDGE_HIGH registro PROC0_INTF0 */
+
+#define mIOBANK_PROC0_INTF1_GPIO8_LEVEL_LOW(x)      (x & 0x00000001U)      /**< Macro de campo de bit GPIO8_LEVEL_LOW registro PROC0_INTF1 */
+#define mIOBANK_PROC0_INTF1_GPIO8_LEVEL_HIGH(x)     (x & 0x00000002U)      /**< Macro de campo de bit GPIO8_LEVEL_HIGH registro PROC0_INTF1 */
+#define mIOBANK_PROC0_INTF1_GPIO8_EDGE_LOW(x)       (x & 0x00000004U)      /**< Macro de campo de bit GPIO8_EDGE_LOW registro PROC0_INTF1 */
+#define mIOBANK_PROC0_INTF1_GPIO8_EDGE_HIGH(x)      (x & 0x00000008U)      /**< Macro de campo de bit GPIO8_EDGE_HIGH registro PROC0_INTF1 */
+#define mIOBANK_PROC0_INTF1_GPIO9_LEVEL_LOW(x)      (x & 0x00000010U)      /**< Macro de campo de bit GPIO9_LEVEL_LOW registro PROC0_INTF1 */
+#define mIOBANK_PROC0_INTF1_GPIO9_LEVEL_HIGH(x)     (x & 0x00000020U)      /**< Macro de campo de bit GPIO9_LEVEL_HIGH registro PROC0_INTF1 */
+#define mIOBANK_PROC0_INTF1_GPIO9_EDGE_LOW(x)       (x & 0x00000040U)      /**< Macro de campo de bit GPIO9_EDGE_LOW registro PROC0_INTF1 */
+#define mIOBANK_PROC0_INTF1_GPIO9_EDGE_HIGH(x)      (x & 0x00000080U)      /**< Macro de campo de bit GPIO9_EDGE_HIGH registro PROC0_INTF1 */
+#define mIOBANK_PROC0_INTF1_GPIO10_LEVEL_LOW(x)     (x & 0x00000100U)       /**< Macro de campo de bit GPIO10_LEVEL_LOW registro PROC0_INTF1 */
+#define mIOBANK_PROC0_INTF1_GPIO10_LEVEL_HIGH(x)    (x & 0x00000200U)       /**< Macro de campo de bit GPIO10_LEVEL_HIGH registro PROC0_INTF1 */
+#define mIOBANK_PROC0_INTF1_GPIO10_EDGE_LOW(x)      (x & 0x00000400U)       /**< Macro de campo de bit GPIO10_EDGE_LOW registro PROC0_INTF1 */
+#define mIOBANK_PROC0_INTF1_GPIO10_EDGE_HIGH(x)     (x & 0x00000800U)       /**< Macro de campo de bit GPIO10_EDGE_HIGH registro PROC0_INTF1 */
+#define mIOBANK_PROC0_INTF1_GPIO11_LEVEL_LOW(x)     (x & 0x00001000U)       /**< Macro de campo de bit GPIO11_LEVEL_LOW registro PROC0_INTF1 */
+#define mIOBANK_PROC0_INTF1_GPIO11_LEVEL_HIGH(x)    (x & 0x00002000U)       /**< Macro de campo de bit GPIO11_LEVEL_HIGH registro PROC0_INTF1 */
+#define mIOBANK_PROC0_INTF1_GPIO11_EDGE_LOW(x)      (x & 0x00004000U)       /**< Macro de campo de bit GPIO11_EDGE_LOW registro PROC0_INTF1 */
+#define mIOBANK_PROC0_INTF1_GPIO11_EDGE_HIGH(x)     (x & 0x00008000U)       /**< Macro de campo de bit GPIO11_EDGE_HIGH registro PROC0_INTF1 */
+#define mIOBANK_PROC0_INTF1_GPIO12_LEVEL_LOW(x)     (x & 0x00010000U)       /**< Macro de campo de bit GPIO12_LEVEL_LOW registro PROC0_INTF1 */
+#define mIOBANK_PROC0_INTF1_GPIO12_LEVEL_HIGH(x)    (x & 0x00020000U)       /**< Macro de campo de bit GPIO12_LEVEL_HIGH registro PROC0_INTF1 */
+#define mIOBANK_PROC0_INTF1_GPIO12_EDGE_LOW(x)      (x & 0x00040000U)       /**< Macro de campo de bit GPIO12_EDGE_LOW registro PROC0_INTF1 */
+#define mIOBANK_PROC0_INTF1_GPIO12_EDGE_HIGH(x)     (x & 0x00080000U)       /**< Macro de campo de bit GPIO12_EDGE_HIGH registro PROC0_INTF1 */
+#define mIOBANK_PROC0_INTF1_GPIO13_LEVEL_LOW(x)     (x & 0x00100000U)       /**< Macro de campo de bit GPIO13_LEVEL_LOW registro PROC0_INTF1 */
+#define mIOBANK_PROC0_INTF1_GPIO13_LEVEL_HIGH(x)    (x & 0x00200000U)       /**< Macro de campo de bit GPIO13_LEVEL_HIGH registro PROC0_INTF1 */
+#define mIOBANK_PROC0_INTF1_GPIO13_EDGE_LOW(x)      (x & 0x00400000U)       /**< Macro de campo de bit GPIO13_EDGE_LOW registro PROC0_INTF1 */
+#define mIOBANK_PROC0_INTF1_GPIO13_EDGE_HIGH(x)     (x & 0x00800000U)       /**< Macro de campo de bit GPIO13_EDGE_HIGH registro PROC0_INTF1 */
+#define mIOBANK_PROC0_INTF1_GPIO14_LEVEL_LOW(x)     (x & 0x01000000U)       /**< Macro de campo de bit GPIO14_LEVEL_LOW registro PROC0_INTF1 */
+#define mIOBANK_PROC0_INTF1_GPIO14_LEVEL_HIGH(x)    (x & 0x02000000U)       /**< Macro de campo de bit GPIO14_LEVEL_HIGH registro PROC0_INTF1 */
+#define mIOBANK_PROC0_INTF1_GPIO14_EDGE_LOW(x)      (x & 0x04000000U)       /**< Macro de campo de bit GPIO14_EDGE_LOW registro PROC0_INTF1 */
+#define mIOBANK_PROC0_INTF1_GPIO14_EDGE_HIGH(x)     (x & 0x08000000U)       /**< Macro de campo de bit GPIO14_EDGE_HIGH registro PROC0_INTF1 */
+#define mIOBANK_PROC0_INTF1_GPIO15_LEVEL_LOW(x)     (x & 0x10000000U)       /**< Macro de campo de bit GPIO15_LEVEL_LOW registro PROC0_INTF1 */
+#define mIOBANK_PROC0_INTF1_GPIO15_LEVEL_HIGH(x)    (x & 0x20000000U)       /**< Macro de campo de bit GPIO15_LEVEL_HIGH registro PROC0_INTF1 */
+#define mIOBANK_PROC0_INTF1_GPIO15_EDGE_LOW(x)      (x & 0x40000000U)       /**< Macro de campo de bit GPIO15_EDGE_LOW registro PROC0_INTF1 */
+#define mIOBANK_PROC0_INTF1_GPIO15_EDGE_HIGH(x)     (x & 0x80000000U)       /**< Macro de campo de bit GPIO15_EDGE_HIGH registro PROC0_INTF1 */
+
+#define mIOBANK_PROC0_INTF2_GPIO16_LEVEL_LOW(x)     (x & 0x00000001U)       /**< Macro de campo de bit GPIO16_LEVEL_LOW registro PROC0_INTF2 */
+#define mIOBANK_PROC0_INTF2_GPIO16_LEVEL_HIGH(x)    (x & 0x00000002U)       /**< Macro de campo de bit GPIO16_LEVEL_HIGH registro PROC0_INTF2 */
+#define mIOBANK_PROC0_INTF2_GPIO16_EDGE_LOW(x)      (x & 0x00000004U)       /**< Macro de campo de bit GPIO16_EDGE_LOW registro PROC0_INTF2 */
+#define mIOBANK_PROC0_INTF2_GPIO16_EDGE_HIGH(x)     (x & 0x00000008U)       /**< Macro de campo de bit GPIO16_EDGE_HIGH registro PROC0_INTF2 */
+#define mIOBANK_PROC0_INTF2_GPIO17_LEVEL_LOW(x)     (x & 0x00000010U)       /**< Macro de campo de bit GPIO17_LEVEL_LOW registro PROC0_INTF2 */
+#define mIOBANK_PROC0_INTF2_GPIO17_LEVEL_HIGH(x)    (x & 0x00000020U)       /**< Macro de campo de bit GPIO17_LEVEL_HIGH registro PROC0_INTF2 */
+#define mIOBANK_PROC0_INTF2_GPIO17_EDGE_LOW(x)      (x & 0x00000040U)       /**< Macro de campo de bit GPIO17_EDGE_LOW registro PROC0_INTF2 */
+#define mIOBANK_PROC0_INTF2_GPIO17_EDGE_HIGH(x)     (x & 0x00000080U)       /**< Macro de campo de bit GPIO17_EDGE_HIGH registro PROC0_INTF2 */
+#define mIOBANK_PROC0_INTF2_GPIO18_LEVEL_LOW(x)     (x & 0x00000100U)       /**< Macro de campo de bit GPIO18_LEVEL_LOW registro PROC0_INTF2 */
+#define mIOBANK_PROC0_INTF2_GPIO18_LEVEL_HIGH(x)    (x & 0x00000200U)       /**< Macro de campo de bit GPIO18_LEVEL_HIGH registro PROC0_INTF2 */
+#define mIOBANK_PROC0_INTF2_GPIO18_EDGE_LOW(x)      (x & 0x00000400U)       /**< Macro de campo de bit GPIO18_EDGE_LOW registro PROC0_INTF2 */
+#define mIOBANK_PROC0_INTF2_GPIO18_EDGE_HIGH(x)     (x & 0x00000800U)       /**< Macro de campo de bit GPIO18_EDGE_HIGH registro PROC0_INTF2 */
+#define mIOBANK_PROC0_INTF2_GPIO19_LEVEL_LOW(x)     (x & 0x00001000U)       /**< Macro de campo de bit GPIO19_LEVEL_LOW registro PROC0_INTF2 */
+#define mIOBANK_PROC0_INTF2_GPIO19_LEVEL_HIGH(x)    (x & 0x00002000U)       /**< Macro de campo de bit GPIO19_LEVEL_HIGH registro PROC0_INTF2 */
+#define mIOBANK_PROC0_INTF2_GPIO19_EDGE_LOW(x)      (x & 0x00004000U)       /**< Macro de campo de bit GPIO19_EDGE_LOW registro PROC0_INTF2 */
+#define mIOBANK_PROC0_INTF2_GPIO19_EDGE_HIGH(x)     (x & 0x00008000U)       /**< Macro de campo de bit GPIO19_EDGE_HIGH registro PROC0_INTF2 */
+#define mIOBANK_PROC0_INTF2_GPIO20_LEVEL_LOW(x)     (x & 0x00010000U)       /**< Macro de campo de bit GPIO20_LEVEL_LOW registro PROC0_INTF2 */
+#define mIOBANK_PROC0_INTF2_GPIO20_LEVEL_HIGH(x)    (x & 0x00020000U)       /**< Macro de campo de bit GPIO20_LEVEL_HIGH registro PROC0_INTF2 */
+#define mIOBANK_PROC0_INTF2_GPIO20_EDGE_LOW(x)      (x & 0x00040000U)       /**< Macro de campo de bit GPIO20_EDGE_LOW registro PROC0_INTF2 */
+#define mIOBANK_PROC0_INTF2_GPIO20_EDGE_HIGH(x)     (x & 0x00080000U)       /**< Macro de campo de bit GPIO20_EDGE_HIGH registro PROC0_INTF2 */
+#define mIOBANK_PROC0_INTF2_GPIO21_LEVEL_LOW(x)     (x & 0x00100000U)       /**< Macro de campo de bit GPIO21_LEVEL_LOW registro PROC0_INTF2 */
+#define mIOBANK_PROC0_INTF2_GPIO21_LEVEL_HIGH(x)    (x & 0x00200000U)       /**< Macro de campo de bit GPIO21_LEVEL_HIGH registro PROC0_INTF2 */
+#define mIOBANK_PROC0_INTF2_GPIO21_EDGE_LOW(x)      (x & 0x00400000U)       /**< Macro de campo de bit GPIO21_EDGE_LOW registro PROC0_INTF2 */
+#define mIOBANK_PROC0_INTF2_GPIO21_EDGE_HIGH(x)     (x & 0x00800000U)       /**< Macro de campo de bit GPIO21_EDGE_HIGH registro PROC0_INTF2 */
+#define mIOBANK_PROC0_INTF2_GPIO22_LEVEL_LOW(x)     (x & 0x01000000U)       /**< Macro de campo de bit GPIO22_LEVEL_LOW registro PROC0_INTF2 */
+#define mIOBANK_PROC0_INTF2_GPIO22_LEVEL_HIGH(x)    (x & 0x02000000U)       /**< Macro de campo de bit GPIO22_LEVEL_HIGH registro PROC0_INTF2 */
+#define mIOBANK_PROC0_INTF2_GPIO22_EDGE_LOW(x)      (x & 0x04000000U)       /**< Macro de campo de bit GPIO22_EDGE_LOW registro PROC0_INTF2 */
+#define mIOBANK_PROC0_INTF2_GPIO22_EDGE_HIGH(x)     (x & 0x08000000U)       /**< Macro de campo de bit GPIO22_EDGE_HIGH registro PROC0_INTF2 */
+#define mIOBANK_PROC0_INTF2_GPIO23_LEVEL_LOW(x)     (x & 0x10000000U)       /**< Macro de campo de bit GPIO23_LEVEL_LOW registro PROC0_INTF2 */
+#define mIOBANK_PROC0_INTF2_GPIO23_LEVEL_HIGH(x)    (x & 0x20000000U)       /**< Macro de campo de bit GPIO23_LEVEL_HIGH registro PROC0_INTF2 */
+#define mIOBANK_PROC0_INTF2_GPIO23_EDGE_LOW(x)      (x & 0x40000000U)       /**< Macro de campo de bit GPIO23_EDGE_LOW registro PROC0_INTF2 */
+#define mIOBANK_PROC0_INTF2_GPIO23_EDGE_HIGH(x)     (x & 0x80000000U)       /**< Macro de campo de bit GPIO23_EDGE_HIGH registro PROC0_INTF2 */
+
+#define mIOBANK_PROC0_INTF3_GPIO24_LEVEL_LOW(x)     (x & 0x00000001U)       /**< Macro de campo de bit GPIO24_LEVEL_LOW registro PROC0_INTF3 */
+#define mIOBANK_PROC0_INTF3_GPIO24_LEVEL_HIGH(x)    (x & 0x00000002U)       /**< Macro de campo de bit GPIO24_LEVEL_HIGH registro PROC0_INTF3 */
+#define mIOBANK_PROC0_INTF3_GPIO24_EDGE_LOW(x)      (x & 0x00000004U)       /**< Macro de campo de bit GPIO24_EDGE_LOW registro PROC0_INTF3 */
+#define mIOBANK_PROC0_INTF3_GPIO24_EDGE_HIGH(x)     (x & 0x00000008U)       /**< Macro de campo de bit GPIO24_EDGE_HIGH registro PROC0_INTF3 */
+#define mIOBANK_PROC0_INTF3_GPIO25_LEVEL_LOW(x)     (x & 0x00000010U)       /**< Macro de campo de bit GPIO25_LEVEL_LOW registro PROC0_INTF3 */
+#define mIOBANK_PROC0_INTF3_GPIO25_LEVEL_HIGH(x)    (x & 0x00000020U)       /**< Macro de campo de bit GPIO25_LEVEL_HIGH registro PROC0_INTF3 */
+#define mIOBANK_PROC0_INTF3_GPIO25_EDGE_LOW(x)      (x & 0x00000040U)       /**< Macro de campo de bit GPIO25_EDGE_LOW registro PROC0_INTF3 */
+#define mIOBANK_PROC0_INTF3_GPIO25_EDGE_HIGH(x)     (x & 0x00000080U)       /**< Macro de campo de bit GPIO25_EDGE_HIGH registro PROC0_INTF3 */
+#define mIOBANK_PROC0_INTF3_GPIO26_LEVEL_LOW(x)     (x & 0x00000100U)       /**< Macro de campo de bit GPIO26_LEVEL_LOW registro PROC0_INTF3 */
+#define mIOBANK_PROC0_INTF3_GPIO26_LEVEL_HIGH(x)    (x & 0x00000200U)       /**< Macro de campo de bit GPIO26_LEVEL_HIGH registro PROC0_INTF3 */
+#define mIOBANK_PROC0_INTF3_GPIO26_EDGE_LOW(x)      (x & 0x00000400U)       /**< Macro de campo de bit GPIO26_EDGE_LOW registro PROC0_INTF3 */
+#define mIOBANK_PROC0_INTF3_GPIO26_EDGE_HIGH(x)     (x & 0x00000800U)       /**< Macro de campo de bit GPIO26_EDGE_HIGH registro PROC0_INTF3 */
+#define mIOBANK_PROC0_INTF3_GPIO27_LEVEL_LOW(x)     (x & 0x00001000U)       /**< Macro de campo de bit GPIO27_LEVEL_LOW registro PROC0_INTF3 */
+#define mIOBANK_PROC0_INTF3_GPIO27_LEVEL_HIGH(x)    (x & 0x00002000U)       /**< Macro de campo de bit GPIO27_LEVEL_HIGH registro PROC0_INTF3 */
+#define mIOBANK_PROC0_INTF3_GPIO27_EDGE_LOW(x)      (x & 0x00004000U)       /**< Macro de campo de bit GPIO27_EDGE_LOW registro PROC0_INTF3 */
+#define mIOBANK_PROC0_INTF3_GPIO27_EDGE_HIGH(x)     (x & 0x00008000U)       /**< Macro de campo de bit GPIO27_EDGE_HIGH registro PROC0_INTF3 */
+#define mIOBANK_PROC0_INTF3_GPIO28_LEVEL_LOW(x)     (x & 0x00010000U)       /**< Macro de campo de bit GPIO28_LEVEL_LOW registro PROC0_INTF3 */
+#define mIOBANK_PROC0_INTF3_GPIO28_LEVEL_HIGH(x)    (x & 0x00020000U)       /**< Macro de campo de bit GPIO28_LEVEL_HIGH registro PROC0_INTF3 */
+#define mIOBANK_PROC0_INTF3_GPIO28_EDGE_LOW(x)      (x & 0x00040000U)       /**< Macro de campo de bit GPIO28_EDGE_LOW registro PROC0_INTF3 */
+#define mIOBANK_PROC0_INTF3_GPIO28_EDGE_HIGH(x)     (x & 0x00080000U)       /**< Macro de campo de bit GPIO28_EDGE_HIGH registro PROC0_INTF3 */
+#define mIOBANK_PROC0_INTF3_GPIO29_LEVEL_LOW(x)     (x & 0x00100000U)       /**< Macro de campo de bit GPIO29_LEVEL_LOW registro PROC0_INTF3 */
+#define mIOBANK_PROC0_INTF3_GPIO29_LEVEL_HIGH(x)    (x & 0x00200000U)       /**< Macro de campo de bit GPIO29_LEVEL_HIGH registro PROC0_INTF3 */
+#define mIOBANK_PROC0_INTF3_GPIO29_EDGE_LOW(x)      (x & 0x00400000U)       /**< Macro de campo de bit GPIO29_EDGE_LOW registro PROC0_INTF3 */
+#define mIOBANK_PROC0_INTF3_GPIO29_EDGE_HIGH(x)     (x & 0x00800000U)       /**< Macro de campo de bit GPIO29_EDGE_HIGH registro PROC0_INTF3 */
+
+//--------------------------------------------------------------------
+
+#define mIOBANK_PROC0_INTS0_GPIO0_LEVEL_LOW(x)      (x & 0x00000001U)       /**< Macro de campo de bit GPIO0_LEVEL_LOW registro PROC0_INTS0 */
+#define mIOBANK_PROC0_INTS0_GPIO0_LEVEL_HIGH(x)     (x & 0x00000002U)       /**< Macro de campo de bit GPIO0_LEVEL_HIGH registro PROC0_INTS0 */
+#define mIOBANK_PROC0_INTS0_GPIO0_EDGE_LOW(x)       (x & 0x00000004U)       /**< Macro de campo de bit GPIO0_EDGE_LOW registro PROC0_INTS0 */
+#define mIOBANK_PROC0_INTS0_GPIO0_EDGE_HIGH(x)      (x & 0x00000008U)       /**< Macro de campo de bit GPIO0_EDGE_HIGH registro PROC0_INTS0 */
+#define mIOBANK_PROC0_INTS0_GPIO1_LEVEL_LOW(x)      (x & 0x00000010U)       /**< Macro de campo de bit GPIO1_LEVEL_LOW registro PROC0_INTS0 */
+#define mIOBANK_PROC0_INTS0_GPIO1_LEVEL_HIGH(x)     (x & 0x00000020U)       /**< Macro de campo de bit GPIO1_LEVEL_HIGH registro PROC0_INTS0 */
+#define mIOBANK_PROC0_INTS0_GPIO1_EDGE_LOW(x)       (x & 0x00000040U)       /**< Macro de campo de bit GPIO1_EDGE_LOW registro PROC0_INTS0 */
+#define mIOBANK_PROC0_INTS0_GPIO1_EDGE_HIGH(x)      (x & 0x00000080U)       /**< Macro de campo de bit GPIO1_EDGE_HIGH registro PROC0_INTS0 */
+#define mIOBANK_PROC0_INTS0_GPIO2_LEVEL_LOW(x)      (x & 0x00000100U)       /**< Macro de campo de bit GPIO2_LEVEL_LOW registro PROC0_INTS0 */
+#define mIOBANK_PROC0_INTS0_GPIO2_LEVEL_HIGH(x)     (x & 0x00000200U)       /**< Macro de campo de bit GPIO2_LEVEL_HIGH registro PROC0_INTS0 */
+#define mIOBANK_PROC0_INTS0_GPIO2_EDGE_LOW(x)       (x & 0x00000400U)       /**< Macro de campo de bit GPIO2_EDGE_LOW registro PROC0_INTS0 */
+#define mIOBANK_PROC0_INTS0_GPIO2_EDGE_HIGH(x)      (x & 0x00000800U)       /**< Macro de campo de bit GPIO0_EDGE_HIGH registro PROC0_INTS0 */
+#define mIOBANK_PROC0_INTS0_GPIO3_LEVEL_LOW(x)      (x & 0x00001000U)       /**< Macro de campo de bit GPIO3_LEVEL_LOW registro PROC0_INTS0 */
+#define mIOBANK_PROC0_INTS0_GPIO3_LEVEL_HIGH(x)     (x & 0x00002000U)       /**< Macro de campo de bit GPIO3_LEVEL_HIGH registro PROC0_INTS0 */
+#define mIOBANK_PROC0_INTS0_GPIO3_EDGE_LOW(x)       (x & 0x00004000U)       /**< Macro de campo de bit GPIO3_EDGE_LOW registro PROC0_INTS0 */
+#define mIOBANK_PROC0_INTS0_GPIO3_EDGE_HIGH(x)      (x & 0x00008000U)       /**< Macro de campo de bit GPIO3_EDGE_HIGH registro PROC0_INTS0 */
+#define mIOBANK_PROC0_INTS0_GPIO4_LEVEL_LOW(x)      (x & 0x00010000U)       /**< Macro de campo de bit GPIO4_LEVEL_LOW registro PROC0_INTS0 */
+#define mIOBANK_PROC0_INTS0_GPIO4_LEVEL_HIGH(x)     (x & 0x00020000U)       /**< Macro de campo de bit GPIO4_LEVEL_HIGH registro PROC0_INTS0 */
+#define mIOBANK_PROC0_INTS0_GPIO4_EDGE_LOW(x)       (x & 0x00040000U)       /**< Macro de campo de bit GPIO4_EDGE_LOW registro PROC0_INTS0 */
+#define mIOBANK_PROC0_INTS0_GPIO4_EDGE_HIGH(x)      (x & 0x00080000U)       /**< Macro de campo de bit GPIO4_EDGE_HIGH registro PROC0_INTS0 */
+#define mIOBANK_PROC0_INTS0_GPIO5_LEVEL_LOW(x)      (x & 0x00100000U)       /**< Macro de campo de bit GPIO5_LEVEL_LOW registro PROC0_INTS0 */
+#define mIOBANK_PROC0_INTS0_GPIO5_LEVEL_HIGH(x)     (x & 0x00200000U)       /**< Macro de campo de bit GPIO5_LEVEL_HIGH registro PROC0_INTS0 */
+#define mIOBANK_PROC0_INTS0_GPIO5_EDGE_LOW(x)       (x & 0x00400000U)       /**< Macro de campo de bit GPIO5_EDGE_LOW registro PROC0_INTS0 */
+#define mIOBANK_PROC0_INTS0_GPIO5_EDGE_HIGH(x)      (x & 0x00800000U)       /**< Macro de campo de bit GPIO5_EDGE_HIGH registro PROC0_INTS0 */
+#define mIOBANK_PROC0_INTS0_GPIO6_LEVEL_LOW(x)      (x & 0x01000000U)       /**< Macro de campo de bit GPIO6_LEVEL_LOW registro PROC0_INTS0 */
+#define mIOBANK_PROC0_INTS0_GPIO6_LEVEL_HIGH(x)     (x & 0x02000000U)       /**< Macro de campo de bit GPIO6_LEVEL_HIGH registro PROC0_INTS0 */
+#define mIOBANK_PROC0_INTS0_GPIO6_EDGE_LOW(x)       (x & 0x04000000U)       /**< Macro de campo de bit GPIO6_EDGE_LOW registro PROC0_INTS0 */
+#define mIOBANK_PROC0_INTS0_GPIO6_EDGE_HIGH(x)      (x & 0x08000000U)       /**< Macro de campo de bit GPIO6_EDGE_HIGH registro PROC0_INTS0 */
+#define mIOBANK_PROC0_INTS0_GPIO7_LEVEL_LOW(x)      (x & 0x10000000U)       /**< Macro de campo de bit GPIO7_LEVEL_LOW registro PROC0_INTS0 */
+#define mIOBANK_PROC0_INTS0_GPIO7_LEVEL_HIGH(x)     (x & 0x20000000U)       /**< Macro de campo de bit GPIO7_LEVEL_HIGH registro PROC0_INTS0 */
+#define mIOBANK_PROC0_INTS0_GPIO7_EDGE_LOW(x)       (x & 0x40000000U)       /**< Macro de campo de bit GPIO7_EDGE_LOW registro PROC0_INTS0 */
+#define mIOBANK_PROC0_INTS0_GPIO7_EDGE_HIGH(x)      (x & 0x80000000U)       /**< Macro de campo de bit GPIO7_EDGE_HIGH registro PROC0_INTS0 */
+
+#define mIOBANK_PROC0_INTS1_GPIO8_LEVEL_LOW(x)      (x & 0x00000001U)      /**< Macro de campo de bit GPIO8_LEVEL_LOW registro PROC0_INTS1 */
+#define mIOBANK_PROC0_INTS1_GPIO8_LEVEL_HIGH(x)     (x & 0x00000002U)      /**< Macro de campo de bit GPIO8_LEVEL_HIGH registro PROC0_INTS1 */
+#define mIOBANK_PROC0_INTS1_GPIO8_EDGE_LOW(x)       (x & 0x00000004U)      /**< Macro de campo de bit GPIO8_EDGE_LOW registro PROC0_INTS1 */
+#define mIOBANK_PROC0_INTS1_GPIO8_EDGE_HIGH(x)      (x & 0x00000008U)      /**< Macro de campo de bit GPIO8_EDGE_HIGH registro PROC0_INTS1 */
+#define mIOBANK_PROC0_INTS1_GPIO9_LEVEL_LOW(x)      (x & 0x00000010U)      /**< Macro de campo de bit GPIO9_LEVEL_LOW registro PROC0_INTS1 */
+#define mIOBANK_PROC0_INTS1_GPIO9_LEVEL_HIGH(x)     (x & 0x00000020U)      /**< Macro de campo de bit GPIO9_LEVEL_HIGH registro PROC0_INTS1 */
+#define mIOBANK_PROC0_INTS1_GPIO9_EDGE_LOW(x)       (x & 0x00000040U)      /**< Macro de campo de bit GPIO9_EDGE_LOW registro PROC0_INTS1 */
+#define mIOBANK_PROC0_INTS1_GPIO9_EDGE_HIGH(x)      (x & 0x00000080U)      /**< Macro de campo de bit GPIO9_EDGE_HIGH registro PROC0_INTS1 */
+#define mIOBANK_PROC0_INTS1_GPIO10_LEVEL_LOW(x)     (x & 0x00000100U)       /**< Macro de campo de bit GPIO10_LEVEL_LOW registro PROC0_INTS1 */
+#define mIOBANK_PROC0_INTS1_GPIO10_LEVEL_HIGH(x)    (x & 0x00000200U)       /**< Macro de campo de bit GPIO10_LEVEL_HIGH registro PROC0_INTS1 */
+#define mIOBANK_PROC0_INTS1_GPIO10_EDGE_LOW(x)      (x & 0x00000400U)       /**< Macro de campo de bit GPIO10_EDGE_LOW registro PROC0_INTS1 */
+#define mIOBANK_PROC0_INTS1_GPIO10_EDGE_HIGH(x)     (x & 0x00000800U)       /**< Macro de campo de bit GPIO10_EDGE_HIGH registro PROC0_INTS1 */
+#define mIOBANK_PROC0_INTS1_GPIO11_LEVEL_LOW(x)     (x & 0x00001000U)       /**< Macro de campo de bit GPIO11_LEVEL_LOW registro PROC0_INTS1 */
+#define mIOBANK_PROC0_INTS1_GPIO11_LEVEL_HIGH(x)    (x & 0x00002000U)       /**< Macro de campo de bit GPIO11_LEVEL_HIGH registro PROC0_INTS1 */
+#define mIOBANK_PROC0_INTS1_GPIO11_EDGE_LOW(x)      (x & 0x00004000U)       /**< Macro de campo de bit GPIO11_EDGE_LOW registro PROC0_INTS1 */
+#define mIOBANK_PROC0_INTS1_GPIO11_EDGE_HIGH(x)     (x & 0x00008000U)       /**< Macro de campo de bit GPIO11_EDGE_HIGH registro PROC0_INTS1 */
+#define mIOBANK_PROC0_INTS1_GPIO12_LEVEL_LOW(x)     (x & 0x00010000U)       /**< Macro de campo de bit GPIO12_LEVEL_LOW registro PROC0_INTS1 */
+#define mIOBANK_PROC0_INTS1_GPIO12_LEVEL_HIGH(x)    (x & 0x00020000U)       /**< Macro de campo de bit GPIO12_LEVEL_HIGH registro PROC0_INTS1 */
+#define mIOBANK_PROC0_INTS1_GPIO12_EDGE_LOW(x)      (x & 0x00040000U)       /**< Macro de campo de bit GPIO12_EDGE_LOW registro PROC0_INTS1 */
+#define mIOBANK_PROC0_INTS1_GPIO12_EDGE_HIGH(x)     (x & 0x00080000U)       /**< Macro de campo de bit GPIO12_EDGE_HIGH registro PROC0_INTS1 */
+#define mIOBANK_PROC0_INTS1_GPIO13_LEVEL_LOW(x)     (x & 0x00100000U)       /**< Macro de campo de bit GPIO13_LEVEL_LOW registro PROC0_INTS1 */
+#define mIOBANK_PROC0_INTS1_GPIO13_LEVEL_HIGH(x)    (x & 0x00200000U)       /**< Macro de campo de bit GPIO13_LEVEL_HIGH registro PROC0_INTS1 */
+#define mIOBANK_PROC0_INTS1_GPIO13_EDGE_LOW(x)      (x & 0x00400000U)       /**< Macro de campo de bit GPIO13_EDGE_LOW registro PROC0_INTS1 */
+#define mIOBANK_PROC0_INTS1_GPIO13_EDGE_HIGH(x)     (x & 0x00800000U)       /**< Macro de campo de bit GPIO13_EDGE_HIGH registro PROC0_INTS1 */
+#define mIOBANK_PROC0_INTS1_GPIO14_LEVEL_LOW(x)     (x & 0x01000000U)       /**< Macro de campo de bit GPIO14_LEVEL_LOW registro PROC0_INTS1 */
+#define mIOBANK_PROC0_INTS1_GPIO14_LEVEL_HIGH(x)    (x & 0x02000000U)       /**< Macro de campo de bit GPIO14_LEVEL_HIGH registro PROC0_INTS1 */
+#define mIOBANK_PROC0_INTS1_GPIO14_EDGE_LOW(x)      (x & 0x04000000U)       /**< Macro de campo de bit GPIO14_EDGE_LOW registro PROC0_INTS1 */
+#define mIOBANK_PROC0_INTS1_GPIO14_EDGE_HIGH(x)     (x & 0x08000000U)       /**< Macro de campo de bit GPIO14_EDGE_HIGH registro PROC0_INTS1 */
+#define mIOBANK_PROC0_INTS1_GPIO15_LEVEL_LOW(x)     (x & 0x10000000U)       /**< Macro de campo de bit GPIO15_LEVEL_LOW registro PROC0_INTS1 */
+#define mIOBANK_PROC0_INTS1_GPIO15_LEVEL_HIGH(x)    (x & 0x20000000U)       /**< Macro de campo de bit GPIO15_LEVEL_HIGH registro PROC0_INTS1 */
+#define mIOBANK_PROC0_INTS1_GPIO15_EDGE_LOW(x)      (x & 0x40000000U)       /**< Macro de campo de bit GPIO15_EDGE_LOW registro PROC0_INTS1 */
+#define mIOBANK_PROC0_INTS1_GPIO15_EDGE_HIGH(x)     (x & 0x80000000U)       /**< Macro de campo de bit GPIO15_EDGE_HIGH registro PROC0_INTS1 */
+
+#define mIOBANK_PROC0_INTS2_GPIO16_LEVEL_LOW(x)     (x & 0x00000001U)       /**< Macro de campo de bit GPIO16_LEVEL_LOW registro PROC0_INTS2 */
+#define mIOBANK_PROC0_INTS2_GPIO16_LEVEL_HIGH(x)    (x & 0x00000002U)       /**< Macro de campo de bit GPIO16_LEVEL_HIGH registro PROC0_INTS2 */
+#define mIOBANK_PROC0_INTS2_GPIO16_EDGE_LOW(x)      (x & 0x00000004U)       /**< Macro de campo de bit GPIO16_EDGE_LOW registro PROC0_INTS2 */
+#define mIOBANK_PROC0_INTS2_GPIO16_EDGE_HIGH(x)     (x & 0x00000008U)       /**< Macro de campo de bit GPIO16_EDGE_HIGH registro PROC0_INTS2 */
+#define mIOBANK_PROC0_INTS2_GPIO17_LEVEL_LOW(x)     (x & 0x00000010U)       /**< Macro de campo de bit GPIO17_LEVEL_LOW registro PROC0_INTS2 */
+#define mIOBANK_PROC0_INTS2_GPIO17_LEVEL_HIGH(x)    (x & 0x00000020U)       /**< Macro de campo de bit GPIO17_LEVEL_HIGH registro PROC0_INTS2 */
+#define mIOBANK_PROC0_INTS2_GPIO17_EDGE_LOW(x)      (x & 0x00000040U)       /**< Macro de campo de bit GPIO17_EDGE_LOW registro PROC0_INTS2 */
+#define mIOBANK_PROC0_INTS2_GPIO17_EDGE_HIGH(x)     (x & 0x00000080U)       /**< Macro de campo de bit GPIO17_EDGE_HIGH registro PROC0_INTS2 */
+#define mIOBANK_PROC0_INTS2_GPIO18_LEVEL_LOW(x)     (x & 0x00000100U)       /**< Macro de campo de bit GPIO18_LEVEL_LOW registro PROC0_INTS2 */
+#define mIOBANK_PROC0_INTS2_GPIO18_LEVEL_HIGH(x)    (x & 0x00000200U)       /**< Macro de campo de bit GPIO18_LEVEL_HIGH registro PROC0_INTS2 */
+#define mIOBANK_PROC0_INTS2_GPIO18_EDGE_LOW(x)      (x & 0x00000400U)       /**< Macro de campo de bit GPIO18_EDGE_LOW registro PROC0_INTS2 */
+#define mIOBANK_PROC0_INTS2_GPIO18_EDGE_HIGH(x)     (x & 0x00000800U)       /**< Macro de campo de bit GPIO18_EDGE_HIGH registro PROC0_INTS2 */
+#define mIOBANK_PROC0_INTS2_GPIO19_LEVEL_LOW(x)     (x & 0x00001000U)       /**< Macro de campo de bit GPIO19_LEVEL_LOW registro PROC0_INTS2 */
+#define mIOBANK_PROC0_INTS2_GPIO19_LEVEL_HIGH(x)    (x & 0x00002000U)       /**< Macro de campo de bit GPIO19_LEVEL_HIGH registro PROC0_INTS2 */
+#define mIOBANK_PROC0_INTS2_GPIO19_EDGE_LOW(x)      (x & 0x00004000U)       /**< Macro de campo de bit GPIO19_EDGE_LOW registro PROC0_INTS2 */
+#define mIOBANK_PROC0_INTS2_GPIO19_EDGE_HIGH(x)     (x & 0x00008000U)       /**< Macro de campo de bit GPIO19_EDGE_HIGH registro PROC0_INTS2 */
+#define mIOBANK_PROC0_INTS2_GPIO20_LEVEL_LOW(x)     (x & 0x00010000U)       /**< Macro de campo de bit GPIO20_LEVEL_LOW registro PROC0_INTS2 */
+#define mIOBANK_PROC0_INTS2_GPIO20_LEVEL_HIGH(x)    (x & 0x00020000U)       /**< Macro de campo de bit GPIO20_LEVEL_HIGH registro PROC0_INTS2 */
+#define mIOBANK_PROC0_INTS2_GPIO20_EDGE_LOW(x)      (x & 0x00040000U)       /**< Macro de campo de bit GPIO20_EDGE_LOW registro PROC0_INTS2 */
+#define mIOBANK_PROC0_INTS2_GPIO20_EDGE_HIGH(x)     (x & 0x00080000U)       /**< Macro de campo de bit GPIO20_EDGE_HIGH registro PROC0_INTS2 */
+#define mIOBANK_PROC0_INTS2_GPIO21_LEVEL_LOW(x)     (x & 0x00100000U)       /**< Macro de campo de bit GPIO21_LEVEL_LOW registro PROC0_INTS2 */
+#define mIOBANK_PROC0_INTS2_GPIO21_LEVEL_HIGH(x)    (x & 0x00200000U)       /**< Macro de campo de bit GPIO21_LEVEL_HIGH registro PROC0_INTS2 */
+#define mIOBANK_PROC0_INTS2_GPIO21_EDGE_LOW(x)      (x & 0x00400000U)       /**< Macro de campo de bit GPIO21_EDGE_LOW registro PROC0_INTS2 */
+#define mIOBANK_PROC0_INTS2_GPIO21_EDGE_HIGH(x)     (x & 0x00800000U)       /**< Macro de campo de bit GPIO21_EDGE_HIGH registro PROC0_INTS2 */
+#define mIOBANK_PROC0_INTS2_GPIO22_LEVEL_LOW(x)     (x & 0x01000000U)       /**< Macro de campo de bit GPIO22_LEVEL_LOW registro PROC0_INTS2 */
+#define mIOBANK_PROC0_INTS2_GPIO22_LEVEL_HIGH(x)    (x & 0x02000000U)       /**< Macro de campo de bit GPIO22_LEVEL_HIGH registro PROC0_INTS2 */
+#define mIOBANK_PROC0_INTS2_GPIO22_EDGE_LOW(x)      (x & 0x04000000U)       /**< Macro de campo de bit GPIO22_EDGE_LOW registro PROC0_INTS2 */
+#define mIOBANK_PROC0_INTS2_GPIO22_EDGE_HIGH(x)     (x & 0x08000000U)       /**< Macro de campo de bit GPIO22_EDGE_HIGH registro PROC0_INTS2 */
+#define mIOBANK_PROC0_INTS2_GPIO23_LEVEL_LOW(x)     (x & 0x10000000U)       /**< Macro de campo de bit GPIO23_LEVEL_LOW registro PROC0_INTS2 */
+#define mIOBANK_PROC0_INTS2_GPIO23_LEVEL_HIGH(x)    (x & 0x20000000U)       /**< Macro de campo de bit GPIO23_LEVEL_HIGH registro PROC0_INTS2 */
+#define mIOBANK_PROC0_INTS2_GPIO23_EDGE_LOW(x)      (x & 0x40000000U)       /**< Macro de campo de bit GPIO23_EDGE_LOW registro PROC0_INTS2 */
+#define mIOBANK_PROC0_INTS2_GPIO23_EDGE_HIGH(x)     (x & 0x80000000U)       /**< Macro de campo de bit GPIO23_EDGE_HIGH registro PROC0_INTS2 */
+
+#define mIOBANK_PROC0_INTS3_GPIO24_LEVEL_LOW(x)     (x & 0x00000001U)       /**< Macro de campo de bit GPIO24_LEVEL_LOW registro PROC0_INTS3 */
+#define mIOBANK_PROC0_INTS3_GPIO24_LEVEL_HIGH(x)    (x & 0x00000002U)       /**< Macro de campo de bit GPIO24_LEVEL_HIGH registro PROC0_INTS3 */
+#define mIOBANK_PROC0_INTS3_GPIO24_EDGE_LOW(x)      (x & 0x00000004U)       /**< Macro de campo de bit GPIO24_EDGE_LOW registro PROC0_INTS3 */
+#define mIOBANK_PROC0_INTS3_GPIO24_EDGE_HIGH(x)     (x & 0x00000008U)       /**< Macro de campo de bit GPIO24_EDGE_HIGH registro PROC0_INTS3 */
+#define mIOBANK_PROC0_INTS3_GPIO25_LEVEL_LOW(x)     (x & 0x00000010U)       /**< Macro de campo de bit GPIO25_LEVEL_LOW registro PROC0_INTS3 */
+#define mIOBANK_PROC0_INTS3_GPIO25_LEVEL_HIGH(x)    (x & 0x00000020U)       /**< Macro de campo de bit GPIO25_LEVEL_HIGH registro PROC0_INTS3 */
+#define mIOBANK_PROC0_INTS3_GPIO25_EDGE_LOW(x)      (x & 0x00000040U)       /**< Macro de campo de bit GPIO25_EDGE_LOW registro PROC0_INTS3 */
+#define mIOBANK_PROC0_INTS3_GPIO25_EDGE_HIGH(x)     (x & 0x00000080U)       /**< Macro de campo de bit GPIO25_EDGE_HIGH registro PROC0_INTS3 */
+#define mIOBANK_PROC0_INTS3_GPIO26_LEVEL_LOW(x)     (x & 0x00000100U)       /**< Macro de campo de bit GPIO26_LEVEL_LOW registro PROC0_INTS3 */
+#define mIOBANK_PROC0_INTS3_GPIO26_LEVEL_HIGH(x)    (x & 0x00000200U)       /**< Macro de campo de bit GPIO26_LEVEL_HIGH registro PROC0_INTS3 */
+#define mIOBANK_PROC0_INTS3_GPIO26_EDGE_LOW(x)      (x & 0x00000400U)       /**< Macro de campo de bit GPIO26_EDGE_LOW registro PROC0_INTS3 */
+#define mIOBANK_PROC0_INTS3_GPIO26_EDGE_HIGH(x)     (x & 0x00000800U)       /**< Macro de campo de bit GPIO26_EDGE_HIGH registro PROC0_INTS3 */
+#define mIOBANK_PROC0_INTS3_GPIO27_LEVEL_LOW(x)     (x & 0x00001000U)       /**< Macro de campo de bit GPIO27_LEVEL_LOW registro PROC0_INTS3 */
+#define mIOBANK_PROC0_INTS3_GPIO27_LEVEL_HIGH(x)    (x & 0x00002000U)       /**< Macro de campo de bit GPIO27_LEVEL_HIGH registro PROC0_INTS3 */
+#define mIOBANK_PROC0_INTS3_GPIO27_EDGE_LOW(x)      (x & 0x00004000U)       /**< Macro de campo de bit GPIO27_EDGE_LOW registro PROC0_INTS3 */
+#define mIOBANK_PROC0_INTS3_GPIO27_EDGE_HIGH(x)     (x & 0x00008000U)       /**< Macro de campo de bit GPIO27_EDGE_HIGH registro PROC0_INTS3 */
+#define mIOBANK_PROC0_INTS3_GPIO28_LEVEL_LOW(x)     (x & 0x00010000U)       /**< Macro de campo de bit GPIO28_LEVEL_LOW registro PROC0_INTS3 */
+#define mIOBANK_PROC0_INTS3_GPIO28_LEVEL_HIGH(x)    (x & 0x00020000U)       /**< Macro de campo de bit GPIO28_LEVEL_HIGH registro PROC0_INTS3 */
+#define mIOBANK_PROC0_INTS3_GPIO28_EDGE_LOW(x)      (x & 0x00040000U)       /**< Macro de campo de bit GPIO28_EDGE_LOW registro PROC0_INTS3 */
+#define mIOBANK_PROC0_INTS3_GPIO28_EDGE_HIGH(x)     (x & 0x00080000U)       /**< Macro de campo de bit GPIO28_EDGE_HIGH registro PROC0_INTS3 */
+#define mIOBANK_PROC0_INTS3_GPIO29_LEVEL_LOW(x)     (x & 0x00100000U)       /**< Macro de campo de bit GPIO29_LEVEL_LOW registro PROC0_INTS3 */
+#define mIOBANK_PROC0_INTS3_GPIO29_LEVEL_HIGH(x)    (x & 0x00200000U)       /**< Macro de campo de bit GPIO29_LEVEL_HIGH registro PROC0_INTS3 */
+#define mIOBANK_PROC0_INTS3_GPIO29_EDGE_LOW(x)      (x & 0x00400000U)       /**< Macro de campo de bit GPIO29_EDGE_LOW registro PROC0_INTS3 */
+#define mIOBANK_PROC0_INTS3_GPIO29_EDGE_HIGH(x)     (x & 0x00800000U)       /**< Macro de campo de bit GPIO29_EDGE_HIGH registro PROC0_INTS3 */
+
+//--------------- Macros PROC1_INT -------------------------------/
+
+#define mIOBANK_PROC1_INTE0_GPIO0_LEVEL_LOW(x)      (x & 0x00000001U)       /**< Macro de campo de bit GPIO0_LEVEL_LOW registro PROC1_INTE0 */
+#define mIOBANK_PROC1_INTE0_GPIO0_LEVEL_HIGH(x)     (x & 0x00000002U)       /**< Macro de campo de bit GPIO0_LEVEL_HIGH registro PROC1_INTE0 */
+#define mIOBANK_PROC1_INTE0_GPIO0_EDGE_LOW(x)       (x & 0x00000004U)       /**< Macro de campo de bit GPIO0_EDGE_LOW registro PROC1_INTE0 */
+#define mIOBANK_PROC1_INTE0_GPIO0_EDGE_HIGH(x)      (x & 0x00000008U)       /**< Macro de campo de bit GPIO0_EDGE_HIGH registro PROC1_INTE0 */
+#define mIOBANK_PROC1_INTE0_GPIO1_LEVEL_LOW(x)      (x & 0x00000010U)       /**< Macro de campo de bit GPIO1_LEVEL_LOW registro PROC1_INTE0 */
+#define mIOBANK_PROC1_INTE0_GPIO1_LEVEL_HIGH(x)     (x & 0x00000020U)       /**< Macro de campo de bit GPIO1_LEVEL_HIGH registro PROC1_INTE0 */
+#define mIOBANK_PROC1_INTE0_GPIO1_EDGE_LOW(x)       (x & 0x00000040U)       /**< Macro de campo de bit GPIO1_EDGE_LOW registro PROC1_INTE0 */
+#define mIOBANK_PROC1_INTE0_GPIO1_EDGE_HIGH(x)      (x & 0x00000080U)       /**< Macro de campo de bit GPIO1_EDGE_HIGH registro PROC1_INTE0 */
+#define mIOBANK_PROC1_INTE0_GPIO2_LEVEL_LOW(x)      (x & 0x00000100U)       /**< Macro de campo de bit GPIO2_LEVEL_LOW registro PROC1_INTE0 */
+#define mIOBANK_PROC1_INTE0_GPIO2_LEVEL_HIGH(x)     (x & 0x00000200U)       /**< Macro de campo de bit GPIO2_LEVEL_HIGH registro PROC1_INTE0 */
+#define mIOBANK_PROC1_INTE0_GPIO2_EDGE_LOW(x)       (x & 0x00000400U)       /**< Macro de campo de bit GPIO2_EDGE_LOW registro PROC1_INTE0 */
+#define mIOBANK_PROC1_INTE0_GPIO2_EDGE_HIGH(x)      (x & 0x00000800U)       /**< Macro de campo de bit GPIO0_EDGE_HIGH registro PROC1_INTE0 */
+#define mIOBANK_PROC1_INTE0_GPIO3_LEVEL_LOW(x)      (x & 0x00001000U)       /**< Macro de campo de bit GPIO3_LEVEL_LOW registro PROC1_INTE0 */
+#define mIOBANK_PROC1_INTE0_GPIO3_LEVEL_HIGH(x)     (x & 0x00002000U)       /**< Macro de campo de bit GPIO3_LEVEL_HIGH registro PROC1_INTE0 */
+#define mIOBANK_PROC1_INTE0_GPIO3_EDGE_LOW(x)       (x & 0x00004000U)       /**< Macro de campo de bit GPIO3_EDGE_LOW registro PROC1_INTE0 */
+#define mIOBANK_PROC1_INTE0_GPIO3_EDGE_HIGH(x)      (x & 0x00008000U)       /**< Macro de campo de bit GPIO3_EDGE_HIGH registro PROC1_INTE0 */
+#define mIOBANK_PROC1_INTE0_GPIO4_LEVEL_LOW(x)      (x & 0x00010000U)       /**< Macro de campo de bit GPIO4_LEVEL_LOW registro PROC1_INTE0 */
+#define mIOBANK_PROC1_INTE0_GPIO4_LEVEL_HIGH(x)     (x & 0x00020000U)       /**< Macro de campo de bit GPIO4_LEVEL_HIGH registro PROC1_INTE0 */
+#define mIOBANK_PROC1_INTE0_GPIO4_EDGE_LOW(x)       (x & 0x00040000U)       /**< Macro de campo de bit GPIO4_EDGE_LOW registro PROC1_INTE0 */
+#define mIOBANK_PROC1_INTE0_GPIO4_EDGE_HIGH(x)      (x & 0x00080000U)       /**< Macro de campo de bit GPIO4_EDGE_HIGH registro PROC1_INTE0 */
+#define mIOBANK_PROC1_INTE0_GPIO5_LEVEL_LOW(x)      (x & 0x00100000U)       /**< Macro de campo de bit GPIO5_LEVEL_LOW registro PROC1_INTE0 */
+#define mIOBANK_PROC1_INTE0_GPIO5_LEVEL_HIGH(x)     (x & 0x00200000U)       /**< Macro de campo de bit GPIO5_LEVEL_HIGH registro PROC1_INTE0 */
+#define mIOBANK_PROC1_INTE0_GPIO5_EDGE_LOW(x)       (x & 0x00400000U)       /**< Macro de campo de bit GPIO5_EDGE_LOW registro PROC1_INTE0 */
+#define mIOBANK_PROC1_INTE0_GPIO5_EDGE_HIGH(x)      (x & 0x00800000U)       /**< Macro de campo de bit GPIO5_EDGE_HIGH registro PROC1_INTE0 */
+#define mIOBANK_PROC1_INTE0_GPIO6_LEVEL_LOW(x)      (x & 0x01000000U)       /**< Macro de campo de bit GPIO6_LEVEL_LOW registro PROC1_INTE0 */
+#define mIOBANK_PROC1_INTE0_GPIO6_LEVEL_HIGH(x)     (x & 0x02000000U)       /**< Macro de campo de bit GPIO6_LEVEL_HIGH registro PROC1_INTE0 */
+#define mIOBANK_PROC1_INTE0_GPIO6_EDGE_LOW(x)       (x & 0x04000000U)       /**< Macro de campo de bit GPIO6_EDGE_LOW registro PROC1_INTE0 */
+#define mIOBANK_PROC1_INTE0_GPIO6_EDGE_HIGH(x)      (x & 0x08000000U)       /**< Macro de campo de bit GPIO6_EDGE_HIGH registro PROC1_INTE0 */
+#define mIOBANK_PROC1_INTE0_GPIO7_LEVEL_LOW(x)      (x & 0x10000000U)       /**< Macro de campo de bit GPIO7_LEVEL_LOW registro PROC1_INTE0 */
+#define mIOBANK_PROC1_INTE0_GPIO7_LEVEL_HIGH(x)     (x & 0x20000000U)       /**< Macro de campo de bit GPIO7_LEVEL_HIGH registro PROC1_INTE0 */
+#define mIOBANK_PROC1_INTE0_GPIO7_EDGE_LOW(x)       (x & 0x40000000U)       /**< Macro de campo de bit GPIO7_EDGE_LOW registro PROC1_INTE0 */
+#define mIOBANK_PROC1_INTE0_GPIO7_EDGE_HIGH(x)      (x & 0x80000000U)       /**< Macro de campo de bit GPIO7_EDGE_HIGH registro PROC1_INTE0 */
+
+#define mIOBANK_PROC1_INTE1_GPIO8_LEVEL_LOW(x)      (x & 0x00000001U)      /**< Macro de campo de bit GPIO8_LEVEL_LOW registro PROC1_INTE1 */
+#define mIOBANK_PROC1_INTE1_GPIO8_LEVEL_HIGH(x)     (x & 0x00000002U)      /**< Macro de campo de bit GPIO8_LEVEL_HIGH registro PROC1_INTE1 */
+#define mIOBANK_PROC1_INTE1_GPIO8_EDGE_LOW(x)       (x & 0x00000004U)      /**< Macro de campo de bit GPIO8_EDGE_LOW registro PROC1_INTE1 */
+#define mIOBANK_PROC1_INTE1_GPIO8_EDGE_HIGH(x)      (x & 0x00000008U)      /**< Macro de campo de bit GPIO8_EDGE_HIGH registro PROC1_INTE1 */
+#define mIOBANK_PROC1_INTE1_GPIO9_LEVEL_LOW(x)      (x & 0x00000010U)      /**< Macro de campo de bit GPIO9_LEVEL_LOW registro PROC1_INTE1 */
+#define mIOBANK_PROC1_INTE1_GPIO9_LEVEL_HIGH(x)     (x & 0x00000020U)      /**< Macro de campo de bit GPIO9_LEVEL_HIGH registro PROC1_INTE1 */
+#define mIOBANK_PROC1_INTE1_GPIO9_EDGE_LOW(x)       (x & 0x00000040U)      /**< Macro de campo de bit GPIO9_EDGE_LOW registro PROC1_INTE1 */
+#define mIOBANK_PROC1_INTE1_GPIO9_EDGE_HIGH(x)      (x & 0x00000080U)      /**< Macro de campo de bit GPIO9_EDGE_HIGH registro PROC1_INTE1 */
+#define mIOBANK_PROC1_INTE1_GPIO10_LEVEL_LOW(x)     (x & 0x00000100U)       /**< Macro de campo de bit GPIO10_LEVEL_LOW registro PROC1_INTE1 */
+#define mIOBANK_PROC1_INTE1_GPIO10_LEVEL_HIGH(x)    (x & 0x00000200U)       /**< Macro de campo de bit GPIO10_LEVEL_HIGH registro PROC1_INTE1 */
+#define mIOBANK_PROC1_INTE1_GPIO10_EDGE_LOW(x)      (x & 0x00000400U)       /**< Macro de campo de bit GPIO10_EDGE_LOW registro PROC1_INTE1 */
+#define mIOBANK_PROC1_INTE1_GPIO10_EDGE_HIGH(x)     (x & 0x00000800U)       /**< Macro de campo de bit GPIO10_EDGE_HIGH registro PROC1_INTE1 */
+#define mIOBANK_PROC1_INTE1_GPIO11_LEVEL_LOW(x)     (x & 0x00001000U)       /**< Macro de campo de bit GPIO11_LEVEL_LOW registro PROC1_INTE1 */
+#define mIOBANK_PROC1_INTE1_GPIO11_LEVEL_HIGH(x)    (x & 0x00002000U)       /**< Macro de campo de bit GPIO11_LEVEL_HIGH registro PROC1_INTE1 */
+#define mIOBANK_PROC1_INTE1_GPIO11_EDGE_LOW(x)      (x & 0x00004000U)       /**< Macro de campo de bit GPIO11_EDGE_LOW registro PROC1_INTE1 */
+#define mIOBANK_PROC1_INTE1_GPIO11_EDGE_HIGH(x)     (x & 0x00008000U)       /**< Macro de campo de bit GPIO11_EDGE_HIGH registro PROC1_INTE1 */
+#define mIOBANK_PROC1_INTE1_GPIO12_LEVEL_LOW(x)     (x & 0x00010000U)       /**< Macro de campo de bit GPIO12_LEVEL_LOW registro PROC1_INTE1 */
+#define mIOBANK_PROC1_INTE1_GPIO12_LEVEL_HIGH(x)    (x & 0x00020000U)       /**< Macro de campo de bit GPIO12_LEVEL_HIGH registro PROC1_INTE1 */
+#define mIOBANK_PROC1_INTE1_GPIO12_EDGE_LOW(x)      (x & 0x00040000U)       /**< Macro de campo de bit GPIO12_EDGE_LOW registro PROC1_INTE1 */
+#define mIOBANK_PROC1_INTE1_GPIO12_EDGE_HIGH(x)     (x & 0x00080000U)       /**< Macro de campo de bit GPIO12_EDGE_HIGH registro PROC1_INTE1 */
+#define mIOBANK_PROC1_INTE1_GPIO13_LEVEL_LOW(x)     (x & 0x00100000U)       /**< Macro de campo de bit GPIO13_LEVEL_LOW registro PROC1_INTE1 */
+#define mIOBANK_PROC1_INTE1_GPIO13_LEVEL_HIGH(x)    (x & 0x00200000U)       /**< Macro de campo de bit GPIO13_LEVEL_HIGH registro PROC1_INTE1 */
+#define mIOBANK_PROC1_INTE1_GPIO13_EDGE_LOW(x)      (x & 0x00400000U)       /**< Macro de campo de bit GPIO13_EDGE_LOW registro PROC1_INTE1 */
+#define mIOBANK_PROC1_INTE1_GPIO13_EDGE_HIGH(x)     (x & 0x00800000U)       /**< Macro de campo de bit GPIO13_EDGE_HIGH registro PROC1_INTE1 */
+#define mIOBANK_PROC1_INTE1_GPIO14_LEVEL_LOW(x)     (x & 0x01000000U)       /**< Macro de campo de bit GPIO14_LEVEL_LOW registro PROC1_INTE1 */
+#define mIOBANK_PROC1_INTE1_GPIO14_LEVEL_HIGH(x)    (x & 0x02000000U)       /**< Macro de campo de bit GPIO14_LEVEL_HIGH registro PROC1_INTE1 */
+#define mIOBANK_PROC1_INTE1_GPIO14_EDGE_LOW(x)      (x & 0x04000000U)       /**< Macro de campo de bit GPIO14_EDGE_LOW registro PROC1_INTE1 */
+#define mIOBANK_PROC1_INTE1_GPIO14_EDGE_HIGH(x)     (x & 0x08000000U)       /**< Macro de campo de bit GPIO14_EDGE_HIGH registro PROC1_INTE1 */
+#define mIOBANK_PROC1_INTE1_GPIO15_LEVEL_LOW(x)     (x & 0x10000000U)       /**< Macro de campo de bit GPIO15_LEVEL_LOW registro PROC1_INTE1 */
+#define mIOBANK_PROC1_INTE1_GPIO15_LEVEL_HIGH(x)    (x & 0x20000000U)       /**< Macro de campo de bit GPIO15_LEVEL_HIGH registro PROC1_INTE1 */
+#define mIOBANK_PROC1_INTE1_GPIO15_EDGE_LOW(x)      (x & 0x40000000U)       /**< Macro de campo de bit GPIO15_EDGE_LOW registro PROC1_INTE1 */
+#define mIOBANK_PROC1_INTE1_GPIO15_EDGE_HIGH(x)     (x & 0x80000000U)       /**< Macro de campo de bit GPIO15_EDGE_HIGH registro PROC1_INTE1 */
+
+#define mIOBANK_PROC1_INTE2_GPIO16_LEVEL_LOW(x)     (x & 0x00000001U)       /**< Macro de campo de bit GPIO16_LEVEL_LOW registro PROC1_INTE2 */
+#define mIOBANK_PROC1_INTE2_GPIO16_LEVEL_HIGH(x)    (x & 0x00000002U)       /**< Macro de campo de bit GPIO16_LEVEL_HIGH registro PROC1_INTE2 */
+#define mIOBANK_PROC1_INTE2_GPIO16_EDGE_LOW(x)      (x & 0x00000004U)       /**< Macro de campo de bit GPIO16_EDGE_LOW registro PROC1_INTE2 */
+#define mIOBANK_PROC1_INTE2_GPIO16_EDGE_HIGH(x)     (x & 0x00000008U)       /**< Macro de campo de bit GPIO16_EDGE_HIGH registro PROC1_INTE2 */
+#define mIOBANK_PROC1_INTE2_GPIO17_LEVEL_LOW(x)     (x & 0x00000010U)       /**< Macro de campo de bit GPIO17_LEVEL_LOW registro PROC1_INTE2 */
+#define mIOBANK_PROC1_INTE2_GPIO17_LEVEL_HIGH(x)    (x & 0x00000020U)       /**< Macro de campo de bit GPIO17_LEVEL_HIGH registro PROC1_INTE2 */
+#define mIOBANK_PROC1_INTE2_GPIO17_EDGE_LOW(x)      (x & 0x00000040U)       /**< Macro de campo de bit GPIO17_EDGE_LOW registro PROC1_INTE2 */
+#define mIOBANK_PROC1_INTE2_GPIO17_EDGE_HIGH(x)     (x & 0x00000080U)       /**< Macro de campo de bit GPIO17_EDGE_HIGH registro PROC1_INTE2 */
+#define mIOBANK_PROC1_INTE2_GPIO18_LEVEL_LOW(x)     (x & 0x00000100U)       /**< Macro de campo de bit GPIO18_LEVEL_LOW registro PROC1_INTE2 */
+#define mIOBANK_PROC1_INTE2_GPIO18_LEVEL_HIGH(x)    (x & 0x00000200U)       /**< Macro de campo de bit GPIO18_LEVEL_HIGH registro PROC1_INTE2 */
+#define mIOBANK_PROC1_INTE2_GPIO18_EDGE_LOW(x)      (x & 0x00000400U)       /**< Macro de campo de bit GPIO18_EDGE_LOW registro PROC1_INTE2 */
+#define mIOBANK_PROC1_INTE2_GPIO18_EDGE_HIGH(x)     (x & 0x00000800U)       /**< Macro de campo de bit GPIO18_EDGE_HIGH registro PROC1_INTE2 */
+#define mIOBANK_PROC1_INTE2_GPIO19_LEVEL_LOW(x)     (x & 0x00001000U)       /**< Macro de campo de bit GPIO19_LEVEL_LOW registro PROC1_INTE2 */
+#define mIOBANK_PROC1_INTE2_GPIO19_LEVEL_HIGH(x)    (x & 0x00002000U)       /**< Macro de campo de bit GPIO19_LEVEL_HIGH registro PROC1_INTE2 */
+#define mIOBANK_PROC1_INTE2_GPIO19_EDGE_LOW(x)      (x & 0x00004000U)       /**< Macro de campo de bit GPIO19_EDGE_LOW registro PROC1_INTE2 */
+#define mIOBANK_PROC1_INTE2_GPIO19_EDGE_HIGH(x)     (x & 0x00008000U)       /**< Macro de campo de bit GPIO19_EDGE_HIGH registro PROC1_INTE2 */
+#define mIOBANK_PROC1_INTE2_GPIO20_LEVEL_LOW(x)     (x & 0x00010000U)       /**< Macro de campo de bit GPIO20_LEVEL_LOW registro PROC1_INTE2 */
+#define mIOBANK_PROC1_INTE2_GPIO20_LEVEL_HIGH(x)    (x & 0x00020000U)       /**< Macro de campo de bit GPIO20_LEVEL_HIGH registro PROC1_INTE2 */
+#define mIOBANK_PROC1_INTE2_GPIO20_EDGE_LOW(x)      (x & 0x00040000U)       /**< Macro de campo de bit GPIO20_EDGE_LOW registro PROC1_INTE2 */
+#define mIOBANK_PROC1_INTE2_GPIO20_EDGE_HIGH(x)     (x & 0x00080000U)       /**< Macro de campo de bit GPIO20_EDGE_HIGH registro PROC1_INTE2 */
+#define mIOBANK_PROC1_INTE2_GPIO21_LEVEL_LOW(x)     (x & 0x00100000U)       /**< Macro de campo de bit GPIO21_LEVEL_LOW registro PROC1_INTE2 */
+#define mIOBANK_PROC1_INTE2_GPIO21_LEVEL_HIGH(x)    (x & 0x00200000U)       /**< Macro de campo de bit GPIO21_LEVEL_HIGH registro PROC1_INTE2 */
+#define mIOBANK_PROC1_INTE2_GPIO21_EDGE_LOW(x)      (x & 0x00400000U)       /**< Macro de campo de bit GPIO21_EDGE_LOW registro PROC1_INTE2 */
+#define mIOBANK_PROC1_INTE2_GPIO21_EDGE_HIGH(x)     (x & 0x00800000U)       /**< Macro de campo de bit GPIO21_EDGE_HIGH registro PROC1_INTE2 */
+#define mIOBANK_PROC1_INTE2_GPIO22_LEVEL_LOW(x)     (x & 0x01000000U)       /**< Macro de campo de bit GPIO22_LEVEL_LOW registro PROC1_INTE2 */
+#define mIOBANK_PROC1_INTE2_GPIO22_LEVEL_HIGH(x)    (x & 0x02000000U)       /**< Macro de campo de bit GPIO22_LEVEL_HIGH registro PROC1_INTE2 */
+#define mIOBANK_PROC1_INTE2_GPIO22_EDGE_LOW(x)      (x & 0x04000000U)       /**< Macro de campo de bit GPIO22_EDGE_LOW registro PROC1_INTE2 */
+#define mIOBANK_PROC1_INTE2_GPIO22_EDGE_HIGH(x)     (x & 0x08000000U)       /**< Macro de campo de bit GPIO22_EDGE_HIGH registro PROC1_INTE2 */
+#define mIOBANK_PROC1_INTE2_GPIO23_LEVEL_LOW(x)     (x & 0x10000000U)       /**< Macro de campo de bit GPIO23_LEVEL_LOW registro PROC1_INTE2 */
+#define mIOBANK_PROC1_INTE2_GPIO23_LEVEL_HIGH(x)    (x & 0x20000000U)       /**< Macro de campo de bit GPIO23_LEVEL_HIGH registro PROC1_INTE2 */
+#define mIOBANK_PROC1_INTE2_GPIO23_EDGE_LOW(x)      (x & 0x40000000U)       /**< Macro de campo de bit GPIO23_EDGE_LOW registro PROC1_INTE2 */
+#define mIOBANK_PROC1_INTE2_GPIO23_EDGE_HIGH(x)     (x & 0x80000000U)       /**< Macro de campo de bit GPIO23_EDGE_HIGH registro PROC1_INTE2 */
+
+#define mIOBANK_PROC1_INTE3_GPIO24_LEVEL_LOW(x)     (x & 0x00000001U)       /**< Macro de campo de bit GPIO24_LEVEL_LOW registro PROC1_INTE3 */
+#define mIOBANK_PROC1_INTE3_GPIO24_LEVEL_HIGH(x)    (x & 0x00000002U)       /**< Macro de campo de bit GPIO24_LEVEL_HIGH registro PROC1_INTE3 */
+#define mIOBANK_PROC1_INTE3_GPIO24_EDGE_LOW(x)      (x & 0x00000004U)       /**< Macro de campo de bit GPIO24_EDGE_LOW registro PROC1_INTE3 */
+#define mIOBANK_PROC1_INTE3_GPIO24_EDGE_HIGH(x)     (x & 0x00000008U)       /**< Macro de campo de bit GPIO24_EDGE_HIGH registro PROC1_INTE3 */
+#define mIOBANK_PROC1_INTE3_GPIO25_LEVEL_LOW(x)     (x & 0x00000010U)       /**< Macro de campo de bit GPIO25_LEVEL_LOW registro PROC1_INTE3 */
+#define mIOBANK_PROC1_INTE3_GPIO25_LEVEL_HIGH(x)    (x & 0x00000020U)       /**< Macro de campo de bit GPIO25_LEVEL_HIGH registro PROC1_INTE3 */
+#define mIOBANK_PROC1_INTE3_GPIO25_EDGE_LOW(x)      (x & 0x00000040U)       /**< Macro de campo de bit GPIO25_EDGE_LOW registro PROC1_INTE3 */
+#define mIOBANK_PROC1_INTE3_GPIO25_EDGE_HIGH(x)     (x & 0x00000080U)       /**< Macro de campo de bit GPIO25_EDGE_HIGH registro PROC1_INTE3 */
+#define mIOBANK_PROC1_INTE3_GPIO26_LEVEL_LOW(x)     (x & 0x00000100U)       /**< Macro de campo de bit GPIO26_LEVEL_LOW registro PROC1_INTE3 */
+#define mIOBANK_PROC1_INTE3_GPIO26_LEVEL_HIGH(x)    (x & 0x00000200U)       /**< Macro de campo de bit GPIO26_LEVEL_HIGH registro PROC1_INTE3 */
+#define mIOBANK_PROC1_INTE3_GPIO26_EDGE_LOW(x)      (x & 0x00000400U)       /**< Macro de campo de bit GPIO26_EDGE_LOW registro PROC1_INTE3 */
+#define mIOBANK_PROC1_INTE3_GPIO26_EDGE_HIGH(x)     (x & 0x00000800U)       /**< Macro de campo de bit GPIO26_EDGE_HIGH registro PROC1_INTE3 */
+#define mIOBANK_PROC1_INTE3_GPIO27_LEVEL_LOW(x)     (x & 0x00001000U)       /**< Macro de campo de bit GPIO27_LEVEL_LOW registro PROC1_INTE3 */
+#define mIOBANK_PROC1_INTE3_GPIO27_LEVEL_HIGH(x)    (x & 0x00002000U)       /**< Macro de campo de bit GPIO27_LEVEL_HIGH registro PROC1_INTE3 */
+#define mIOBANK_PROC1_INTE3_GPIO27_EDGE_LOW(x)      (x & 0x00004000U)       /**< Macro de campo de bit GPIO27_EDGE_LOW registro PROC1_INTE3 */
+#define mIOBANK_PROC1_INTE3_GPIO27_EDGE_HIGH(x)     (x & 0x00008000U)       /**< Macro de campo de bit GPIO27_EDGE_HIGH registro PROC1_INTE3 */
+#define mIOBANK_PROC1_INTE3_GPIO28_LEVEL_LOW(x)     (x & 0x00010000U)       /**< Macro de campo de bit GPIO28_LEVEL_LOW registro PROC1_INTE3 */
+#define mIOBANK_PROC1_INTE3_GPIO28_LEVEL_HIGH(x)    (x & 0x00020000U)       /**< Macro de campo de bit GPIO28_LEVEL_HIGH registro PROC1_INTE3 */
+#define mIOBANK_PROC1_INTE3_GPIO28_EDGE_LOW(x)      (x & 0x00040000U)       /**< Macro de campo de bit GPIO28_EDGE_LOW registro PROC1_INTE3 */
+#define mIOBANK_PROC1_INTE3_GPIO28_EDGE_HIGH(x)     (x & 0x00080000U)       /**< Macro de campo de bit GPIO28_EDGE_HIGH registro PROC1_INTE3 */
+#define mIOBANK_PROC1_INTE3_GPIO29_LEVEL_LOW(x)     (x & 0x00100000U)       /**< Macro de campo de bit GPIO29_LEVEL_LOW registro PROC1_INTE3 */
+#define mIOBANK_PROC1_INTE3_GPIO29_LEVEL_HIGH(x)    (x & 0x00200000U)       /**< Macro de campo de bit GPIO29_LEVEL_HIGH registro PROC1_INTE3 */
+#define mIOBANK_PROC1_INTE3_GPIO29_EDGE_LOW(x)      (x & 0x00400000U)       /**< Macro de campo de bit GPIO29_EDGE_LOW registro PROC1_INTE3 */
+#define mIOBANK_PROC1_INTE3_GPIO29_EDGE_HIGH(x)     (x & 0x00800000U)       /**< Macro de campo de bit GPIO29_EDGE_HIGH registro PROC1_INTE3 */
+
+//------------------------------------------------------------------------
+
+#define mIOBANK_PROC1_INTF0_GPIO0_LEVEL_LOW(x)      (x & 0x00000001U)       /**< Macro de campo de bit GPIO0_LEVEL_LOW registro PROC1_INTF0 */
+#define mIOBANK_PROC1_INTF0_GPIO0_LEVEL_HIGH(x)     (x & 0x00000002U)       /**< Macro de campo de bit GPIO0_LEVEL_HIGH registro PROC1_INTF0 */
+#define mIOBANK_PROC1_INTF0_GPIO0_EDGE_LOW(x)       (x & 0x00000004U)       /**< Macro de campo de bit GPIO0_EDGE_LOW registro PROC1_INTF0 */
+#define mIOBANK_PROC1_INTF0_GPIO0_EDGE_HIGH(x)      (x & 0x00000008U)       /**< Macro de campo de bit GPIO0_EDGE_HIGH registro PROC1_INTF0 */
+#define mIOBANK_PROC1_INTF0_GPIO1_LEVEL_LOW(x)      (x & 0x00000010U)       /**< Macro de campo de bit GPIO1_LEVEL_LOW registro PROC1_INTF0 */
+#define mIOBANK_PROC1_INTF0_GPIO1_LEVEL_HIGH(x)     (x & 0x00000020U)       /**< Macro de campo de bit GPIO1_LEVEL_HIGH registro PROC1_INTF0 */
+#define mIOBANK_PROC1_INTF0_GPIO1_EDGE_LOW(x)       (x & 0x00000040U)       /**< Macro de campo de bit GPIO1_EDGE_LOW registro PROC1_INTF0 */
+#define mIOBANK_PROC1_INTF0_GPIO1_EDGE_HIGH(x)      (x & 0x00000080U)       /**< Macro de campo de bit GPIO1_EDGE_HIGH registro PROC1_INTF0 */
+#define mIOBANK_PROC1_INTF0_GPIO2_LEVEL_LOW(x)      (x & 0x00000100U)       /**< Macro de campo de bit GPIO2_LEVEL_LOW registro PROC1_INTF0 */
+#define mIOBANK_PROC1_INTF0_GPIO2_LEVEL_HIGH(x)     (x & 0x00000200U)       /**< Macro de campo de bit GPIO2_LEVEL_HIGH registro PROC1_INTF0 */
+#define mIOBANK_PROC1_INTF0_GPIO2_EDGE_LOW(x)       (x & 0x00000400U)       /**< Macro de campo de bit GPIO2_EDGE_LOW registro PROC1_INTF0 */
+#define mIOBANK_PROC1_INTF0_GPIO2_EDGE_HIGH(x)      (x & 0x00000800U)       /**< Macro de campo de bit GPIO0_EDGE_HIGH registro PROC1_INTF0 */
+#define mIOBANK_PROC1_INTF0_GPIO3_LEVEL_LOW(x)      (x & 0x00001000U)       /**< Macro de campo de bit GPIO3_LEVEL_LOW registro PROC1_INTF0 */
+#define mIOBANK_PROC1_INTF0_GPIO3_LEVEL_HIGH(x)     (x & 0x00002000U)       /**< Macro de campo de bit GPIO3_LEVEL_HIGH registro PROC1_INTF0 */
+#define mIOBANK_PROC1_INTF0_GPIO3_EDGE_LOW(x)       (x & 0x00004000U)       /**< Macro de campo de bit GPIO3_EDGE_LOW registro PROC1_INTF0 */
+#define mIOBANK_PROC1_INTF0_GPIO3_EDGE_HIGH(x)      (x & 0x00008000U)       /**< Macro de campo de bit GPIO3_EDGE_HIGH registro PROC1_INTF0 */
+#define mIOBANK_PROC1_INTF0_GPIO4_LEVEL_LOW(x)      (x & 0x00010000U)       /**< Macro de campo de bit GPIO4_LEVEL_LOW registro PROC1_INTF0 */
+#define mIOBANK_PROC1_INTF0_GPIO4_LEVEL_HIGH(x)     (x & 0x00020000U)       /**< Macro de campo de bit GPIO4_LEVEL_HIGH registro PROC1_INTF0 */
+#define mIOBANK_PROC1_INTF0_GPIO4_EDGE_LOW(x)       (x & 0x00040000U)       /**< Macro de campo de bit GPIO4_EDGE_LOW registro PROC1_INTF0 */
+#define mIOBANK_PROC1_INTF0_GPIO4_EDGE_HIGH(x)      (x & 0x00080000U)       /**< Macro de campo de bit GPIO4_EDGE_HIGH registro PROC1_INTF0 */
+#define mIOBANK_PROC1_INTF0_GPIO5_LEVEL_LOW(x)      (x & 0x00100000U)       /**< Macro de campo de bit GPIO5_LEVEL_LOW registro PROC1_INTF0 */
+#define mIOBANK_PROC1_INTF0_GPIO5_LEVEL_HIGH(x)     (x & 0x00200000U)       /**< Macro de campo de bit GPIO5_LEVEL_HIGH registro PROC1_INTF0 */
+#define mIOBANK_PROC1_INTF0_GPIO5_EDGE_LOW(x)       (x & 0x00400000U)       /**< Macro de campo de bit GPIO5_EDGE_LOW registro PROC1_INTF0 */
+#define mIOBANK_PROC1_INTF0_GPIO5_EDGE_HIGH(x)      (x & 0x00800000U)       /**< Macro de campo de bit GPIO5_EDGE_HIGH registro PROC1_INTF0 */
+#define mIOBANK_PROC1_INTF0_GPIO6_LEVEL_LOW(x)      (x & 0x01000000U)       /**< Macro de campo de bit GPIO6_LEVEL_LOW registro PROC1_INTF0 */
+#define mIOBANK_PROC1_INTF0_GPIO6_LEVEL_HIGH(x)     (x & 0x02000000U)       /**< Macro de campo de bit GPIO6_LEVEL_HIGH registro PROC1_INTF0 */
+#define mIOBANK_PROC1_INTF0_GPIO6_EDGE_LOW(x)       (x & 0x04000000U)       /**< Macro de campo de bit GPIO6_EDGE_LOW registro PROC1_INTF0 */
+#define mIOBANK_PROC1_INTF0_GPIO6_EDGE_HIGH(x)      (x & 0x08000000U)       /**< Macro de campo de bit GPIO6_EDGE_HIGH registro PROC1_INTF0 */
+#define mIOBANK_PROC1_INTF0_GPIO7_LEVEL_LOW(x)      (x & 0x10000000U)       /**< Macro de campo de bit GPIO7_LEVEL_LOW registro PROC1_INTF0 */
+#define mIOBANK_PROC1_INTF0_GPIO7_LEVEL_HIGH(x)     (x & 0x20000000U)       /**< Macro de campo de bit GPIO7_LEVEL_HIGH registro PROC1_INTF0 */
+#define mIOBANK_PROC1_INTF0_GPIO7_EDGE_LOW(x)       (x & 0x40000000U)       /**< Macro de campo de bit GPIO7_EDGE_LOW registro PROC1_INTF0 */
+#define mIOBANK_PROC1_INTF0_GPIO7_EDGE_HIGH(x)      (x & 0x80000000U)       /**< Macro de campo de bit GPIO7_EDGE_HIGH registro PROC1_INTF0 */
+
+#define mIOBANK_PROC1_INTF1_GPIO8_LEVEL_LOW(x)      (x & 0x00000001U)      /**< Macro de campo de bit GPIO8_LEVEL_LOW registro PROC1_INTF1 */
+#define mIOBANK_PROC1_INTF1_GPIO8_LEVEL_HIGH(x)     (x & 0x00000002U)      /**< Macro de campo de bit GPIO8_LEVEL_HIGH registro PROC1_INTF1 */
+#define mIOBANK_PROC1_INTF1_GPIO8_EDGE_LOW(x)       (x & 0x00000004U)      /**< Macro de campo de bit GPIO8_EDGE_LOW registro PROC1_INTF1 */
+#define mIOBANK_PROC1_INTF1_GPIO8_EDGE_HIGH(x)      (x & 0x00000008U)      /**< Macro de campo de bit GPIO8_EDGE_HIGH registro PROC1_INTF1 */
+#define mIOBANK_PROC1_INTF1_GPIO9_LEVEL_LOW(x)      (x & 0x00000010U)      /**< Macro de campo de bit GPIO9_LEVEL_LOW registro PROC1_INTF1 */
+#define mIOBANK_PROC1_INTF1_GPIO9_LEVEL_HIGH(x)     (x & 0x00000020U)      /**< Macro de campo de bit GPIO9_LEVEL_HIGH registro PROC1_INTF1 */
+#define mIOBANK_PROC1_INTF1_GPIO9_EDGE_LOW(x)       (x & 0x00000040U)      /**< Macro de campo de bit GPIO9_EDGE_LOW registro PROC1_INTF1 */
+#define mIOBANK_PROC1_INTF1_GPIO9_EDGE_HIGH(x)      (x & 0x00000080U)      /**< Macro de campo de bit GPIO9_EDGE_HIGH registro PROC1_INTF1 */
+#define mIOBANK_PROC1_INTF1_GPIO10_LEVEL_LOW(x)     (x & 0x00000100U)       /**< Macro de campo de bit GPIO10_LEVEL_LOW registro PROC1_INTF1 */
+#define mIOBANK_PROC1_INTF1_GPIO10_LEVEL_HIGH(x)    (x & 0x00000200U)       /**< Macro de campo de bit GPIO10_LEVEL_HIGH registro PROC1_INTF1 */
+#define mIOBANK_PROC1_INTF1_GPIO10_EDGE_LOW(x)      (x & 0x00000400U)       /**< Macro de campo de bit GPIO10_EDGE_LOW registro PROC1_INTF1 */
+#define mIOBANK_PROC1_INTF1_GPIO10_EDGE_HIGH(x)     (x & 0x00000800U)       /**< Macro de campo de bit GPIO10_EDGE_HIGH registro PROC1_INTF1 */
+#define mIOBANK_PROC1_INTF1_GPIO11_LEVEL_LOW(x)     (x & 0x00001000U)       /**< Macro de campo de bit GPIO11_LEVEL_LOW registro PROC1_INTF1 */
+#define mIOBANK_PROC1_INTF1_GPIO11_LEVEL_HIGH(x)    (x & 0x00002000U)       /**< Macro de campo de bit GPIO11_LEVEL_HIGH registro PROC1_INTF1 */
+#define mIOBANK_PROC1_INTF1_GPIO11_EDGE_LOW(x)      (x & 0x00004000U)       /**< Macro de campo de bit GPIO11_EDGE_LOW registro PROC1_INTF1 */
+#define mIOBANK_PROC1_INTF1_GPIO11_EDGE_HIGH(x)     (x & 0x00008000U)       /**< Macro de campo de bit GPIO11_EDGE_HIGH registro PROC1_INTF1 */
+#define mIOBANK_PROC1_INTF1_GPIO12_LEVEL_LOW(x)     (x & 0x00010000U)       /**< Macro de campo de bit GPIO12_LEVEL_LOW registro PROC1_INTF1 */
+#define mIOBANK_PROC1_INTF1_GPIO12_LEVEL_HIGH(x)    (x & 0x00020000U)       /**< Macro de campo de bit GPIO12_LEVEL_HIGH registro PROC1_INTF1 */
+#define mIOBANK_PROC1_INTF1_GPIO12_EDGE_LOW(x)      (x & 0x00040000U)       /**< Macro de campo de bit GPIO12_EDGE_LOW registro PROC1_INTF1 */
+#define mIOBANK_PROC1_INTF1_GPIO12_EDGE_HIGH(x)     (x & 0x00080000U)       /**< Macro de campo de bit GPIO12_EDGE_HIGH registro PROC1_INTF1 */
+#define mIOBANK_PROC1_INTF1_GPIO13_LEVEL_LOW(x)     (x & 0x00100000U)       /**< Macro de campo de bit GPIO13_LEVEL_LOW registro PROC1_INTF1 */
+#define mIOBANK_PROC1_INTF1_GPIO13_LEVEL_HIGH(x)    (x & 0x00200000U)       /**< Macro de campo de bit GPIO13_LEVEL_HIGH registro PROC1_INTF1 */
+#define mIOBANK_PROC1_INTF1_GPIO13_EDGE_LOW(x)      (x & 0x00400000U)       /**< Macro de campo de bit GPIO13_EDGE_LOW registro PROC1_INTF1 */
+#define mIOBANK_PROC1_INTF1_GPIO13_EDGE_HIGH(x)     (x & 0x00800000U)       /**< Macro de campo de bit GPIO13_EDGE_HIGH registro PROC1_INTF1 */
+#define mIOBANK_PROC1_INTF1_GPIO14_LEVEL_LOW(x)     (x & 0x01000000U)       /**< Macro de campo de bit GPIO14_LEVEL_LOW registro PROC1_INTF1 */
+#define mIOBANK_PROC1_INTF1_GPIO14_LEVEL_HIGH(x)    (x & 0x02000000U)       /**< Macro de campo de bit GPIO14_LEVEL_HIGH registro PROC1_INTF1 */
+#define mIOBANK_PROC1_INTF1_GPIO14_EDGE_LOW(x)      (x & 0x04000000U)       /**< Macro de campo de bit GPIO14_EDGE_LOW registro PROC1_INTF1 */
+#define mIOBANK_PROC1_INTF1_GPIO14_EDGE_HIGH(x)     (x & 0x08000000U)       /**< Macro de campo de bit GPIO14_EDGE_HIGH registro PROC1_INTF1 */
+#define mIOBANK_PROC1_INTF1_GPIO15_LEVEL_LOW(x)     (x & 0x10000000U)       /**< Macro de campo de bit GPIO15_LEVEL_LOW registro PROC1_INTF1 */
+#define mIOBANK_PROC1_INTF1_GPIO15_LEVEL_HIGH(x)    (x & 0x20000000U)       /**< Macro de campo de bit GPIO15_LEVEL_HIGH registro PROC1_INTF1 */
+#define mIOBANK_PROC1_INTF1_GPIO15_EDGE_LOW(x)      (x & 0x40000000U)       /**< Macro de campo de bit GPIO15_EDGE_LOW registro PROC1_INTF1 */
+#define mIOBANK_PROC1_INTF1_GPIO15_EDGE_HIGH(x)     (x & 0x80000000U)       /**< Macro de campo de bit GPIO15_EDGE_HIGH registro PROC1_INTF1 */
+
+#define mIOBANK_PROC1_INTF2_GPIO16_LEVEL_LOW(x)     (x & 0x00000001U)       /**< Macro de campo de bit GPIO16_LEVEL_LOW registro PROC1_INTF2 */
+#define mIOBANK_PROC1_INTF2_GPIO16_LEVEL_HIGH(x)    (x & 0x00000002U)       /**< Macro de campo de bit GPIO16_LEVEL_HIGH registro PROC1_INTF2 */
+#define mIOBANK_PROC1_INTF2_GPIO16_EDGE_LOW(x)      (x & 0x00000004U)       /**< Macro de campo de bit GPIO16_EDGE_LOW registro PROC1_INTF2 */
+#define mIOBANK_PROC1_INTF2_GPIO16_EDGE_HIGH(x)     (x & 0x00000008U)       /**< Macro de campo de bit GPIO16_EDGE_HIGH registro PROC1_INTF2 */
+#define mIOBANK_PROC1_INTF2_GPIO17_LEVEL_LOW(x)     (x & 0x00000010U)       /**< Macro de campo de bit GPIO17_LEVEL_LOW registro PROC1_INTF2 */
+#define mIOBANK_PROC1_INTF2_GPIO17_LEVEL_HIGH(x)    (x & 0x00000020U)       /**< Macro de campo de bit GPIO17_LEVEL_HIGH registro PROC1_INTF2 */
+#define mIOBANK_PROC1_INTF2_GPIO17_EDGE_LOW(x)      (x & 0x00000040U)       /**< Macro de campo de bit GPIO17_EDGE_LOW registro PROC1_INTF2 */
+#define mIOBANK_PROC1_INTF2_GPIO17_EDGE_HIGH(x)     (x & 0x00000080U)       /**< Macro de campo de bit GPIO17_EDGE_HIGH registro PROC1_INTF2 */
+#define mIOBANK_PROC1_INTF2_GPIO18_LEVEL_LOW(x)     (x & 0x00000100U)       /**< Macro de campo de bit GPIO18_LEVEL_LOW registro PROC1_INTF2 */
+#define mIOBANK_PROC1_INTF2_GPIO18_LEVEL_HIGH(x)    (x & 0x00000200U)       /**< Macro de campo de bit GPIO18_LEVEL_HIGH registro PROC1_INTF2 */
+#define mIOBANK_PROC1_INTF2_GPIO18_EDGE_LOW(x)      (x & 0x00000400U)       /**< Macro de campo de bit GPIO18_EDGE_LOW registro PROC1_INTF2 */
+#define mIOBANK_PROC1_INTF2_GPIO18_EDGE_HIGH(x)     (x & 0x00000800U)       /**< Macro de campo de bit GPIO18_EDGE_HIGH registro PROC1_INTF2 */
+#define mIOBANK_PROC1_INTF2_GPIO19_LEVEL_LOW(x)     (x & 0x00001000U)       /**< Macro de campo de bit GPIO19_LEVEL_LOW registro PROC1_INTF2 */
+#define mIOBANK_PROC1_INTF2_GPIO19_LEVEL_HIGH(x)    (x & 0x00002000U)       /**< Macro de campo de bit GPIO19_LEVEL_HIGH registro PROC1_INTF2 */
+#define mIOBANK_PROC1_INTF2_GPIO19_EDGE_LOW(x)      (x & 0x00004000U)       /**< Macro de campo de bit GPIO19_EDGE_LOW registro PROC1_INTF2 */
+#define mIOBANK_PROC1_INTF2_GPIO19_EDGE_HIGH(x)     (x & 0x00008000U)       /**< Macro de campo de bit GPIO19_EDGE_HIGH registro PROC1_INTF2 */
+#define mIOBANK_PROC1_INTF2_GPIO20_LEVEL_LOW(x)     (x & 0x00010000U)       /**< Macro de campo de bit GPIO20_LEVEL_LOW registro PROC1_INTF2 */
+#define mIOBANK_PROC1_INTF2_GPIO20_LEVEL_HIGH(x)    (x & 0x00020000U)       /**< Macro de campo de bit GPIO20_LEVEL_HIGH registro PROC1_INTF2 */
+#define mIOBANK_PROC1_INTF2_GPIO20_EDGE_LOW(x)      (x & 0x00040000U)       /**< Macro de campo de bit GPIO20_EDGE_LOW registro PROC1_INTF2 */
+#define mIOBANK_PROC1_INTF2_GPIO20_EDGE_HIGH(x)     (x & 0x00080000U)       /**< Macro de campo de bit GPIO20_EDGE_HIGH registro PROC1_INTF2 */
+#define mIOBANK_PROC1_INTF2_GPIO21_LEVEL_LOW(x)     (x & 0x00100000U)       /**< Macro de campo de bit GPIO21_LEVEL_LOW registro PROC1_INTF2 */
+#define mIOBANK_PROC1_INTF2_GPIO21_LEVEL_HIGH(x)    (x & 0x00200000U)       /**< Macro de campo de bit GPIO21_LEVEL_HIGH registro PROC1_INTF2 */
+#define mIOBANK_PROC1_INTF2_GPIO21_EDGE_LOW(x)      (x & 0x00400000U)       /**< Macro de campo de bit GPIO21_EDGE_LOW registro PROC1_INTF2 */
+#define mIOBANK_PROC1_INTF2_GPIO21_EDGE_HIGH(x)     (x & 0x00800000U)       /**< Macro de campo de bit GPIO21_EDGE_HIGH registro PROC1_INTF2 */
+#define mIOBANK_PROC1_INTF2_GPIO22_LEVEL_LOW(x)     (x & 0x01000000U)       /**< Macro de campo de bit GPIO22_LEVEL_LOW registro PROC1_INTF2 */
+#define mIOBANK_PROC1_INTF2_GPIO22_LEVEL_HIGH(x)    (x & 0x02000000U)       /**< Macro de campo de bit GPIO22_LEVEL_HIGH registro PROC1_INTF2 */
+#define mIOBANK_PROC1_INTF2_GPIO22_EDGE_LOW(x)      (x & 0x04000000U)       /**< Macro de campo de bit GPIO22_EDGE_LOW registro PROC1_INTF2 */
+#define mIOBANK_PROC1_INTF2_GPIO22_EDGE_HIGH(x)     (x & 0x08000000U)       /**< Macro de campo de bit GPIO22_EDGE_HIGH registro PROC1_INTF2 */
+#define mIOBANK_PROC1_INTF2_GPIO23_LEVEL_LOW(x)     (x & 0x10000000U)       /**< Macro de campo de bit GPIO23_LEVEL_LOW registro PROC1_INTF2 */
+#define mIOBANK_PROC1_INTF2_GPIO23_LEVEL_HIGH(x)    (x & 0x20000000U)       /**< Macro de campo de bit GPIO23_LEVEL_HIGH registro PROC1_INTF2 */
+#define mIOBANK_PROC1_INTF2_GPIO23_EDGE_LOW(x)      (x & 0x40000000U)       /**< Macro de campo de bit GPIO23_EDGE_LOW registro PROC1_INTF2 */
+#define mIOBANK_PROC1_INTF2_GPIO23_EDGE_HIGH(x)     (x & 0x80000000U)       /**< Macro de campo de bit GPIO23_EDGE_HIGH registro PROC1_INTF2 */
+
+#define mIOBANK_PROC1_INTF3_GPIO24_LEVEL_LOW(x)     (x & 0x00000001U)       /**< Macro de campo de bit GPIO24_LEVEL_LOW registro PROC1_INTF3 */
+#define mIOBANK_PROC1_INTF3_GPIO24_LEVEL_HIGH(x)    (x & 0x00000002U)       /**< Macro de campo de bit GPIO24_LEVEL_HIGH registro PROC1_INTF3 */
+#define mIOBANK_PROC1_INTF3_GPIO24_EDGE_LOW(x)      (x & 0x00000004U)       /**< Macro de campo de bit GPIO24_EDGE_LOW registro PROC1_INTF3 */
+#define mIOBANK_PROC1_INTF3_GPIO24_EDGE_HIGH(x)     (x & 0x00000008U)       /**< Macro de campo de bit GPIO24_EDGE_HIGH registro PROC1_INTF3 */
+#define mIOBANK_PROC1_INTF3_GPIO25_LEVEL_LOW(x)     (x & 0x00000010U)       /**< Macro de campo de bit GPIO25_LEVEL_LOW registro PROC1_INTF3 */
+#define mIOBANK_PROC1_INTF3_GPIO25_LEVEL_HIGH(x)    (x & 0x00000020U)       /**< Macro de campo de bit GPIO25_LEVEL_HIGH registro PROC1_INTF3 */
+#define mIOBANK_PROC1_INTF3_GPIO25_EDGE_LOW(x)      (x & 0x00000040U)       /**< Macro de campo de bit GPIO25_EDGE_LOW registro PROC1_INTF3 */
+#define mIOBANK_PROC1_INTF3_GPIO25_EDGE_HIGH(x)     (x & 0x00000080U)       /**< Macro de campo de bit GPIO25_EDGE_HIGH registro PROC1_INTF3 */
+#define mIOBANK_PROC1_INTF3_GPIO26_LEVEL_LOW(x)     (x & 0x00000100U)       /**< Macro de campo de bit GPIO26_LEVEL_LOW registro PROC1_INTF3 */
+#define mIOBANK_PROC1_INTF3_GPIO26_LEVEL_HIGH(x)    (x & 0x00000200U)       /**< Macro de campo de bit GPIO26_LEVEL_HIGH registro PROC1_INTF3 */
+#define mIOBANK_PROC1_INTF3_GPIO26_EDGE_LOW(x)      (x & 0x00000400U)       /**< Macro de campo de bit GPIO26_EDGE_LOW registro PROC1_INTF3 */
+#define mIOBANK_PROC1_INTF3_GPIO26_EDGE_HIGH(x)     (x & 0x00000800U)       /**< Macro de campo de bit GPIO26_EDGE_HIGH registro PROC1_INTF3 */
+#define mIOBANK_PROC1_INTF3_GPIO27_LEVEL_LOW(x)     (x & 0x00001000U)       /**< Macro de campo de bit GPIO27_LEVEL_LOW registro PROC1_INTF3 */
+#define mIOBANK_PROC1_INTF3_GPIO27_LEVEL_HIGH(x)    (x & 0x00002000U)       /**< Macro de campo de bit GPIO27_LEVEL_HIGH registro PROC1_INTF3 */
+#define mIOBANK_PROC1_INTF3_GPIO27_EDGE_LOW(x)      (x & 0x00004000U)       /**< Macro de campo de bit GPIO27_EDGE_LOW registro PROC1_INTF3 */
+#define mIOBANK_PROC1_INTF3_GPIO27_EDGE_HIGH(x)     (x & 0x00008000U)       /**< Macro de campo de bit GPIO27_EDGE_HIGH registro PROC1_INTF3 */
+#define mIOBANK_PROC1_INTF3_GPIO28_LEVEL_LOW(x)     (x & 0x00010000U)       /**< Macro de campo de bit GPIO28_LEVEL_LOW registro PROC1_INTF3 */
+#define mIOBANK_PROC1_INTF3_GPIO28_LEVEL_HIGH(x)    (x & 0x00020000U)       /**< Macro de campo de bit GPIO28_LEVEL_HIGH registro PROC1_INTF3 */
+#define mIOBANK_PROC1_INTF3_GPIO28_EDGE_LOW(x)      (x & 0x00040000U)       /**< Macro de campo de bit GPIO28_EDGE_LOW registro PROC1_INTF3 */
+#define mIOBANK_PROC1_INTF3_GPIO28_EDGE_HIGH(x)     (x & 0x00080000U)       /**< Macro de campo de bit GPIO28_EDGE_HIGH registro PROC1_INTF3 */
+#define mIOBANK_PROC1_INTF3_GPIO29_LEVEL_LOW(x)     (x & 0x00100000U)       /**< Macro de campo de bit GPIO29_LEVEL_LOW registro PROC1_INTF3 */
+#define mIOBANK_PROC1_INTF3_GPIO29_LEVEL_HIGH(x)    (x & 0x00200000U)       /**< Macro de campo de bit GPIO29_LEVEL_HIGH registro PROC1_INTF3 */
+#define mIOBANK_PROC1_INTF3_GPIO29_EDGE_LOW(x)      (x & 0x00400000U)       /**< Macro de campo de bit GPIO29_EDGE_LOW registro PROC1_INTF3 */
+#define mIOBANK_PROC1_INTF3_GPIO29_EDGE_HIGH(x)     (x & 0x00800000U)       /**< Macro de campo de bit GPIO29_EDGE_HIGH registro PROC1_INTF3 */
+
+//--------------------------------------------------------------------
+
+#define mIOBANK_PROC1_INTS0_GPIO0_LEVEL_LOW(x)      (x & 0x00000001U)       /**< Macro de campo de bit GPIO0_LEVEL_LOW registro PROC1_INTS0 */
+#define mIOBANK_PROC1_INTS0_GPIO0_LEVEL_HIGH(x)     (x & 0x00000002U)       /**< Macro de campo de bit GPIO0_LEVEL_HIGH registro PROC1_INTS0 */
+#define mIOBANK_PROC1_INTS0_GPIO0_EDGE_LOW(x)       (x & 0x00000004U)       /**< Macro de campo de bit GPIO0_EDGE_LOW registro PROC1_INTS0 */
+#define mIOBANK_PROC1_INTS0_GPIO0_EDGE_HIGH(x)      (x & 0x00000008U)       /**< Macro de campo de bit GPIO0_EDGE_HIGH registro PROC1_INTS0 */
+#define mIOBANK_PROC1_INTS0_GPIO1_LEVEL_LOW(x)      (x & 0x00000010U)       /**< Macro de campo de bit GPIO1_LEVEL_LOW registro PROC1_INTS0 */
+#define mIOBANK_PROC1_INTS0_GPIO1_LEVEL_HIGH(x)     (x & 0x00000020U)       /**< Macro de campo de bit GPIO1_LEVEL_HIGH registro PROC1_INTS0 */
+#define mIOBANK_PROC1_INTS0_GPIO1_EDGE_LOW(x)       (x & 0x00000040U)       /**< Macro de campo de bit GPIO1_EDGE_LOW registro PROC1_INTS0 */
+#define mIOBANK_PROC1_INTS0_GPIO1_EDGE_HIGH(x)      (x & 0x00000080U)       /**< Macro de campo de bit GPIO1_EDGE_HIGH registro PROC1_INTS0 */
+#define mIOBANK_PROC1_INTS0_GPIO2_LEVEL_LOW(x)      (x & 0x00000100U)       /**< Macro de campo de bit GPIO2_LEVEL_LOW registro PROC1_INTS0 */
+#define mIOBANK_PROC1_INTS0_GPIO2_LEVEL_HIGH(x)     (x & 0x00000200U)       /**< Macro de campo de bit GPIO2_LEVEL_HIGH registro PROC1_INTS0 */
+#define mIOBANK_PROC1_INTS0_GPIO2_EDGE_LOW(x)       (x & 0x00000400U)       /**< Macro de campo de bit GPIO2_EDGE_LOW registro PROC1_INTS0 */
+#define mIOBANK_PROC1_INTS0_GPIO2_EDGE_HIGH(x)      (x & 0x00000800U)       /**< Macro de campo de bit GPIO0_EDGE_HIGH registro PROC1_INTS0 */
+#define mIOBANK_PROC1_INTS0_GPIO3_LEVEL_LOW(x)      (x & 0x00001000U)       /**< Macro de campo de bit GPIO3_LEVEL_LOW registro PROC1_INTS0 */
+#define mIOBANK_PROC1_INTS0_GPIO3_LEVEL_HIGH(x)     (x & 0x00002000U)       /**< Macro de campo de bit GPIO3_LEVEL_HIGH registro PROC1_INTS0 */
+#define mIOBANK_PROC1_INTS0_GPIO3_EDGE_LOW(x)       (x & 0x00004000U)       /**< Macro de campo de bit GPIO3_EDGE_LOW registro PROC1_INTS0 */
+#define mIOBANK_PROC1_INTS0_GPIO3_EDGE_HIGH(x)      (x & 0x00008000U)       /**< Macro de campo de bit GPIO3_EDGE_HIGH registro PROC1_INTS0 */
+#define mIOBANK_PROC1_INTS0_GPIO4_LEVEL_LOW(x)      (x & 0x00010000U)       /**< Macro de campo de bit GPIO4_LEVEL_LOW registro PROC1_INTS0 */
+#define mIOBANK_PROC1_INTS0_GPIO4_LEVEL_HIGH(x)     (x & 0x00020000U)       /**< Macro de campo de bit GPIO4_LEVEL_HIGH registro PROC1_INTS0 */
+#define mIOBANK_PROC1_INTS0_GPIO4_EDGE_LOW(x)       (x & 0x00040000U)       /**< Macro de campo de bit GPIO4_EDGE_LOW registro PROC1_INTS0 */
+#define mIOBANK_PROC1_INTS0_GPIO4_EDGE_HIGH(x)      (x & 0x00080000U)       /**< Macro de campo de bit GPIO4_EDGE_HIGH registro PROC1_INTS0 */
+#define mIOBANK_PROC1_INTS0_GPIO5_LEVEL_LOW(x)      (x & 0x00100000U)       /**< Macro de campo de bit GPIO5_LEVEL_LOW registro PROC1_INTS0 */
+#define mIOBANK_PROC1_INTS0_GPIO5_LEVEL_HIGH(x)     (x & 0x00200000U)       /**< Macro de campo de bit GPIO5_LEVEL_HIGH registro PROC1_INTS0 */
+#define mIOBANK_PROC1_INTS0_GPIO5_EDGE_LOW(x)       (x & 0x00400000U)       /**< Macro de campo de bit GPIO5_EDGE_LOW registro PROC1_INTS0 */
+#define mIOBANK_PROC1_INTS0_GPIO5_EDGE_HIGH(x)      (x & 0x00800000U)       /**< Macro de campo de bit GPIO5_EDGE_HIGH registro PROC1_INTS0 */
+#define mIOBANK_PROC1_INTS0_GPIO6_LEVEL_LOW(x)      (x & 0x01000000U)       /**< Macro de campo de bit GPIO6_LEVEL_LOW registro PROC1_INTS0 */
+#define mIOBANK_PROC1_INTS0_GPIO6_LEVEL_HIGH(x)     (x & 0x02000000U)       /**< Macro de campo de bit GPIO6_LEVEL_HIGH registro PROC1_INTS0 */
+#define mIOBANK_PROC1_INTS0_GPIO6_EDGE_LOW(x)       (x & 0x04000000U)       /**< Macro de campo de bit GPIO6_EDGE_LOW registro PROC1_INTS0 */
+#define mIOBANK_PROC1_INTS0_GPIO6_EDGE_HIGH(x)      (x & 0x08000000U)       /**< Macro de campo de bit GPIO6_EDGE_HIGH registro PROC1_INTS0 */
+#define mIOBANK_PROC1_INTS0_GPIO7_LEVEL_LOW(x)      (x & 0x10000000U)       /**< Macro de campo de bit GPIO7_LEVEL_LOW registro PROC1_INTS0 */
+#define mIOBANK_PROC1_INTS0_GPIO7_LEVEL_HIGH(x)     (x & 0x20000000U)       /**< Macro de campo de bit GPIO7_LEVEL_HIGH registro PROC1_INTS0 */
+#define mIOBANK_PROC1_INTS0_GPIO7_EDGE_LOW(x)       (x & 0x40000000U)       /**< Macro de campo de bit GPIO7_EDGE_LOW registro PROC1_INTS0 */
+#define mIOBANK_PROC1_INTS0_GPIO7_EDGE_HIGH(x)      (x & 0x80000000U)       /**< Macro de campo de bit GPIO7_EDGE_HIGH registro PROC1_INTS0 */
+
+#define mIOBANK_PROC1_INTS1_GPIO8_LEVEL_LOW(x)      (x & 0x00000001U)      /**< Macro de campo de bit GPIO8_LEVEL_LOW registro PROC1_INTS1 */
+#define mIOBANK_PROC1_INTS1_GPIO8_LEVEL_HIGH(x)     (x & 0x00000002U)      /**< Macro de campo de bit GPIO8_LEVEL_HIGH registro PROC1_INTS1 */
+#define mIOBANK_PROC1_INTS1_GPIO8_EDGE_LOW(x)       (x & 0x00000004U)      /**< Macro de campo de bit GPIO8_EDGE_LOW registro PROC1_INTS1 */
+#define mIOBANK_PROC1_INTS1_GPIO8_EDGE_HIGH(x)      (x & 0x00000008U)      /**< Macro de campo de bit GPIO8_EDGE_HIGH registro PROC1_INTS1 */
+#define mIOBANK_PROC1_INTS1_GPIO9_LEVEL_LOW(x)      (x & 0x00000010U)      /**< Macro de campo de bit GPIO9_LEVEL_LOW registro PROC1_INTS1 */
+#define mIOBANK_PROC1_INTS1_GPIO9_LEVEL_HIGH(x)     (x & 0x00000020U)      /**< Macro de campo de bit GPIO9_LEVEL_HIGH registro PROC1_INTS1 */
+#define mIOBANK_PROC1_INTS1_GPIO9_EDGE_LOW(x)       (x & 0x00000040U)      /**< Macro de campo de bit GPIO9_EDGE_LOW registro PROC1_INTS1 */
+#define mIOBANK_PROC1_INTS1_GPIO9_EDGE_HIGH(x)      (x & 0x00000080U)      /**< Macro de campo de bit GPIO9_EDGE_HIGH registro PROC1_INTS1 */
+#define mIOBANK_PROC1_INTS1_GPIO10_LEVEL_LOW(x)     (x & 0x00000100U)       /**< Macro de campo de bit GPIO10_LEVEL_LOW registro PROC1_INTS1 */
+#define mIOBANK_PROC1_INTS1_GPIO10_LEVEL_HIGH(x)    (x & 0x00000200U)       /**< Macro de campo de bit GPIO10_LEVEL_HIGH registro PROC1_INTS1 */
+#define mIOBANK_PROC1_INTS1_GPIO10_EDGE_LOW(x)      (x & 0x00000400U)       /**< Macro de campo de bit GPIO10_EDGE_LOW registro PROC1_INTS1 */
+#define mIOBANK_PROC1_INTS1_GPIO10_EDGE_HIGH(x)     (x & 0x00000800U)       /**< Macro de campo de bit GPIO10_EDGE_HIGH registro PROC1_INTS1 */
+#define mIOBANK_PROC1_INTS1_GPIO11_LEVEL_LOW(x)     (x & 0x00001000U)       /**< Macro de campo de bit GPIO11_LEVEL_LOW registro PROC1_INTS1 */
+#define mIOBANK_PROC1_INTS1_GPIO11_LEVEL_HIGH(x)    (x & 0x00002000U)       /**< Macro de campo de bit GPIO11_LEVEL_HIGH registro PROC1_INTS1 */
+#define mIOBANK_PROC1_INTS1_GPIO11_EDGE_LOW(x)      (x & 0x00004000U)       /**< Macro de campo de bit GPIO11_EDGE_LOW registro PROC1_INTS1 */
+#define mIOBANK_PROC1_INTS1_GPIO11_EDGE_HIGH(x)     (x & 0x00008000U)       /**< Macro de campo de bit GPIO11_EDGE_HIGH registro PROC1_INTS1 */
+#define mIOBANK_PROC1_INTS1_GPIO12_LEVEL_LOW(x)     (x & 0x00010000U)       /**< Macro de campo de bit GPIO12_LEVEL_LOW registro PROC1_INTS1 */
+#define mIOBANK_PROC1_INTS1_GPIO12_LEVEL_HIGH(x)    (x & 0x00020000U)       /**< Macro de campo de bit GPIO12_LEVEL_HIGH registro PROC1_INTS1 */
+#define mIOBANK_PROC1_INTS1_GPIO12_EDGE_LOW(x)      (x & 0x00040000U)       /**< Macro de campo de bit GPIO12_EDGE_LOW registro PROC1_INTS1 */
+#define mIOBANK_PROC1_INTS1_GPIO12_EDGE_HIGH(x)     (x & 0x00080000U)       /**< Macro de campo de bit GPIO12_EDGE_HIGH registro PROC1_INTS1 */
+#define mIOBANK_PROC1_INTS1_GPIO13_LEVEL_LOW(x)     (x & 0x00100000U)       /**< Macro de campo de bit GPIO13_LEVEL_LOW registro PROC1_INTS1 */
+#define mIOBANK_PROC1_INTS1_GPIO13_LEVEL_HIGH(x)    (x & 0x00200000U)       /**< Macro de campo de bit GPIO13_LEVEL_HIGH registro PROC1_INTS1 */
+#define mIOBANK_PROC1_INTS1_GPIO13_EDGE_LOW(x)      (x & 0x00400000U)       /**< Macro de campo de bit GPIO13_EDGE_LOW registro PROC1_INTS1 */
+#define mIOBANK_PROC1_INTS1_GPIO13_EDGE_HIGH(x)     (x & 0x00800000U)       /**< Macro de campo de bit GPIO13_EDGE_HIGH registro PROC1_INTS1 */
+#define mIOBANK_PROC1_INTS1_GPIO14_LEVEL_LOW(x)     (x & 0x01000000U)       /**< Macro de campo de bit GPIO14_LEVEL_LOW registro PROC1_INTS1 */
+#define mIOBANK_PROC1_INTS1_GPIO14_LEVEL_HIGH(x)    (x & 0x02000000U)       /**< Macro de campo de bit GPIO14_LEVEL_HIGH registro PROC1_INTS1 */
+#define mIOBANK_PROC1_INTS1_GPIO14_EDGE_LOW(x)      (x & 0x04000000U)       /**< Macro de campo de bit GPIO14_EDGE_LOW registro PROC1_INTS1 */
+#define mIOBANK_PROC1_INTS1_GPIO14_EDGE_HIGH(x)     (x & 0x08000000U)       /**< Macro de campo de bit GPIO14_EDGE_HIGH registro PROC1_INTS1 */
+#define mIOBANK_PROC1_INTS1_GPIO15_LEVEL_LOW(x)     (x & 0x10000000U)       /**< Macro de campo de bit GPIO15_LEVEL_LOW registro PROC1_INTS1 */
+#define mIOBANK_PROC1_INTS1_GPIO15_LEVEL_HIGH(x)    (x & 0x20000000U)       /**< Macro de campo de bit GPIO15_LEVEL_HIGH registro PROC1_INTS1 */
+#define mIOBANK_PROC1_INTS1_GPIO15_EDGE_LOW(x)      (x & 0x40000000U)       /**< Macro de campo de bit GPIO15_EDGE_LOW registro PROC1_INTS1 */
+#define mIOBANK_PROC1_INTS1_GPIO15_EDGE_HIGH(x)     (x & 0x80000000U)       /**< Macro de campo de bit GPIO15_EDGE_HIGH registro PROC1_INTS1 */
+
+#define mIOBANK_PROC1_INTS2_GPIO16_LEVEL_LOW(x)     (x & 0x00000001U)       /**< Macro de campo de bit GPIO16_LEVEL_LOW registro PROC1_INTS2 */
+#define mIOBANK_PROC1_INTS2_GPIO16_LEVEL_HIGH(x)    (x & 0x00000002U)       /**< Macro de campo de bit GPIO16_LEVEL_HIGH registro PROC1_INTS2 */
+#define mIOBANK_PROC1_INTS2_GPIO16_EDGE_LOW(x)      (x & 0x00000004U)       /**< Macro de campo de bit GPIO16_EDGE_LOW registro PROC1_INTS2 */
+#define mIOBANK_PROC1_INTS2_GPIO16_EDGE_HIGH(x)     (x & 0x00000008U)       /**< Macro de campo de bit GPIO16_EDGE_HIGH registro PROC1_INTS2 */
+#define mIOBANK_PROC1_INTS2_GPIO17_LEVEL_LOW(x)     (x & 0x00000010U)       /**< Macro de campo de bit GPIO17_LEVEL_LOW registro PROC1_INTS2 */
+#define mIOBANK_PROC1_INTS2_GPIO17_LEVEL_HIGH(x)    (x & 0x00000020U)       /**< Macro de campo de bit GPIO17_LEVEL_HIGH registro PROC1_INTS2 */
+#define mIOBANK_PROC1_INTS2_GPIO17_EDGE_LOW(x)      (x & 0x00000040U)       /**< Macro de campo de bit GPIO17_EDGE_LOW registro PROC1_INTS2 */
+#define mIOBANK_PROC1_INTS2_GPIO17_EDGE_HIGH(x)     (x & 0x00000080U)       /**< Macro de campo de bit GPIO17_EDGE_HIGH registro PROC1_INTS2 */
+#define mIOBANK_PROC1_INTS2_GPIO18_LEVEL_LOW(x)     (x & 0x00000100U)       /**< Macro de campo de bit GPIO18_LEVEL_LOW registro PROC1_INTS2 */
+#define mIOBANK_PROC1_INTS2_GPIO18_LEVEL_HIGH(x)    (x & 0x00000200U)       /**< Macro de campo de bit GPIO18_LEVEL_HIGH registro PROC1_INTS2 */
+#define mIOBANK_PROC1_INTS2_GPIO18_EDGE_LOW(x)      (x & 0x00000400U)       /**< Macro de campo de bit GPIO18_EDGE_LOW registro PROC1_INTS2 */
+#define mIOBANK_PROC1_INTS2_GPIO18_EDGE_HIGH(x)     (x & 0x00000800U)       /**< Macro de campo de bit GPIO18_EDGE_HIGH registro PROC1_INTS2 */
+#define mIOBANK_PROC1_INTS2_GPIO19_LEVEL_LOW(x)     (x & 0x00001000U)       /**< Macro de campo de bit GPIO19_LEVEL_LOW registro PROC1_INTS2 */
+#define mIOBANK_PROC1_INTS2_GPIO19_LEVEL_HIGH(x)    (x & 0x00002000U)       /**< Macro de campo de bit GPIO19_LEVEL_HIGH registro PROC1_INTS2 */
+#define mIOBANK_PROC1_INTS2_GPIO19_EDGE_LOW(x)      (x & 0x00004000U)       /**< Macro de campo de bit GPIO19_EDGE_LOW registro PROC1_INTS2 */
+#define mIOBANK_PROC1_INTS2_GPIO19_EDGE_HIGH(x)     (x & 0x00008000U)       /**< Macro de campo de bit GPIO19_EDGE_HIGH registro PROC1_INTS2 */
+#define mIOBANK_PROC1_INTS2_GPIO20_LEVEL_LOW(x)     (x & 0x00010000U)       /**< Macro de campo de bit GPIO20_LEVEL_LOW registro PROC1_INTS2 */
+#define mIOBANK_PROC1_INTS2_GPIO20_LEVEL_HIGH(x)    (x & 0x00020000U)       /**< Macro de campo de bit GPIO20_LEVEL_HIGH registro PROC1_INTS2 */
+#define mIOBANK_PROC1_INTS2_GPIO20_EDGE_LOW(x)      (x & 0x00040000U)       /**< Macro de campo de bit GPIO20_EDGE_LOW registro PROC1_INTS2 */
+#define mIOBANK_PROC1_INTS2_GPIO20_EDGE_HIGH(x)     (x & 0x00080000U)       /**< Macro de campo de bit GPIO20_EDGE_HIGH registro PROC1_INTS2 */
+#define mIOBANK_PROC1_INTS2_GPIO21_LEVEL_LOW(x)     (x & 0x00100000U)       /**< Macro de campo de bit GPIO21_LEVEL_LOW registro PROC1_INTS2 */
+#define mIOBANK_PROC1_INTS2_GPIO21_LEVEL_HIGH(x)    (x & 0x00200000U)       /**< Macro de campo de bit GPIO21_LEVEL_HIGH registro PROC1_INTS2 */
+#define mIOBANK_PROC1_INTS2_GPIO21_EDGE_LOW(x)      (x & 0x00400000U)       /**< Macro de campo de bit GPIO21_EDGE_LOW registro PROC1_INTS2 */
+#define mIOBANK_PROC1_INTS2_GPIO21_EDGE_HIGH(x)     (x & 0x00800000U)       /**< Macro de campo de bit GPIO21_EDGE_HIGH registro PROC1_INTS2 */
+#define mIOBANK_PROC1_INTS2_GPIO22_LEVEL_LOW(x)     (x & 0x01000000U)       /**< Macro de campo de bit GPIO22_LEVEL_LOW registro PROC1_INTS2 */
+#define mIOBANK_PROC1_INTS2_GPIO22_LEVEL_HIGH(x)    (x & 0x02000000U)       /**< Macro de campo de bit GPIO22_LEVEL_HIGH registro PROC1_INTS2 */
+#define mIOBANK_PROC1_INTS2_GPIO22_EDGE_LOW(x)      (x & 0x04000000U)       /**< Macro de campo de bit GPIO22_EDGE_LOW registro PROC1_INTS2 */
+#define mIOBANK_PROC1_INTS2_GPIO22_EDGE_HIGH(x)     (x & 0x08000000U)       /**< Macro de campo de bit GPIO22_EDGE_HIGH registro PROC1_INTS2 */
+#define mIOBANK_PROC1_INTS2_GPIO23_LEVEL_LOW(x)     (x & 0x10000000U)       /**< Macro de campo de bit GPIO23_LEVEL_LOW registro PROC1_INTS2 */
+#define mIOBANK_PROC1_INTS2_GPIO23_LEVEL_HIGH(x)    (x & 0x20000000U)       /**< Macro de campo de bit GPIO23_LEVEL_HIGH registro PROC1_INTS2 */
+#define mIOBANK_PROC1_INTS2_GPIO23_EDGE_LOW(x)      (x & 0x40000000U)       /**< Macro de campo de bit GPIO23_EDGE_LOW registro PROC1_INTS2 */
+#define mIOBANK_PROC1_INTS2_GPIO23_EDGE_HIGH(x)     (x & 0x80000000U)       /**< Macro de campo de bit GPIO23_EDGE_HIGH registro PROC1_INTS2 */
+
+#define mIOBANK_PROC1_INTS3_GPIO24_LEVEL_LOW(x)     (x & 0x00000001U)       /**< Macro de campo de bit GPIO24_LEVEL_LOW registro PROC1_INTS3 */
+#define mIOBANK_PROC1_INTS3_GPIO24_LEVEL_HIGH(x)    (x & 0x00000002U)       /**< Macro de campo de bit GPIO24_LEVEL_HIGH registro PROC1_INTS3 */
+#define mIOBANK_PROC1_INTS3_GPIO24_EDGE_LOW(x)      (x & 0x00000004U)       /**< Macro de campo de bit GPIO24_EDGE_LOW registro PROC1_INTS3 */
+#define mIOBANK_PROC1_INTS3_GPIO24_EDGE_HIGH(x)     (x & 0x00000008U)       /**< Macro de campo de bit GPIO24_EDGE_HIGH registro PROC1_INTS3 */
+#define mIOBANK_PROC1_INTS3_GPIO25_LEVEL_LOW(x)     (x & 0x00000010U)       /**< Macro de campo de bit GPIO25_LEVEL_LOW registro PROC1_INTS3 */
+#define mIOBANK_PROC1_INTS3_GPIO25_LEVEL_HIGH(x)    (x & 0x00000020U)       /**< Macro de campo de bit GPIO25_LEVEL_HIGH registro PROC1_INTS3 */
+#define mIOBANK_PROC1_INTS3_GPIO25_EDGE_LOW(x)      (x & 0x00000040U)       /**< Macro de campo de bit GPIO25_EDGE_LOW registro PROC1_INTS3 */
+#define mIOBANK_PROC1_INTS3_GPIO25_EDGE_HIGH(x)     (x & 0x00000080U)       /**< Macro de campo de bit GPIO25_EDGE_HIGH registro PROC1_INTS3 */
+#define mIOBANK_PROC1_INTS3_GPIO26_LEVEL_LOW(x)     (x & 0x00000100U)       /**< Macro de campo de bit GPIO26_LEVEL_LOW registro PROC1_INTS3 */
+#define mIOBANK_PROC1_INTS3_GPIO26_LEVEL_HIGH(x)    (x & 0x00000200U)       /**< Macro de campo de bit GPIO26_LEVEL_HIGH registro PROC1_INTS3 */
+#define mIOBANK_PROC1_INTS3_GPIO26_EDGE_LOW(x)      (x & 0x00000400U)       /**< Macro de campo de bit GPIO26_EDGE_LOW registro PROC1_INTS3 */
+#define mIOBANK_PROC1_INTS3_GPIO26_EDGE_HIGH(x)     (x & 0x00000800U)       /**< Macro de campo de bit GPIO26_EDGE_HIGH registro PROC1_INTS3 */
+#define mIOBANK_PROC1_INTS3_GPIO27_LEVEL_LOW(x)     (x & 0x00001000U)       /**< Macro de campo de bit GPIO27_LEVEL_LOW registro PROC1_INTS3 */
+#define mIOBANK_PROC1_INTS3_GPIO27_LEVEL_HIGH(x)    (x & 0x00002000U)       /**< Macro de campo de bit GPIO27_LEVEL_HIGH registro PROC1_INTS3 */
+#define mIOBANK_PROC1_INTS3_GPIO27_EDGE_LOW(x)      (x & 0x00004000U)       /**< Macro de campo de bit GPIO27_EDGE_LOW registro PROC1_INTS3 */
+#define mIOBANK_PROC1_INTS3_GPIO27_EDGE_HIGH(x)     (x & 0x00008000U)       /**< Macro de campo de bit GPIO27_EDGE_HIGH registro PROC1_INTS3 */
+#define mIOBANK_PROC1_INTS3_GPIO28_LEVEL_LOW(x)     (x & 0x00010000U)       /**< Macro de campo de bit GPIO28_LEVEL_LOW registro PROC1_INTS3 */
+#define mIOBANK_PROC1_INTS3_GPIO28_LEVEL_HIGH(x)    (x & 0x00020000U)       /**< Macro de campo de bit GPIO28_LEVEL_HIGH registro PROC1_INTS3 */
+#define mIOBANK_PROC1_INTS3_GPIO28_EDGE_LOW(x)      (x & 0x00040000U)       /**< Macro de campo de bit GPIO28_EDGE_LOW registro PROC1_INTS3 */
+#define mIOBANK_PROC1_INTS3_GPIO28_EDGE_HIGH(x)     (x & 0x00080000U)       /**< Macro de campo de bit GPIO28_EDGE_HIGH registro PROC1_INTS3 */
+#define mIOBANK_PROC1_INTS3_GPIO29_LEVEL_LOW(x)     (x & 0x00100000U)       /**< Macro de campo de bit GPIO29_LEVEL_LOW registro PROC1_INTS3 */
+#define mIOBANK_PROC1_INTS3_GPIO29_LEVEL_HIGH(x)    (x & 0x00200000U)       /**< Macro de campo de bit GPIO29_LEVEL_HIGH registro PROC1_INTS3 */
+#define mIOBANK_PROC1_INTS3_GPIO29_EDGE_LOW(x)      (x & 0x00400000U)       /**< Macro de campo de bit GPIO29_EDGE_LOW registro PROC1_INTS3 */
+#define mIOBANK_PROC1_INTS3_GPIO29_EDGE_HIGH(x)     (x & 0x00800000U)       /**< Macro de campo de bit GPIO29_EDGE_HIGH registro PROC1_INTS3 */
+
 /**
  * @union __gpio_status_t
  * @brief Union de los registros GPIO_STATUS de 32 bits. Contiene los 9 campos de bits de los registros.
@@ -1370,332 +2126,305 @@ typedef struct {
  ****************************************************************************************
 *****************************************************************************************/
 
-// Registro GPIO0_STATUS
-#define rIOBANK0_GPIO0_STATUS sIOBANK0.GPIO0_STATUS.WORD
-#define bIOBANK0_GPIO0_OUTFROMPERI sIOBANK0.GPIO0_STATUS.BITS.OUTFROMPERI
-#define bIOBANK0_GPIO0_OUTTOPAD sIOBANK0.GPIO0_STATUS.BITS.OUTTOPAD
-#define bIOBANK0_GPIO0_OEFROMPERI sIOBANK0.GPIO0_STATUS.BITS.OEFROMPERI
-#define bIOBANK0_GPIO0_OETOPAD sIOBANK0.GPIO0_STATUS.BITS.OETOPAD
-#define bIOBANK0_GPIO0_INFROMPAD sIOBANK0.GPIO0_STATUS.BITS.INFROMPAD
-#define bIOBANK0_GPIO0_INTOPERI sIOBANK0.GPIO0_STATUS.BITS.INTOPERI
-#define bIOBANK0_GPIO0_IRQFROMPAD sIOBANK0.GPIO0_STATUS.BITS.IRQFROMPAD
-#define bIOBANK0_GPIO0_IRQTOPROC sIOBANK0.GPIO0_STATUS.BITS.IRQTOPROC
+#define rIOBANK0_GPIO0_STATUS sIOBANK0.GPIO0_STATUS.WORD                                    /**< Acceder al registro completo GPIO0_STATUS */
+#define bIOBANK0_GPIO0_OUTFROMPERI sIOBANK0.GPIO0_STATUS.BITS.OUTFROMPERI                   /**< Acceder al campo de bits OUTFROMPERI del registro GPIO0_STATUS */
+#define bIOBANK0_GPIO0_OUTTOPAD sIOBANK0.GPIO0_STATUS.BITS.OUTTOPAD                         /**< Acceder al campo de bits OUTTOPAD del registro GPIO0_STATUS */
+#define bIOBANK0_GPIO0_OEFROMPERI sIOBANK0.GPIO0_STATUS.BITS.OEFROMPERI                     /**< Acceder al campo de bits OEFROMPERI del registro GPIO0_STATUS */
+#define bIOBANK0_GPIO0_OETOPAD sIOBANK0.GPIO0_STATUS.BITS.OETOPAD                           /**< Acceder al campo de bits OETOPAD del registro GPIO0_STATUS */
+#define bIOBANK0_GPIO0_INFROMPAD sIOBANK0.GPIO0_STATUS.BITS.INFROMPAD                       /**< Acceder al campo de bits INFROMPAD del registro GPIO0_STATUS */
+#define bIOBANK0_GPIO0_INTOPERI sIOBANK0.GPIO0_STATUS.BITS.INTOPERI                         /**< Acceder al campo de bits INTOPERI del registro GPIO0_STATUS */
+#define bIOBANK0_GPIO0_IRQFROMPAD sIOBANK0.GPIO0_STATUS.BITS.IRQFROMPAD                     /**< Acceder al campo de bits IRQFROMPAD del registro GPIO0_STATUS */
+#define bIOBANK0_GPIO0_IRQTOPROC sIOBANK0.GPIO0_STATUS.BITS.IRQTOPROC                       /**< Acceder al campo de bits IRQTOPROC del registro GPIO0_STATUS */
 
-// Registro GPIO1_STATUS
-#define rIOBANK0_GPIO1_STATUS sIOBANK0.GPIO1_STATUS.WORD
-#define bIOBANK0_GPIO1_OUTFROMPERI sIOBANK0.GPIO1_STATUS.BITS.OUTFROMPERI
-#define bIOBANK0_GPIO1_OUTTOPAD sIOBANK0.GPIO1_STATUS.BITS.OUTTOPAD
-#define bIOBANK0_GPIO1_OEFROMPERI sIOBANK0.GPIO1_STATUS.BITS.OEFROMPERI
-#define bIOBANK0_GPIO1_OETOPAD sIOBANK0.GPIO1_STATUS.BITS.OETOPAD
-#define bIOBANK0_GPIO1_INFROMPAD sIOBANK0.GPIO1_STATUS.BITS.INFROMPAD
-#define bIOBANK0_GPIO1_INTOPERI sIOBANK0.GPIO1_STATUS.BITS.INTOPERI
-#define bIOBANK0_GPIO1_IRQFROMPAD sIOBANK0.GPIO1_STATUS.BITS.IRQFROMPAD
-#define bIOBANK0_GPIO1_IRQTOPROC sIOBANK0.GPIO1_STATUS.BITS.IRQTOPROC
+#define rIOBANK0_GPIO1_STATUS sIOBANK0.GPIO1_STATUS.WORD                                    /**< Acceder al registro completo GPIO1_STATUS */
+#define bIOBANK0_GPIO1_OUTFROMPERI sIOBANK0.GPIO1_STATUS.BITS.OUTFROMPERI                   /**< Acceder al campo de bits OUTFROMPERI del registro GPIO1_STATUS */
+#define bIOBANK0_GPIO1_OUTTOPAD sIOBANK0.GPIO1_STATUS.BITS.OUTTOPAD                         /**< Acceder al campo de bits OUTTOPAD del registro GPIO1_STATUS */
+#define bIOBANK0_GPIO1_OEFROMPERI sIOBANK0.GPIO1_STATUS.BITS.OEFROMPERI                     /**< Acceder al campo de bits OEFROMPERI del registro GPIO1_STATUS */
+#define bIOBANK0_GPIO1_OETOPAD sIOBANK0.GPIO1_STATUS.BITS.OETOPAD                           /**< Acceder al campo de bits OETOPAD del registro GPIO1_STATUS */
+#define bIOBANK0_GPIO1_INFROMPAD sIOBANK0.GPIO1_STATUS.BITS.INFROMPAD                       /**< Acceder al campo de bits INFROMPAD del registro GPIO1_STATUS */
+#define bIOBANK0_GPIO1_INTOPERI sIOBANK0.GPIO1_STATUS.BITS.INTOPERI                         /**< Acceder al campo de bits INTOPERI del registro GPIO1_STATUS */
+#define bIOBANK0_GPIO1_IRQFROMPAD sIOBANK0.GPIO1_STATUS.BITS.IRQFROMPAD                     /**< Acceder al campo de bits IRQFROMPAD del registro GPIO1_STATUS */
+#define bIOBANK0_GPIO1_IRQTOPROC sIOBANK0.GPIO1_STATUS.BITS.IRQTOPROC                       /**< Acceder al campo de bits IRQTOPROC del registro GPIO1_STATUS */
 
-// Registro GPIO2_STATUS
-#define rIOBANK0_GPIO2_STATUS sIOBANK0.GPIO2_STATUS.WORD
-#define bIOBANK0_GPIO2_OUTFROMPERI sIOBANK0.GPIO2_STATUS.BITS.OUTFROMPERI
-#define bIOBANK0_GPIO2_OUTTOPAD sIOBANK0.GPIO2_STATUS.BITS.OUTTOPAD
-#define bIOBANK0_GPIO2_OEFROMPERI sIOBANK0.GPIO2_STATUS.BITS.OEFROMPERI
-#define bIOBANK0_GPIO2_OETOPAD sIOBANK0.GPIO2_STATUS.BITS.OETOPAD
-#define bIOBANK0_GPIO2_INFROMPAD sIOBANK0.GPIO2_STATUS.BITS.INFROMPAD
-#define bIOBANK0_GPIO2_GPIO1O3_STATUS sIOBANK0.GPIO3_STATUS.WORD
+#define rIOBANK0_GPIO2_STATUS sIOBANK0.GPIO2_STATUS.WORD                                    /**< Acceder al registro completo GPIO2_STATUS */
+#define bIOBANK0_GPIO2_OUTFROMPERI sIOBANK0.GPIO2_STATUS.BITS.OUTFROMPERI                   /**< Acceder al campo de bits OUTFROMPERI del registro GPIO2_STATUS */
+#define bIOBANK0_GPIO2_OUTTOPAD sIOBANK0.GPIO2_STATUS.BITS.OUTTOPAD                         /**< Acceder al campo de bits OUTTOPAD del registro GPIO2_STATUS */
+#define bIOBANK0_GPIO2_OEFROMPERI sIOBANK0.GPIO2_STATUS.BITS.OEFROMPERI                     /**< Acceder al campo de bits OEFROMPERI del registro GPIO2_STATUS */
+#define bIOBANK0_GPIO2_OETOPAD sIOBANK0.GPIO2_STATUS.BITS.OETOPAD                           /**< Acceder al campo de bits OETOPAD del registro GPIO2_STATUS */
+#define bIOBANK0_GPIO2_INFROMPAD sIOBANK0.GPIO2_STATUS.BITS.INFROMPAD                       /**< Acceder al campo de bits INFROMPAD del registro GPIO2_STATUS */
+#define bIOBANK0_GPIO2_INTOPERI sIOBANK0.GPIO2_STATUS.BITS.INTOPERI                         /**< Acceder al campo de bits INTOPERI del registro GPIO2_STATUS */
+#define bIOBANK0_GPIO2_IRQFROMPAD sIOBANK0.GPIO2_STATUS.BITS.IRQFROMPAD                     /**< Acceder al campo de bits IRQFROMPAD del registro GPIO2_STATUS */
+#define bIOBANK0_GPIO2_IRQTOPROC sIOBANK0.GPIO2_STATUS.BITS.IRQTOPROC                       /**< Acceder al campo de bits IRQTOPROC del registro GPIO2_STATUS */
 
-// Registro GPIO3_STATUS
-#define bIOBANK0_GPIO3_OUTFROMPERI sIOBANK0.GPIO3_STATUS.BITS.OUTFROMPERI
-#define bIOBANK0_GPIO3_OUTTOPAD sIOBANK0.GPIO3_STATUS.BITS.OUTTOPAD
-#define bIOBANK0_GPIO3_OEFROMPERI sIOBANK0.GPIO3_STATUS.BITS.OEFROMPERI
-#define bIOBANK0_GPIO3_OETOPAD sIOBANK0.GPIO3_STATUS.BITS.OETOPAD
-#define bIOBANK0_GPIO3_INFROMPAD sIOBANK0.GPIO3_STATUS.BITS.INFROMPAD
-#define bIOBANK0_GPIO3_INTOPERI sIOBANK0.GPIO3_STATUS.BITS.INTOPERI
-#define bIOBANK0_GPIO3_IRQFROMPAD sIOBANK0.GPIO3_STATUS.BITS.IRQFROMPAD
-#define bIOBANK0_GPIO3_IRQTOPROC sIOBANK0.GPIO3_STATUS.BITS.IRQTOPROC
+#define rIOBANK0_GPIO3_STATUS sIOBANK0.GPIO3_STATUS.WORD                                    /**< Acceder al registro completo GPIO3_STATUS */
+#define bIOBANK0_GPIO3_OUTFROMPERI sIOBANK0.GPIO3_STATUS.BITS.OUTFROMPERI                   /**< Acceder al campo de bits OUTFROMPERI del registro GPIO3_STATUS */
+#define bIOBANK0_GPIO3_OUTTOPAD sIOBANK0.GPIO3_STATUS.BITS.OUTTOPAD                         /**< Acceder al campo de bits OUTTOPAD del registro GPIO3_STATUS */
+#define bIOBANK0_GPIO3_OEFROMPERI sIOBANK0.GPIO3_STATUS.BITS.OEFROMPERI                     /**< Acceder al campo de bits OEFROMPERI del registro GPIO3_STATUS */
+#define bIOBANK0_GPIO3_OETOPAD sIOBANK0.GPIO3_STATUS.BITS.OETOPAD                           /**< Acceder al campo de bits OETOPAD del registro GPIO3_STATUS */
+#define bIOBANK0_GPIO3_INFROMPAD sIOBANK0.GPIO3_STATUS.BITS.INFROMPAD                       /**< Acceder al campo de bits INFROMPAD del registro GPIO3_STATUS */
+#define bIOBANK0_GPIO3_INTOPERI sIOBANK0.GPIO3_STATUS.BITS.INTOPERI                         /**< Acceder al campo de bits INTOPERI del registro GPIO3_STATUS */
+#define bIOBANK0_GPIO3_IRQFROMPAD sIOBANK0.GPIO3_STATUS.BITS.IRQFROMPAD                     /**< Acceder al campo de bits IRQFROMPAD del registro GPIO3_STATUS */
+#define bIOBANK0_GPIO3_IRQTOPROC sIOBANK0.GPIO3_STATUS.BITS.IRQTOPROC                       /**< Acceder al campo de bits IRQTOPROC del registro GPIO3_STATUS */
 
-// Registro GPIO4_STGPIO1ATUS
-#define rIOBANK0_GPIO4_STATUS sIOBANK0.GPIO4_STATUS.WORD
-#define bIOBANK0_GPIO4_OUTFROMPERI sIOBANK0.GPIO4_STATUS.BITS.OUTFROMPERI
-#define bIOBANK0_GPIO4_OUTTOPAD sIOBANK0.GPIO4_STATUS.BITS.OUTTOPAD
-#define bIOBANK0_GPIO4_OEFROMPERI sIOBANK0.GPIO4_STATUS.BITS.OEFROMPERI
-#define bIOBANK0_GPIO4_OETOPAD sIOBANK0.GPIO4_STATUS.BITS.OETOPAD
-#define bIOBANK0_GPIO4_INFROMPAD sIOBANK0.GPIO4_STATUS.BITS.INFROMPAD
-#define bIOBANK0_GPIO4_INTOPERI sIOBANK0.GPIO4_STATUS.BITS.INTOPERI
-#define bIOBANK0_GPIO4_IRQFROMPAD sIOBANK0.GPIO4_STATUS.BITS.IRQFROMPAD
-#define bIOBANK0_GPIO4_IRQTOPROC sIOBANK0.GPIO4_STATUS.BITS.IRQTOPROC
+#define rIOBANK0_GPIO4_STATUS sIOBANK0.GPIO4_STATUS.WORD                                    /**< Acceder al registro completo GPIO4_STATUS */
+#define bIOBANK0_GPIO4_OUTFROMPERI sIOBANK0.GPIO4_STATUS.BITS.OUTFROMPERI                   /**< Acceder al campo de bits OUTFROMPERI del registro GPIO4_STATUS */
+#define bIOBANK0_GPIO4_OUTTOPAD sIOBANK0.GPIO4_STATUS.BITS.OUTTOPAD                         /**< Acceder al campo de bits OUTTOPAD del registro GPIO4_STATUS */
+#define bIOBANK0_GPIO4_OEFROMPERI sIOBANK0.GPIO4_STATUS.BITS.OEFROMPERI                     /**< Acceder al campo de bits OEFROMPERI del registro GPIO4_STATUS */
+#define bIOBANK0_GPIO4_OETOPAD sIOBANK0.GPIO4_STATUS.BITS.OETOPAD                           /**< Acceder al campo de bits OETOPAD del registro GPIO4_STATUS */
+#define bIOBANK0_GPIO4_INFROMPAD sIOBANK0.GPIO4_STATUS.BITS.INFROMPAD                       /**< Acceder al campo de bits INFROMPAD del registro GPIO4_STATUS */
+#define bIOBANK0_GPIO4_INTOPERI sIOBANK0.GPIO4_STATUS.BITS.INTOPERI                         /**< Acceder al campo de bits INTOPERI del registro GPIO4_STATUS */
+#define bIOBANK0_GPIO4_IRQFROMPAD sIOBANK0.GPIO4_STATUS.BITS.IRQFROMPAD                     /**< Acceder al campo de bits IRQFROMPAD del registro GPIO4_STATUS */
+#define bIOBANK0_GPIO4_IRQTOPROC sIOBANK0.GPIO4_STATUS.BITS.IRQTOPROC                       /**< Acceder al campo de bits IRQTOPROC del registro GPIO4_STATUS */
 
-// Registro GPIO5_STATUS
-#define rIOBANK0_GPIO5_STATUS sIOBANK0.GPIO5_STATUS.WORD
-#define bIOBANK0_GPIO5_OUTFROMPERI sIOBANK0.GPIO5_STATUS.BITS.OUTFROMPERI
-#define bIOBANK0_GPIO5_OUTTOPAD sIOBANK0.GPIO5_STATUS.BITS.OUTTOPAD
-#define bIOBANK0_GPIO5_OEFROMPERI sIOBANK0.GPIO5_STATUS.BITS.OEFROMPERI
-#define bIOBANK0_GPIO5_OETOPAD sIOBANK0.GPIO5_STATUS.BITS.OETOPAD
-#define bIOBANK0_GPIO5_INFROMPAD sIOBANK0.GPIO5_STATUS.BITS.INFROMPAD
-#define bIOBANK0_GPIO5_INTOPERI sIOBANK0.GPIO5_STATUS.BITS.INTOPERI
-#define bIOBANK0_GPIO5_IRQFROMPAD sIOBANK0.GPIO5_STATUS.BITS.IRQFROMPAD
-#define bIOBANK0_GPIO5_IRQTOPROC sIOBANK0.GPIO5_STATUS.BITS.IRQTOPROC
+#define rIOBANK0_GPIO5_STATUS sIOBANK0.GPIO5_STATUS.WORD                                    /**< Acceder al registro completo GPIO5_STATUS */
+#define bIOBANK0_GPIO5_OUTFROMPERI sIOBANK0.GPIO5_STATUS.BITS.OUTFROMPERI                   /**< Acceder al campo de bits OUTFROMPERI del registro GPIO5_STATUS */
+#define bIOBANK0_GPIO5_OUTTOPAD sIOBANK0.GPIO5_STATUS.BITS.OUTTOPAD                         /**< Acceder al campo de bits OUTTOPAD del registro GPIO5_STATUS */
+#define bIOBANK0_GPIO5_OEFROMPERI sIOBANK0.GPIO5_STATUS.BITS.OEFROMPERI                     /**< Acceder al campo de bits OEFROMPERI del registro GPIO5_STATUS */
+#define bIOBANK0_GPIO5_OETOPAD sIOBANK0.GPIO5_STATUS.BITS.OETOPAD                           /**< Acceder al campo de bits OETOPAD del registro GPIO5_STATUS */
+#define bIOBANK0_GPIO5_INFROMPAD sIOBANK0.GPIO5_STATUS.BITS.INFROMPAD                       /**< Acceder al campo de bits INFROMPAD del registro GPIO5_STATUS */
+#define bIOBANK0_GPIO5_INTOPERI sIOBANK0.GPIO5_STATUS.BITS.INTOPERI                         /**< Acceder al campo de bits INTOPERI del registro GPIO5_STATUS */
+#define bIOBANK0_GPIO5_IRQFROMPAD sIOBANK0.GPIO5_STATUS.BITS.IRQFROMPAD                     /**< Acceder al campo de bits IRQFROMPAD del registro GPIO5_STATUS */
+#define bIOBANK0_GPIO5_IRQTOPROC sIOBANK0.GPIO5_STATUS.BITS.IRQTOPROC                       /**< Acceder al campo de bits IRQTOPROC del registro GPIO5_STATUS */
 
-// Registro GPIO6_STATUS
-#define rIOBANK0_GPIO6_STATUS sIOBANK0.GPIO6_STATUS.WORD
-#define bIOBANK0_GPIO6_OUTFROMPERI sIOBANK0.GPIO6_STATUS.BITS.OUTFROMPERI
-#define bIOBANK0_GPIO6_OUTTOPAD sIOBANK0.GPIO6_STATUS.BITS.OUTTOPAD
-#define bIOBANK0_GPIO6_OEFROMPERI sIOBANK0.GPIO6_STATUS.BITS.OEFROMPERI
-#define bIOBANK0_GPIO6_OETOPAD sIOBANK0.GPIO6_STATUS.BITS.OETOPAD
-#define bIOBANK0_GPIO6_INFROMPAD sIOBANK0.GPIO6_STATUS.BITS.INFROMPAD
-#define bIOBANK0_GPIO6_INTOPERI sIOBANK0.GPIO6_STATUS.BITS.INTOPERI
-#define bIOBANK0_GPIO6_IRQFROMPAD sIOBANK0.GPIO6_STATUS.BITS.IRQFROMPAD
-#define bIOBANK0_GPIO6_IRQTOPROC sIOBANK0.GPIO6_STATUS.BITS.IRQTOPROC
+#define rIOBANK0_GPIO6_STATUS sIOBANK0.GPIO6_STATUS.WORD                                    /**< Acceder al registro completo GPIO6_STATUS */
+#define bIOBANK0_GPIO6_OUTFROMPERI sIOBANK0.GPIO6_STATUS.BITS.OUTFROMPERI                   /**< Acceder al campo de bits OUTFROMPERI del registro GPIO6_STATUS */
+#define bIOBANK0_GPIO6_OUTTOPAD sIOBANK0.GPIO6_STATUS.BITS.OUTTOPAD                         /**< Acceder al campo de bits OUTTOPAD del registro GPIO6_STATUS */
+#define bIOBANK0_GPIO6_OEFROMPERI sIOBANK0.GPIO6_STATUS.BITS.OEFROMPERI                     /**< Acceder al campo de bits OEFROMPERI del registro GPIO6_STATUS */
+#define bIOBANK0_GPIO6_OETOPAD sIOBANK0.GPIO6_STATUS.BITS.OETOPAD                           /**< Acceder al campo de bits OETOPAD del registro GPIO6_STATUS */
+#define bIOBANK0_GPIO6_INFROMPAD sIOBANK0.GPIO6_STATUS.BITS.INFROMPAD                       /**< Acceder al campo de bits INFROMPAD del registro GPIO6_STATUS */
+#define bIOBANK0_GPIO6_INTOPERI sIOBANK0.GPIO6_STATUS.BITS.INTOPERI                         /**< Acceder al campo de bits INTOPERI del registro GPIO6_STATUS */
+#define bIOBANK0_GPIO6_IRQFROMPAD sIOBANK0.GPIO6_STATUS.BITS.IRQFROMPAD                     /**< Acceder al campo de bits IRQFROMPAD del registro GPIO6_STATUS */
+#define bIOBANK0_GPIO6_IRQTOPROC sIOBANK0.GPIO6_STATUS.BITS.IRQTOPROC                       /**< Acceder al campo de bits IRQTOPROC del registro GPIO6_STATUS */
 
-// Registro GPIO7_STATUS
-#define rIOBANK0_GPIO7_STATUS sIOBANK0.GPIO7_STATUS.WORD
-#define bIOBANK0_GPIO7_OUTFROMPERI sIOBANK0.GPIO7_STATUS.BITS.OUTFROMPERI
-#define bIOBANK0_GPIO7_OUTTOPAD sIOBANK0.GPIO7_STATUS.BITS.OUTTOPAD
-#define bIOBANK0_GPIO7_OEFROMPERI sIOBANK0.GPIO7_STATUS.BITS.OEFROMPERI
-#define bIOBANK0_GPIO7_OETOPAD sIOBANK0.GPIO7_STATUS.BITS.OETOPAD
-#define bIOBANK0_GPIO7_INFROMPAD sIOBANK0.GPIO7_STATUS.BITS.INFROMPAD
-#define bIOBANK0_GPIO7_INTOPERI sIOBANK0.GPIO7_STATUS.BITS.INTOPERI
-#define bIOBANK0_GPIO7_IRQFROMPAD sIOBANK0.GPIO7_STATUS.BITS.IRQFROMPAD
-#define bIOBANK0_GPIO7_IRQTOPROC sIOBANK0.GPIO7_STATUS.BITS.IRQTOPROC
+#define rIOBANK0_GPIO7_STATUS sIOBANK0.GPIO7_STATUS.WORD                                    /**< Acceder al registro completo GPIO7_STATUS */
+#define bIOBANK0_GPIO7_OUTFROMPERI sIOBANK0.GPIO7_STATUS.BITS.OUTFROMPERI                   /**< Acceder al campo de bits OUTFROMPERI del registro GPIO7_STATUS */
+#define bIOBANK0_GPIO7_OUTTOPAD sIOBANK0.GPIO7_STATUS.BITS.OUTTOPAD                         /**< Acceder al campo de bits OUTTOPAD del registro GPIO7_STATUS */
+#define bIOBANK0_GPIO7_OEFROMPERI sIOBANK0.GPIO7_STATUS.BITS.OEFROMPERI                     /**< Acceder al campo de bits OEFROMPERI del registro GPIO7_STATUS */
+#define bIOBANK0_GPIO7_OETOPAD sIOBANK0.GPIO7_STATUS.BITS.OETOPAD                           /**< Acceder al campo de bits OETOPAD del registro GPIO7_STATUS */
+#define bIOBANK0_GPIO7_INFROMPAD sIOBANK0.GPIO7_STATUS.BITS.INFROMPAD                       /**< Acceder al campo de bits INFROMPAD del registro GPIO7_STATUS */
+#define bIOBANK0_GPIO7_INTOPERI sIOBANK0.GPIO7_STATUS.BITS.INTOPERI                         /**< Acceder al campo de bits INTOPERI del registro GPIO7_STATUS */
+#define bIOBANK0_GPIO7_IRQFROMPAD sIOBANK0.GPIO7_STATUS.BITS.IRQFROMPAD                     /**< Acceder al campo de bits IRQFROMPAD del registro GPIO7_STATUS */
+#define bIOBANK0_GPIO7_IRQTOPROC sIOBANK0.GPIO7_STATUS.BITS.IRQTOPROC                       /**< Acceder al campo de bits IRQTOPROC del registro GPIO7_STATUS */
 
-// Registro GPIO8_STATUS
-#define rIOBANK0_GPIO8_STATUS sIOBANK0.GPIO8_STATUS.WORD
-#define bIOBANK0_GPIO8_OUTFROMPERI sIOBANK0.GPIO8_STATUS.BITS.OUTFROMPERI
-#define bIOBANK0_GPIO8_OUTTOPAD sIOBANK0.GPIO8_STATUS.BITS.OUTTOPAD
-#define bIOBANK0_GPIO8_OEFROMPERI sIOBANK0.GPIO8_STATUS.BITS.OEFROMPERI
-#define bIOBANK0_GPIO8_OETOPAD sIOBANK0.GPIO8_STATUS.BITS.OETOPAD
-#define bIOBANK0_GPIO8_INFROMPAD sIOBANK0.GPIO8_STATUS.BITS.INFROMPAD
-#define bIOBANK0_GPIO8_INTOPERI sIOBANK0.GPIO8_STATUS.BITS.INTOPERI
-#define bIOBANK0_GPIO8_IRQFROMPAD sIOBANK0.GPIO8_STATUS.BITS.IRQFROMPAD
-#define bIOBANK0_GPIO8_IRQTOPROC sIOBANK0.GPIO8_STATUS.BITS.IRQTOPROC
+#define rIOBANK0_GPIO8_STATUS sIOBANK0.GPIO8_STATUS.WORD                                    /**< Acceder al registro completo GPIO8_STATUS */
+#define bIOBANK0_GPIO8_OUTFROMPERI sIOBANK0.GPIO8_STATUS.BITS.OUTFROMPERI                   /**< Acceder al campo de bits OUTFROMPERI del registro GPIO8_STATUS */
+#define bIOBANK0_GPIO8_OUTTOPAD sIOBANK0.GPIO8_STATUS.BITS.OUTTOPAD                         /**< Acceder al campo de bits OUTTOPAD del registro GPIO8_STATUS */
+#define bIOBANK0_GPIO8_OEFROMPERI sIOBANK0.GPIO8_STATUS.BITS.OEFROMPERI                     /**< Acceder al campo de bits OEFROMPERI del registro GPIO8_STATUS */
+#define bIOBANK0_GPIO8_OETOPAD sIOBANK0.GPIO8_STATUS.BITS.OETOPAD                           /**< Acceder al campo de bits OETOPAD del registro GPIO0_STATUS */
+#define bIOBANK0_GPIO8_INFROMPAD sIOBANK0.GPIO8_STATUS.BITS.INFROMPAD                       /**< Acceder al campo de bits INFROMPAD del registro GPIO8_STATUS */
+#define bIOBANK0_GPIO8_INTOPERI sIOBANK0.GPIO8_STATUS.BITS.INTOPERI                         /**< Acceder al campo de bits INTOPERI del registro GPIO8_STATUS */
+#define bIOBANK0_GPIO8_IRQFROMPAD sIOBANK0.GPIO8_STATUS.BITS.IRQFROMPAD                     /**< Acceder al campo de bits IRQFROMPAD del registro GPIO8_STATUS */
+#define bIOBANK0_GPIO8_IRQTOPROC sIOBANK0.GPIO8_STATUS.BITS.IRQTOPROC                       /**< Acceder al campo de bits IRQTOPROC del registro GPIO8_STATUS */
 
-// Registro GPIO9_STATUS
-#define rIOBANK0_GPIO9_STATUS sIOBANK0.GPIO9_STATUS.WORD
-#define bIOBANK0_GPIO9_OUTFROMPERI sIOBANK0.GPIO9_STATUS.BITS.OUTFROMPERI
-#define bIOBANK0_GPIO9_OUTTOPAD sIOBANK0.GPIO9_STATUS.BITS.OUTTOPAD
-#define bIOBANK0_GPIO9_OEFROMPERI sIOBANK0.GPIO9_STATUS.BITS.OEFROMPERI
-#define bIOBANK0_GPIO9_OETOPAD sIOBANK0.GPIO9_STATUS.BITS.OETOPAD
-#define bIOBANK0_GPIO9_INFROMPAD sIOBANK0.GPIO9_STATUS.BITS.INFROMPAD
-#define bIOBANK0_GPIO9_INTOPERI sIOBANK0.GPIO9_STATUS.BITS.INTOPERI
-#define bIOBANK0_GPIO9_IRQFROMPAD sIOBANK0.GPIO9_STATUS.BITS.IRQFROMPAD
-#define bIOBANK0_GPIO9_IRQTOPROC sIOBANK0.GPIO9_STATUS.BITS.IRQTOPROC
+#define rIOBANK0_GPIO9_STATUS sIOBANK0.GPIO9_STATUS.WORD                                    /**< Acceder al registro completo GPIO9_STATUS */
+#define bIOBANK0_GPIO9_OUTFROMPERI sIOBANK0.GPIO9_STATUS.BITS.OUTFROMPERI                   /**< Acceder al campo de bits OUTFROMPERI del registro GPIO9_STATUS */
+#define bIOBANK0_GPIO9_OUTTOPAD sIOBANK0.GPIO9_STATUS.BITS.OUTTOPAD                         /**< Acceder al campo de bits OUTTOPAD del registro GPIO9_STATUS */
+#define bIOBANK0_GPIO9_OEFROMPERI sIOBANK0.GPIO9_STATUS.BITS.OEFROMPERI                     /**< Acceder al campo de bits OEFROMPERI del registro GPIO9_STATUS */
+#define bIOBANK0_GPIO9_OETOPAD sIOBANK0.GPIO9_STATUS.BITS.OETOPAD                           /**< Acceder al campo de bits OETOPAD del registro GPIO9_STATUS */
+#define bIOBANK0_GPIO9_INFROMPAD sIOBANK0.GPIO9_STATUS.BITS.INFROMPAD                       /**< Acceder al campo de bits INFROMPAD del registro GPIO9_STATUS */
+#define bIOBANK0_GPIO9_INTOPERI sIOBANK0.GPIO9_STATUS.BITS.INTOPERI                         /**< Acceder al campo de bits INTOPERI del registro GPIO9_STATUS */
+#define bIOBANK0_GPIO9_IRQFROMPAD sIOBANK0.GPIO9_STATUS.BITS.IRQFROMPAD                     /**< Acceder al campo de bits IRQFROMPAD del registro GPIO9_STATUS */
+#define bIOBANK0_GPIO9_IRQTOPROC sIOBANK0.GPIO9_STATUS.BITS.IRQTOPROC                       /**< Acceder al campo de bits IRQTOPROC del registro GPIO9_STATUS */
 
-// Registro GPIO10_STATUS
-#define rIOBANK0_GPIO10_STATUS sIOBANK0.GPIO10_STATUS.WORD
-#define bIOBANK0_GPIO10_OUTFROMPERI sIOBANK0.GPIO10_STATUS.BITS.OUTFROMPERI
-#define bIOBANK0_GPIO10_OUTTOPAD sIOBANK0.GPIO10_STATUS.BITS.OUTTOPAD
-#define bIOBANK0_GPIO10_OEFROMPERI sIOBANK0.GPIO10_STATUS.BITS.OEFROMPERI
-#define bIOBANK0_GPIO10_OETOPAD sIOBANK0.GPIO10_STATUS.BITS.OETOPAD
-#define bIOBANK0_GPIO10_INFROMPAD sIOBANK0.GPIO10_STATUS.BITS.INFROMPAD
-#define bIOBANK0_GPIO10_INTOPERI sIOBANK0.GPIO10_STATUS.BITS.INTOPERI
-#define bIOBANK0_GPIO10_IRQFROMPAD sIOBANK0.GPIO10_STATUS.BITS.IRQFROMPAD
-#define bIOBANK0_GPIO10_IRQTOPROC sIOBANK0.GPIO10_STATUS.BITS.IRQTOPROC
+#define rIOBANK0_GPIO10_STATUS sIOBANK0.GPIO10_STATUS.WORD                                    /**< Acceder al registro completo GPIO10_STATUS */
+#define bIOBANK0_GPIO10_OUTFROMPERI sIOBANK0.GPIO10_STATUS.BITS.OUTFROMPERI                   /**< Acceder al campo de bits OUTFROMPERI del registro GPIO10_STATUS */
+#define bIOBANK0_GPIO10_OUTTOPAD sIOBANK0.GPIO10_STATUS.BITS.OUTTOPAD                         /**< Acceder al campo de bits OUTTOPAD del registro GPIO10_STATUS */
+#define bIOBANK0_GPIO10_OEFROMPERI sIOBANK0.GPIO10_STATUS.BITS.OEFROMPERI                     /**< Acceder al campo de bits OEFROMPERI del registro GPIO10_STATUS */
+#define bIOBANK0_GPIO10_OETOPAD sIOBANK0.GPIO10_STATUS.BITS.OETOPAD                           /**< Acceder al campo de bits OETOPAD del registro GPIO10_STATUS */
+#define bIOBANK0_GPIO10_INFROMPAD sIOBANK0.GPIO10_STATUS.BITS.INFROMPAD                       /**< Acceder al campo de bits INFROMPAD del registro GPIO10_STATUS */
+#define bIOBANK0_GPIO10_INTOPERI sIOBANK0.GPIO10_STATUS.BITS.INTOPERI                         /**< Acceder al campo de bits INTOPERI del registro GPIO10_STATUS */
+#define bIOBANK0_GPIO10_IRQFROMPAD sIOBANK0.GPIO10_STATUS.BITS.IRQFROMPAD                     /**< Acceder al campo de bits IRQFROMPAD del registro GPIO10_STATUS */
+#define bIOBANK0_GPIO10_IRQTOPROC sIOBANK0.GPIO10_STATUS.BITS.IRQTOPROC                       /**< Acceder al campo de bits IRQTOPROC del registro GPIO10_STATUS */
 
-// Registro GPIO11_STATUS
-#define rIOBANK0_GPIO11_STATUS sIOBANK0.GPIO11_STATUS.WORD
-#define bIOBANK0_GPIO11_OUTFROMPERI sIOBANK0.GPIO11_STATUS.BITS.OUTFROMPERI
-#define bIOBANK0_GPIO11_OUTTOPAD sIOBANK0.GPIO11_STATUS.BITS.OUTTOPAD
-#define bIOBANK0_GPIO11_OEFROMPERI sIOBANK0.GPIO11_STATUS.BITS.OEFROMPERI
-#define bIOBANK0_GPIO11_OETOPAD sIOBANK0.GPIO11_STATUS.BITS.OETOPAD
-#define bIOBANK0_GPIO11_INFROMPAD sIOBANK0.GPIO11_STATUS.BITS.INFROMPAD
-#define bIOBANK0_GPIO11_INTOPERI sIOBANK0.GPIO11_STATUS.BITS.INTOPERI
-#define bIOBANK0_GPIO11_IRQFROMPAD sIOBANK0.GPIO11_STATUS.BITS.IRQFROMPAD
-#define bIOBANK0_GPIO11_IRQTOPROC sIOBANK0.GPIO11_STATUS.BITS.IRQTOPROC
+#define rIOBANK0_GPIO11_STATUS sIOBANK0.GPIO11_STATUS.WORD                                    /**< Acceder al registro completo GPIO11_STATUS */
+#define bIOBANK0_GPIO11_OUTFROMPERI sIOBANK0.GPIO11_STATUS.BITS.OUTFROMPERI                   /**< Acceder al campo de bits OUTFROMPERI del registro GPIO11_STATUS */
+#define bIOBANK0_GPIO11_OUTTOPAD sIOBANK0.GPIO11_STATUS.BITS.OUTTOPAD                         /**< Acceder al campo de bits OUTTOPAD del registro GPIO11_STATUS */
+#define bIOBANK0_GPIO11_OEFROMPERI sIOBANK0.GPIO11_STATUS.BITS.OEFROMPERI                     /**< Acceder al campo de bits OEFROMPERI del registro GPIO11_STATUS */
+#define bIOBANK0_GPIO11_OETOPAD sIOBANK0.GPIO11_STATUS.BITS.OETOPAD                           /**< Acceder al campo de bits OETOPAD del registro GPIO11_STATUS */
+#define bIOBANK0_GPIO11_INFROMPAD sIOBANK0.GPIO11_STATUS.BITS.INFROMPAD                       /**< Acceder al campo de bits INFROMPAD del registro GPIO11_STATUS */
+#define bIOBANK0_GPIO11_INTOPERI sIOBANK0.GPIO11_STATUS.BITS.INTOPERI                         /**< Acceder al campo de bits INTOPERI del registro GPIO11_STATUS */
+#define bIOBANK0_GPIO11_IRQFROMPAD sIOBANK0.GPIO11_STATUS.BITS.IRQFROMPAD                     /**< Acceder al campo de bits IRQFROMPAD del registro GPIO11_STATUS */
+#define bIOBANK0_GPIO11_IRQTOPROC sIOBANK0.GPIO11_STATUS.BITS.IRQTOPROC                       /**< Acceder al campo de bits IRQTOPROC del registro GPIO11_STATUS */
 
-// Registro GPIO12_STATUS
-#define rIOBANK0_GPIO12_STATUS sIOBANK0.GPIO12_STATUS.WORD
-#define bIOBANK0_GPIO12_OUTFROMPERI sIOBANK0.GPIO12_STATUS.BITS.OUTFROMPERI
-#define bIOBANK0_GPIO12_OUTTOPAD sIOBANK0.GPIO12_STATUS.BITS.OUTTOPAD
-#define bIOBANK0_GPIO12_OEFROMPERI sIOBANK0.GPIO12_STATUS.BITS.OEFROMPERI
-#define bIOBANK0_GPIO12_OETOPAD sIOBANK0.GPIO12_STATUS.BITS.OETOPAD
-#define bIOBANK0_GPIO12_INFROMPAD sIOBANK0.GPIO12_STATUS.BITS.INFROMPAD
-#define bIOBANK0_GPIO12_INTOPERI sIOBANK0.GPIO12_STATUS.BITS.INTOPERI
-#define bIOBANK0_GPIO12_IRQFROMPAD sIOBANK0.GPIO12_STATUS.BITS.IRQFROMPAD
-#define bIOBANK0_GPIO12_IRQTOPROC sIOBANK0.GPIO12_STATUS.BITS.IRQTOPROC
+#define rIOBANK0_GPIO12_STATUS sIOBANK0.GPIO12_STATUS.WORD                                    /**< Acceder al registro completo GPIO12_STATUS */
+#define bIOBANK0_GPIO12_OUTFROMPERI sIOBANK0.GPIO12_STATUS.BITS.OUTFROMPERI                   /**< Acceder al campo de bits OUTFROMPERI del registro GPIO12_STATUS */
+#define bIOBANK0_GPIO12_OUTTOPAD sIOBANK0.GPIO12_STATUS.BITS.OUTTOPAD                         /**< Acceder al campo de bits OUTTOPAD del registro GPIO12_STATUS */
+#define bIOBANK0_GPIO12_OEFROMPERI sIOBANK0.GPIO12_STATUS.BITS.OEFROMPERI                     /**< Acceder al campo de bits OEFROMPERI del registro GPIO12_STATUS */
+#define bIOBANK0_GPIO12_OETOPAD sIOBANK0.GPIO12_STATUS.BITS.OETOPAD                           /**< Acceder al campo de bits OETOPAD del registro GPIO12_STATUS */
+#define bIOBANK0_GPIO12_INFROMPAD sIOBANK0.GPIO12_STATUS.BITS.INFROMPAD                       /**< Acceder al campo de bits INFROMPAD del registro GPIO12_STATUS */
+#define bIOBANK0_GPIO12_INTOPERI sIOBANK0.GPIO12_STATUS.BITS.INTOPERI                         /**< Acceder al campo de bits INTOPERI del registro GPIO12_STATUS */
+#define bIOBANK0_GPIO12_IRQFROMPAD sIOBANK0.GPIO12_STATUS.BITS.IRQFROMPAD                     /**< Acceder al campo de bits IRQFROMPAD del registro GPIO12_STATUS */
+#define bIOBANK0_GPIO12_IRQTOPROC sIOBANK0.GPIO12_STATUS.BITS.IRQTOPROC                       /**< Acceder al campo de bits IRQTOPROC del registro GPIO12_STATUS */
 
-// Registro GPIO13_STATUS
-#define rIOBANK0_GPIO13_STATUS sIOBANK0.GPIO13_STATUS.WORD
-#define bIOBANK0_GPIO13_OUTFROMPERI sIOBANK0.GPIO13_STATUS.BITS.OUTFROMPERI
-#define bIOBANK0_GPIO13_OUTTOPAD sIOBANK0.GPIO13_STATUS.BITS.OUTTOPAD
-#define bIOBANK0_GPIO13_OEFROMPERI sIOBANK0.GPIO13_STATUS.BITS.OEFROMPERI
-#define bIOBANK0_GPIO13_OETOPAD sIOBANK0.GPIO13_STATUS.BITS.OETOPAD
-#define bIOBANK0_GPIO13_INFROMPAD sIOBANK0.GPIO13_STATUS.BITS.INFROMPAD
-#define bIOBANK0_GPIO13_INTOPERI sIOBANK0.GPIO13_STATUS.BITS.INTOPERI
-#define bIOBANK0_GPIO13_IRQFROMPAD sIOBANK0.GPIO13_STATUS.BITS.IRQFROMPAD
-#define bIOBANK0_GPIO13_IRQTOPROC sIOBANK0.GPIO13_STATUS.BITS.IRQTOPROC
+#define rIOBANK0_GPIO13_STATUS sIOBANK0.GPIO13_STATUS.WORD                                    /**< Acceder al registro completo GPIO13_STATUS */
+#define bIOBANK0_GPIO13_OUTFROMPERI sIOBANK0.GPIO13_STATUS.BITS.OUTFROMPERI                   /**< Acceder al campo de bits OUTFROMPERI del registro GPIO13_STATUS */
+#define bIOBANK0_GPIO13_OUTTOPAD sIOBANK0.GPIO13_STATUS.BITS.OUTTOPAD                         /**< Acceder al campo de bits OUTTOPAD del registro GPIO13_STATUS */
+#define bIOBANK0_GPIO13_OEFROMPERI sIOBANK0.GPIO13_STATUS.BITS.OEFROMPERI                     /**< Acceder al campo de bits OEFROMPERI del registro GPIO13_STATUS */
+#define bIOBANK0_GPIO13_OETOPAD sIOBANK0.GPIO13_STATUS.BITS.OETOPAD                           /**< Acceder al campo de bits OETOPAD del registro GPIO13_STATUS */
+#define bIOBANK0_GPIO13_INFROMPAD sIOBANK0.GPIO13_STATUS.BITS.INFROMPAD                       /**< Acceder al campo de bits INFROMPAD del registro GPIO13_STATUS */
+#define bIOBANK0_GPIO13_INTOPERI sIOBANK0.GPIO13_STATUS.BITS.INTOPERI                         /**< Acceder al campo de bits INTOPERI del registro GPIO13_STATUS */
+#define bIOBANK0_GPIO13_IRQFROMPAD sIOBANK0.GPIO13_STATUS.BITS.IRQFROMPAD                     /**< Acceder al campo de bits IRQFROMPAD del registro GPIO13_STATUS */
+#define bIOBANK0_GPIO13_IRQTOPROC sIOBANK0.GPIO13_STATUS.BITS.IRQTOPROC                       /**< Acceder al campo de bits IRQTOPROC del registro GPIO13_STATUS */
 
-// Registro GPIO14_STATUS
-#define rIOBANK0_GPIO14_STATUS sIOBANK0.GPIO14_STATUS.WORD
-#define bIOBANK0_GPIO14_OUTFROMPERI sIOBANK0.GPIO14_STATUS.BITS.OUTFROMPERI
-#define bIOBANK0_GPIO14_OUTTOPAD sIOBANK0.GPIO14_STATUS.BITS.OUTTOPAD
-#define bIOBANK0_GPIO14_OEFROMPERI sIOBANK0.GPIO14_STATUS.BITS.OEFROMPERI
-#define bIOBANK0_GPIO14_OETOPAD sIOBANK0.GPIO14_STATUS.BITS.OETOPAD
-#define bIOBANK0_GPIO14_INFROMPAD sIOBANK0.GPIO14_STATUS.BITS.INFROMPAD
-#define bIOBANK0_GPIO14_INTOPERI sIOBANK0.GPIO14_STATUS.BITS.INTOPERI
-#define bIOBANK0_GPIO14_IRQFROMPAD sIOBANK0.GPIO14_STATUS.BITS.IRQFROMPAD
-#define bIOBANK0_GPIO14_IRQTOPROC sIOBANK0.GPIO14_STATUS.BITS.IRQTOPROC
+#define rIOBANK0_GPIO14_STATUS sIOBANK0.GPIO14_STATUS.WORD                                    /**< Acceder al registro completo GPIO14_STATUS */
+#define bIOBANK0_GPIO14_OUTFROMPERI sIOBANK0.GPIO14_STATUS.BITS.OUTFROMPERI                   /**< Acceder al campo de bits OUTFROMPERI del registro GPIO14_STATUS */
+#define bIOBANK0_GPIO14_OUTTOPAD sIOBANK0.GPIO14_STATUS.BITS.OUTTOPAD                         /**< Acceder al campo de bits OUTTOPAD del registro GPIO14_STATUS */
+#define bIOBANK0_GPIO14_OEFROMPERI sIOBANK0.GPIO14_STATUS.BITS.OEFROMPERI                     /**< Acceder al campo de bits OEFROMPERI del registro GPIO14_STATUS */
+#define bIOBANK0_GPIO14_OETOPAD sIOBANK0.GPIO14_STATUS.BITS.OETOPAD                           /**< Acceder al campo de bits OETOPAD del registro GPIO14_STATUS */
+#define bIOBANK0_GPIO14_INFROMPAD sIOBANK0.GPIO14_STATUS.BITS.INFROMPAD                       /**< Acceder al campo de bits INFROMPAD del registro GPIO14_STATUS */
+#define bIOBANK0_GPIO14_INTOPERI sIOBANK0.GPIO14_STATUS.BITS.INTOPERI                         /**< Acceder al campo de bits INTOPERI del registro GPIO14_STATUS */
+#define bIOBANK0_GPIO14_IRQFROMPAD sIOBANK0.GPIO14_STATUS.BITS.IRQFROMPAD                     /**< Acceder al campo de bits IRQFROMPAD del registro GPIO14_STATUS */
+#define bIOBANK0_GPIO14_IRQTOPROC sIOBANK0.GPIO14_STATUS.BITS.IRQTOPROC                       /**< Acceder al campo de bits IRQTOPROC del registro GPIO14_STATUS */
 
-// Registro GPIO15_STATUS
-#define rIOBANK0_GPIO15_STATUS sIOBANK0.GPIO15_STATUS.WORD
-#define bIOBANK0_GPIO15_OUTFROMPERI sIOBANK0.GPIO15_STATUS.BITS.OUTFROMPERI
-#define bIOBANK0_GPIO15_OUTTOPAD sIOBANK0.GPIO15_STATUS.BITS.OUTTOPAD
-#define bIOBANK0_GPIO15_OEFROMPERI sIOBANK0.GPIO15_STATUS.BITS.OEFROMPERI
-#define bIOBANK0_GPIO15_OETOPAD sIOBANK0.GPIO15_STATUS.BITS.OETOPAD
-#define bIOBANK0_GPIO15_INFROMPAD sIOBANK0.GPIO15_STATUS.BITS.INFROMPAD
-#define bIOBANK0_GPIO15_INTOPERI sIOBANK0.GPIO15_STATUS.BITS.INTOPERI
-#define bIOBANK0_GPIO15_IRQFROMPAD sIOBANK0.GPIO15_STATUS.BITS.IRQFROMPAD
-#define bIOBANK0_GPIO15_IRQTOPROC sIOBANK0.GPIO15_STATUS.BITS.IRQTOPROC
+#define rIOBANK0_GPIO15_STATUS sIOBANK0.GPIO15_STATUS.WORD                                    /**< Acceder al registro completo GPIO15_STATUS */
+#define bIOBANK0_GPIO15_OUTFROMPERI sIOBANK0.GPIO15_STATUS.BITS.OUTFROMPERI                   /**< Acceder al campo de bits OUTFROMPERI del registro GPIO15_STATUS */
+#define bIOBANK0_GPIO15_OUTTOPAD sIOBANK0.GPIO15_STATUS.BITS.OUTTOPAD                         /**< Acceder al campo de bits OUTTOPAD del registro GPIO15_STATUS */
+#define bIOBANK0_GPIO15_OEFROMPERI sIOBANK0.GPIO15_STATUS.BITS.OEFROMPERI                     /**< Acceder al campo de bits OEFROMPERI del registro GPIO15_STATUS */
+#define bIOBANK0_GPIO15_OETOPAD sIOBANK0.GPIO15_STATUS.BITS.OETOPAD                           /**< Acceder al campo de bits OETOPAD del registro GPIO15_STATUS */
+#define bIOBANK0_GPIO15_INFROMPAD sIOBANK0.GPIO15_STATUS.BITS.INFROMPAD                       /**< Acceder al campo de bits INFROMPAD del registro GPIO15_STATUS */
+#define bIOBANK0_GPIO15_INTOPERI sIOBANK0.GPIO15_STATUS.BITS.INTOPERI                         /**< Acceder al campo de bits INTOPERI del registro GPIO15_STATUS */
+#define bIOBANK0_GPIO15_IRQFROMPAD sIOBANK0.GPIO15_STATUS.BITS.IRQFROMPAD                     /**< Acceder al campo de bits IRQFROMPAD del registro GPIO15_STATUS */
+#define bIOBANK0_GPIO15_IRQTOPROC sIOBANK0.GPIO15_STATUS.BITS.IRQTOPROC                       /**< Acceder al campo de bits IRQTOPROC del registro GPIO15_STATUS */
 
-// Registro GPIO16_STATUS
-#define rIOBANK0_GPIO16_STATUS sIOBANK0.GPIO16_STATUS.WORD
-#define bIOBANK0_GPIO16_OUTFROMPERI sIOBANK0.GPIO16_STATUS.BITS.OUTFROMPERI
-#define bIOBANK0_GPIO16_OUTTOPAD sIOBANK0.GPIO16_STATUS.BITS.OUTTOPAD
-#define bIOBANK0_GPIO16_OEFROMPERI sIOBANK0.GPIO16_STATUS.BITS.OEFROMPERI
-#define bIOBANK0_GPIO16_OETOPAD sIOBANK0.GPIO16_STATUS.BITS.OETOPAD
-#define bIOBANK0_GPIO16_INFROMPAD sIOBANK0.GPIO16_STATUS.BITS.INFROMPAD
-#define bIOBANK0_GPIO16_INTOPERI sIOBANK0.GPIO16_STATUS.BITS.INTOPERI
-#define bIOBANK0_GPIO16_IRQFROMPAD sIOBANK0.GPIO16_STATUS.BITS.IRQFROMPAD
-#define bIOBANK0_GPIO16_IRQTOPROC sIOBANK0.GPIO16_STATUS.BITS.IRQTOPROC
+#define rIOBANK0_GPIO16_STATUS sIOBANK0.GPIO16_STATUS.WORD                                    /**< Acceder al registro completo GPIO16_STATUS */
+#define bIOBANK0_GPIO16_OUTFROMPERI sIOBANK0.GPIO16_STATUS.BITS.OUTFROMPERI                   /**< Acceder al campo de bits OUTFROMPERI del registro GPIO16_STATUS */
+#define bIOBANK0_GPIO16_OUTTOPAD sIOBANK0.GPIO16_STATUS.BITS.OUTTOPAD                         /**< Acceder al campo de bits OUTTOPAD del registro GPIO16_STATUS */
+#define bIOBANK0_GPIO16_OEFROMPERI sIOBANK0.GPIO16_STATUS.BITS.OEFROMPERI                     /**< Acceder al campo de bits OEFROMPERI del registro GPIO16_STATUS */
+#define bIOBANK0_GPIO16_OETOPAD sIOBANK0.GPIO16_STATUS.BITS.OETOPAD                           /**< Acceder al campo de bits OETOPAD del registro GPIO16_STATUS */
+#define bIOBANK0_GPIO16_INFROMPAD sIOBANK0.GPIO16_STATUS.BITS.INFROMPAD                       /**< Acceder al campo de bits INFROMPAD del registro GPIO16_STATUS */
+#define bIOBANK0_GPIO16_INTOPERI sIOBANK0.GPIO16_STATUS.BITS.INTOPERI                         /**< Acceder al campo de bits INTOPERI del registro GPIO16_STATUS */
+#define bIOBANK0_GPIO16_IRQFROMPAD sIOBANK0.GPIO16_STATUS.BITS.IRQFROMPAD                     /**< Acceder al campo de bits IRQFROMPAD del registro GPIO16_STATUS */
+#define bIOBANK0_GPIO16_IRQTOPROC sIOBANK0.GPIO16_STATUS.BITS.IRQTOPROC                       /**< Acceder al campo de bits IRQTOPROC del registro GPIO16_STATUS */
 
-// Registro GPIO17_STATUS
-#define rIOBANK0_GPIO17_STATUS sIOBANK0.GPIO17_STATUS.WORD
-#define bIOBANK0_GPIO17_OUTFROMPERI sIOBANK0.GPIO17_STATUS.BITS.OUTFROMPERI
-#define bIOBANK0_GPIO17_OUTTOPAD sIOBANK0.GPIO17_STATUS.BITS.OUTTOPAD
-#define bIOBANK0_GPIO17_OEFROMPERI sIOBANK0.GPIO17_STATUS.BITS.OEFROMPERI
-#define bIOBANK0_GPIO17_OETOPAD sIOBANK0.GPIO17_STATUS.BITS.OETOPAD
-#define bIOBANK0_GPIO17_INFROMPAD sIOBANK0.GPIO17_STATUS.BITS.INFROMPAD
-#define bIOBANK0_GPIO17_INTOPERI sIOBANK0.GPIO17_STATUS.BITS.INTOPERI
-#define bIOBANK0_GPIO17_IRQFROMPAD sIOBANK0.GPIO17_STATUS.BITS.IRQFROMPAD
-#define bIOBANK0_GPIO17_IRQTOPROC sIOBANK0.GPIO17_STATUS.BITS.IRQTOPROC
+#define rIOBANK0_GPIO17_STATUS sIOBANK0.GPIO17_STATUS.WORD                                    /**< Acceder al registro completo GPIO17_STATUS */
+#define bIOBANK0_GPIO17_OUTFROMPERI sIOBANK0.GPIO17_STATUS.BITS.OUTFROMPERI                   /**< Acceder al campo de bits OUTFROMPERI del registro GPIO17_STATUS */
+#define bIOBANK0_GPIO17_OUTTOPAD sIOBANK0.GPIO17_STATUS.BITS.OUTTOPAD                         /**< Acceder al campo de bits OUTTOPAD del registro GPIO17_STATUS */
+#define bIOBANK0_GPIO17_OEFROMPERI sIOBANK0.GPIO17_STATUS.BITS.OEFROMPERI                     /**< Acceder al campo de bits OEFROMPERI del registro GPIO17_STATUS */
+#define bIOBANK0_GPIO17_OETOPAD sIOBANK0.GPIO17_STATUS.BITS.OETOPAD                           /**< Acceder al campo de bits OETOPAD del registro GPIO17_STATUS */
+#define bIOBANK0_GPIO17_INFROMPAD sIOBANK0.GPIO17_STATUS.BITS.INFROMPAD                       /**< Acceder al campo de bits INFROMPAD del registro GPIO17_STATUS */
+#define bIOBANK0_GPIO17_INTOPERI sIOBANK0.GPIO17_STATUS.BITS.INTOPERI                         /**< Acceder al campo de bits INTOPERI del registro GPIO17_STATUS */
+#define bIOBANK0_GPIO17_IRQFROMPAD sIOBANK0.GPIO17_STATUS.BITS.IRQFROMPAD                     /**< Acceder al campo de bits IRQFROMPAD del registro GPIO17_STATUS */
+#define bIOBANK0_GPIO17_IRQTOPROC sIOBANK0.GPIO17_STATUS.BITS.IRQTOPROC                       /**< Acceder al campo de bits IRQTOPROC del registro GPIO17_STATUS */
 
-// Registro GPIO18_STATUS
-#define rIOBANK0_GPIO18_STATUS sIOBANK0.GPIO18_STATUS.WORD
-#define bIOBANK0_GPIO18_OUTFROMPERI sIOBANK0.GPIO18_STATUS.BITS.OUTFROMPERI
-#define bIOBANK0_GPIO18_OUTTOPAD sIOBANK0.GPIO18_STATUS.BITS.OUTTOPAD
-#define bIOBANK0_GPIO18_OEFROMPERI sIOBANK0.GPIO18_STATUS.BITS.OEFROMPERI
-#define bIOBANK0_GPIO18_OETOPAD sIOBANK0.GPIO18_STATUS.BITS.OETOPAD
-#define bIOBANK0_GPIO18_INFROMPAD sIOBANK0.GPIO18_STATUS.BITS.INFROMPAD
-#define bIOBANK0_GPIO18_INTOPERI sIOBANK0.GPIO18_STATUS.BITS.INTOPERI
-#define bIOBANK0_GPIO18_IRQFROMPAD sIOBANK0.GPIO18_STATUS.BITS.IRQFROMPAD
-#define bIOBANK0_GPIO18_IRQTOPROC sIOBANK0.GPIO18_STATUS.BITS.IRQTOPROC
+#define rIOBANK0_GPIO18_STATUS sIOBANK0.GPIO18_STATUS.WORD                                    /**< Acceder al registro completo GPIO18_STATUS */
+#define bIOBANK0_GPIO18_OUTFROMPERI sIOBANK0.GPIO18_STATUS.BITS.OUTFROMPERI                   /**< Acceder al campo de bits OUTFROMPERI del registro GPIO18_STATUS */
+#define bIOBANK0_GPIO18_OUTTOPAD sIOBANK0.GPIO18_STATUS.BITS.OUTTOPAD                         /**< Acceder al campo de bits OUTTOPAD del registro GPIO18_STATUS */
+#define bIOBANK0_GPIO18_OEFROMPERI sIOBANK0.GPIO18_STATUS.BITS.OEFROMPERI                     /**< Acceder al campo de bits OEFROMPERI del registro GPIO18_STATUS */
+#define bIOBANK0_GPIO18_OETOPAD sIOBANK0.GPIO18_STATUS.BITS.OETOPAD                           /**< Acceder al campo de bits OETOPAD del registro GPIO18_STATUS */
+#define bIOBANK0_GPIO18_INFROMPAD sIOBANK0.GPIO18_STATUS.BITS.INFROMPAD                       /**< Acceder al campo de bits INFROMPAD del registro GPIO18_STATUS */
+#define bIOBANK0_GPIO18_INTOPERI sIOBANK0.GPIO18_STATUS.BITS.INTOPERI                         /**< Acceder al campo de bits INTOPERI del registro GPIO18_STATUS */
+#define bIOBANK0_GPIO18_IRQFROMPAD sIOBANK0.GPIO18_STATUS.BITS.IRQFROMPAD                     /**< Acceder al campo de bits IRQFROMPAD del registro GPIO18_STATUS */
+#define bIOBANK0_GPIO18_IRQTOPROC sIOBANK0.GPIO18_STATUS.BITS.IRQTOPROC                       /**< Acceder al campo de bits IRQTOPROC del registro GPIO18_STATUS */
 
-// Registro GPIO19_STATUS
-#define rIOBANK0_GPIO19_STATUS sIOBANK0.GPIO19_STATUS.WORD
-#define bIOBANK0_GPIO19_OUTFROMPERI sIOBANK0.GPIO19_STATUS.BITS.OUTFROMPERI
-#define bIOBANK0_GPIO19_OUTTOPAD sIOBANK0.GPIO19_STATUS.BITS.OUTTOPAD
-#define bIOBANK0_GPIO19_OEFROMPERI sIOBANK0.GPIO19_STATUS.BITS.OEFROMPERI
-#define bIOBANK0_GPIO19_OETOPAD sIOBANK0.GPIO19_STATUS.BITS.OETOPAD
-#define bIOBANK0_GPIO19_INFROMPAD sIOBANK0.GPIO19_STATUS.BITS.INFROMPAD
-#define bIOBANK0_GPIO19_INTOPERI sIOBANK0.GPIO19_STATUS.BITS.INTOPERI
-#define bIOBANK0_GPIO19_IRQFROMPAD sIOBANK0.GPIO19_STATUS.BITS.IRQFROMPAD
-#define bIOBANK0_GPIO19_IRQTOPROC sIOBANK0.GPIO19_STATUS.BITS.IRQTOPROC
+#define rIOBANK0_GPIO19_STATUS sIOBANK0.GPIO19_STATUS.WORD                                    /**< Acceder al registro completo GPIO19_STATUS */
+#define bIOBANK0_GPIO19_OUTFROMPERI sIOBANK0.GPIO19_STATUS.BITS.OUTFROMPERI                   /**< Acceder al campo de bits OUTFROMPERI del registro GPIO19_STATUS */
+#define bIOBANK0_GPIO19_OUTTOPAD sIOBANK0.GPIO19_STATUS.BITS.OUTTOPAD                         /**< Acceder al campo de bits OUTTOPAD del registro GPIO19_STATUS */
+#define bIOBANK0_GPIO19_OEFROMPERI sIOBANK0.GPIO19_STATUS.BITS.OEFROMPERI                     /**< Acceder al campo de bits OEFROMPERI del registro GPIO19_STATUS */
+#define bIOBANK0_GPIO19_OETOPAD sIOBANK0.GPIO19_STATUS.BITS.OETOPAD                           /**< Acceder al campo de bits OETOPAD del registro GPIO19_STATUS */
+#define bIOBANK0_GPIO19_INFROMPAD sIOBANK0.GPIO19_STATUS.BITS.INFROMPAD                       /**< Acceder al campo de bits INFROMPAD del registro GPIO19_STATUS */
+#define bIOBANK0_GPIO19_INTOPERI sIOBANK0.GPIO19_STATUS.BITS.INTOPERI                         /**< Acceder al campo de bits INTOPERI del registro GPIO19_STATUS */
+#define bIOBANK0_GPIO19_IRQFROMPAD sIOBANK0.GPIO19_STATUS.BITS.IRQFROMPAD                     /**< Acceder al campo de bits IRQFROMPAD del registro GPIO19_STATUS */
+#define bIOBANK0_GPIO19_IRQTOPROC sIOBANK0.GPIO19_STATUS.BITS.IRQTOPROC                       /**< Acceder al campo de bits IRQTOPROC del registro GPIO19_STATUS */
 
-// Registro GPIO20_STATUS
-#define rIOBANK0_GPIO20_STATUS sIOBANK0.GPIO20_STATUS.WORD
-#define bIOBANK0_GPIO20_OUTFROMPERI sIOBANK0.GPIO20_STATUS.BITS.OUTFROMPERI
-#define bIOBANK0_GPIO20_OUTTOPAD sIOBANK0.GPIO20_STATUS.BITS.OUTTOPAD
-#define bIOBANK0_GPIO20_OEFROMPERI sIOBANK0.GPIO20_STATUS.BITS.OEFROMPERI
-#define bIOBANK0_GPIO20_OETOPAD sIOBANK0.GPIO20_STATUS.BITS.OETOPAD
-#define bIOBANK0_GPIO20_INFROMPAD sIOBANK0.GPIO20_STATUS.BITS.INFROMPAD
-#define bIOBANK0_GPIO20_INTOPERI sIOBANK0.GPIO20_STATUS.BITS.INTOPERI
-#define bIOBANK0_GPIO20_IRQFROMPAD sIOBANK0.GPIO20_STATUS.BITS.IRQFROMPAD
-#define bIOBANK0_GPIO20_IRQTOPROC sIOBANK0.GPIO20_STATUS.BITS.IRQTOPROC
+#define rIOBANK0_GPIO20_STATUS sIOBANK0.GPIO20_STATUS.WORD                                    /**< Acceder al registro completo GPIO20_STATUS */
+#define bIOBANK0_GPIO20_OUTFROMPERI sIOBANK0.GPIO20_STATUS.BITS.OUTFROMPERI                   /**< Acceder al campo de bits OUTFROMPERI del registro GPIO20_STATUS */
+#define bIOBANK0_GPIO20_OUTTOPAD sIOBANK0.GPIO20_STATUS.BITS.OUTTOPAD                         /**< Acceder al campo de bits OUTTOPAD del registro GPIO20_STATUS */
+#define bIOBANK0_GPIO20_OEFROMPERI sIOBANK0.GPIO20_STATUS.BITS.OEFROMPERI                     /**< Acceder al campo de bits OEFROMPERI del registro GPIO20_STATUS */
+#define bIOBANK0_GPIO20_OETOPAD sIOBANK0.GPIO20_STATUS.BITS.OETOPAD                           /**< Acceder al campo de bits OETOPAD del registro GPIO20_STATUS */
+#define bIOBANK0_GPIO20_INFROMPAD sIOBANK0.GPIO20_STATUS.BITS.INFROMPAD                       /**< Acceder al campo de bits INFROMPAD del registro GPIO20_STATUS */
+#define bIOBANK0_GPIO20_INTOPERI sIOBANK0.GPIO20_STATUS.BITS.INTOPERI                         /**< Acceder al campo de bits INTOPERI del registro GPIO20_STATUS */
+#define bIOBANK0_GPIO20_IRQFROMPAD sIOBANK0.GPIO20_STATUS.BITS.IRQFROMPAD                     /**< Acceder al campo de bits IRQFROMPAD del registro GPIO20_STATUS */
+#define bIOBANK0_GPIO20_IRQTOPROC sIOBANK0.GPIO20_STATUS.BITS.IRQTOPROC                       /**< Acceder al campo de bits IRQTOPROC del registro GPIO20_STATUS */
 
-// Registro GPIO21_STATUS
-#define rIOBANK0_GPIO21_STATUS sIOBANK0.GPIO21_STATUS.WORD
-#define bIOBANK0_GPIO21_OUTFROMPERI sIOBANK0.GPIO21_STATUS.BITS.OUTFROMPERI
-#define bIOBANK0_GPIO21_OUTTOPAD sIOBANK0.GPIO21_STATUS.BITS.OUTTOPAD
-#define bIOBANK0_GPIO21_OEFROMPERI sIOBANK0.GPIO21_STATUS.BITS.OEFROMPERI
-#define bIOBANK0_GPIO21_OETOPAD sIOBANK0.GPIO21_STATUS.BITS.OETOPAD
-#define bIOBANK0_GPIO21_INFROMPAD sIOBANK0.GPIO21_STATUS.BITS.INFROMPAD
-#define bIOBANK0_GPIO21_INTOPERI sIOBANK0.GPIO21_STATUS.BITS.INTOPERI
-#define bIOBANK0_GPIO21_IRQFROMPAD sIOBANK0.GPIO21_STATUS.BITS.IRQFROMPAD
-#define bIOBANK0_GPIO21_IRQTOPROC sIOBANK0.GPIO21_STATUS.BITS.IRQTOPROC
+#define rIOBANK0_GPIO21_STATUS sIOBANK0.GPIO21_STATUS.WORD                                    /**< Acceder al registro completo GPIO21_STATUS */
+#define bIOBANK0_GPIO21_OUTFROMPERI sIOBANK0.GPIO21_STATUS.BITS.OUTFROMPERI                   /**< Acceder al campo de bits OUTFROMPERI del registro GPIO21_STATUS */
+#define bIOBANK0_GPIO21_OUTTOPAD sIOBANK0.GPIO21_STATUS.BITS.OUTTOPAD                         /**< Acceder al campo de bits OUTTOPAD del registro GPIO21_STATUS */
+#define bIOBANK0_GPIO21_OEFROMPERI sIOBANK0.GPIO21_STATUS.BITS.OEFROMPERI                     /**< Acceder al campo de bits OEFROMPERI del registro GPIO21_STATUS */
+#define bIOBANK0_GPIO21_OETOPAD sIOBANK0.GPIO21_STATUS.BITS.OETOPAD                           /**< Acceder al campo de bits OETOPAD del registro GPIO21_STATUS */
+#define bIOBANK0_GPIO21_INFROMPAD sIOBANK0.GPIO21_STATUS.BITS.INFROMPAD                       /**< Acceder al campo de bits INFROMPAD del registro GPIO21_STATUS */
+#define bIOBANK0_GPIO21_INTOPERI sIOBANK0.GPIO21_STATUS.BITS.INTOPERI                         /**< Acceder al campo de bits INTOPERI del registro GPIO21_STATUS */
+#define bIOBANK0_GPIO21_IRQFROMPAD sIOBANK0.GPIO21_STATUS.BITS.IRQFROMPAD                     /**< Acceder al campo de bits IRQFROMPAD del registro GPIO21_STATUS */
+#define bIOBANK0_GPIO21_IRQTOPROC sIOBANK0.GPIO21_STATUS.BITS.IRQTOPROC                       /**< Acceder al campo de bits IRQTOPROC del registro GPIO21_STATUS */
 
-// Registro GPIO22_STATUS
-#define rIOBANK0_GPIO22_STATUS sIOBANK0.GPIO22_STATUS.WORD
-#define bIOBANK0_GPIO22_OUTFROMPERI sIOBANK0.GPIO22_STATUS.BITS.OUTFROMPERI
-#define bIOBANK0_GPIO22_OUTTOPAD sIOBANK0.GPIO22_STATUS.BITS.OUTTOPAD
-#define bIOBANK0_GPIO22_OEFROMPERI sIOBANK0.GPIO22_STATUS.BITS.OEFROMPERI
-#define bIOBANK0_GPIO22_OETOPAD sIOBANK0.GPIO22_STATUS.BITS.OETOPAD
-#define bIOBANK0_GPIO22_INFROMPAD sIOBANK0.GPIO22_STATUS.BITS.INFROMPAD
-#define bIOBANK0_GPIO22_INTOPERI sIOBANK0.GPIO22_STATUS.BITS.INTOPERI
-#define bIOBANK0_GPIO22_IRQFROMPAD sIOBANK0.GPIO22_STATUS.BITS.IRQFROMPAD
-#define bIOBANK0_GPIO22_IRQTOPROC sIOBANK0.GPIO22_STATUS.BITS.IRQTOPROC
+#define rIOBANK0_GPIO22_STATUS sIOBANK0.GPIO22_STATUS.WORD                                    /**< Acceder al registro completo GPIO22_STATUS */
+#define bIOBANK0_GPIO22_OUTFROMPERI sIOBANK0.GPIO22_STATUS.BITS.OUTFROMPERI                   /**< Acceder al campo de bits OUTFROMPERI del registro GPIO22_STATUS */
+#define bIOBANK0_GPIO22_OUTTOPAD sIOBANK0.GPIO22_STATUS.BITS.OUTTOPAD                         /**< Acceder al campo de bits OUTTOPAD del registro GPIO22_STATUS */
+#define bIOBANK0_GPIO22_OEFROMPERI sIOBANK0.GPIO22_STATUS.BITS.OEFROMPERI                     /**< Acceder al campo de bits OEFROMPERI del registro GPIO22_STATUS */
+#define bIOBANK0_GPIO22_OETOPAD sIOBANK0.GPIO22_STATUS.BITS.OETOPAD                           /**< Acceder al campo de bits OETOPAD del registro GPIO22_STATUS */
+#define bIOBANK0_GPIO22_INFROMPAD sIOBANK0.GPIO22_STATUS.BITS.INFROMPAD                       /**< Acceder al campo de bits INFROMPAD del registro GPIO22_STATUS */
+#define bIOBANK0_GPIO22_INTOPERI sIOBANK0.GPIO22_STATUS.BITS.INTOPERI                         /**< Acceder al campo de bits INTOPERI del registro GPIO22_STATUS */
+#define bIOBANK0_GPIO22_IRQFROMPAD sIOBANK0.GPIO22_STATUS.BITS.IRQFROMPAD                     /**< Acceder al campo de bits IRQFROMPAD del registro GPIO22_STATUS */
+#define bIOBANK0_GPIO22_IRQTOPROC sIOBANK0.GPIO22_STATUS.BITS.IRQTOPROC                       /**< Acceder al campo de bits IRQTOPROC del registro GPIO22_STATUS */
 
-// Registro GPIO23_STATUS
-#define rIOBANK0_GPIO23_STATUS sIOBANK0.GPIO23_STATUS.WORD
-#define bIOBANK0_GPIO23_OUTFROMPERI sIOBANK0.GPIO23_STATUS.BITS.OUTFROMPERI
-#define bIOBANK0_GPIO23_OUTTOPAD sIOBANK0.GPIO23_STATUS.BITS.OUTTOPAD
-#define bIOBANK0_GPIO23_OEFROMPERI sIOBANK0.GPIO23_STATUS.BITS.OEFROMPERI
-#define bIOBANK0_GPIO23_OETOPAD sIOBANK0.GPIO23_STATUS.BITS.OETOPAD
-#define bIOBANK0_GPIO23_INFROMPAD sIOBANK0.GPIO23_STATUS.BITS.INFROMPAD
-#define bIOBANK0_GPIO23_INTOPERI sIOBANK0.GPIO23_STATUS.BITS.INTOPERI
-#define bIOBANK0_GPIO23_IRQFROMPAD sIOBANK0.GPIO23_STATUS.BITS.IRQFROMPAD
-#define bIOBANK0_GPIO23_IRQTOPROC sIOBANK0.GPIO23_STATUS.BITS.IRQTOPROC
+#define rIOBANK0_GPIO23_STATUS sIOBANK0.GPIO23_STATUS.WORD                                    /**< Acceder al registro completo GPIO23_STATUS */
+#define bIOBANK0_GPIO23_OUTFROMPERI sIOBANK0.GPIO23_STATUS.BITS.OUTFROMPERI                   /**< Acceder al campo de bits OUTFROMPERI del registro GPIO23_STATUS */
+#define bIOBANK0_GPIO23_OUTTOPAD sIOBANK0.GPIO23_STATUS.BITS.OUTTOPAD                         /**< Acceder al campo de bits OUTTOPAD del registro GPIO23_STATUS */
+#define bIOBANK0_GPIO23_OEFROMPERI sIOBANK0.GPIO23_STATUS.BITS.OEFROMPERI                     /**< Acceder al campo de bits OEFROMPERI del registro GPIO23_STATUS */
+#define bIOBANK0_GPIO23_OETOPAD sIOBANK0.GPIO23_STATUS.BITS.OETOPAD                           /**< Acceder al campo de bits OETOPAD del registro GPIO23_STATUS */
+#define bIOBANK0_GPIO23_INFROMPAD sIOBANK0.GPIO23_STATUS.BITS.INFROMPAD                       /**< Acceder al campo de bits INFROMPAD del registro GPIO23_STATUS */
+#define bIOBANK0_GPIO23_INTOPERI sIOBANK0.GPIO23_STATUS.BITS.INTOPERI                         /**< Acceder al campo de bits INTOPERI del registro GPIO23_STATUS */
+#define bIOBANK0_GPIO23_IRQFROMPAD sIOBANK0.GPIO23_STATUS.BITS.IRQFROMPAD                     /**< Acceder al campo de bits IRQFROMPAD del registro GPIO23_STATUS */
+#define bIOBANK0_GPIO23_IRQTOPROC sIOBANK0.GPIO23_STATUS.BITS.IRQTOPROC                       /**< Acceder al campo de bits IRQTOPROC del registro GPIO23_STATUS */
 
-// Registro GPIO24_STATUS
-#define rIOBANK0_GPIO24_STATUS sIOBANK0.GPIO24_STATUS.WORD
-#define bIOBANK0_GPIO24_OUTFROMPERI sIOBANK0.GPIO24_STATUS.BITS.OUTFROMPERI
-#define bIOBANK0_GPIO24_OUTTOPAD sIOBANK0.GPIO24_STATUS.BITS.OUTTOPAD
-#define bIOBANK0_GPIO24_OEFROMPERI sIOBANK0.GPIO24_STATUS.BITS.OEFROMPERI
-#define bIOBANK0_GPIO24_OETOPAD sIOBANK0.GPIO24_STATUS.BITS.OETOPAD
-#define bIOBANK0_GPIO24_INFROMPAD sIOBANK0.GPIO24_STATUS.BITS.INFROMPAD
-#define bIOBANK0_GPIO24_INTOPERI sIOBANK0.GPIO24_STATUS.BITS.INTOPERI
-#define bIOBANK0_GPIO24_IRQFROMPAD sIOBANK0.GPIO24_STATUS.BITS.IRQFROMPAD
-#define bIOBANK0_GPIO24_IRQTOPROC sIOBANK0.GPIO24_STATUS.BITS.IRQTOPROC
+#define rIOBANK0_GPIO24_STATUS sIOBANK0.GPIO24_STATUS.WORD                                    /**< Acceder al registro completo GPIO24_STATUS */
+#define bIOBANK0_GPIO24_OUTFROMPERI sIOBANK0.GPIO24_STATUS.BITS.OUTFROMPERI                   /**< Acceder al campo de bits OUTFROMPERI del registro GPIO24_STATUS */
+#define bIOBANK0_GPIO24_OUTTOPAD sIOBANK0.GPIO24_STATUS.BITS.OUTTOPAD                         /**< Acceder al campo de bits OUTTOPAD del registro GPIO24_STATUS */
+#define bIOBANK0_GPIO24_OEFROMPERI sIOBANK0.GPIO24_STATUS.BITS.OEFROMPERI                     /**< Acceder al campo de bits OEFROMPERI del registro GPIO24_STATUS */
+#define bIOBANK0_GPIO24_OETOPAD sIOBANK0.GPIO24_STATUS.BITS.OETOPAD                           /**< Acceder al campo de bits OETOPAD del registro GPIO24_STATUS */
+#define bIOBANK0_GPIO24_INFROMPAD sIOBANK0.GPIO24_STATUS.BITS.INFROMPAD                       /**< Acceder al campo de bits INFROMPAD del registro GPIO24_STATUS */
+#define bIOBANK0_GPIO24_INTOPERI sIOBANK0.GPIO24_STATUS.BITS.INTOPERI                         /**< Acceder al campo de bits INTOPERI del registro GPIO24_STATUS */
+#define bIOBANK0_GPIO24_IRQFROMPAD sIOBANK0.GPIO24_STATUS.BITS.IRQFROMPAD                     /**< Acceder al campo de bits IRQFROMPAD del registro GPIO24_STATUS */
+#define bIOBANK0_GPIO24_IRQTOPROC sIOBANK0.GPIO24_STATUS.BITS.IRQTOPROC                       /**< Acceder al campo de bits IRQTOPROC del registro GPIO24_STATUS */
 
-// Registro GPIO25_STATUS
-#define rIOBANK0_GPIO25_STATUS sIOBANK0.GPIO25_STATUS.WORD
-#define bIOBANK0_GPIO25_OUTFROMPERI sIOBANK0.GPIO25_STATUS.BITS.OUTFROMPERI
-#define bIOBANK0_GPIO25_OUTTOPAD sIOBANK0.GPIO25_STATUS.BITS.OUTTOPAD
-#define bIOBANK0_GPIO25_OEFROMPERI sIOBANK0.GPIO25_STATUS.BITS.OEFROMPERI
-#define bIOBANK0_GPIO25_OETOPAD sIOBANK0.GPIO25_STATUS.BITS.OETOPAD
-#define bIOBANK0_GPIO25_INFROMPAD sIOBANK0.GPIO25_STATUS.BITS.INFROMPAD
-#define bIOBANK0_GPIO25_INTOPERI sIOBANK0.GPIO25_STATUS.BITS.INTOPERI
-#define bIOBANK0_GPIO25_IRQFROMPAD sIOBANK0.GPIO25_STATUS.BITS.IRQFROMPAD
-#define bIOBANK0_GPIO25_IRQTOPROC sIOBANK0.GPIO25_STATUS.BITS.IRQTOPROC
+#define rIOBANK0_GPIO25_STATUS sIOBANK0.GPIO25_STATUS.WORD                                    /**< Acceder al registro completo GPIO25_STATUS */
+#define bIOBANK0_GPIO25_OUTFROMPERI sIOBANK0.GPIO25_STATUS.BITS.OUTFROMPERI                   /**< Acceder al campo de bits OUTFROMPERI del registro GPIO25_STATUS */
+#define bIOBANK0_GPIO25_OUTTOPAD sIOBANK0.GPIO25_STATUS.BITS.OUTTOPAD                         /**< Acceder al campo de bits OUTTOPAD del registro GPIO25_STATUS */
+#define bIOBANK0_GPIO25_OEFROMPERI sIOBANK0.GPIO25_STATUS.BITS.OEFROMPERI                     /**< Acceder al campo de bits OEFROMPERI del registro GPIO25_STATUS */
+#define bIOBANK0_GPIO25_OETOPAD sIOBANK0.GPIO25_STATUS.BITS.OETOPAD                           /**< Acceder al campo de bits OETOPAD del registro GPIO25_STATUS */
+#define bIOBANK0_GPIO25_INFROMPAD sIOBANK0.GPIO25_STATUS.BITS.INFROMPAD                       /**< Acceder al campo de bits INFROMPAD del registro GPIO25_STATUS */
+#define bIOBANK0_GPIO25_INTOPERI sIOBANK0.GPIO25_STATUS.BITS.INTOPERI                         /**< Acceder al campo de bits INTOPERI del registro GPIO25_STATUS */
+#define bIOBANK0_GPIO25_IRQFROMPAD sIOBANK0.GPIO25_STATUS.BITS.IRQFROMPAD                     /**< Acceder al campo de bits IRQFROMPAD del registro GPIO25_STATUS */
+#define bIOBANK0_GPIO25_IRQTOPROC sIOBANK0.GPIO25_STATUS.BITS.IRQTOPROC                       /**< Acceder al campo de bits IRQTOPROC del registro GPIO25_STATUS */
 
-// Registro GPIO26_STATUS
-#define rIOBANK0_GPIO26_STATUS sIOBANK0.GPIO26_STATUS.WORD
-#define bIOBANK0_GPIO26_OUTFROMPERI sIOBANK0.GPIO26_STATUS.BITS.OUTFROMPERI
-#define bIOBANK0_GPIO26_OUTTOPAD sIOBANK0.GPIO26_STATUS.BITS.OUTTOPAD
-#define bIOBANK0_GPIO26_OEFROMPERI sIOBANK0.GPIO26_STATUS.BITS.OEFROMPERI
-#define bIOBANK0_GPIO26_OETOPAD sIOBANK0.GPIO26_STATUS.BITS.OETOPAD
-#define bIOBANK0_GPIO26_INFROMPAD sIOBANK0.GPIO26_STATUS.BITS.INFROMPAD
-#define bIOBANK0_GPIO26_INTOPERI sIOBANK0.GPIO26_STATUS.BITS.INTOPERI
-#define bIOBANK0_GPIO26_IRQFROMPAD sIOBANK0.GPIO26_STATUS.BITS.IRQFROMPAD
-#define bIOBANK0_GPIO26_IRQTOPROC sIOBANK0.GPIO26_STATUS.BITS.IRQTOPROC
+#define rIOBANK0_GPIO26_STATUS sIOBANK0.GPIO26_STATUS.WORD                                    /**< Acceder al registro completo GPIO26_STATUS */
+#define bIOBANK0_GPIO26_OUTFROMPERI sIOBANK0.GPIO26_STATUS.BITS.OUTFROMPERI                   /**< Acceder al campo de bits OUTFROMPERI del registro GPIO26_STATUS */
+#define bIOBANK0_GPIO26_OUTTOPAD sIOBANK0.GPIO26_STATUS.BITS.OUTTOPAD                         /**< Acceder al campo de bits OUTTOPAD del registro GPIO26_STATUS */
+#define bIOBANK0_GPIO26_OEFROMPERI sIOBANK0.GPIO26_STATUS.BITS.OEFROMPERI                     /**< Acceder al campo de bits OEFROMPERI del registro GPIO26_STATUS */
+#define bIOBANK0_GPIO26_OETOPAD sIOBANK0.GPIO26_STATUS.BITS.OETOPAD                           /**< Acceder al campo de bits OETOPAD del registro GPIO26_STATUS */
+#define bIOBANK0_GPIO26_INFROMPAD sIOBANK0.GPIO26_STATUS.BITS.INFROMPAD                       /**< Acceder al campo de bits INFROMPAD del registro GPIO26_STATUS */
+#define bIOBANK0_GPIO26_INTOPERI sIOBANK0.GPIO26_STATUS.BITS.INTOPERI                         /**< Acceder al campo de bits INTOPERI del registro GPIO26_STATUS */
+#define bIOBANK0_GPIO26_IRQFROMPAD sIOBANK0.GPIO26_STATUS.BITS.IRQFROMPAD                     /**< Acceder al campo de bits IRQFROMPAD del registro GPIO26_STATUS */
+#define bIOBANK0_GPIO26_IRQTOPROC sIOBANK0.GPIO26_STATUS.BITS.IRQTOPROC                       /**< Acceder al campo de bits IRQTOPROC del registro GPIO26_STATUS */
 
-// Registro GPIO27_STATUS
-#define rIOBANK0_GPIO27_STATUS sIOBANK0.GPIO27_STATUS.WORD
-#define bIOBANK0_GPIO27_OUTFROMPERI sIOBANK0.GPIO27_STATUS.BITS.OUTFROMPERI
-#define bIOBANK0_GPIO27_OUTTOPAD sIOBANK0.GPIO27_STATUS.BITS.OUTTOPAD
-#define bIOBANK0_GPIO27_OEFROMPERI sIOBANK0.GPIO27_STATUS.BITS.OEFROMPERI
-#define bIOBANK0_GPIO27_OETOPAD sIOBANK0.GPIO27_STATUS.BITS.OETOPAD
-#define bIOBANK0_GPIO27_INFROMPAD sIOBANK0.GPIO27_STATUS.BITS.INFROMPAD
-#define bIOBANK0_GPIO27_INTOPERI sIOBANK0.GPIO27_STATUS.BITS.INTOPERI
-#define bIOBANK0_GPIO27_IRQFROMPAD sIOBANK0.GPIO27_STATUS.BITS.IRQFROMPAD
-#define bIOBANK0_GPIO27_IRQTOPROC sIOBANK0.GPIO27_STATUS.BITS.IRQTOPROC
+#define rIOBANK0_GPIO27_STATUS sIOBANK0.GPIO27_STATUS.WORD                                    /**< Acceder al registro completo GPIO27_STATUS */
+#define bIOBANK0_GPIO27_OUTFROMPERI sIOBANK0.GPIO27_STATUS.BITS.OUTFROMPERI                   /**< Acceder al campo de bits OUTFROMPERI del registro GPIO27_STATUS */
+#define bIOBANK0_GPIO27_OUTTOPAD sIOBANK0.GPIO27_STATUS.BITS.OUTTOPAD                         /**< Acceder al campo de bits OUTTOPAD del registro GPIO27_STATUS */
+#define bIOBANK0_GPIO27_OEFROMPERI sIOBANK0.GPIO27_STATUS.BITS.OEFROMPERI                     /**< Acceder al campo de bits OEFROMPERI del registro GPIO27_STATUS */
+#define bIOBANK0_GPIO27_OETOPAD sIOBANK0.GPIO27_STATUS.BITS.OETOPAD                           /**< Acceder al campo de bits OETOPAD del registro GPIO27_STATUS */
+#define bIOBANK0_GPIO27_INFROMPAD sIOBANK0.GPIO27_STATUS.BITS.INFROMPAD                       /**< Acceder al campo de bits INFROMPAD del registro GPIO27_STATUS */
+#define bIOBANK0_GPIO27_INTOPERI sIOBANK0.GPIO27_STATUS.BITS.INTOPERI                         /**< Acceder al campo de bits INTOPERI del registro GPIO27_STATUS */
+#define bIOBANK0_GPIO27_IRQFROMPAD sIOBANK0.GPIO27_STATUS.BITS.IRQFROMPAD                     /**< Acceder al campo de bits IRQFROMPAD del registro GPIO27_STATUS */
+#define bIOBANK0_GPIO27_IRQTOPROC sIOBANK0.GPIO27_STATUS.BITS.IRQTOPROC                       /**< Acceder al campo de bits IRQTOPROC del registro GPIO27_STATUS */
 
-// Registro GPIO28_STATUS
-#define rIOBANK0_GPIO28_STATUS sIOBANK0.GPIO28_STATUS.WORD
-#define bIOBANK0_GPIO28_OUTFROMPERI sIOBANK0.GPIO28_STATUS.BITS.OUTFROMPERI
-#define bIOBANK0_GPIO28_OUTTOPAD sIOBANK0.GPIO28_STATUS.BITS.OUTTOPAD
-#define bIOBANK0_GPIO28_OEFROMPERI sIOBANK0.GPIO28_STATUS.BITS.OEFROMPERI
-#define bIOBANK0_GPIO28_OETOPAD sIOBANK0.GPIO28_STATUS.BITS.OETOPAD
-#define bIOBANK0_GPIO28_INFROMPAD sIOBANK0.GPIO28_STATUS.BITS.INFROMPAD
-#define bIOBANK0_GPIO28_INTOPERI sIOBANK0.GPIO28_STATUS.BITS.INTOPERI
-#define bIOBANK0_GPIO28_IRQFROMPAD sIOBANK0.GPIO28_STATUS.BITS.IRQFROMPAD
-#define bIOBANK0_GPIO28_IRQTOPROC sIOBANK0.GPIO28_STATUS.BITS.IRQTOPROC
+#define rIOBANK0_GPIO28_STATUS sIOBANK0.GPIO28_STATUS.WORD                                    /**< Acceder al registro completo GPIO28_STATUS */
+#define bIOBANK0_GPIO28_OUTFROMPERI sIOBANK0.GPIO28_STATUS.BITS.OUTFROMPERI                   /**< Acceder al campo de bits OUTFROMPERI del registro GPIO28_STATUS */
+#define bIOBANK0_GPIO28_OUTTOPAD sIOBANK0.GPIO28_STATUS.BITS.OUTTOPAD                         /**< Acceder al campo de bits OUTTOPAD del registro GPIO28_STATUS */
+#define bIOBANK0_GPIO28_OEFROMPERI sIOBANK0.GPIO28_STATUS.BITS.OEFROMPERI                     /**< Acceder al campo de bits OEFROMPERI del registro GPIO28_STATUS */
+#define bIOBANK0_GPIO28_OETOPAD sIOBANK0.GPIO28_STATUS.BITS.OETOPAD                           /**< Acceder al campo de bits OETOPAD del registro GPIO28_STATUS */
+#define bIOBANK0_GPIO28_INFROMPAD sIOBANK0.GPIO28_STATUS.BITS.INFROMPAD                       /**< Acceder al campo de bits INFROMPAD del registro GPIO28_STATUS */
+#define bIOBANK0_GPIO28_INTOPERI sIOBANK0.GPIO28_STATUS.BITS.INTOPERI                         /**< Acceder al campo de bits INTOPERI del registro GPIO28_STATUS */
+#define bIOBANK0_GPIO28_IRQFROMPAD sIOBANK0.GPIO28_STATUS.BITS.IRQFROMPAD                     /**< Acceder al campo de bits IRQFROMPAD del registro GPIO28_STATUS */
+#define bIOBANK0_GPIO28_IRQTOPROC sIOBANK0.GPIO28_STATUS.BITS.IRQTOPROC                       /**< Acceder al campo de bits IRQTOPROC del registro GPIO28_STATUS */
 
-// Registro GPIO29_STATUS
-#define rIOBANK0_GPIO29_STATUS sIOBANK0.GPIO29_STATUS.WORD
-#define bIOBANK0_GPIO29_OUTFROMPERI sIOBANK0.GPIO29_STATUS.BITS.OUTFROMPERI
-#define bIOBANK0_GPIO29_OUTTOPAD sIOBANK0.GPIO29_STATUS.BITS.OUTTOPAD
-#define bIOBANK0_GPIO29_OEFROMPERI sIOBANK0.GPIO29_STATUS.BITS.OEFROMPERI
-#define bIOBANK0_GPIO29_OETOPAD sIOBANK0.GPIO29_STATUS.BITS.OETOPAD
-#define bIOBANK0_GPIO29_INFROMPAD sIOBANK0.GPIO29_STATUS.BITS.INFROMPAD
-#define bIOBANK0_GPIO29_INTOPERI sIOBANK0.GPIO29_STATUS.BITS.INTOPERI
-#define bIOBANK0_GPIO29_IRQFROMPAD sIOBANK0.GPIO29_STATUS.BITS.IRQFROMPAD
-#define bIOBANK0_GPIO29_IRQTOPROC sIOBANK0.GPIO29_STATUS.BITS.IRQTOPROC
+#define rIOBANK0_GPIO29_STATUS sIOBANK0.GPIO29_STATUS.WORD                                    /**< Acceder al registro completo GPIO29_STATUS */
+#define bIOBANK0_GPIO29_OUTFROMPERI sIOBANK0.GPIO29_STATUS.BITS.OUTFROMPERI                   /**< Acceder al campo de bits OUTFROMPERI del registro GPIO29_STATUS */
+#define bIOBANK0_GPIO29_OUTTOPAD sIOBANK0.GPIO29_STATUS.BITS.OUTTOPAD                         /**< Acceder al campo de bits OUTTOPAD del registro GPIO29_STATUS */
+#define bIOBANK0_GPIO29_OEFROMPERI sIOBANK0.GPIO29_STATUS.BITS.OEFROMPERI                     /**< Acceder al campo de bits OEFROMPERI del registro GPIO29_STATUS */
+#define bIOBANK0_GPIO29_OETOPAD sIOBANK0.GPIO29_STATUS.BITS.OETOPAD                           /**< Acceder al campo de bits OETOPAD del registro GPIO29_STATUS */
+#define bIOBANK0_GPIO29_INFROMPAD sIOBANK0.GPIO29_STATUS.BITS.INFROMPAD                       /**< Acceder al campo de bits INFROMPAD del registro GPIO29_STATUS */
+#define bIOBANK0_GPIO29_INTOPERI sIOBANK0.GPIO29_STATUS.BITS.INTOPERI                         /**< Acceder al campo de bits INTOPERI del registro GPIO29_STATUS */
+#define bIOBANK0_GPIO29_IRQFROMPAD sIOBANK0.GPIO29_STATUS.BITS.IRQFROMPAD                     /**< Acceder al campo de bits IRQFROMPAD del registro GPIO29_STATUS */
+#define bIOBANK0_GPIO29_IRQTOPROC sIOBANK0.GPIO29_STATUS.BITS.IRQTOPROC                       /**< Acceder al campo de bits IRQTOPROC del registro GPIO29_STATUS */
 
 /****************************************************************************************
  ****************************************************************************************
@@ -1703,245 +2432,215 @@ typedef struct {
  ****************************************************************************************
 *****************************************************************************************/
 
-// Registro GPIO0_CTRL
-#define rIOBANK0_GPIO0_CTRL sIOBANK0.GPIO0_CTRL.WORD
-#define bIOBANK0_GPIO0_FUNCSEL sIOBANK0.GPIO0_CTRL.BITS.FUNCSEL
-#define bIOBANK0_GPIO0_OUTOVER sIOBANK0.GPIO0_CTRL.BITS.OUTOVER
-#define bIOBANK0_GPIO0_OEOVER sIOBANK0.GPIO0_CTRL.BITS.OEOVER
-#define bIOBANK0_GPIO0_INOVER sIOBANK0.GPIO0_CTRL.BITS.INOVER
-#define bIOBANK0_GPIO0_IRQOVER sIOBANK0.GPIO0_CTRL.BITS.IRQOVER
+#define rIOBANK0_GPIO0_CTRL sIOBANK0.GPIO0_CTRL.WORD                            /**< Acceder al registro completo GPIO0_CTRL */
+#define bIOBANK0_GPIO0_FUNCSEL sIOBANK0.GPIO0_CTRL.BITS.FUNCSEL                 /**< Acceder al campo de bits FUNCSEL del registro GPIO0_CTRL */
+#define bIOBANK0_GPIO0_OUTOVER sIOBANK0.GPIO0_CTRL.BITS.OUTOVER                 /**< Acceder al campo de bits OUTOVER del registro GPIO0_CTRL */
+#define bIOBANK0_GPIO0_OEOVER sIOBANK0.GPIO0_CTRL.BITS.OEOVER                   /**< Acceder al campo de bits OEOVER del registro GPIO0_CTRL */
+#define bIOBANK0_GPIO0_INOVER sIOBANK0.GPIO0_CTRL.BITS.INOVER                   /**< Acceder al campo de bits INOVER del registro GPIO0_CTRL */
+#define bIOBANK0_GPIO0_IRQOVER sIOBANK0.GPIO0_CTRL.BITS.IRQOVER                 /**< Acceder al campo de bits IRQOVER del registro GPIO0_CTRL */
 
-// Registro GPIO1_CTRL
-#define rIOBANK0_GPIO1_CTRL sIOBANK0.GPIO1_CTRL.WORD
-#define bIOBANK0_GPIO1_FUNCSEL sIOBANK0.GPIO1_CTRL.BITS.FUNCSEL
-#define bIOBANK0_GPIO1_OUTOVER sIOBANK0.GPIO1_CTRL.BITS.OUTOVER
-#define bIOBANK0_GPIO1_OEOVER sIOBANK0.GPIO1_CTRL.BITS.OEOVER
-#define bIOBANK0_GPIO1_INOVER sIOBANK0.GPIO1_CTRL.BITS.INOVER
-#define bIOBANK0_GPIO1_IRQOVER sIOBANK0.GPIO1_CTRL.BITS.IRQOVER
+#define rIOBANK0_GPIO1_CTRL sIOBANK0.GPIO1_CTRL.WORD                            /**< Acceder al registro completo GPIO1_CTRL */
+#define bIOBANK0_GPIO1_FUNCSEL sIOBANK0.GPIO1_CTRL.BITS.FUNCSEL                 /**< Acceder al campo de bits FUNCSEL del registro GPIO1_CTRL */
+#define bIOBANK0_GPIO1_OUTOVER sIOBANK0.GPIO1_CTRL.BITS.OUTOVER                 /**< Acceder al campo de bits OUTOVER del registro GPIO1_CTRL */
+#define bIOBANK0_GPIO1_OEOVER sIOBANK0.GPIO1_CTRL.BITS.OEOVER                   /**< Acceder al campo de bits OEOVER del registro GPIO1_CTRL */
+#define bIOBANK0_GPIO1_INOVER sIOBANK0.GPIO1_CTRL.BITS.INOVER                   /**< Acceder al campo de bits INOVER del registro GPIO1_CTRL */
+#define bIOBANK0_GPIO1_IRQOVER sIOBANK0.GPIO1_CTRL.BITS.IRQOVER                 /**< Acceder al campo de bits IRQOVER del registro GPIO1_CTRL */
 
-// Registro GPIO2_CTRL
-#define rIOBANK0_GPIO2_CTRL sIOBANK0.GPIO2_CTRL.WORD
-#define bIOBANK0_GPIO2_FUNCSEL sIOBANK0.GPIO2_CTRL.BITS.FUNCSEL
-#define bIOBANK0_GPIO2_OUTOVER sIOBANK0.GPIO2_CTRL.BITS.OUTOVER
-#define bIOBANK0_GPIO2_OEOVER sIOBANK0.GPIO2_CTRL.BITS.OEOVER
-#define bIOBANK0_GPIO2_INOVER sIOBANK0.GPIO2_CTRL.BITS.INOVER
-#define bIOBANK0_GPIO2_IRQOVER sIOBANK0.GPIO2_CTRL.BITS.IRQOVER
+#define rIOBANK0_GPIO2_CTRL sIOBANK0.GPIO2_CTRL.WORD                            /**< Acceder al registro completo GPIO2_CTRL */
+#define bIOBANK0_GPIO2_FUNCSEL sIOBANK0.GPIO2_CTRL.BITS.FUNCSEL                 /**< Acceder al campo de bits FUNCSEL del registro GPIO2_CTRL */
+#define bIOBANK0_GPIO2_OUTOVER sIOBANK0.GPIO2_CTRL.BITS.OUTOVER                 /**< Acceder al campo de bits OUTOVER del registro GPIO2_CTRL */
+#define bIOBANK0_GPIO2_OEOVER sIOBANK0.GPIO2_CTRL.BITS.OEOVER                   /**< Acceder al campo de bits OEOVER del registro GPIO2_CTRL */
+#define bIOBANK0_GPIO2_INOVER sIOBANK0.GPIO2_CTRL.BITS.INOVER                   /**< Acceder al campo de bits INOVER del registro GPIO2_CTRL */
+#define bIOBANK0_GPIO2_IRQOVER sIOBANK0.GPIO2_CTRL.BITS.IRQOVER                 /**< Acceder al campo de bits IRQOVER del registro GPIO2_CTRL */
 
-// Registro GPIO3_CTRL
-#define rIOBANK0_GPIO3_CTRL sIOBANK0.GPIO3_CTRL.WORD
-#define bIOBANK0_GPIO3_FUNCSEL sIOBANK0.GPIO3_CTRL.BITS.FUNCSEL
-#define bIOBANK0_GPIO3_OUTOVER sIOBANK0.GPIO3_CTRL.BITS.OUTOVER
-#define bIOBANK0_GPIO3_OEOVER sIOBANK0.GPIO3_CTRL.BITS.OEOVER
-#define bIOBANK0_GPIO3_INOVER sIOBANK0.GPIO3_CTRL.BITS.INOVER
-#define bIOBANK0_GPIO3_IRQOVER sIOBANK0.GPIO3_CTRL.BITS.IRQOVER
+#define rIOBANK0_GPIO3_CTRL sIOBANK0.GPIO3_CTRL.WORD                            /**< Acceder al registro completo GPIO3_CTRL */
+#define bIOBANK0_GPIO3_FUNCSEL sIOBANK0.GPIO3_CTRL.BITS.FUNCSEL                 /**< Acceder al campo de bits FUNCSEL del registro GPIO3_CTRL */
+#define bIOBANK0_GPIO3_OUTOVER sIOBANK0.GPIO3_CTRL.BITS.OUTOVER                 /**< Acceder al campo de bits OUTOVER del registro GPIO3_CTRL */
+#define bIOBANK0_GPIO3_OEOVER sIOBANK0.GPIO3_CTRL.BITS.OEOVER                   /**< Acceder al campo de bits OEOVER del registro GPIO3_CTRL */
+#define bIOBANK0_GPIO3_INOVER sIOBANK0.GPIO3_CTRL.BITS.INOVER                   /**< Acceder al campo de bits INOVER del registro GPIO3_CTRL */
+#define bIOBANK0_GPIO3_IRQOVER sIOBANK0.GPIO3_CTRL.BITS.IRQOVER                 /**< Acceder al campo de bits IRQOVER del registro GPIO3_CTRL */
 
-// Registro GPIO4_CTRL
-#define rIOBANK0_GPIO4_CTRL sIOBANK0.GPIO4_CTRL.WORD
-#define bIOBANK0_GPIO4_FUNCSEL sIOBANK0.GPIO4_CTRL.BITS.FUNCSEL
-#define bIOBANK0_GPIO4_OUTOVER sIOBANK0.GPIO4_CTRL.BITS.OUTOVER
-#define bIOBANK0_GPIO4_OEOVER sIOBANK0.GPIO4_CTRL.BITS.OEOVER
-#define bIOBANK0_GPIO4_INOVER sIOBANK0.GPIO4_CTRL.BITS.INOVER
-#define bIOBANK0_GPIO4_IRQOVER sIOBANK0.GPIO4_CTRL.BITS.IRQOVER
+#define rIOBANK0_GPIO4_CTRL sIOBANK0.GPIO4_CTRL.WORD                            /**< Acceder al registro completo GPIO4_CTRL */
+#define bIOBANK0_GPIO4_FUNCSEL sIOBANK0.GPIO4_CTRL.BITS.FUNCSEL                 /**< Acceder al campo de bits FUNCSEL del registro GPIO4_CTRL */
+#define bIOBANK0_GPIO4_OUTOVER sIOBANK0.GPIO4_CTRL.BITS.OUTOVER                 /**< Acceder al campo de bits OUTOVER del registro GPIO4_CTRL */
+#define bIOBANK0_GPIO4_OEOVER sIOBANK0.GPIO4_CTRL.BITS.OEOVER                   /**< Acceder al campo de bits OEOVER del registro GPIO4_CTRL */
+#define bIOBANK0_GPIO4_INOVER sIOBANK0.GPIO4_CTRL.BITS.INOVER                   /**< Acceder al campo de bits INOVER del registro GPIO4_CTRL */
+#define bIOBANK0_GPIO4_IRQOVER sIOBANK0.GPIO4_CTRL.BITS.IRQOVER                 /**< Acceder al campo de bits IRQOVER del registro GPIO4_CTRL */
 
-// Registro GPIO5_CTRL
-#define rIOBANK0_GPIO5_CTRL sIOBANK0.GPIO5_CTRL.WORD
-#define bIOBANK0_GPIO5_FUNCSEL sIOBANK0.GPIO5_CTRL.BITS.FUNCSEL
-#define bIOBANK0_GPIO5_OUTOVER sIOBANK0.GPIO5_CTRL.BITS.OUTOVER
-#define bIOBANK0_GPIO5_OEOVER sIOBANK0.GPIO5_CTRL.BITS.OEOVER
-#define bIOBANK0_GPIO5_INOVER sIOBANK0.GPIO5_CTRL.BITS.INOVER
-#define bIOBANK0_GPIO5_IRQOVER sIOBANK0.GPIO5_CTRL.BITS.IRQOVER
+#define rIOBANK0_GPIO5_CTRL sIOBANK0.GPIO5_CTRL.WORD                            /**< Acceder al registro completo GPIO5_CTRL */
+#define bIOBANK0_GPIO5_FUNCSEL sIOBANK0.GPIO5_CTRL.BITS.FUNCSEL                 /**< Acceder al campo de bits FUNCSEL del registro GPIO5_CTRL */
+#define bIOBANK0_GPIO5_OUTOVER sIOBANK0.GPIO5_CTRL.BITS.OUTOVER                 /**< Acceder al campo de bits OUTOVER del registro GPIO5_CTRL */
+#define bIOBANK0_GPIO5_OEOVER sIOBANK0.GPIO5_CTRL.BITS.OEOVER                   /**< Acceder al campo de bits OEOVER del registro GPIO5_CTRL */
+#define bIOBANK0_GPIO5_INOVER sIOBANK0.GPIO5_CTRL.BITS.INOVER                   /**< Acceder al campo de bits INOVER del registro GPIO5_CTRL */
+#define bIOBANK0_GPIO5_IRQOVER sIOBANK0.GPIO5_CTRL.BITS.IRQOVER                 /**< Acceder al campo de bits IRQOVER del registro GPIO5_CTRL */
 
-// Registro GPIO6_CTRL
-#define rIOBANK0_GPIO6_CTRL sIOBANK0.GPIO6_CTRL.WORD
-#define bIOBANK0_GPIO6_FUNCSEL sIOBANK0.GPIO6_CTRL.BITS.FUNCSEL
-#define bIOBANK0_GPIO6_OUTOVER sIOBANK0.GPIO6_CTRL.BITS.OUTOVER
-#define bIOBANK0_GPIO6_OEOVER sIOBANK0.GPIO6_CTRL.BITS.OEOVER
-#define bIOBANK0_GPIO6_INOVER sIOBANK0.GPIO6_CTRL.BITS.INOVER
-#define bIOBANK0_GPIO6_IRQOVER sIOBANK0.GPIO6_CTRL.BITS.IRQOVER
+#define rIOBANK0_GPIO6_CTRL sIOBANK0.GPIO6_CTRL.WORD                            /**< Acceder al registro completo GPIO6_CTRL */
+#define bIOBANK0_GPIO6_FUNCSEL sIOBANK0.GPIO6_CTRL.BITS.FUNCSEL                 /**< Acceder al campo de bits FUNCSEL del registro GPIO6_CTRL */
+#define bIOBANK0_GPIO6_OUTOVER sIOBANK0.GPIO6_CTRL.BITS.OUTOVER                 /**< Acceder al campo de bits OUTOVER del registro GPIO6_CTRL */
+#define bIOBANK0_GPIO6_OEOVER sIOBANK0.GPIO6_CTRL.BITS.OEOVER                   /**< Acceder al campo de bits OEOVER del registro GPIO6_CTRL */
+#define bIOBANK0_GPIO6_INOVER sIOBANK0.GPIO6_CTRL.BITS.INOVER                   /**< Acceder al campo de bits INOVER del registro GPIO6_CTRL */
+#define bIOBANK0_GPIO6_IRQOVER sIOBANK0.GPIO6_CTRL.BITS.IRQOVER                 /**< Acceder al campo de bits IRQOVER del registro GPIO6_CTRL */
 
-// Registro GPIO7_CTRL
-#define rIOBANK0_GPIO7_CTRL sIOBANK0.GPIO7_CTRL.WORD
-#define bIOBANK0_GPIO7_FUNCSEL sIOBANK0.GPIO7_CTRL.BITS.FUNCSEL
-#define bIOBANK0_GPIO7_OUTOVER sIOBANK0.GPIO7_CTRL.BITS.OUTOVER
-#define bIOBANK0_GPIO7_OEOVER sIOBANK0.GPIO7_CTRL.BITS.OEOVER
-#define bIOBANK0_GPIO7_INOVER sIOBANK0.GPIO7_CTRL.BITS.INOVER
-#define bIOBANK0_GPIO7_IRQOVER sIOBANK0.GPIO7_CTRL.BITS.IRQOVER
+#define rIOBANK0_GPIO7_CTRL sIOBANK0.GPIO7_CTRL.WORD                            /**< Acceder al registro completo GPIO7_CTRL */
+#define bIOBANK0_GPIO7_FUNCSEL sIOBANK0.GPIO7_CTRL.BITS.FUNCSEL                 /**< Acceder al campo de bits FUNCSEL del registro GPIO7_CTRL */
+#define bIOBANK0_GPIO7_OUTOVER sIOBANK0.GPIO7_CTRL.BITS.OUTOVER                 /**< Acceder al campo de bits OUTOVER del registro GPIO7_CTRL */
+#define bIOBANK0_GPIO7_OEOVER sIOBANK0.GPIO7_CTRL.BITS.OEOVER                   /**< Acceder al campo de bits OEOVER del registro GPIO7_CTRL */
+#define bIOBANK0_GPIO7_INOVER sIOBANK0.GPIO7_CTRL.BITS.INOVER                   /**< Acceder al campo de bits INOVER del registro GPIO7_CTRL */
+#define bIOBANK0_GPIO7_IRQOVER sIOBANK0.GPIO7_CTRL.BITS.IRQOVER                 /**< Acceder al campo de bits IRQOVER del registro GPIO7_CTRL */
 
-// Registro GPIO8_CTRL
-#define rIOBANK0_GPIO8_CTRL sIOBANK0.GPIO8_CTRL.WORD
-#define bIOBANK0_GPIO8_FUNCSEL sIOBANK0.GPIO8_CTRL.BITS.FUNCSEL
-#define bIOBANK0_GPIO8_OUTOVER sIOBANK0.GPIO8_CTRL.BITS.OUTOVER
-#define bIOBANK0_GPIO8_OEOVER sIOBANK0.GPIO8_CTRL.BITS.OEOVER
-#define bIOBANK0_GPIO8_INOVER sIOBANK0.GPIO8_CTRL.BITS.INOVER
-#define bIOBANK0_GPIO8_IRQOVER sIOBANK0.GPIO8_CTRL.BITS.IRQOVER
+#define rIOBANK0_GPIO8_CTRL sIOBANK0.GPIO8_CTRL.WORD                            /**< Acceder al registro completo GPIO8_CTRL */
+#define bIOBANK0_GPIO8_FUNCSEL sIOBANK0.GPIO8_CTRL.BITS.FUNCSEL                 /**< Acceder al campo de bits FUNCSEL del registro GPIO8_CTRL */
+#define bIOBANK0_GPIO8_OUTOVER sIOBANK0.GPIO8_CTRL.BITS.OUTOVER                 /**< Acceder al campo de bits OUTOVER del registro GPIO8_CTRL */
+#define bIOBANK0_GPIO8_OEOVER sIOBANK0.GPIO8_CTRL.BITS.OEOVER                   /**< Acceder al campo de bits OEOVER del registro GPIO8_CTRL */
+#define bIOBANK0_GPIO8_INOVER sIOBANK0.GPIO8_CTRL.BITS.INOVER                   /**< Acceder al campo de bits INOVER del registro GPIO8_CTRL */
+#define bIOBANK0_GPIO8_IRQOVER sIOBANK0.GPIO8_CTRL.BITS.IRQOVER                 /**< Acceder al campo de bits IRQOVER del registro GPIO8_CTRL */
 
-// Registro GPIO9_CTRL
-#define rIOBANK0_GPIO9_CTRL sIOBANK0.GPIO9_CTRL.WORD
-#define bIOBANK0_GPIO9_FUNCSEL sIOBANK0.GPIO9_CTRL.BITS.FUNCSEL
-#define bIOBANK0_GPIO9_OUTOVER sIOBANK0.GPIO9_CTRL.BITS.OUTOVER
-#define bIOBANK0_GPIO9_OEOVER sIOBANK0.GPIO9_CTRL.BITS.OEOVER
-#define bIOBANK0_GPIO9_INOVER sIOBANK0.GPIO9_CTRL.BITS.INOVER
-#define bIOBANK0_GPIO9_IRQOVER sIOBANK0.GPIO9_CTRL.BITS.IRQOVER
+#define rIOBANK0_GPIO9_CTRL sIOBANK0.GPIO9_CTRL.WORD                            /**< Acceder al registro completo GPIO9_CTRL */
+#define bIOBANK0_GPIO9_FUNCSEL sIOBANK0.GPIO9_CTRL.BITS.FUNCSEL                 /**< Acceder al campo de bits FUNCSEL del registro GPIO9_CTRL */
+#define bIOBANK0_GPIO9_OUTOVER sIOBANK0.GPIO9_CTRL.BITS.OUTOVER                 /**< Acceder al campo de bits OUTOVER del registro GPIO9_CTRL */
+#define bIOBANK0_GPIO9_OEOVER sIOBANK0.GPIO9_CTRL.BITS.OEOVER                   /**< Acceder al campo de bits OEOVER del registro GPIO9_CTRL */
+#define bIOBANK0_GPIO9_INOVER sIOBANK0.GPIO9_CTRL.BITS.INOVER                   /**< Acceder al campo de bits INOVER del registro GPIO9_CTRL */
+#define bIOBANK0_GPIO9_IRQOVER sIOBANK0.GPIO9_CTRL.BITS.IRQOVER                 /**< Acceder al campo de bits IRQOVER del registro GPIO9_CTRL */
 
-// Registro GPIO10_CTRL
-#define rIOBANK0_GPIO10_CTRL sIOBANK0.GPIO10_CTRL.WORD
-#define bIOBANK0_GPIO10_FUNCSEL sIOBANK0.GPIO10_CTRL.BITS.FUNCSEL
-#define bIOBANK0_GPIO10_OUTOVER sIOBANK0.GPIO10_CTRL.BITS.OUTOVER
-#define bIOBANK0_GPIO10_OEOVER sIOBANK0.GPIO10_CTRL.BITS.OEOVER
-#define bIOBANK0_GPIO10_INOVER sIOBANK0.GPIO10_CTRL.BITS.INOVER
-#define bIOBANK0_GPIO10_IRQOVER sIOBANK0.GPIO10_CTRL.BITS.IRQOVER
+#define rIOBANK0_GPIO10_CTRL sIOBANK0.GPIO10_CTRL.WORD                            /**< Acceder al registro completo GPIO10_CTRL */
+#define bIOBANK0_GPIO10_FUNCSEL sIOBANK0.GPIO10_CTRL.BITS.FUNCSEL                 /**< Acceder al campo de bits FUNCSEL del registro GPIO10_CTRL */
+#define bIOBANK0_GPIO10_OUTOVER sIOBANK0.GPIO10_CTRL.BITS.OUTOVER                 /**< Acceder al campo de bits OUTOVER del registro GPIO10_CTRL */
+#define bIOBANK0_GPIO10_OEOVER sIOBANK0.GPIO10_CTRL.BITS.OEOVER                   /**< Acceder al campo de bits OEOVER del registro GPIO10_CTRL */
+#define bIOBANK0_GPIO10_INOVER sIOBANK0.GPIO10_CTRL.BITS.INOVER                   /**< Acceder al campo de bits INOVER del registro GPIO10_CTRL */
+#define bIOBANK0_GPIO10_IRQOVER sIOBANK0.GPIO10_CTRL.BITS.IRQOVER                 /**< Acceder al campo de bits IRQOVER del registro GPIO10_CTRL */
 
-// Registro GPIO11_CTRL
-#define rIOBANK0_GPIO11_CTRL sIOBANK0.GPIO11_CTRL.WORD
-#define bIOBANK0_GPIO11_FUNCSEL sIOBANK0.GPIO11_CTRL.BITS.FUNCSEL
-#define bIOBANK0_GPIO11_OUTOVER sIOBANK0.GPIO11_CTRL.BITS.OUTOVER
-#define bIOBANK0_GPIO11_OEOVER sIOBANK0.GPIO11_CTRL.BITS.OEOVER
-#define bIOBANK0_GPIO11_INOVER sIOBANK0.GPIO11_CTRL.BITS.INOVER
-#define bIOBANK0_GPIO11_IRQOVER sIOBANK0.GPIO11_CTRL.BITS.IRQOVER
+#define rIOBANK0_GPIO11_CTRL sIOBANK0.GPIO11_CTRL.WORD                            /**< Acceder al registro completo GPIO11_CTRL */
+#define bIOBANK0_GPIO11_FUNCSEL sIOBANK0.GPIO11_CTRL.BITS.FUNCSEL                 /**< Acceder al campo de bits FUNCSEL del registro GPIO11_CTRL */
+#define bIOBANK0_GPIO11_OUTOVER sIOBANK0.GPIO11_CTRL.BITS.OUTOVER                 /**< Acceder al campo de bits OUTOVER del registro GPIO11_CTRL */
+#define bIOBANK0_GPIO11_OEOVER sIOBANK0.GPIO11_CTRL.BITS.OEOVER                   /**< Acceder al campo de bits OEOVER del registro GPIO11_CTRL */
+#define bIOBANK0_GPIO11_INOVER sIOBANK0.GPIO11_CTRL.BITS.INOVER                   /**< Acceder al campo de bits INOVER del registro GPIO11_CTRL */
+#define bIOBANK0_GPIO11_IRQOVER sIOBANK0.GPIO11_CTRL.BITS.IRQOVER                 /**< Acceder al campo de bits IRQOVER del registro GPIO11_CTRL */
 
-// Registro GPIO12_CTRL
-#define rIOBANK0_GPIO12_CTRL sIOBANK0.GPIO12_CTRL.WORD
-#define bIOBANK0_GPIO12_FUNCSEL sIOBANK0.GPIO12_CTRL.BITS.FUNCSEL
-#define bIOBANK0_GPIO12_OUTOVER sIOBANK0.GPIO12_CTRL.BITS.OUTOVER
-#define bIOBANK0_GPIO12_OEOVER sIOBANK0.GPIO12_CTRL.BITS.OEOVER
-#define bIOBANK0_GPIO12_INOVER sIOBANK0.GPIO12_CTRL.BITS.INOVER
-#define bIOBANK0_GPIO12_IRQOVER sIOBANK0.GPIO12_CTRL.BITS.IRQOVER
+#define rIOBANK0_GPIO12_CTRL sIOBANK0.GPIO12_CTRL.WORD                            /**< Acceder al registro completo GPIO12_CTRL */
+#define bIOBANK0_GPIO12_FUNCSEL sIOBANK0.GPIO12_CTRL.BITS.FUNCSEL                 /**< Acceder al campo de bits FUNCSEL del registro GPIO12_CTRL */
+#define bIOBANK0_GPIO12_OUTOVER sIOBANK0.GPIO12_CTRL.BITS.OUTOVER                 /**< Acceder al campo de bits OUTOVER del registro GPIO12_CTRL */
+#define bIOBANK0_GPIO12_OEOVER sIOBANK0.GPIO12_CTRL.BITS.OEOVER                   /**< Acceder al campo de bits OEOVER del registro GPIO12_CTRL */
+#define bIOBANK0_GPIO12_INOVER sIOBANK0.GPIO12_CTRL.BITS.INOVER                   /**< Acceder al campo de bits INOVER del registro GPIO12_CTRL */
+#define bIOBANK0_GPIO12_IRQOVER sIOBANK0.GPIO12_CTRL.BITS.IRQOVER                 /**< Acceder al campo de bits IRQOVER del registro GPIO12_CTRL */
 
-// Registro GPIO13_CTRL
-#define rIOBANK0_GPIO13_CTRL sIOBANK0.GPIO13_CTRL.WORD
-#define bIOBANK0_GPIO13_FUNCSEL sIOBANK0.GPIO13_CTRL.BITS.FUNCSEL
-#define bIOBANK0_GPIO13_OUTOVER sIOBANK0.GPIO13_CTRL.BITS.OUTOVER
-#define bIOBANK0_GPIO13_OEOVER sIOBANK0.GPIO13_CTRL.BITS.OEOVER
-#define bIOBANK0_GPIO13_INOVER sIOBANK0.GPIO13_CTRL.BITS.INOVER
-#define bIOBANK0_GPIO13_IRQOVER sIOBANK0.GPIO13_CTRL.BITS.IRQOVER
+#define rIOBANK0_GPIO13_CTRL sIOBANK0.GPIO13_CTRL.WORD                            /**< Acceder al registro completo GPIO13_CTRL */
+#define bIOBANK0_GPIO13_FUNCSEL sIOBANK0.GPIO13_CTRL.BITS.FUNCSEL                 /**< Acceder al campo de bits FUNCSEL del registro GPIO13_CTRL */
+#define bIOBANK0_GPIO13_OUTOVER sIOBANK0.GPIO13_CTRL.BITS.OUTOVER                 /**< Acceder al campo de bits OUTOVER del registro GPIO13_CTRL */
+#define bIOBANK0_GPIO13_OEOVER sIOBANK0.GPIO13_CTRL.BITS.OEOVER                   /**< Acceder al campo de bits OEOVER del registro GPIO13_CTRL */
+#define bIOBANK0_GPIO13_INOVER sIOBANK0.GPIO13_CTRL.BITS.INOVER                   /**< Acceder al campo de bits INOVER del registro GPIO13_CTRL */
+#define bIOBANK0_GPIO13_IRQOVER sIOBANK0.GPIO13_CTRL.BITS.IRQOVER                 /**< Acceder al campo de bits IRQOVER del registro GPIO13_CTRL */
 
-// Registro GPIO14_CTRL
-#define rIOBANK0_GPIO14_CTRL sIOBANK0.GPIO14_CTRL.WORD
-#define bIOBANK0_GPIO14_FUNCSEL sIOBANK0.GPIO14_CTRL.BITS.FUNCSEL
-#define bIOBANK0_GPIO14_OUTOVER sIOBANK0.GPIO14_CTRL.BITS.OUTOVER
-#define bIOBANK0_GPIO14_OEOVER sIOBANK0.GPIO14_CTRL.BITS.OEOVER
-#define bIOBANK0_GPIO14_INOVER sIOBANK0.GPIO14_CTRL.BITS.INOVER
-#define bIOBANK0_GPIO14_IRQOVER sIOBANK0.GPIO14_CTRL.BITS.IRQOVER
+#define rIOBANK0_GPIO14_CTRL sIOBANK0.GPIO14_CTRL.WORD                            /**< Acceder al registro completo GPIO14_CTRL */
+#define bIOBANK0_GPIO14_FUNCSEL sIOBANK0.GPIO14_CTRL.BITS.FUNCSEL                 /**< Acceder al campo de bits FUNCSEL del registro GPIO14_CTRL */
+#define bIOBANK0_GPIO14_OUTOVER sIOBANK0.GPIO14_CTRL.BITS.OUTOVER                 /**< Acceder al campo de bits OUTOVER del registro GPIO14_CTRL */
+#define bIOBANK0_GPIO14_OEOVER sIOBANK0.GPIO14_CTRL.BITS.OEOVER                   /**< Acceder al campo de bits OEOVER del registro GPIO14_CTRL */
+#define bIOBANK0_GPIO14_INOVER sIOBANK0.GPIO14_CTRL.BITS.INOVER                   /**< Acceder al campo de bits INOVER del registro GPIO14_CTRL */
+#define bIOBANK0_GPIO14_IRQOVER sIOBANK0.GPIO14_CTRL.BITS.IRQOVER                 /**< Acceder al campo de bits IRQOVER del registro GPIO14_CTRL */
 
-// Registro GPIO15_CTRL
-#define rIOBANK0_GPIO15_CTRL sIOBANK0.GPIO15_CTRL.WORD
-#define bIOBANK0_GPIO15_FUNCSEL sIOBANK0.GPIO15_CTRL.BITS.FUNCSEL
-#define bIOBANK0_GPIO15_OUTOVER sIOBANK0.GPIO15_CTRL.BITS.OUTOVER
-#define bIOBANK0_GPIO15_OEOVER sIOBANK0.GPIO15_CTRL.BITS.OEOVER
-#define bIOBANK0_GPIO15_INOVER sIOBANK0.GPIO15_CTRL.BITS.INOVER
-#define bIOBANK0_GPIO15_IRQOVER sIOBANK0.GPIO15_CTRL.BITS.IRQOVER
+#define rIOBANK0_GPIO15_CTRL sIOBANK0.GPIO15_CTRL.WORD                            /**< Acceder al registro completo GPIO15_CTRL */
+#define bIOBANK0_GPIO15_FUNCSEL sIOBANK0.GPIO15_CTRL.BITS.FUNCSEL                 /**< Acceder al campo de bits FUNCSEL del registro GPIO15_CTRL */
+#define bIOBANK0_GPIO15_OUTOVER sIOBANK0.GPIO15_CTRL.BITS.OUTOVER                 /**< Acceder al campo de bits OUTOVER del registro GPIO15_CTRL */
+#define bIOBANK0_GPIO15_OEOVER sIOBANK0.GPIO15_CTRL.BITS.OEOVER                   /**< Acceder al campo de bits OEOVER del registro GPIO15_CTRL */
+#define bIOBANK0_GPIO15_INOVER sIOBANK0.GPIO15_CTRL.BITS.INOVER                   /**< Acceder al campo de bits INOVER del registro GPIO15_CTRL */
+#define bIOBANK0_GPIO15_IRQOVER sIOBANK0.GPIO15_CTRL.BITS.IRQOVER                 /**< Acceder al campo de bits IRQOVER del registro GPIO15_CTRL */
 
-// Registro GPIO16_CTRL
-#define rIOBANK0_GPIO16_CTRL sIOBANK0.GPIO16_CTRL.WORD
-#define bIOBANK0_GPIO16_FUNCSEL sIOBANK0.GPIO16_CTRL.BITS.FUNCSEL
-#define bIOBANK0_GPIO16_OUTOVER sIOBANK0.GPIO16_CTRL.BITS.OUTOVER
-#define bIOBANK0_GPIO16_OEOVER sIOBANK0.GPIO16_CTRL.BITS.OEOVER
-#define bIOBANK0_GPIO16_INOVER sIOBANK0.GPIO16_CTRL.BITS.INOVER
-#define bIOBANK0_GPIO16_IRQOVER sIOBANK0.GPIO16_CTRL.BITS.IRQOVER
+#define rIOBANK0_GPIO16_CTRL sIOBANK0.GPIO16_CTRL.WORD                            /**< Acceder al registro completo GPIO16_CTRL */
+#define bIOBANK0_GPIO16_FUNCSEL sIOBANK0.GPIO16_CTRL.BITS.FUNCSEL                 /**< Acceder al campo de bits FUNCSEL del registro GPIO16_CTRL */
+#define bIOBANK0_GPIO16_OUTOVER sIOBANK0.GPIO16_CTRL.BITS.OUTOVER                 /**< Acceder al campo de bits OUTOVER del registro GPIO16_CTRL */
+#define bIOBANK0_GPIO16_OEOVER sIOBANK0.GPIO16_CTRL.BITS.OEOVER                   /**< Acceder al campo de bits OEOVER del registro GPIO16_CTRL */
+#define bIOBANK0_GPIO16_INOVER sIOBANK0.GPIO16_CTRL.BITS.INOVER                   /**< Acceder al campo de bits INOVER del registro GPIO16_CTRL */
+#define bIOBANK0_GPIO16_IRQOVER sIOBANK0.GPIO16_CTRL.BITS.IRQOVER                 /**< Acceder al campo de bits IRQOVER del registro GPIO16_CTRL */
 
-// Registro GPIO17_CTRL
-#define rIOBANK0_GPIO17_CTRL sIOBANK0.GPIO17_CTRL.WORD
-#define bIOBANK0_GPIO17_FUNCSEL sIOBANK0.GPIO17_CTRL.BITS.FUNCSEL
-#define bIOBANK0_GPIO17_OUTOVER sIOBANK0.GPIO17_CTRL.BITS.OUTOVER
-#define bIOBANK0_GPIO17_OEOVER sIOBANK0.GPIO17_CTRL.BITS.OEOVER
-#define bIOBANK0_GPIO17_INOVER sIOBANK0.GPIO17_CTRL.BITS.INOVER
-#define bIOBANK0_GPIO17_IRQOVER sIOBANK0.GPIO17_CTRL.BITS.IRQOVER
+#define rIOBANK0_GPIO17_CTRL sIOBANK0.GPIO17_CTRL.WORD                            /**< Acceder al registro completo GPIO17_CTRL */
+#define bIOBANK0_GPIO17_FUNCSEL sIOBANK0.GPIO17_CTRL.BITS.FUNCSEL                 /**< Acceder al campo de bits FUNCSEL del registro GPIO17_CTRL */
+#define bIOBANK0_GPIO17_OUTOVER sIOBANK0.GPIO17_CTRL.BITS.OUTOVER                 /**< Acceder al campo de bits OUTOVER del registro GPIO17_CTRL */
+#define bIOBANK0_GPIO17_OEOVER sIOBANK0.GPIO17_CTRL.BITS.OEOVER                   /**< Acceder al campo de bits OEOVER del registro GPIO17_CTRL */
+#define bIOBANK0_GPIO17_INOVER sIOBANK0.GPIO17_CTRL.BITS.INOVER                   /**< Acceder al campo de bits INOVER del registro GPIO17_CTRL */
+#define bIOBANK0_GPIO17_IRQOVER sIOBANK0.GPIO17_CTRL.BITS.IRQOVER                 /**< Acceder al campo de bits IRQOVER del registro GPIO17_CTRL */
 
-// Registro GPIO18_CTRL
-#define rIOBANK0_GPIO18_CTRL sIOBANK0.GPIO18_CTRL.WORD
-#define bIOBANK0_GPIO18_FUNCSEL sIOBANK0.GPIO18_CTRL.BITS.FUNCSEL
-#define bIOBANK0_GPIO18_OUTOVER sIOBANK0.GPIO18_CTRL.BITS.OUTOVER
-#define bIOBANK0_GPIO18_OEOVER sIOBANK0.GPIO18_CTRL.BITS.OEOVER
-#define bIOBANK0_GPIO18_INOVER sIOBANK0.GPIO18_CTRL.BITS.INOVER
-#define bIOBANK0_GPIO18_IRQOVER sIOBANK0.GPIO18_CTRL.BITS.IRQOVER
+#define rIOBANK0_GPIO18_CTRL sIOBANK0.GPIO18_CTRL.WORD                            /**< Acceder al registro completo GPIO18_CTRL */
+#define bIOBANK0_GPIO18_FUNCSEL sIOBANK0.GPIO18_CTRL.BITS.FUNCSEL                 /**< Acceder al campo de bits FUNCSEL del registro GPIO18_CTRL */
+#define bIOBANK0_GPIO18_OUTOVER sIOBANK0.GPIO18_CTRL.BITS.OUTOVER                 /**< Acceder al campo de bits OUTOVER del registro GPIO18_CTRL */
+#define bIOBANK0_GPIO18_OEOVER sIOBANK0.GPIO18_CTRL.BITS.OEOVER                   /**< Acceder al campo de bits OEOVER del registro GPIO18_CTRL */
+#define bIOBANK0_GPIO18_INOVER sIOBANK0.GPIO18_CTRL.BITS.INOVER                   /**< Acceder al campo de bits INOVER del registro GPIO18_CTRL */
+#define bIOBANK0_GPIO18_IRQOVER sIOBANK0.GPIO18_CTRL.BITS.IRQOVER                 /**< Acceder al campo de bits IRQOVER del registro GPIO18_CTRL */
 
-// Registro GPIO19_CTRL
-#define rIOBANK0_GPIO19_CTRL sIOBANK0.GPIO19_CTRL.WORD
-#define bIOBANK0_GPIO19_FUNCSEL sIOBANK0.GPIO19_CTRL.BITS.FUNCSEL
-#define bIOBANK0_GPIO19_OUTOVER sIOBANK0.GPIO19_CTRL.BITS.OUTOVER
-#define bIOBANK0_GPIO19_OEOVER sIOBANK0.GPIO19_CTRL.BITS.OEOVER
-#define bIOBANK0_GPIO19_INOVER sIOBANK0.GPIO19_CTRL.BITS.INOVER
-#define bIOBANK0_GPIO19_IRQOVER sIOBANK0.GPIO19_CTRL.BITS.IRQOVER
+#define rIOBANK0_GPIO19_CTRL sIOBANK0.GPIO19_CTRL.WORD                            /**< Acceder al registro completo GPIO19_CTRL */
+#define bIOBANK0_GPIO19_FUNCSEL sIOBANK0.GPIO19_CTRL.BITS.FUNCSEL                 /**< Acceder al campo de bits FUNCSEL del registro GPIO19_CTRL */
+#define bIOBANK0_GPIO19_OUTOVER sIOBANK0.GPIO19_CTRL.BITS.OUTOVER                 /**< Acceder al campo de bits OUTOVER del registro GPIO19_CTRL */
+#define bIOBANK0_GPIO19_OEOVER sIOBANK0.GPIO19_CTRL.BITS.OEOVER                   /**< Acceder al campo de bits OEOVER del registro GPIO19_CTRL */
+#define bIOBANK0_GPIO19_INOVER sIOBANK0.GPIO19_CTRL.BITS.INOVER                   /**< Acceder al campo de bits INOVER del registro GPIO19_CTRL */
+#define bIOBANK0_GPIO19_IRQOVER sIOBANK0.GPIO19_CTRL.BITS.IRQOVER                 /**< Acceder al campo de bits IRQOVER del registro GPIO19_CTRL */
 
-// Registro GPIO20_CTRL
-#define rIOBANK0_GPIO20_CTRL sIOBANK0.GPIO20_CTRL.WORD
-#define bIOBANK0_GPIO20_FUNCSEL sIOBANK0.GPIO20_CTRL.BITS.FUNCSEL
-#define bIOBANK0_GPIO20_OUTOVER sIOBANK0.GPIO20_CTRL.BITS.OUTOVER
-#define bIOBANK0_GPIO20_OEOVER sIOBANK0.GPIO20_CTRL.BITS.OEOVER
-#define bIOBANK0_GPIO20_INOVER sIOBANK0.GPIO20_CTRL.BITS.INOVER
-#define bIOBANK0_GPIO20_IRQOVER sIOBANK0.GPIO20_CTRL.BITS.IRQOVER
+#define rIOBANK0_GPIO20_CTRL sIOBANK0.GPIO20_CTRL.WORD                            /**< Acceder al registro completo GPIO20_CTRL */
+#define bIOBANK0_GPIO20_FUNCSEL sIOBANK0.GPIO20_CTRL.BITS.FUNCSEL                 /**< Acceder al campo de bits FUNCSEL del registro GPIO20_CTRL */
+#define bIOBANK0_GPIO20_OUTOVER sIOBANK0.GPIO20_CTRL.BITS.OUTOVER                 /**< Acceder al campo de bits OUTOVER del registro GPIO20_CTRL */
+#define bIOBANK0_GPIO20_OEOVER sIOBANK0.GPIO20_CTRL.BITS.OEOVER                   /**< Acceder al campo de bits OEOVER del registro GPIO20_CTRL */
+#define bIOBANK0_GPIO20_INOVER sIOBANK0.GPIO20_CTRL.BITS.INOVER                   /**< Acceder al campo de bits INOVER del registro GPIO20_CTRL */
+#define bIOBANK0_GPIO20_IRQOVER sIOBANK0.GPIO20_CTRL.BITS.IRQOVER                 /**< Acceder al campo de bits IRQOVER del registro GPIO20_CTRL */
 
-// Registro GPIO21_CTRL
-#define rIOBANK0_GPIO21_CTRL sIOBANK0.GPIO21_CTRL.WORD
-#define bIOBANK0_GPIO21_FUNCSEL sIOBANK0.GPIO21_CTRL.BITS.FUNCSEL
-#define bIOBANK0_GPIO21_OUTOVER sIOBANK0.GPIO21_CTRL.BITS.OUTOVER
-#define bIOBANK0_GPIO21_OEOVER sIOBANK0.GPIO21_CTRL.BITS.OEOVER
-#define bIOBANK0_GPIO21_INOVER sIOBANK0.GPIO21_CTRL.BITS.INOVER
-#define bIOBANK0_GPIO21_IRQOVER sIOBANK0.GPIO21_CTRL.BITS.IRQOVER
+#define rIOBANK0_GPIO21_CTRL sIOBANK0.GPIO21_CTRL.WORD                            /**< Acceder al registro completo GPIO21_CTRL */
+#define bIOBANK0_GPIO21_FUNCSEL sIOBANK0.GPIO21_CTRL.BITS.FUNCSEL                 /**< Acceder al campo de bits FUNCSEL del registro GPIO21_CTRL */
+#define bIOBANK0_GPIO21_OUTOVER sIOBANK0.GPIO21_CTRL.BITS.OUTOVER                 /**< Acceder al campo de bits OUTOVER del registro GPIO21_CTRL */
+#define bIOBANK0_GPIO21_OEOVER sIOBANK0.GPIO21_CTRL.BITS.OEOVER                   /**< Acceder al campo de bits OEOVER del registro GPIO21_CTRL */
+#define bIOBANK0_GPIO21_INOVER sIOBANK0.GPIO21_CTRL.BITS.INOVER                   /**< Acceder al campo de bits INOVER del registro GPIO21_CTRL */
+#define bIOBANK0_GPIO21_IRQOVER sIOBANK0.GPIO21_CTRL.BITS.IRQOVER                 /**< Acceder al campo de bits IRQOVER del registro GPIO21_CTRL */
 
-// Registro GPIO22_CTRL
-#define rIOBANK0_GPIO22_CTRL sIOBANK0.GPIO22_CTRL.WORD
-#define bIOBANK0_GPIO22_FUNCSEL sIOBANK0.GPIO22_CTRL.BITS.FUNCSEL
-#define bIOBANK0_GPIO22_OUTOVER sIOBANK0.GPIO22_CTRL.BITS.OUTOVER
-#define bIOBANK0_GPIO22_OEOVER sIOBANK0.GPIO22_CTRL.BITS.OEOVER
-#define bIOBANK0_GPIO22_INOVER sIOBANK0.GPIO22_CTRL.BITS.INOVER
-#define bIOBANK0_GPIO22_IRQOVER sIOBANK0.GPIO22_CTRL.BITS.IRQOVER
+#define rIOBANK0_GPIO22_CTRL sIOBANK0.GPIO22_CTRL.WORD                            /**< Acceder al registro completo GPIO22_CTRL */
+#define bIOBANK0_GPIO22_FUNCSEL sIOBANK0.GPIO22_CTRL.BITS.FUNCSEL                 /**< Acceder al campo de bits FUNCSEL del registro GPIO22_CTRL */
+#define bIOBANK0_GPIO22_OUTOVER sIOBANK0.GPIO22_CTRL.BITS.OUTOVER                 /**< Acceder al campo de bits OUTOVER del registro GPIO22_CTRL */
+#define bIOBANK0_GPIO22_OEOVER sIOBANK0.GPIO22_CTRL.BITS.OEOVER                   /**< Acceder al campo de bits OEOVER del registro GPIO22_CTRL */
+#define bIOBANK0_GPIO22_INOVER sIOBANK0.GPIO22_CTRL.BITS.INOVER                   /**< Acceder al campo de bits INOVER del registro GPIO22_CTRL */
+#define bIOBANK0_GPIO22_IRQOVER sIOBANK0.GPIO22_CTRL.BITS.IRQOVER                 /**< Acceder al campo de bits IRQOVER del registro GPIO22_CTRL */
 
-// Registro GPIO23_CTRL
-#define rIOBANK0_GPIO23_CTRL sIOBANK0.GPIO23_CTRL.WORD
-#define bIOBANK0_GPIO23_FUNCSEL sIOBANK0.GPIO23_CTRL.BITS.FUNCSEL
-#define bIOBANK0_GPIO23_OUTOVER sIOBANK0.GPIO23_CTRL.BITS.OUTOVER
-#define bIOBANK0_GPIO23_OEOVER sIOBANK0.GPIO23_CTRL.BITS.OEOVER
-#define bIOBANK0_GPIO23_INOVER sIOBANK0.GPIO23_CTRL.BITS.INOVER
-#define bIOBANK0_GPIO23_IRQOVER sIOBANK0.GPIO23_CTRL.BITS.IRQOVER
+#define rIOBANK0_GPIO23_CTRL sIOBANK0.GPIO23_CTRL.WORD                            /**< Acceder al registro completo GPIO23_CTRL */
+#define bIOBANK0_GPIO23_FUNCSEL sIOBANK0.GPIO23_CTRL.BITS.FUNCSEL                 /**< Acceder al campo de bits FUNCSEL del registro GPIO23_CTRL */
+#define bIOBANK0_GPIO23_OUTOVER sIOBANK0.GPIO23_CTRL.BITS.OUTOVER                 /**< Acceder al campo de bits OUTOVER del registro GPIO23_CTRL */
+#define bIOBANK0_GPIO23_OEOVER sIOBANK0.GPIO23_CTRL.BITS.OEOVER                   /**< Acceder al campo de bits OEOVER del registro GPIO23_CTRL */
+#define bIOBANK0_GPIO23_INOVER sIOBANK0.GPIO23_CTRL.BITS.INOVER                   /**< Acceder al campo de bits INOVER del registro GPIO23_CTRL */
+#define bIOBANK0_GPIO23_IRQOVER sIOBANK0.GPIO23_CTRL.BITS.IRQOVER                 /**< Acceder al campo de bits IRQOVER del registro GPIO23_CTRL */
 
-// Registro GPIO24_CTRL
-#define rIOBANK0_GPIO24_CTRL sIOBANK0.GPIO24_CTRL.WORD
-#define bIOBANK0_GPIO24_FUNCSEL sIOBANK0.GPIO24_CTRL.BITS.FUNCSEL
-#define bIOBANK0_GPIO24_OUTOVER sIOBANK0.GPIO24_CTRL.BITS.OUTOVER
-#define bIOBANK0_GPIO24_OEOVER sIOBANK0.GPIO24_CTRL.BITS.OEOVER
-#define bIOBANK0_GPIO24_INOVER sIOBANK0.GPIO24_CTRL.BITS.INOVER
-#define bIOBANK0_GPIO24_IRQOVER sIOBANK0.GPIO24_CTRL.BITS.IRQOVER
+#define rIOBANK0_GPIO24_CTRL sIOBANK0.GPIO24_CTRL.WORD                            /**< Acceder al registro completo GPIO24_CTRL */
+#define bIOBANK0_GPIO24_FUNCSEL sIOBANK0.GPIO24_CTRL.BITS.FUNCSEL                 /**< Acceder al campo de bits FUNCSEL del registro GPIO24_CTRL */
+#define bIOBANK0_GPIO24_OUTOVER sIOBANK0.GPIO24_CTRL.BITS.OUTOVER                 /**< Acceder al campo de bits OUTOVER del registro GPIO24_CTRL */
+#define bIOBANK0_GPIO24_OEOVER sIOBANK0.GPIO24_CTRL.BITS.OEOVER                   /**< Acceder al campo de bits OEOVER del registro GPIO24_CTRL */
+#define bIOBANK0_GPIO24_INOVER sIOBANK0.GPIO24_CTRL.BITS.INOVER                   /**< Acceder al campo de bits INOVER del registro GPIO24_CTRL */
+#define bIOBANK0_GPIO24_IRQOVER sIOBANK0.GPIO24_CTRL.BITS.IRQOVER                 /**< Acceder al campo de bits IRQOVER del registro GPIO24_CTRL */
 
-// Registro GPIO25_CTRL
-#define rIOBANK0_GPIO25_CTRL sIOBANK0.GPIO25_CTRL.WORD
-#define bIOBANK0_GPIO25_FUNCSEL sIOBANK0.GPIO25_CTRL.BITS.FUNCSEL
-#define bIOBANK0_GPIO25_OUTOVER sIOBANK0.GPIO25_CTRL.BITS.OUTOVER
-#define bIOBANK0_GPIO25_OEOVER sIOBANK0.GPIO25_CTRL.BITS.OEOVER
-#define bIOBANK0_GPIO25_INOVER sIOBANK0.GPIO25_CTRL.BITS.INOVER
-#define bIOBANK0_GPIO25_IRQOVER sIOBANK0.GPIO25_CTRL.BITS.IRQOVER
+#define rIOBANK0_GPIO25_CTRL sIOBANK0.GPIO25_CTRL.WORD                            /**< Acceder al registro completo GPIO25_CTRL */
+#define bIOBANK0_GPIO25_FUNCSEL sIOBANK0.GPIO25_CTRL.BITS.FUNCSEL                 /**< Acceder al campo de bits FUNCSEL del registro GPIO25_CTRL */
+#define bIOBANK0_GPIO25_OUTOVER sIOBANK0.GPIO25_CTRL.BITS.OUTOVER                 /**< Acceder al campo de bits OUTOVER del registro GPIO25_CTRL */
+#define bIOBANK0_GPIO25_OEOVER sIOBANK0.GPIO25_CTRL.BITS.OEOVER                   /**< Acceder al campo de bits OEOVER del registro GPIO25_CTRL */
+#define bIOBANK0_GPIO25_INOVER sIOBANK0.GPIO25_CTRL.BITS.INOVER                   /**< Acceder al campo de bits INOVER del registro GPIO25_CTRL */
+#define bIOBANK0_GPIO25_IRQOVER sIOBANK0.GPIO25_CTRL.BITS.IRQOVER                 /**< Acceder al campo de bits IRQOVER del registro GPIO25_CTRL */
 
-// Registro GPIO26_CTRL
-#define rIOBANK0_GPIO26_CTRL sIOBANK0.GPIO26_CTRL.WORD
-#define bIOBANK0_GPIO26_FUNCSEL sIOBANK0.GPIO26_CTRL.BITS.FUNCSEL
-#define bIOBANK0_GPIO26_OUTOVER sIOBANK0.GPIO26_CTRL.BITS.OUTOVER
-#define bIOBANK0_GPIO26_OEOVER sIOBANK0.GPIO26_CTRL.BITS.OEOVER
-#define bIOBANK0_GPIO26_INOVER sIOBANK0.GPIO26_CTRL.BITS.INOVER
-#define bIOBANK0_GPIO26_IRQOVER sIOBANK0.GPIO26_CTRL.BITS.IRQOVER
+#define rIOBANK0_GPIO26_CTRL sIOBANK0.GPIO26_CTRL.WORD                            /**< Acceder al registro completo GPIO26_CTRL */
+#define bIOBANK0_GPIO26_FUNCSEL sIOBANK0.GPIO26_CTRL.BITS.FUNCSEL                 /**< Acceder al campo de bits FUNCSEL del registro GPIO26_CTRL */
+#define bIOBANK0_GPIO26_OUTOVER sIOBANK0.GPIO26_CTRL.BITS.OUTOVER                 /**< Acceder al campo de bits OUTOVER del registro GPIO26_CTRL */
+#define bIOBANK0_GPIO26_OEOVER sIOBANK0.GPIO26_CTRL.BITS.OEOVER                   /**< Acceder al campo de bits OEOVER del registro GPIO26_CTRL */
+#define bIOBANK0_GPIO26_INOVER sIOBANK0.GPIO26_CTRL.BITS.INOVER                   /**< Acceder al campo de bits INOVER del registro GPIO26_CTRL */
+#define bIOBANK0_GPIO26_IRQOVER sIOBANK0.GPIO26_CTRL.BITS.IRQOVER                 /**< Acceder al campo de bits IRQOVER del registro GPIO26_CTRL */
 
-// Registro GPIO27_CTRL
-#define rIOBANK0_GPIO27_CTRL sIOBANK0.GPIO27_CTRL.WORD
-#define bIOBANK0_GPIO27_FUNCSEL sIOBANK0.GPIO27_CTRL.BITS.FUNCSEL
-#define bIOBANK0_GPIO27_OUTOVER sIOBANK0.GPIO27_CTRL.BITS.OUTOVER
-#define bIOBANK0_GPIO27_OEOVER sIOBANK0.GPIO27_CTRL.BITS.OEOVER
-#define bIOBANK0_GPIO27_INOVER sIOBANK0.GPIO27_CTRL.BITS.INOVER
-#define bIOBANK0_GPIO27_IRQOVER sIOBANK0.GPIO27_CTRL.BITS.IRQOVER
+#define rIOBANK0_GPIO27_CTRL sIOBANK0.GPIO27_CTRL.WORD                            /**< Acceder al registro completo GPIO27_CTRL */
+#define bIOBANK0_GPIO27_FUNCSEL sIOBANK0.GPIO27_CTRL.BITS.FUNCSEL                 /**< Acceder al campo de bits FUNCSEL del registro GPIO27_CTRL */
+#define bIOBANK0_GPIO27_OUTOVER sIOBANK0.GPIO27_CTRL.BITS.OUTOVER                 /**< Acceder al campo de bits OUTOVER del registro GPIO27_CTRL */
+#define bIOBANK0_GPIO27_OEOVER sIOBANK0.GPIO27_CTRL.BITS.OEOVER                   /**< Acceder al campo de bits OEOVER del registro GPIO27_CTRL */
+#define bIOBANK0_GPIO27_INOVER sIOBANK0.GPIO27_CTRL.BITS.INOVER                   /**< Acceder al campo de bits INOVER del registro GPIO27_CTRL */
+#define bIOBANK0_GPIO27_IRQOVER sIOBANK0.GPIO27_CTRL.BITS.IRQOVER                 /**< Acceder al campo de bits IRQOVER del registro GPIO27_CTRL */
 
-// Registro GPIO28_CTRL
-#define rIOBANK0_GPIO28_CTRL sIOBANK0.GPIO28_CTRL.WORD
-#define bIOBANK0_GPIO28_FUNCSEL sIOBANK0.GPIO28_CTRL.BITS.FUNCSEL
-#define bIOBANK0_GPIO28_OUTOVER sIOBANK0.GPIO28_CTRL.BITS.OUTOVER
-#define bIOBANK0_GPIO28_OEOVER sIOBANK0.GPIO28_CTRL.BITS.OEOVER
-#define bIOBANK0_GPIO28_INOVER sIOBANK0.GPIO28_CTRL.BITS.INOVER
-#define bIOBANK0_GPIO28_IRQOVER sIOBANK0.GPIO28_CTRL.BITS.IRQOVER
+#define rIOBANK0_GPIO28_CTRL sIOBANK0.GPIO28_CTRL.WORD                            /**< Acceder al registro completo GPIO28_CTRL */
+#define bIOBANK0_GPIO28_FUNCSEL sIOBANK0.GPIO28_CTRL.BITS.FUNCSEL                 /**< Acceder al campo de bits FUNCSEL del registro GPIO28_CTRL */
+#define bIOBANK0_GPIO28_OUTOVER sIOBANK0.GPIO28_CTRL.BITS.OUTOVER                 /**< Acceder al campo de bits OUTOVER del registro GPIO28_CTRL */
+#define bIOBANK0_GPIO28_OEOVER sIOBANK0.GPIO28_CTRL.BITS.OEOVER                   /**< Acceder al campo de bits OEOVER del registro GPIO28_CTRL */
+#define bIOBANK0_GPIO28_INOVER sIOBANK0.GPIO28_CTRL.BITS.INOVER                   /**< Acceder al campo de bits INOVER del registro GPIO28_CTRL */
+#define bIOBANK0_GPIO28_IRQOVER sIOBANK0.GPIO28_CTRL.BITS.IRQOVER                 /**< Acceder al campo de bits IRQOVER del registro GPIO28_CTRL */
 
-// Registro GPIO29_CTRL
-#define rIOBANK0_GPIO29_CTRL sIOBANK0.GPIO29_CTRL.WORD
-#define bIOBANK0_GPIO29_FUNCSEL sIOBANK0.GPIO29_CTRL.BITS.FUNCSEL
-#define bIOBANK0_GPIO29_OUTOVER sIOBANK0.GPIO29_CTRL.BITS.OUTOVER
-#define bIOBANK0_GPIO29_OEOVER sIOBANK0.GPIO29_CTRL.BITS.OEOVER
-#define bIOBANK0_GPIO29_INOVER sIOBANK0.GPIO29_CTRL.BITS.INOVER
-#define bIOBANK0_GPIO29_IRQOVER sIOBANK0.GPIO29_CTRL.BITS.IRQOVER
+#define rIOBANK0_GPIO29_CTRL sIOBANK0.GPIO29_CTRL.WORD                            /**< Acceder al registro completo GPIO29_CTRL */
+#define bIOBANK0_GPIO29_FUNCSEL sIOBANK0.GPIO29_CTRL.BITS.FUNCSEL                 /**< Acceder al campo de bits FUNCSEL del registro GPIO29_CTRL */
+#define bIOBANK0_GPIO29_OUTOVER sIOBANK0.GPIO29_CTRL.BITS.OUTOVER                 /**< Acceder al campo de bits OUTOVER del registro GPIO29_CTRL */
+#define bIOBANK0_GPIO29_OEOVER sIOBANK0.GPIO29_CTRL.BITS.OEOVER                   /**< Acceder al campo de bits OEOVER del registro GPIO29_CTRL */
+#define bIOBANK0_GPIO29_INOVER sIOBANK0.GPIO29_CTRL.BITS.INOVER                   /**< Acceder al campo de bits INOVER del registro GPIO29_CTRL */
+#define bIOBANK0_GPIO29_IRQOVER sIOBANK0.GPIO29_CTRL.BITS.IRQOVER                 /**< Acceder al campo de bits IRQOVER del registro GPIO29_CTRL */
 
 /****************************************************************************************
  ****************************************************************************************
