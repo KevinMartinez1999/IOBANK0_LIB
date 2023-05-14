@@ -1,0 +1,108 @@
+\hypertarget{union____gpio__status__t}{}\doxysection{Referencia de la Unión \+\_\+\+\_\+gpio\+\_\+status\+\_\+t}
+\label{union____gpio__status__t}\index{\_\_gpio\_status\_t@{\_\_gpio\_status\_t}}
+
+
+Union de los registros GPIO\+\_\+\+STATUS de 32 bits. Contiene los 9 campos de bits de los registros.  
+
+
+
+
+{\ttfamily \#include $<$IOBANK0\+\_\+\+LIB.\+h$>$}
+
+\doxysubsection*{Campos de datos}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{union____gpio__status__t_adb358c20ee228eecf09b17ae8d3b2f09}{WORD}}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>uint32\_t \mbox{\hyperlink{union____gpio__status__t_a7deb9fb9e3130cf00704c8acda46128e}{OUTFROMPERI}}: 1\\
+\>uint32\_t \mbox{\hyperlink{union____gpio__status__t_ac019077fb4b0ee35e1a7635864e9e1e6}{OUTTOPAD}}: 1\\
+\>uint32\_t \mbox{\hyperlink{union____gpio__status__t_a2bb624c549d7a76ada93a8a514f3fca0}{OEFROMPERI}}: 1\\
+\>uint32\_t \mbox{\hyperlink{union____gpio__status__t_a965d9d8ed6e69b997c9b532216ee9d15}{OETOPAD}}: 1\\
+\>uint32\_t \mbox{\hyperlink{union____gpio__status__t_a38cf2bd49cfc2b4b66cf6b12f4ce30e3}{INFROMPAD}}: 1\\
+\>uint32\_t \mbox{\hyperlink{union____gpio__status__t_aca6442b9dc7d042d9955dae6d01f9645}{INTOPERI}}: 1\\
+\>uint32\_t \mbox{\hyperlink{union____gpio__status__t_ad225e0858687c500409fa04990b87f49}{IRQFROMPAD}}: 1\\
+\>uint32\_t \mbox{\hyperlink{union____gpio__status__t_ad8bfc17e1d80402dec709e0263c67d90}{IRQTOPROC}}: 1\\
+\>uint32\_t \mbox{\hyperlink{union____gpio__status__t_a3e57c2ef1c3ffb36722f000cc1156824}{\+\_\+\+\_\+pad0\+\_\+\+\_\+}}: 24\\
+\} \mbox{\hyperlink{union____gpio__status__t_a16367642d78fb56e7873dc8eda316235}{BITS}}\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Union de los registros GPIO\+\_\+\+STATUS de 32 bits. Contiene los 9 campos de bits de los registros. 
+
+\doxysubsection{Documentación de los campos}
+\mbox{\Hypertarget{union____gpio__status__t_a3e57c2ef1c3ffb36722f000cc1156824}\label{union____gpio__status__t_a3e57c2ef1c3ffb36722f000cc1156824}} 
+\index{\_\_gpio\_status\_t@{\_\_gpio\_status\_t}!\_\_pad0\_\_@{\_\_pad0\_\_}}
+\index{\_\_pad0\_\_@{\_\_pad0\_\_}!\_\_gpio\_status\_t@{\_\_gpio\_status\_t}}
+\doxysubsubsection{\texorpdfstring{\_\_pad0\_\_}{\_\_pad0\_\_}}
+{\footnotesize\ttfamily uint32\+\_\+t \+\_\+\+\_\+pad0\+\_\+\+\_\+}
+
+Campo de bits reservado para los registros GPIO\+\_\+\+STATUS \mbox{\Hypertarget{union____gpio__status__t_a16367642d78fb56e7873dc8eda316235}\label{union____gpio__status__t_a16367642d78fb56e7873dc8eda316235}} 
+\index{\_\_gpio\_status\_t@{\_\_gpio\_status\_t}!BITS@{BITS}}
+\index{BITS@{BITS}!\_\_gpio\_status\_t@{\_\_gpio\_status\_t}}
+\doxysubsubsection{\texorpdfstring{}{}}
+{\footnotesize\ttfamily struct  \{ ... \}  BITS}
+
+\mbox{\Hypertarget{union____gpio__status__t_a38cf2bd49cfc2b4b66cf6b12f4ce30e3}\label{union____gpio__status__t_a38cf2bd49cfc2b4b66cf6b12f4ce30e3}} 
+\index{\_\_gpio\_status\_t@{\_\_gpio\_status\_t}!INFROMPAD@{INFROMPAD}}
+\index{INFROMPAD@{INFROMPAD}!\_\_gpio\_status\_t@{\_\_gpio\_status\_t}}
+\doxysubsubsection{\texorpdfstring{INFROMPAD}{INFROMPAD}}
+{\footnotesize\ttfamily uint32\+\_\+t INFROMPAD}
+
+Campo de bits INFROMPAD para los registros GPIO\+\_\+\+STATUS \mbox{\Hypertarget{union____gpio__status__t_aca6442b9dc7d042d9955dae6d01f9645}\label{union____gpio__status__t_aca6442b9dc7d042d9955dae6d01f9645}} 
+\index{\_\_gpio\_status\_t@{\_\_gpio\_status\_t}!INTOPERI@{INTOPERI}}
+\index{INTOPERI@{INTOPERI}!\_\_gpio\_status\_t@{\_\_gpio\_status\_t}}
+\doxysubsubsection{\texorpdfstring{INTOPERI}{INTOPERI}}
+{\footnotesize\ttfamily uint32\+\_\+t INTOPERI}
+
+Campo de bits INTOPERI para los registros GPIO\+\_\+\+STATUS \mbox{\Hypertarget{union____gpio__status__t_ad225e0858687c500409fa04990b87f49}\label{union____gpio__status__t_ad225e0858687c500409fa04990b87f49}} 
+\index{\_\_gpio\_status\_t@{\_\_gpio\_status\_t}!IRQFROMPAD@{IRQFROMPAD}}
+\index{IRQFROMPAD@{IRQFROMPAD}!\_\_gpio\_status\_t@{\_\_gpio\_status\_t}}
+\doxysubsubsection{\texorpdfstring{IRQFROMPAD}{IRQFROMPAD}}
+{\footnotesize\ttfamily uint32\+\_\+t IRQFROMPAD}
+
+Campo de bits IRQFROMPAD para los registros GPIO\+\_\+\+STATUS \mbox{\Hypertarget{union____gpio__status__t_ad8bfc17e1d80402dec709e0263c67d90}\label{union____gpio__status__t_ad8bfc17e1d80402dec709e0263c67d90}} 
+\index{\_\_gpio\_status\_t@{\_\_gpio\_status\_t}!IRQTOPROC@{IRQTOPROC}}
+\index{IRQTOPROC@{IRQTOPROC}!\_\_gpio\_status\_t@{\_\_gpio\_status\_t}}
+\doxysubsubsection{\texorpdfstring{IRQTOPROC}{IRQTOPROC}}
+{\footnotesize\ttfamily uint32\+\_\+t IRQTOPROC}
+
+Campo de bits IRQTOPROC para los registros GPIO\+\_\+\+STATUS \mbox{\Hypertarget{union____gpio__status__t_a2bb624c549d7a76ada93a8a514f3fca0}\label{union____gpio__status__t_a2bb624c549d7a76ada93a8a514f3fca0}} 
+\index{\_\_gpio\_status\_t@{\_\_gpio\_status\_t}!OEFROMPERI@{OEFROMPERI}}
+\index{OEFROMPERI@{OEFROMPERI}!\_\_gpio\_status\_t@{\_\_gpio\_status\_t}}
+\doxysubsubsection{\texorpdfstring{OEFROMPERI}{OEFROMPERI}}
+{\footnotesize\ttfamily uint32\+\_\+t OEFROMPERI}
+
+Campo de bits OEFROMPERI para los registros GPIO\+\_\+\+STATUS \mbox{\Hypertarget{union____gpio__status__t_a965d9d8ed6e69b997c9b532216ee9d15}\label{union____gpio__status__t_a965d9d8ed6e69b997c9b532216ee9d15}} 
+\index{\_\_gpio\_status\_t@{\_\_gpio\_status\_t}!OETOPAD@{OETOPAD}}
+\index{OETOPAD@{OETOPAD}!\_\_gpio\_status\_t@{\_\_gpio\_status\_t}}
+\doxysubsubsection{\texorpdfstring{OETOPAD}{OETOPAD}}
+{\footnotesize\ttfamily uint32\+\_\+t OETOPAD}
+
+Campo de bits OETOPAD para los registros GPIO\+\_\+\+STATUS \mbox{\Hypertarget{union____gpio__status__t_a7deb9fb9e3130cf00704c8acda46128e}\label{union____gpio__status__t_a7deb9fb9e3130cf00704c8acda46128e}} 
+\index{\_\_gpio\_status\_t@{\_\_gpio\_status\_t}!OUTFROMPERI@{OUTFROMPERI}}
+\index{OUTFROMPERI@{OUTFROMPERI}!\_\_gpio\_status\_t@{\_\_gpio\_status\_t}}
+\doxysubsubsection{\texorpdfstring{OUTFROMPERI}{OUTFROMPERI}}
+{\footnotesize\ttfamily uint32\+\_\+t OUTFROMPERI}
+
+Campo de bits OUTFROMPERI para los registros GPIO\+\_\+\+STATUS \mbox{\Hypertarget{union____gpio__status__t_ac019077fb4b0ee35e1a7635864e9e1e6}\label{union____gpio__status__t_ac019077fb4b0ee35e1a7635864e9e1e6}} 
+\index{\_\_gpio\_status\_t@{\_\_gpio\_status\_t}!OUTTOPAD@{OUTTOPAD}}
+\index{OUTTOPAD@{OUTTOPAD}!\_\_gpio\_status\_t@{\_\_gpio\_status\_t}}
+\doxysubsubsection{\texorpdfstring{OUTTOPAD}{OUTTOPAD}}
+{\footnotesize\ttfamily uint32\+\_\+t OUTTOPAD}
+
+Campo de bits OUTTOPAD para los registros GPIO\+\_\+\+STATUS \mbox{\Hypertarget{union____gpio__status__t_adb358c20ee228eecf09b17ae8d3b2f09}\label{union____gpio__status__t_adb358c20ee228eecf09b17ae8d3b2f09}} 
+\index{\_\_gpio\_status\_t@{\_\_gpio\_status\_t}!WORD@{WORD}}
+\index{WORD@{WORD}!\_\_gpio\_status\_t@{\_\_gpio\_status\_t}}
+\doxysubsubsection{\texorpdfstring{WORD}{WORD}}
+{\footnotesize\ttfamily uint32\+\_\+t WORD}
+
+
+
+La documentación para esta unión fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_i_o_b_a_n_k0___l_i_b_8h}{IOBANK0\+\_\+\+LIB.\+h}}\end{DoxyCompactItemize}

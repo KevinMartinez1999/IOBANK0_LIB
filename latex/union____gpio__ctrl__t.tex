@@ -1,0 +1,87 @@
+\hypertarget{union____gpio__ctrl__t}{}\doxysection{Referencia de la Unión \+\_\+\+\_\+gpio\+\_\+ctrl\+\_\+t}
+\label{union____gpio__ctrl__t}\index{\_\_gpio\_ctrl\_t@{\_\_gpio\_ctrl\_t}}
+
+
+Union de los registros GPIO\+\_\+\+CTRL de 32 bits. Contiene los 6 campos de bits de los registros.  
+
+
+
+
+{\ttfamily \#include $<$IOBANK0\+\_\+\+LIB.\+h$>$}
+
+\doxysubsection*{Campos de datos}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{union____gpio__ctrl__t_adb358c20ee228eecf09b17ae8d3b2f09}{WORD}}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>uint32\_t \mbox{\hyperlink{union____gpio__ctrl__t_a4acbad286e981c09cd345a50230cd2de}{FUNCSEL}}: 5\\
+\>uint32\_t \mbox{\hyperlink{union____gpio__ctrl__t_a038877e54e71a0bb5e4cbe485d6e5d45}{OUTOVER}}: 2\\
+\>uint32\_t \mbox{\hyperlink{union____gpio__ctrl__t_a253af53b984af06e05548fdc331ddba9}{OEOVER}}: 2\\
+\>uint32\_t \mbox{\hyperlink{union____gpio__ctrl__t_ab6d8f1a52c3a64b344811d96d47b9494}{INOVER}}: 2\\
+\>uint32\_t \mbox{\hyperlink{union____gpio__ctrl__t_ab8cb43cebe8e3f483c4291570e8f69e6}{IRQOVER}}: 2\\
+\>uint32\_t \mbox{\hyperlink{union____gpio__ctrl__t_a3e57c2ef1c3ffb36722f000cc1156824}{\+\_\+\+\_\+pad0\+\_\+\+\_\+}}: 19\\
+\} \mbox{\hyperlink{union____gpio__ctrl__t_a9fe5bb156f382590bd767853c90393bf}{BITS}}\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Union de los registros GPIO\+\_\+\+CTRL de 32 bits. Contiene los 6 campos de bits de los registros. 
+
+\doxysubsection{Documentación de los campos}
+\mbox{\Hypertarget{union____gpio__ctrl__t_a3e57c2ef1c3ffb36722f000cc1156824}\label{union____gpio__ctrl__t_a3e57c2ef1c3ffb36722f000cc1156824}} 
+\index{\_\_gpio\_ctrl\_t@{\_\_gpio\_ctrl\_t}!\_\_pad0\_\_@{\_\_pad0\_\_}}
+\index{\_\_pad0\_\_@{\_\_pad0\_\_}!\_\_gpio\_ctrl\_t@{\_\_gpio\_ctrl\_t}}
+\doxysubsubsection{\texorpdfstring{\_\_pad0\_\_}{\_\_pad0\_\_}}
+{\footnotesize\ttfamily uint32\+\_\+t \+\_\+\+\_\+pad0\+\_\+\+\_\+}
+
+Campo de bits reservado para los registros GPIO\+\_\+\+CTRL \mbox{\Hypertarget{union____gpio__ctrl__t_a9fe5bb156f382590bd767853c90393bf}\label{union____gpio__ctrl__t_a9fe5bb156f382590bd767853c90393bf}} 
+\index{\_\_gpio\_ctrl\_t@{\_\_gpio\_ctrl\_t}!BITS@{BITS}}
+\index{BITS@{BITS}!\_\_gpio\_ctrl\_t@{\_\_gpio\_ctrl\_t}}
+\doxysubsubsection{\texorpdfstring{}{}}
+{\footnotesize\ttfamily struct  \{ ... \}  BITS}
+
+\mbox{\Hypertarget{union____gpio__ctrl__t_a4acbad286e981c09cd345a50230cd2de}\label{union____gpio__ctrl__t_a4acbad286e981c09cd345a50230cd2de}} 
+\index{\_\_gpio\_ctrl\_t@{\_\_gpio\_ctrl\_t}!FUNCSEL@{FUNCSEL}}
+\index{FUNCSEL@{FUNCSEL}!\_\_gpio\_ctrl\_t@{\_\_gpio\_ctrl\_t}}
+\doxysubsubsection{\texorpdfstring{FUNCSEL}{FUNCSEL}}
+{\footnotesize\ttfamily uint32\+\_\+t FUNCSEL}
+
+Campo de bits FUNCSEL para los registros GPIO\+\_\+\+CTRL \mbox{\Hypertarget{union____gpio__ctrl__t_ab6d8f1a52c3a64b344811d96d47b9494}\label{union____gpio__ctrl__t_ab6d8f1a52c3a64b344811d96d47b9494}} 
+\index{\_\_gpio\_ctrl\_t@{\_\_gpio\_ctrl\_t}!INOVER@{INOVER}}
+\index{INOVER@{INOVER}!\_\_gpio\_ctrl\_t@{\_\_gpio\_ctrl\_t}}
+\doxysubsubsection{\texorpdfstring{INOVER}{INOVER}}
+{\footnotesize\ttfamily uint32\+\_\+t INOVER}
+
+Campo de bits INOVER para los registros GPIO\+\_\+\+CTRL \mbox{\Hypertarget{union____gpio__ctrl__t_ab8cb43cebe8e3f483c4291570e8f69e6}\label{union____gpio__ctrl__t_ab8cb43cebe8e3f483c4291570e8f69e6}} 
+\index{\_\_gpio\_ctrl\_t@{\_\_gpio\_ctrl\_t}!IRQOVER@{IRQOVER}}
+\index{IRQOVER@{IRQOVER}!\_\_gpio\_ctrl\_t@{\_\_gpio\_ctrl\_t}}
+\doxysubsubsection{\texorpdfstring{IRQOVER}{IRQOVER}}
+{\footnotesize\ttfamily uint32\+\_\+t IRQOVER}
+
+Campo de bits IRQOVER para los registros GPIO\+\_\+\+CTRL \mbox{\Hypertarget{union____gpio__ctrl__t_a253af53b984af06e05548fdc331ddba9}\label{union____gpio__ctrl__t_a253af53b984af06e05548fdc331ddba9}} 
+\index{\_\_gpio\_ctrl\_t@{\_\_gpio\_ctrl\_t}!OEOVER@{OEOVER}}
+\index{OEOVER@{OEOVER}!\_\_gpio\_ctrl\_t@{\_\_gpio\_ctrl\_t}}
+\doxysubsubsection{\texorpdfstring{OEOVER}{OEOVER}}
+{\footnotesize\ttfamily uint32\+\_\+t OEOVER}
+
+Campo de bits OEOVER para los registros GPIO\+\_\+\+CTRL \mbox{\Hypertarget{union____gpio__ctrl__t_a038877e54e71a0bb5e4cbe485d6e5d45}\label{union____gpio__ctrl__t_a038877e54e71a0bb5e4cbe485d6e5d45}} 
+\index{\_\_gpio\_ctrl\_t@{\_\_gpio\_ctrl\_t}!OUTOVER@{OUTOVER}}
+\index{OUTOVER@{OUTOVER}!\_\_gpio\_ctrl\_t@{\_\_gpio\_ctrl\_t}}
+\doxysubsubsection{\texorpdfstring{OUTOVER}{OUTOVER}}
+{\footnotesize\ttfamily uint32\+\_\+t OUTOVER}
+
+Campo de bits OUTOVER para los registros GPIO\+\_\+\+CTRL \mbox{\Hypertarget{union____gpio__ctrl__t_adb358c20ee228eecf09b17ae8d3b2f09}\label{union____gpio__ctrl__t_adb358c20ee228eecf09b17ae8d3b2f09}} 
+\index{\_\_gpio\_ctrl\_t@{\_\_gpio\_ctrl\_t}!WORD@{WORD}}
+\index{WORD@{WORD}!\_\_gpio\_ctrl\_t@{\_\_gpio\_ctrl\_t}}
+\doxysubsubsection{\texorpdfstring{WORD}{WORD}}
+{\footnotesize\ttfamily uint32\+\_\+t WORD}
+
+
+
+La documentación para esta unión fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_i_o_b_a_n_k0___l_i_b_8h}{IOBANK0\+\_\+\+LIB.\+h}}\end{DoxyCompactItemize}

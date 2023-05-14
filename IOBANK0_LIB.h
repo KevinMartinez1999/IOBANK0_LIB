@@ -1,10 +1,9 @@
 /**
  @file IOBANK0_LIB.h
- @brief IOBANK0_LIB.h: Conjunto de pines de entrada/salida (GPIO)
+ @brief Conjunto de pines de entrada/salida (GPIO)
  @mainpage
- @section Esta libreria es desarrollada para la RP2040 para el curso de electrónica digital III
- @details Esta libreria contiene las estructuras, registros, constantes y macros de la RP2040
- @date 13/05/2023
+ @details Esta libreria contiene las estructuras, registros, constantes y macros para los pines entrada/salida (GPIO) de la RP2040
+ @date 14/05/2023
  @author Kevin David Martinez Zapata
 */
 
